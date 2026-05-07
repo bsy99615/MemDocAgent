@@ -1,0 +1,3586 @@
+{
+  "run_id": "20260413_205142",
+  "label": "exodus-bundler",
+  "total_run_time_seconds": 4714.856,
+  "repo_summary": {
+    "file_count": 7,
+    "function_count": 26,
+    "class_count": 17,
+    "method_count": 36,
+    "total_components": 79,
+    "module_count": 2,
+    "repo_count": 1,
+    "topological_order_count": 79,
+    "topological_order": [
+      "src.exodus_bundler.bundling.Bundle.__init__",
+      "src.exodus_bundler.bundling.Elf.__eq__",
+      "src.exodus_bundler.bundling.Elf.__hash__",
+      "src.exodus_bundler.bundling.Elf.__repr__",
+      "src.exodus_bundler.bundling.stored_property.__get__",
+      "src.exodus_bundler.bundling.stored_property",
+      "src.exodus_bundler.bundling.Elf.dependencies",
+      "src.exodus_bundler.bundling.Elf.direct_dependencies",
+      "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output",
+      "src.exodus_bundler.bundling.Elf.find_direct_dependencies",
+      "src.exodus_bundler.bundling.bytes_to_int",
+      "src.exodus_bundler.bundling.Elf",
+      "src.exodus_bundler.bundling.File.__eq__",
+      "src.exodus_bundler.bundling.File.__hash__",
+      "src.exodus_bundler.bundling.File.__repr__",
+      "src.exodus_bundler.bundling.File.copy",
+      "src.exodus_bundler.bundling.File.create_entry_point",
+      "src.exodus_bundler.bundling.File.create_launcher",
+      "src.exodus_bundler.bundling.File.destination",
+      "src.exodus_bundler.bundling.detect_elf_binary",
+      "src.exodus_bundler.bundling.File.elf",
+      "src.exodus_bundler.bundling.File.executable",
+      "src.exodus_bundler.bundling.File.hash",
+      "src.exodus_bundler.bundling.File.requires_launcher",
+      "src.exodus_bundler.bundling.File.source",
+      "src.exodus_bundler.bundling.File.symlink",
+      "src.exodus_bundler.bundling.resolve_binary",
+      "src.exodus_bundler.bundling.resolve_file_path",
+      "src.exodus_bundler.bundling.File",
+      "src.exodus_bundler.bundling.Elf.__init__",
+      "src.exodus_bundler.bundling.File.__init__",
+      "src.exodus_bundler.bundling.Bundle.add_file",
+      "src.exodus_bundler.bundling.Bundle.bundle_root",
+      "src.exodus_bundler.bundling.Bundle.create_bundle",
+      "src.exodus_bundler.bundling.Bundle.delete_working_directory",
+      "src.exodus_bundler.bundling.Bundle.file_factory",
+      "src.exodus_bundler.bundling.Bundle.hash",
+      "src.exodus_bundler.bundling.Bundle",
+      "src.exodus_bundler.bundling.create_unpackaged_bundle",
+      "src.exodus_bundler.bundling.create_bundle",
+      "src.exodus_bundler.bundling.run_ldd",
+      "src.exodus_bundler.bundling.stored_property.__init__",
+      "src.exodus_bundler.cli.StderrFilter.filter",
+      "src.exodus_bundler.cli.StderrFilter",
+      "src.exodus_bundler.cli.StdoutFilter.filter",
+      "src.exodus_bundler.cli.StdoutFilter",
+      "src.exodus_bundler.cli.configure_logging",
+      "src.exodus_bundler.cli.parse_args",
+      "src.exodus_bundler.cli.main",
+      "src.exodus_bundler.dependency_detection.PackageManager.cache_exists",
+      "src.exodus_bundler.dependency_detection.PackageManager.commands_exist",
+      "src.exodus_bundler.dependency_detection.PackageManager.find_dependencies",
+      "src.exodus_bundler.dependency_detection.PackageManager.find_owner",
+      "src.exodus_bundler.dependency_detection.PackageManager",
+      "src.exodus_bundler.dependency_detection.Apt",
+      "src.exodus_bundler.dependency_detection.Pacman",
+      "src.exodus_bundler.dependency_detection.Yum",
+      "src.exodus_bundler.dependency_detection.detect_dependencies",
+      "src.exodus_bundler.errors.FatalError",
+      "src.exodus_bundler.errors.DependencyDetectionError",
+      "src.exodus_bundler.errors.InvalidElfBinaryError",
+      "src.exodus_bundler.errors.MissingFileError",
+      "src.exodus_bundler.errors.UnexpectedDirectoryError",
+      "src.exodus_bundler.errors.UnsupportedArchitectureError",
+      "src.exodus_bundler.input_parsing.strip_pid_prefix",
+      "src.exodus_bundler.input_parsing.extract_exec_path",
+      "src.exodus_bundler.input_parsing.extract_open_path",
+      "src.exodus_bundler.input_parsing.extract_stat_path",
+      "src.exodus_bundler.input_parsing.extract_paths",
+      "src.exodus_bundler.launchers.CompilerNotFoundError",
+      "src.exodus_bundler.launchers.compile_helper",
+      "src.exodus_bundler.launchers.find_executable",
+      "src.exodus_bundler.launchers.compile_diet",
+      "src.exodus_bundler.launchers.compile_musl",
+      "src.exodus_bundler.launchers.compile",
+      "src.exodus_bundler.launchers.construct_bash_launcher",
+      "src.exodus_bundler.launchers.construct_binary_launcher",
+      "src.exodus_bundler.templating.render_template",
+      "src.exodus_bundler.templating.render_template_file"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 155,
+    "Write": 119,
+    "Verify": 114,
+    "Finish": 73
+  },
+  "action_time_totals_seconds": {
+    "Read": 828.78,
+    "Write": 2238.344,
+    "Verify": 649.778
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 848475,
+      "output_tokens": 25362
+    },
+    "Write": {
+      "input_tokens": 759894,
+      "output_tokens": 71361
+    },
+    "Verify": {
+      "input_tokens": 803044,
+      "output_tokens": 19939
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 35,
+    "total_memory_hits": 122
+  },
+  "per_component_stats": {
+    "src.exodus_bundler.bundling.Bundle.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 17.52108626603149,
+      "Verify_time": 7.6122443759813905,
+      "total_time_seconds": 42.043,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.Elf.__eq__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.358711513923481,
+      "Write_time": 12.62303713010624,
+      "Verify_time": 9.173133827978745,
+      "total_time_seconds": 46.789,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.Elf.__hash__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.435333241010085,
+      "Write_time": 10.09916416509077,
+      "Verify_time": 5.401070656022057,
+      "total_time_seconds": 53.023,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.bundling.Elf.__repr__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 8.652052161982283,
+      "Verify_time": 3.1417636428959668,
+      "total_time_seconds": 39.189,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.stored_property.__get__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.510527370963246,
+      "Write_time": 14.66214908612892,
+      "Verify_time": 7.649764422094449,
+      "total_time_seconds": 51.611,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.stored_property": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 18.069504901999608,
+      "Verify_time": 13.8971711860504,
+      "total_time_seconds": 35.208,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.Elf.dependencies": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.457332370104268,
+      "Write_time": 14.639964377973229,
+      "Verify_time": 8.615637780865654,
+      "total_time_seconds": 42.418,
+      "graph_searches": 4,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.bundling.Elf.direct_dependencies": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.215004583122209,
+      "Write_time": 27.193403692217544,
+      "Verify_time": 5.534367577172816,
+      "total_time_seconds": 47.742,
+      "graph_searches": 1,
+      "memory_hits": 4
+    },
+    "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.155052393907681,
+      "Write_time": 30.56919222092256,
+      "Verify_time": 6.47313377680257,
+      "total_time_seconds": 70.295,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.bundling.Elf.find_direct_dependencies": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.054898293921724,
+      "Write_time": 19.136712888954207,
+      "Verify_time": 2.917582380119711,
+      "total_time_seconds": 71.938,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.bundling.bytes_to_int": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.713250706903636,
+      "Write_time": 37.45668776612729,
+      "Verify_time": 13.446285020792857,
+      "total_time_seconds": 112.241,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.Elf": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 8.36857934994623,
+      "Write_time": 80.92177458805963,
+      "Verify_time": 15.149720653891563,
+      "total_time_seconds": 104.442,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.bundling.File.__eq__": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 19.76610231772065,
+      "Write_time": 23.259711185935885,
+      "Verify_time": 14.165960686048493,
+      "total_time_seconds": 59.813,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.bundling.File.__hash__": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.924225192982703,
+      "Write_time": 24.973097105976194,
+      "Verify_time": 5.783309611026198,
+      "total_time_seconds": 42.648,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.bundling.File.__repr__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.752943847794086,
+      "Write_time": 9.249787593027577,
+      "Verify_time": 5.088375381892547,
+      "total_time_seconds": 42.897,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.File.copy": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.618412940297276,
+      "Write_time": 12.975881146965548,
+      "Verify_time": 7.334862167946994,
+      "total_time_seconds": 54.921,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.File.create_entry_point": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.983241216978058,
+      "Write_time": 14.051176914945245,
+      "Verify_time": 7.372314969077706,
+      "total_time_seconds": 35.458,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.bundling.File.create_launcher": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.7166382370051,
+      "Write_time": 19.00453453604132,
+      "Verify_time": 6.947574485791847,
+      "total_time_seconds": 43.575,
+      "graph_searches": 3,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.bundling.File.destination": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.428427890874445,
+      "Write_time": 17.294307883130386,
+      "Verify_time": 3.0843584248796105,
+      "total_time_seconds": 39.051,
+      "graph_searches": 2,
+      "memory_hits": 4
+    },
+    "src.exodus_bundler.bundling.detect_elf_binary": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.88919500191696,
+      "Write_time": 17.33114035613835,
+      "Verify_time": 6.610456990078092,
+      "total_time_seconds": 83.694,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.File.elf": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.226918996777385,
+      "Write_time": 14.872117542894557,
+      "Verify_time": 2.6591370429378003,
+      "total_time_seconds": 39.49,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "src.exodus_bundler.bundling.File.executable": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.577801437815651,
+      "Write_time": 14.442644926952198,
+      "Verify_time": 10.016109317075461,
+      "total_time_seconds": 41.107,
+      "graph_searches": 3,
+      "memory_hits": 8
+    },
+    "src.exodus_bundler.bundling.File.hash": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 8.164153305115178,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.File.requires_launcher": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.942443632986397,
+      "Write_time": 28.543684602947906,
+      "Verify_time": 9.970925856148824,
+      "total_time_seconds": 49.846,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.File.source": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.130235119955614,
+      "Write_time": 11.17503444897011,
+      "Verify_time": 2.491494628833607,
+      "total_time_seconds": 49.357,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "src.exodus_bundler.bundling.File.symlink": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.142394470982254,
+      "Write_time": 33.52653100597672,
+      "Verify_time": 4.617262869141996,
+      "total_time_seconds": 59.099,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "src.exodus_bundler.bundling.resolve_binary": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.67690211511217,
+      "Write_time": 17.059242520015687,
+      "Verify_time": 6.310730137862265,
+      "total_time_seconds": 50.443,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.resolve_file_path": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.211638966109604,
+      "Write_time": 20.05108857504092,
+      "Verify_time": 8.893977492116392,
+      "total_time_seconds": 162.597,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.bundling.File": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 14.96822107792832,
+      "Write_time": 84.1580035421066,
+      "Verify_time": 9.498995176283643,
+      "total_time_seconds": 111.685,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.bundling.Elf.__init__": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 24.26597538194619,
+      "Write_time": 23.658692212076858,
+      "Verify_time": 2.9811604188289493,
+      "total_time_seconds": 53.774,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.bundling.File.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.3319629488978535,
+      "Write_time": 26.43409815011546,
+      "Verify_time": 9.781717580044642,
+      "total_time_seconds": 45.86,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.bundling.Bundle.add_file": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 32.24113808106631,
+      "Verify_time": 21.751361680217087,
+      "total_time_seconds": 84.025,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.Bundle.bundle_root": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.601453504990786,
+      "Write_time": 11.045998155139387,
+      "Verify_time": 7.503466994967312,
+      "total_time_seconds": 67.609,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.Bundle.create_bundle": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.575413211947307,
+      "Write_time": 21.410031645093113,
+      "Verify_time": 8.25312025891617,
+      "total_time_seconds": 54.118,
+      "graph_searches": 0,
+      "memory_hits": 10
+    },
+    "src.exodus_bundler.bundling.Bundle.delete_working_directory": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.267693975009024,
+      "Write_time": 10.812549638096243,
+      "Verify_time": 8.997398459119722,
+      "total_time_seconds": 38.155,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.bundling.Bundle.file_factory": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.311505944933742,
+      "Write_time": 19.227644820930436,
+      "Verify_time": 12.970865424023941,
+      "total_time_seconds": 51.528,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "src.exodus_bundler.bundling.Bundle.hash": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 24.8325279338751,
+      "Write_time": 11.91866901004687,
+      "Verify_time": 2.605692207114771,
+      "total_time_seconds": 40.399,
+      "graph_searches": 0,
+      "memory_hits": 7
+    },
+    "src.exodus_bundler.bundling.Bundle": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.bundling.create_unpackaged_bundle": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.90578985097818,
+      "Write_time": 65.87461857218295,
+      "Verify_time": 6.401987195946276,
+      "total_time_seconds": 90.222,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "src.exodus_bundler.bundling.create_bundle": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.739493038272485,
+      "Write_time": 32.08575829002075,
+      "Verify_time": 3.2113970979116857,
+      "total_time_seconds": 51.726,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.bundling.run_ldd": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.649001423968002,
+      "Write_time": 20.631680746097118,
+      "Verify_time": 2.7718533650040627,
+      "total_time_seconds": 47.772,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.bundling.stored_property.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.556403828086331,
+      "Write_time": 13.689762052847072,
+      "Verify_time": 8.259294856805354,
+      "total_time_seconds": 33.664,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.cli.StderrFilter.filter": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 21.989153191214427,
+      "Verify_time": 9.794869357021526,
+      "total_time_seconds": 44.032,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.cli.StderrFilter": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 60.2937469012104,
+      "Verify_time": 21.911044764798135,
+      "total_time_seconds": 82.206,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.cli.StdoutFilter.filter": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.301248611882329,
+      "Write_time": 8.272734474856406,
+      "Verify_time": 2.587333128089085,
+      "total_time_seconds": 31.364,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.cli.StdoutFilter": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 18.32423329213634,
+      "Verify_time": 9.34497512015514,
+      "total_time_seconds": 51.676,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.cli.configure_logging": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.786991343135014,
+      "Write_time": 22.392941311001778,
+      "Verify_time": 8.000350310932845,
+      "total_time_seconds": 48.5,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.cli.parse_args": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.9521192610263824,
+      "Write_time": 31.439701687078923,
+      "Verify_time": 8.839323807042092,
+      "total_time_seconds": 50.619,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.cli.main": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.288969649933279,
+      "Write_time": 32.36668159207329,
+      "Verify_time": 2.49935775087215,
+      "total_time_seconds": 62.527,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.cache_exists": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.249407351249829,
+      "Write_time": 8.836091811070219,
+      "Verify_time": 10.262435603886843,
+      "total_time_seconds": 33.732,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.commands_exist": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.135592223145068,
+      "Write_time": 11.7547504149843,
+      "Verify_time": 7.2473957180045545,
+      "total_time_seconds": 28.791,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.find_dependencies": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 15.686010794015601,
+      "Verify_time": 7.741850618040189,
+      "total_time_seconds": 46.718,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.find_owner": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.93288479419425,
+      "Write_time": 16.86363260122016,
+      "Verify_time": 7.269432142144069,
+      "total_time_seconds": 44.284,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.018491488182917,
+      "Write_time": 22.395259946817532,
+      "Verify_time": 7.911893355892971,
+      "total_time_seconds": 40.632,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.dependency_detection.Apt": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.068097170908004,
+      "Write_time": 17.449570829048753,
+      "Verify_time": 2.84666623105295,
+      "total_time_seconds": 55.139,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.dependency_detection.Pacman": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.737593267811462,
+      "Write_time": 38.73179657920264,
+      "Verify_time": 5.373038769001141,
+      "total_time_seconds": 71.661,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.dependency_detection.Yum": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.877117844996974,
+      "Write_time": 58.06538157630712,
+      "Verify_time": 18.939758693100885,
+      "total_time_seconds": 89.884,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.dependency_detection.detect_dependencies": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 17.093948649941012,
+      "Write_time": 58.607977375155315,
+      "Verify_time": 14.211779983714223,
+      "total_time_seconds": 93.634,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.errors.FatalError": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 16.76488541206345,
+      "Verify_time": 6.984116812003776,
+      "total_time_seconds": 32.437,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.errors.DependencyDetectionError": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.08127764496021,
+      "Write_time": 16.722526729805395,
+      "Verify_time": 2.391909102909267,
+      "total_time_seconds": 44.222,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.errors.InvalidElfBinaryError": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 14.769533251179382,
+      "Write_time": 54.95804484980181,
+      "Verify_time": 16.0639695241116,
+      "total_time_seconds": 88.378,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.errors.MissingFileError": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 9.280301722930744,
+      "Write_time": 54.643376308027655,
+      "Verify_time": 8.749417971353978,
+      "total_time_seconds": 72.674,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.errors.UnexpectedDirectoryError": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.587735754903406,
+      "Write_time": 32.92417448409833,
+      "Verify_time": 6.274131522048265,
+      "total_time_seconds": 60.702,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.errors.UnsupportedArchitectureError": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.input_parsing.strip_pid_prefix": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 19.84474049601704,
+      "Verify_time": 6.464474402135238,
+      "total_time_seconds": 37.746,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.input_parsing.extract_exec_path": {
+      "Read_calls": 3,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 11.271399043966085,
+      "Write_time": 62.827376467874274,
+      "Verify_time": 8.14075289806351,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.input_parsing.extract_open_path": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.input_parsing.extract_stat_path": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.input_parsing.extract_paths": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.212692448636517,
+      "Write_time": 55.230061245150864,
+      "Verify_time": 5.2209629758726805,
+      "total_time_seconds": 79.042,
+      "graph_searches": 3,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.launchers.CompilerNotFoundError": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 14.266560167074203,
+      "Verify_time": 7.183771172072738,
+      "total_time_seconds": 37.214,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.launchers.compile_helper": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 20.63066298700869,
+      "Verify_time": 8.787390519166365,
+      "total_time_seconds": 52.544,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.launchers.find_executable": {
+      "Read_calls": 1,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 7.140301316045225,
+      "Write_time": 97.07618345692754,
+      "Verify_time": 23.668635258218274,
+      "total_time_seconds": 127.888,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.launchers.compile_diet": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 14.14591544913128,
+      "Write_time": 68.75550075108185,
+      "Verify_time": 13.253933187108487,
+      "total_time_seconds": 96.157,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.launchers.compile_musl": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.056554961949587,
+      "Write_time": 20.250359407858923,
+      "Verify_time": 9.476654255064204,
+      "total_time_seconds": 79.105,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "src.exodus_bundler.launchers.compile": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.launchers.construct_bash_launcher": {
+      "Read_calls": 3,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 11.753862966783345,
+      "Write_time": 81.03311986313201,
+      "Verify_time": 8.030078089097515,
+      "total_time_seconds": null,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "src.exodus_bundler.launchers.construct_binary_launcher": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 18.407877356978133,
+      "Write_time": 63.38463987899013,
+      "Verify_time": 20.83357272273861,
+      "total_time_seconds": 104.383,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "src.exodus_bundler.templating.render_template": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 18.476815085858107,
+      "Verify_time": 7.693689753999934,
+      "total_time_seconds": 35.348,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.exodus_bundler.templating.render_template_file": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.757261079037562,
+      "Write_time": 35.66817133594304,
+      "Verify_time": 15.363203580956906,
+      "total_time_seconds": 77.804,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "src/exodus_bundler": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 8.945750951068476,
+      "Write_time": 49.096866267034784,
+      "Verify_time": 19.44334545568563,
+      "total_time_seconds": 80.803,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "exodus-bundler": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.665735516929999,
+      "Write_time": 61.61313675600104,
+      "Verify_time": 5.6254025939852,
+      "total_time_seconds": 123.473,
+      "graph_searches": 0,
+      "memory_hits": 0
+    }
+  },
+  "per_component_verify_scores": {
+    "src.exodus_bundler.bundling.Bundle.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.__eq__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.__hash__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.__repr__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.stored_property.__get__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.stored_property": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.dependencies": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.direct_dependencies": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.find_direct_dependencies": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.bytes_to_int": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.8333
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.8333
+      }
+    ],
+    "src.exodus_bundler.bundling.File.__eq__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9
+      }
+    ],
+    "src.exodus_bundler.bundling.File.__hash__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.__repr__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9667,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.copy": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.create_entry_point": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.create_launcher": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.destination": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.detect_elf_binary": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.elf": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.executable": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.requires_launcher": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.source": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.symlink": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.resolve_binary": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.resolve_file_path": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.9
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9083,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9
+      }
+    ],
+    "src.exodus_bundler.bundling.Elf.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.File.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Bundle.add_file": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Bundle.bundle_root": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Bundle.create_bundle": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Bundle.delete_working_directory": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Bundle.file_factory": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.Bundle.hash": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.create_unpackaged_bundle": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.create_bundle": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.run_ldd": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.bundling.stored_property.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.cli.StderrFilter.filter": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.cli.StderrFilter": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7357,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.5714
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8071,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.7143
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.7857,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5714
+      }
+    ],
+    "src.exodus_bundler.cli.StdoutFilter.filter": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.cli.StdoutFilter": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.cli.configure_logging": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.cli.parse_args": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.cli.main": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.PackageManager.cache_exists": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.PackageManager.commands_exist": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.PackageManager.find_dependencies": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.PackageManager.find_owner": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.PackageManager": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.Apt": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.Pacman": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7917,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.Yum": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.75
+      }
+    ],
+    "src.exodus_bundler.dependency_detection.detect_dependencies": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.errors.FatalError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.errors.DependencyDetectionError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.errors.InvalidElfBinaryError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.errors.MissingFileError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7917,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7917,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.7083,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.5
+      }
+    ],
+    "src.exodus_bundler.errors.UnexpectedDirectoryError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.675,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.input_parsing.strip_pid_prefix": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.input_parsing.extract_exec_path": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8417,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.input_parsing.extract_paths": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.launchers.CompilerNotFoundError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.launchers.compile_helper": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.launchers.find_executable": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.launchers.compile_diet": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.75
+      }
+    ],
+    "src.exodus_bundler.launchers.compile_musl": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.launchers.construct_bash_launcher": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.launchers.construct_binary_launcher": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.templating.render_template": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.exodus_bundler.templating.render_template_file": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "src": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8417,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "exodus-bundler": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "src.exodus_bundler.bundling.Bundle.__init__": {
+      "requests": 3,
+      "input_tokens": 14877,
+      "output_tokens": 1382,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.__eq__": {
+      "requests": 4,
+      "input_tokens": 23526,
+      "output_tokens": 1491,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.__hash__": {
+      "requests": 6,
+      "input_tokens": 37834,
+      "output_tokens": 1699,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.__repr__": {
+      "requests": 5,
+      "input_tokens": 23505,
+      "output_tokens": 1245,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.stored_property.__get__": {
+      "requests": 5,
+      "input_tokens": 24800,
+      "output_tokens": 1660,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.stored_property": {
+      "requests": 3,
+      "input_tokens": 14647,
+      "output_tokens": 934,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.dependencies": {
+      "requests": 6,
+      "input_tokens": 46071,
+      "output_tokens": 1310,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.direct_dependencies": {
+      "requests": 8,
+      "input_tokens": 56146,
+      "output_tokens": 1463,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output": {
+      "requests": 5,
+      "input_tokens": 26468,
+      "output_tokens": 2177,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.find_direct_dependencies": {
+      "requests": 7,
+      "input_tokens": 58293,
+      "output_tokens": 2183,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.bytes_to_int": {
+      "requests": 6,
+      "input_tokens": 32924,
+      "output_tokens": 3449,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf": {
+      "requests": 7,
+      "input_tokens": 80186,
+      "output_tokens": 3315,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.__eq__": {
+      "requests": 9,
+      "input_tokens": 60276,
+      "output_tokens": 1926,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.__hash__": {
+      "requests": 7,
+      "input_tokens": 45697,
+      "output_tokens": 1368,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.__repr__": {
+      "requests": 5,
+      "input_tokens": 23681,
+      "output_tokens": 1367,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.copy": {
+      "requests": 5,
+      "input_tokens": 25238,
+      "output_tokens": 1773,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.create_entry_point": {
+      "requests": 5,
+      "input_tokens": 31374,
+      "output_tokens": 1112,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.create_launcher": {
+      "requests": 6,
+      "input_tokens": 44501,
+      "output_tokens": 1371,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.destination": {
+      "requests": 6,
+      "input_tokens": 42203,
+      "output_tokens": 1226,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.detect_elf_binary": {
+      "requests": 4,
+      "input_tokens": 20030,
+      "output_tokens": 2683,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.elf": {
+      "requests": 7,
+      "input_tokens": 48580,
+      "output_tokens": 1235,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.executable": {
+      "requests": 6,
+      "input_tokens": 44223,
+      "output_tokens": 1289,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.requires_launcher": {
+      "requests": 6,
+      "input_tokens": 33092,
+      "output_tokens": 1588,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.source": {
+      "requests": 6,
+      "input_tokens": 40482,
+      "output_tokens": 1554,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.symlink": {
+      "requests": 9,
+      "input_tokens": 69173,
+      "output_tokens": 1888,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.resolve_binary": {
+      "requests": 4,
+      "input_tokens": 20403,
+      "output_tokens": 1558,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.resolve_file_path": {
+      "requests": 4,
+      "input_tokens": 21592,
+      "output_tokens": 5245,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File": {
+      "requests": 10,
+      "input_tokens": 104631,
+      "output_tokens": 3462,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Elf.__init__": {
+      "requests": 7,
+      "input_tokens": 62782,
+      "output_tokens": 1675,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.File.__init__": {
+      "requests": 4,
+      "input_tokens": 27207,
+      "output_tokens": 1443,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Bundle.add_file": {
+      "requests": 6,
+      "input_tokens": 34686,
+      "output_tokens": 2686,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Bundle.bundle_root": {
+      "requests": 6,
+      "input_tokens": 37027,
+      "output_tokens": 2107,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Bundle.create_bundle": {
+      "requests": 7,
+      "input_tokens": 64405,
+      "output_tokens": 1624,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Bundle.delete_working_directory": {
+      "requests": 6,
+      "input_tokens": 38230,
+      "output_tokens": 1147,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Bundle.file_factory": {
+      "requests": 6,
+      "input_tokens": 44539,
+      "output_tokens": 1561,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.Bundle.hash": {
+      "requests": 8,
+      "input_tokens": 62080,
+      "output_tokens": 1268,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.create_unpackaged_bundle": {
+      "requests": 8,
+      "input_tokens": 70357,
+      "output_tokens": 2887,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.create_bundle": {
+      "requests": 7,
+      "input_tokens": 47240,
+      "output_tokens": 1641,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.run_ldd": {
+      "requests": 6,
+      "input_tokens": 35835,
+      "output_tokens": 1526,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.bundling.stored_property.__init__": {
+      "requests": 4,
+      "input_tokens": 20657,
+      "output_tokens": 1090,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.StderrFilter.filter": {
+      "requests": 7,
+      "input_tokens": 33980,
+      "output_tokens": 1398,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.StderrFilter": {
+      "requests": 6,
+      "input_tokens": 33716,
+      "output_tokens": 2560,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.StdoutFilter.filter": {
+      "requests": 7,
+      "input_tokens": 33180,
+      "output_tokens": 1002,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.StdoutFilter": {
+      "requests": 3,
+      "input_tokens": 14014,
+      "output_tokens": 1678,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.configure_logging": {
+      "requests": 6,
+      "input_tokens": 36077,
+      "output_tokens": 1479,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.parse_args": {
+      "requests": 4,
+      "input_tokens": 25385,
+      "output_tokens": 1621,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.cli.main": {
+      "requests": 7,
+      "input_tokens": 48645,
+      "output_tokens": 1994,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.cache_exists": {
+      "requests": 5,
+      "input_tokens": 25748,
+      "output_tokens": 1055,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.commands_exist": {
+      "requests": 4,
+      "input_tokens": 20008,
+      "output_tokens": 893,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.find_dependencies": {
+      "requests": 4,
+      "input_tokens": 19128,
+      "output_tokens": 1458,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager.find_owner": {
+      "requests": 5,
+      "input_tokens": 26750,
+      "output_tokens": 1400,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager": {
+      "requests": 4,
+      "input_tokens": 22164,
+      "output_tokens": 1335,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.Apt": {
+      "requests": 7,
+      "input_tokens": 37929,
+      "output_tokens": 1765,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.Pacman": {
+      "requests": 7,
+      "input_tokens": 40390,
+      "output_tokens": 2317,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.Yum": {
+      "requests": 9,
+      "input_tokens": 58557,
+      "output_tokens": 2863,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.dependency_detection.detect_dependencies": {
+      "requests": 10,
+      "input_tokens": 57168,
+      "output_tokens": 3025,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.errors.FatalError": {
+      "requests": 3,
+      "input_tokens": 13356,
+      "output_tokens": 1068,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.errors.DependencyDetectionError": {
+      "requests": 6,
+      "input_tokens": 30625,
+      "output_tokens": 1353,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.errors.InvalidElfBinaryError": {
+      "requests": 10,
+      "input_tokens": 59409,
+      "output_tokens": 2767,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.errors.MissingFileError": {
+      "requests": 8,
+      "input_tokens": 44629,
+      "output_tokens": 2251,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.errors.UnexpectedDirectoryError": {
+      "requests": 7,
+      "input_tokens": 37137,
+      "output_tokens": 1912,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.input_parsing.strip_pid_prefix": {
+      "requests": 3,
+      "input_tokens": 13891,
+      "output_tokens": 1210,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.input_parsing.extract_paths": {
+      "requests": 9,
+      "input_tokens": 54583,
+      "output_tokens": 2523,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.launchers.CompilerNotFoundError": {
+      "requests": 3,
+      "input_tokens": 13452,
+      "output_tokens": 1201,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.launchers.compile_helper": {
+      "requests": 4,
+      "input_tokens": 20348,
+      "output_tokens": 1676,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.launchers.find_executable": {
+      "requests": 8,
+      "input_tokens": 51272,
+      "output_tokens": 3990,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.launchers.compile_diet": {
+      "requests": 9,
+      "input_tokens": 60174,
+      "output_tokens": 2981,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.launchers.compile_musl": {
+      "requests": 5,
+      "input_tokens": 27417,
+      "output_tokens": 2485,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.launchers.construct_binary_launcher": {
+      "requests": 10,
+      "input_tokens": 63555,
+      "output_tokens": 3048,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.templating.render_template": {
+      "requests": 3,
+      "input_tokens": 13734,
+      "output_tokens": 1055,
+      "cost": 0.0
+    },
+    "src.exodus_bundler.templating.render_template_file": {
+      "requests": 7,
+      "input_tokens": 38607,
+      "output_tokens": 2278,
+      "cost": 0.0
+    },
+    "src": {
+      "requests": 9,
+      "input_tokens": 52005,
+      "output_tokens": 2647,
+      "cost": 0.0
+    },
+    "exodus-bundler": {
+      "requests": 7,
+      "input_tokens": 40482,
+      "output_tokens": 4029,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 30,
+    "total_fetched_component_types": 57,
+    "redundant_fetch_count": 92,
+    "duplicates": {
+      "src.exodus_bundler.bundling.File": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf.dependencies",
+          "src.exodus_bundler.bundling.Elf.find_direct_dependencies",
+          "src.exodus_bundler.bundling.Elf",
+          "src.exodus_bundler.bundling.File.__eq__",
+          "src.exodus_bundler.bundling.File.__hash__",
+          "src.exodus_bundler.bundling.File.create_entry_point",
+          "src.exodus_bundler.bundling.File.create_launcher",
+          "src.exodus_bundler.bundling.File.destination",
+          "src.exodus_bundler.bundling.File.elf",
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.File.source",
+          "src.exodus_bundler.bundling.File.symlink",
+          "src.exodus_bundler.bundling.Elf.__init__",
+          "src.exodus_bundler.bundling.File.__init__",
+          "src.exodus_bundler.bundling.Bundle.create_bundle",
+          "src.exodus_bundler.bundling.Bundle.file_factory",
+          "src.exodus_bundler.bundling.Bundle.hash",
+          "src.exodus_bundler.bundling.create_unpackaged_bundle"
+        ],
+        "access_count": 18
+      },
+      "src.exodus_bundler.bundling.Elf": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf.__eq__",
+          "src.exodus_bundler.bundling.Elf.__hash__",
+          "src.exodus_bundler.bundling.Elf.dependencies",
+          "src.exodus_bundler.bundling.Elf.direct_dependencies",
+          "src.exodus_bundler.bundling.Elf.find_direct_dependencies",
+          "src.exodus_bundler.bundling.File.elf",
+          "src.exodus_bundler.bundling.File",
+          "src.exodus_bundler.bundling.Elf.__init__",
+          "src.exodus_bundler.bundling.File.__init__",
+          "src.exodus_bundler.bundling.create_unpackaged_bundle"
+        ],
+        "access_count": 10
+      },
+      "src.exodus_bundler.launchers.find_executable": {
+        "accessed_by": [
+          "src.exodus_bundler.dependency_detection.PackageManager.commands_exist",
+          "src.exodus_bundler.dependency_detection.PackageManager.find_owner",
+          "src.exodus_bundler.dependency_detection.PackageManager",
+          "src.exodus_bundler.dependency_detection.Apt",
+          "src.exodus_bundler.dependency_detection.Pacman",
+          "src.exodus_bundler.dependency_detection.Yum",
+          "src.exodus_bundler.launchers.compile_diet",
+          "src.exodus_bundler.launchers.construct_bash_launcher"
+        ],
+        "access_count": 8
+      },
+      "src.exodus_bundler.bundling.Bundle": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Bundle.bundle_root",
+          "src.exodus_bundler.bundling.Bundle.create_bundle",
+          "src.exodus_bundler.bundling.Bundle.delete_working_directory",
+          "src.exodus_bundler.bundling.Bundle.file_factory",
+          "src.exodus_bundler.bundling.Bundle.hash",
+          "src.exodus_bundler.bundling.create_unpackaged_bundle"
+        ],
+        "access_count": 6
+      },
+      "src.exodus_bundler.dependency_detection.PackageManager": {
+        "accessed_by": [
+          "src.exodus_bundler.dependency_detection.PackageManager.cache_exists",
+          "src.exodus_bundler.dependency_detection.PackageManager.commands_exist",
+          "src.exodus_bundler.dependency_detection.PackageManager.find_owner",
+          "src.exodus_bundler.dependency_detection.Apt",
+          "src.exodus_bundler.dependency_detection.Pacman",
+          "src.exodus_bundler.dependency_detection.Yum"
+        ],
+        "access_count": 6
+      },
+      "src.exodus_bundler.bundling.File.create_entry_point": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.create_entry_point",
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.File.source",
+          "src.exodus_bundler.bundling.File.symlink",
+          "src.exodus_bundler.bundling.Bundle.create_bundle"
+        ],
+        "access_count": 5
+      },
+      "src.exodus_bundler.bundling.File.create_launcher": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.destination",
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.File.source",
+          "src.exodus_bundler.bundling.File.symlink",
+          "src.exodus_bundler.bundling.Bundle.create_bundle"
+        ],
+        "access_count": 5
+      },
+      "src.exodus_bundler.bundling.File.symlink": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.destination",
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.File.source",
+          "src.exodus_bundler.bundling.File.symlink",
+          "src.exodus_bundler.bundling.Bundle.create_bundle"
+        ],
+        "access_count": 5
+      },
+      "src.exodus_bundler.bundling.stored_property": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.stored_property.__get__",
+          "src.exodus_bundler.bundling.File.destination",
+          "src.exodus_bundler.bundling.File.elf",
+          "src.exodus_bundler.bundling.stored_property.__init__"
+        ],
+        "access_count": 4
+      },
+      "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf.dependencies",
+          "src.exodus_bundler.bundling.Elf.direct_dependencies",
+          "src.exodus_bundler.bundling.Elf.find_direct_dependencies",
+          "src.exodus_bundler.bundling.Elf"
+        ],
+        "access_count": 4
+      },
+      "src.exodus_bundler.bundling.detect_elf_binary": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf.find_direct_dependencies",
+          "src.exodus_bundler.bundling.File.elf",
+          "src.exodus_bundler.bundling.File",
+          "src.exodus_bundler.bundling.run_ldd"
+        ],
+        "access_count": 4
+      },
+      "src.exodus_bundler.bundling.File.copy": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.destination",
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.File.symlink",
+          "src.exodus_bundler.bundling.Bundle.create_bundle"
+        ],
+        "access_count": 4
+      },
+      "src.exodus_bundler.bundling.resolve_file_path": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File",
+          "src.exodus_bundler.bundling.File.__init__",
+          "src.exodus_bundler.bundling.Bundle.file_factory",
+          "src.exodus_bundler.bundling.create_unpackaged_bundle"
+        ],
+        "access_count": 4
+      },
+      "src.exodus_bundler.errors.FatalError": {
+        "accessed_by": [
+          "src.exodus_bundler.errors.DependencyDetectionError",
+          "src.exodus_bundler.errors.InvalidElfBinaryError",
+          "src.exodus_bundler.errors.MissingFileError",
+          "src.exodus_bundler.errors.UnexpectedDirectoryError"
+        ],
+        "access_count": 4
+      },
+      "src.exodus_bundler.dependency_detection.detect_dependencies": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf.dependencies",
+          "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output",
+          "src.exodus_bundler.bundling.create_unpackaged_bundle"
+        ],
+        "access_count": 3
+      },
+      "src.exodus_bundler.bundling.File.hash": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.destination",
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.Bundle.hash"
+        ],
+        "access_count": 3
+      },
+      "src.exodus_bundler.bundling.Bundle.hash": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Bundle.bundle_root",
+          "src.exodus_bundler.bundling.Bundle.create_bundle",
+          "src.exodus_bundler.bundling.Bundle.hash"
+        ],
+        "access_count": 3
+      },
+      "src.exodus_bundler.bundling.Elf.find_direct_dependencies": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf.dependencies",
+          "src.exodus_bundler.bundling.Elf.direct_dependencies"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.bytes_to_int": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Elf",
+          "src.exodus_bundler.bundling.Elf.__init__"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.File.__eq__": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.__eq__",
+          "src.exodus_bundler.bundling.File.__hash__"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.launchers.compile": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.create_launcher",
+          "src.exodus_bundler.launchers.construct_binary_launcher"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.File.requires_launcher": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.Bundle.create_bundle"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.File.source": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.File.executable",
+          "src.exodus_bundler.bundling.File.source"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.resolve_binary": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.resolve_file_path",
+          "src.exodus_bundler.bundling.run_ldd"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.Bundle.create_bundle": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Bundle.bundle_root",
+          "src.exodus_bundler.cli.configure_logging"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.bundling.Bundle.bundle_root": {
+        "accessed_by": [
+          "src.exodus_bundler.bundling.Bundle.create_bundle",
+          "src.exodus_bundler.bundling.Bundle.hash"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.input_parsing.strip_pid_prefix": {
+        "accessed_by": [
+          "src.exodus_bundler.input_parsing.extract_exec_path",
+          "src.exodus_bundler.input_parsing.extract_paths"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.launchers.compile_helper": {
+        "accessed_by": [
+          "src.exodus_bundler.launchers.compile_diet",
+          "src.exodus_bundler.launchers.compile_musl"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.launchers.CompilerNotFoundError": {
+        "accessed_by": [
+          "src.exodus_bundler.launchers.compile_diet",
+          "src.exodus_bundler.launchers.compile_musl"
+        ],
+        "access_count": 2
+      },
+      "src.exodus_bundler.templating.render_template_file": {
+        "accessed_by": [
+          "src.exodus_bundler.launchers.construct_bash_launcher",
+          "src.exodus_bundler.launchers.construct_binary_launcher"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 490,
+      "total_input_tokens": 3093202,
+      "total_output_tokens": 148349,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 54.229,
+    "avg_turns_per_component": 5.62,
+    "memory_hit_rate": 0.7771,
+    "total_tokens": 2966938,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 36182.2
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 79,
+      "total_time_seconds": 4242.515,
+      "avg_time_seconds": 53.703,
+      "total_turns": 469,
+      "avg_turns": 5.94,
+      "action_counts": {
+        "Write": 114,
+        "Verify": 109,
+        "Finish": 65,
+        "Read": 151,
+        "Unknown": 30
+      }
+    },
+    "MODULE": {
+      "count": 2,
+      "total_time_seconds": 80.803,
+      "avg_time_seconds": 40.401,
+      "total_turns": 9,
+      "avg_turns": 4.5,
+      "action_counts": {
+        "Read": 2,
+        "Write": 3,
+        "Verify": 3,
+        "Finish": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 123.473,
+      "avg_time_seconds": 123.473,
+      "total_turns": 7,
+      "avg_turns": 7.0,
+      "action_counts": {
+        "Read": 2,
+        "Write": 2,
+        "Verify": 2,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "src.exodus_bundler.bundling.stored_property": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 16,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property.__get__"
+      ]
+    },
+    "src.exodus_bundler.bundling.Elf.dependencies": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.Elf.direct_dependencies": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.Elf.find_direct_dependencies": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output"
+      ]
+    },
+    "src.exodus_bundler.bundling.Elf": {
+      "total_candidate_pairs": 37,
+      "entailment_count": 5,
+      "contradiction_count": 3,
+      "neutral_count": 29,
+      "conflict_score": 0.1667,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.Elf.__eq__",
+        "src.exodus_bundler.bundling.Elf.__hash__",
+        "src.exodus_bundler.bundling.Elf.__repr__",
+        "src.exodus_bundler.bundling.Elf.dependencies",
+        "src.exodus_bundler.bundling.Elf.direct_dependencies",
+        "src.exodus_bundler.bundling.Elf.find_direct_dependencies",
+        "src.exodus_bundler.bundling.bytes_to_int",
+        "src.exodus_bundler.bundling.parse_dependencies_from_ldd_output",
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.File.destination": {
+      "total_candidate_pairs": 14,
+      "entailment_count": 3,
+      "contradiction_count": 1,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.File.elf": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.detect_elf_binary",
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.File.executable": {
+      "total_candidate_pairs": 14,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 11,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.File.requires_launcher": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.File.source": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.resolve_file_path": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.resolve_binary"
+      ]
+    },
+    "src.exodus_bundler.bundling.File": {
+      "total_candidate_pairs": 112,
+      "entailment_count": 15,
+      "contradiction_count": 7,
+      "neutral_count": 90,
+      "conflict_score": 0.1,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.Elf",
+        "src.exodus_bundler.bundling.File.__eq__",
+        "src.exodus_bundler.bundling.File.__hash__",
+        "src.exodus_bundler.bundling.File.__repr__",
+        "src.exodus_bundler.bundling.File.copy",
+        "src.exodus_bundler.bundling.File.create_entry_point",
+        "src.exodus_bundler.bundling.File.create_launcher",
+        "src.exodus_bundler.bundling.File.destination",
+        "src.exodus_bundler.bundling.File.elf",
+        "src.exodus_bundler.bundling.File.executable",
+        "src.exodus_bundler.bundling.File.requires_launcher",
+        "src.exodus_bundler.bundling.File.source",
+        "src.exodus_bundler.bundling.File.symlink",
+        "src.exodus_bundler.bundling.detect_elf_binary",
+        "src.exodus_bundler.bundling.resolve_file_path",
+        "src.exodus_bundler.bundling.stored_property"
+      ]
+    },
+    "src.exodus_bundler.bundling.Elf.__init__": {
+      "total_candidate_pairs": 37,
+      "entailment_count": 33,
+      "contradiction_count": 2,
+      "neutral_count": 2,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.File",
+        "src.exodus_bundler.bundling.bytes_to_int"
+      ]
+    },
+    "src.exodus_bundler.bundling.File.__init__": {
+      "total_candidate_pairs": 70,
+      "entailment_count": 61,
+      "contradiction_count": 0,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.Elf",
+        "src.exodus_bundler.bundling.File",
+        "src.exodus_bundler.bundling.resolve_file_path"
+      ]
+    },
+    "src.exodus_bundler.bundling.Bundle.file_factory": {
+      "total_candidate_pairs": 63,
+      "entailment_count": 48,
+      "contradiction_count": 1,
+      "neutral_count": 14,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.File",
+        "src.exodus_bundler.bundling.resolve_file_path"
+      ]
+    },
+    "src.exodus_bundler.bundling.create_unpackaged_bundle": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.resolve_file_path"
+      ]
+    },
+    "src.exodus_bundler.bundling.create_bundle": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.create_unpackaged_bundle"
+      ]
+    },
+    "src.exodus_bundler.bundling.run_ldd": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.bundling.detect_elf_binary",
+        "src.exodus_bundler.bundling.resolve_binary"
+      ]
+    },
+    "src.exodus_bundler.cli.StderrFilter": {
+      "total_candidate_pairs": 18,
+      "entailment_count": 9,
+      "contradiction_count": 1,
+      "neutral_count": 8,
+      "conflict_score": 0.4286,
+      "dep_ids_checked": [
+        "src.exodus_bundler.cli.StderrFilter.filter"
+      ]
+    },
+    "src.exodus_bundler.cli.StdoutFilter": {
+      "total_candidate_pairs": 16,
+      "entailment_count": 11,
+      "contradiction_count": 0,
+      "neutral_count": 5,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.cli.StdoutFilter.filter"
+      ]
+    },
+    "src.exodus_bundler.cli.configure_logging": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.cli.StderrFilter",
+        "src.exodus_bundler.cli.StdoutFilter"
+      ]
+    },
+    "src.exodus_bundler.cli.main": {
+      "total_candidate_pairs": 19,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.cli.configure_logging",
+        "src.exodus_bundler.cli.parse_args"
+      ]
+    },
+    "src.exodus_bundler.dependency_detection.PackageManager": {
+      "total_candidate_pairs": 40,
+      "entailment_count": 4,
+      "contradiction_count": 2,
+      "neutral_count": 34,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.dependency_detection.PackageManager.cache_exists",
+        "src.exodus_bundler.dependency_detection.PackageManager.commands_exist",
+        "src.exodus_bundler.dependency_detection.PackageManager.find_dependencies",
+        "src.exodus_bundler.dependency_detection.PackageManager.find_owner"
+      ]
+    },
+    "src.exodus_bundler.dependency_detection.Apt": {
+      "total_candidate_pairs": 20,
+      "entailment_count": 4,
+      "contradiction_count": 0,
+      "neutral_count": 16,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.dependency_detection.PackageManager"
+      ]
+    },
+    "src.exodus_bundler.dependency_detection.Pacman": {
+      "total_candidate_pairs": 22,
+      "entailment_count": 9,
+      "contradiction_count": 0,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.dependency_detection.PackageManager"
+      ]
+    },
+    "src.exodus_bundler.dependency_detection.Yum": {
+      "total_candidate_pairs": 22,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 17,
+      "conflict_score": 0.25,
+      "dep_ids_checked": [
+        "src.exodus_bundler.dependency_detection.PackageManager"
+      ]
+    },
+    "src.exodus_bundler.errors.DependencyDetectionError": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 3,
+      "contradiction_count": 1,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.errors.FatalError"
+      ]
+    },
+    "src.exodus_bundler.errors.InvalidElfBinaryError": {
+      "total_candidate_pairs": 18,
+      "entailment_count": 3,
+      "contradiction_count": 2,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.errors.FatalError"
+      ]
+    },
+    "src.exodus_bundler.errors.MissingFileError": {
+      "total_candidate_pairs": 19,
+      "entailment_count": 3,
+      "contradiction_count": 2,
+      "neutral_count": 14,
+      "conflict_score": 0.5,
+      "dep_ids_checked": [
+        "src.exodus_bundler.errors.FatalError"
+      ]
+    },
+    "src.exodus_bundler.errors.UnexpectedDirectoryError": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.errors.FatalError"
+      ]
+    },
+    "src.exodus_bundler.input_parsing.extract_exec_path": {
+      "total_candidate_pairs": 16,
+      "entailment_count": 0,
+      "contradiction_count": 1,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.input_parsing.strip_pid_prefix"
+      ]
+    },
+    "src.exodus_bundler.launchers.compile_diet": {
+      "total_candidate_pairs": 28,
+      "entailment_count": 6,
+      "contradiction_count": 2,
+      "neutral_count": 20,
+      "conflict_score": 0.25,
+      "dep_ids_checked": [
+        "src.exodus_bundler.launchers.CompilerNotFoundError",
+        "src.exodus_bundler.launchers.compile_helper",
+        "src.exodus_bundler.launchers.find_executable"
+      ]
+    },
+    "src.exodus_bundler.launchers.compile_musl": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 6,
+      "contradiction_count": 1,
+      "neutral_count": 23,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.launchers.CompilerNotFoundError",
+        "src.exodus_bundler.launchers.compile_helper",
+        "src.exodus_bundler.launchers.find_executable"
+      ]
+    },
+    "src.exodus_bundler.templating.render_template_file": {
+      "total_candidate_pairs": 14,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.exodus_bundler.templating.render_template"
+      ]
+    },
+    "exodus-bundler": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 114,
+    "first_pass_success": 52,
+    "required_revision": 26,
+    "score_parse_failures": 1,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9327,
+      "COMPLETENESS": 0.9073,
+      "HELPFULNESS": 0.9053
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.072,
+      "COMPLETENESS": 0.096,
+      "HELPFULNESS": 0.072
+    }
+  }
+}

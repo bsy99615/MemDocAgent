@@ -1,0 +1,24 @@
+# API keys and local configs — never commit these
+config/agent_config*.yaml
+!config/example_config.yaml
+.env
+.envrc
+
+# Output artifacts and input data
+output/
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+
+# OS
+.DS_Store

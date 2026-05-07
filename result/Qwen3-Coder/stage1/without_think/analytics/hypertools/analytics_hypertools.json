@@ -1,0 +1,5621 @@
+{
+  "run_id": "20260413_055525",
+  "label": "hypertools",
+  "total_run_time_seconds": 7137.763,
+  "repo_summary": {
+    "file_count": 22,
+    "function_count": 52,
+    "class_count": 11,
+    "method_count": 44,
+    "total_components": 107,
+    "module_count": 8,
+    "repo_count": 1,
+    "topological_order_count": 107,
+    "topological_order": [
+      "docs.tutorials.tools.nb_to_doc.convert_nb",
+      "hypertools._externals.ppca.PPCA._calc_var",
+      "hypertools._externals.ppca.PPCA._standardize",
+      "hypertools._externals.ppca.PPCA.fit",
+      "hypertools._externals.ppca.PPCA.load",
+      "hypertools._externals.ppca.PPCA.save",
+      "hypertools._externals.ppca.PPCA.transform",
+      "hypertools._externals.ppca.PPCA",
+      "hypertools._externals.ppca.PPCA.__init__",
+      "hypertools._externals.srm.DetSRM._compute_shared_response",
+      "hypertools._externals.srm.DetSRM._objective_function",
+      "hypertools._externals.srm._init_w_transforms",
+      "hypertools._externals.srm.DetSRM._srm",
+      "hypertools._externals.srm.DetSRM.fit",
+      "hypertools._externals.srm.DetSRM.transform",
+      "hypertools._externals.srm.DetSRM",
+      "hypertools._externals.srm.DetSRM.__init__",
+      "hypertools._externals.srm.SRM._init_structures",
+      "hypertools._externals.srm.SRM._likelihood",
+      "hypertools._externals.srm.SRM._srm",
+      "hypertools._externals.srm.SRM.fit",
+      "hypertools._externals.srm.SRM.transform",
+      "hypertools._externals.srm.SRM",
+      "hypertools._externals.srm.SRM.__init__",
+      "hypertools._shared.exceptions.HypertoolsError",
+      "hypertools._shared.exceptions.HypertoolsBackendError",
+      "hypertools._shared.exceptions.HypertoolsBackendError.__init__",
+      "hypertools._shared.exceptions.HypertoolsIOError",
+      "hypertools._shared.exceptions.HypertoolsIOError.__init__",
+      "hypertools._shared.helpers.center",
+      "hypertools._shared.helpers.check_geo",
+      "hypertools._shared.helpers.get_type",
+      "hypertools._shared.helpers.convert_text",
+      "hypertools._shared.helpers.get_dtype",
+      "hypertools._shared.helpers.group_by_category",
+      "hypertools._shared.helpers.interp_array",
+      "hypertools._shared.helpers.interp_array_list",
+      "hypertools._shared.helpers.is_line",
+      "hypertools._shared.helpers.memoize",
+      "hypertools._shared.helpers.parse_args",
+      "hypertools._shared.helpers.parse_kwargs",
+      "hypertools._shared.helpers.patch_lines",
+      "hypertools._shared.helpers.reshape_data",
+      "hypertools._shared.helpers.scale",
+      "hypertools._shared.helpers.vals2bins",
+      "hypertools._shared.helpers.vals2colors",
+      "hypertools._shared.params.default_params",
+      "hypertools.datageometry.DataGeometry.get_data",
+      "hypertools.datageometry.DataGeometry.get_formatted_data",
+      "hypertools.datageometry.DataGeometry.plot",
+      "hypertools.datageometry.DataGeometry.save",
+      "hypertools.datageometry.DataGeometry.transform",
+      "hypertools.datageometry.DataGeometry",
+      "hypertools.datageometry.DataGeometry.__init__",
+      "hypertools.plot.backend.HypertoolsBackend.__eq__",
+      "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+      "hypertools.plot.backend.HypertoolsBackend.__hash__",
+      "hypertools.plot.backend.HypertoolsBackend.__new__",
+      "hypertools.plot.backend.HypertoolsBackend.as_ipython",
+      "hypertools.plot.backend.HypertoolsBackend.as_python",
+      "hypertools.plot.backend.HypertoolsBackend.normalize",
+      "hypertools.plot.backend.HypertoolsBackend",
+      "hypertools.plot.backend.ParrotDict.__contains__",
+      "hypertools.plot.backend.ParrotDict.__getitem__",
+      "hypertools.plot.backend.ParrotDict.__missing__",
+      "hypertools.plot.backend.ParrotDict.__setitem__",
+      "hypertools.plot.backend.ParrotDict",
+      "hypertools.plot.backend.BackendMapping.__init__",
+      "hypertools.plot.backend.ParrotDict.__init__",
+      "hypertools.plot.backend.BackendMapping._store_equivalents",
+      "hypertools.plot.backend.BackendMapping",
+      "hypertools.plot.backend._block_greedy_completer_execution",
+      "hypertools.plot.backend._switch_backend_regular",
+      "hypertools.plot.backend._switch_backend_notebook",
+      "hypertools.plot.backend._reset_backend_notebook",
+      "hypertools.plot.backend._init_backend",
+      "hypertools.plot.backend._get_runtime_args",
+      "hypertools.plot.backend._null_backend_context",
+      "hypertools.plot.backend.set_interactive_backend.__enter__",
+      "hypertools.plot.backend.set_interactive_backend.__exit__",
+      "hypertools.plot.backend.set_interactive_backend",
+      "hypertools.plot.backend.manage_backend",
+      "hypertools.plot.backend.set_interactive_backend.__init__",
+      "hypertools.plot.draw._draw",
+      "hypertools.plot.plot.plot",
+      "hypertools.tools.align.align",
+      "hypertools.tools.analyze.analyze",
+      "hypertools.tools.cluster.cluster",
+      "hypertools.tools.describe.get_cdist",
+      "hypertools.tools.describe.get_corr",
+      "hypertools.tools.describe.describe",
+      "hypertools.tools.df2mat.df2mat",
+      "hypertools.tools.load._download_example_data",
+      "hypertools.tools.load._load_example_data",
+      "hypertools.tools.load._load_legacy",
+      "hypertools.tools.load.load",
+      "hypertools.tools.missing_inds.missing_inds",
+      "hypertools.tools.normalize.normalize",
+      "hypertools.tools.procrustes.procrustes",
+      "hypertools.tools.reduce.reduce_list",
+      "hypertools.tools.reduce.reduce",
+      "hypertools.tools.text2mat._check_mtype",
+      "hypertools.tools.text2mat._fit_models",
+      "hypertools.tools.text2mat._transform",
+      "hypertools.tools.text2mat.text2mat",
+      "hypertools.tools.format_data.fill_missing",
+      "hypertools.tools.format_data.format_data"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 237,
+    "Write": 212,
+    "Verify": 202,
+    "Finish": 100
+  },
+  "action_time_totals_seconds": {
+    "Read": 1268.104,
+    "Write": 4535.597,
+    "Verify": 954.06
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 1416545,
+      "output_tokens": 40781
+    },
+    "Write": {
+      "input_tokens": 1624515,
+      "output_tokens": 151403
+    },
+    "Verify": {
+      "input_tokens": 1688395,
+      "output_tokens": 30337
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 40,
+    "total_memory_hits": 362
+  },
+  "per_component_stats": {
+    "docs.tutorials.tools.nb_to_doc.convert_nb": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 5.70753481797874,
+      "Write_time": 48.058632301166654,
+      "Verify_time": 16.390941055957228,
+      "total_time_seconds": 70.425,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "docs/tutorials/tools": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.356459696078673,
+      "Write_time": 10.385404621018097,
+      "Verify_time": 12.642157476162538,
+      "total_time_seconds": 31.637,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "docs/tutorials": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.202824452891946,
+      "Write_time": 10.442276942078024,
+      "Verify_time": 2.3875757069326937,
+      "total_time_seconds": 25.269,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "docs": {
+      "Read_calls": 1,
+      "Write_calls": 4,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.825583768077195,
+      "Write_time": 54.847896579653025,
+      "Verify_time": 10.090126345166937,
+      "total_time_seconds": 72.747,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._externals.ppca.PPCA._calc_var": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.016020253067836,
+      "Write_time": 12.592832887079567,
+      "Verify_time": 9.117641756078228,
+      "total_time_seconds": 34.997,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "hypertools._externals.ppca.PPCA._standardize": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.4313995949924,
+      "Write_time": 9.302202302031219,
+      "Verify_time": 5.488887233892456,
+      "total_time_seconds": 27.472,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "hypertools._externals.ppca.PPCA.fit": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 8.779894519830123,
+      "Write_time": 54.06627625809051,
+      "Verify_time": 19.84334122785367,
+      "total_time_seconds": 82.918,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.ppca.PPCA.load": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.955424217041582,
+      "Write_time": 14.223506356123835,
+      "Verify_time": 8.28519454691559,
+      "total_time_seconds": 29.744,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.ppca.PPCA.save": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.472657705191523,
+      "Write_time": 14.69784529786557,
+      "Verify_time": 10.508954236051068,
+      "total_time_seconds": 41.912,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "hypertools._externals.ppca.PPCA.transform": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.613116700900719,
+      "Write_time": 12.800067897886038,
+      "Verify_time": 6.46259192796424,
+      "total_time_seconds": 28.121,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.ppca.PPCA": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 39.80406651599333,
+      "Verify_time": 10.57623498677276,
+      "total_time_seconds": 62.782,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.ppca.PPCA.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.0243740731384605,
+      "Write_time": 8.418546744156629,
+      "Verify_time": 1.9715425439644605,
+      "total_time_seconds": 22.895,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "hypertools._externals.srm.DetSRM._compute_shared_response": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.987301273969933,
+      "Write_time": 13.624848949024454,
+      "Verify_time": 7.860272692982107,
+      "total_time_seconds": 37.749,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "hypertools._externals.srm.DetSRM._objective_function": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.26257043099031,
+      "Write_time": 15.207395309116691,
+      "Verify_time": 6.976802974939346,
+      "total_time_seconds": 38.753,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools._externals.srm._init_w_transforms": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 2.379521232796833,
+      "Write_time": 65.26912685716525,
+      "Verify_time": 5.6610415109898895,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.srm.DetSRM._srm": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.818722639931366,
+      "Write_time": 17.189131313934922,
+      "Verify_time": 7.889781856909394,
+      "total_time_seconds": 37.411,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "hypertools._externals.srm.DetSRM.fit": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.696585881058127,
+      "Write_time": 13.73203834402375,
+      "Verify_time": 9.505789037095383,
+      "total_time_seconds": 35.186,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "hypertools._externals.srm.DetSRM.transform": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.031013852683827,
+      "Write_time": 12.713144703069702,
+      "Verify_time": 8.721251002978534,
+      "total_time_seconds": 37.693,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools._externals.srm.DetSRM": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.811595689039677,
+      "Write_time": 38.747004956007004,
+      "Verify_time": 7.067698742263019,
+      "total_time_seconds": 62.976,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._externals.srm.DetSRM.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.229814359918237,
+      "Write_time": 14.213237208779901,
+      "Verify_time": 6.472610422875732,
+      "total_time_seconds": 27.186,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._externals.srm.SRM._init_structures": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.585963614983484,
+      "Write_time": 14.90216035884805,
+      "Verify_time": 8.090951961930841,
+      "total_time_seconds": 33.79,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.srm.SRM._likelihood": {
+      "Read_calls": 5,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 15.897762523964047,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "hypertools._externals.srm.SRM._srm": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.352425591088831,
+      "Write_time": 18.79909595521167,
+      "Verify_time": 6.94313498120755,
+      "total_time_seconds": 36.251,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "hypertools._externals.srm.SRM.fit": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.93902793014422,
+      "Write_time": 18.639482859987766,
+      "Verify_time": 7.348870387999341,
+      "total_time_seconds": 39.206,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "hypertools._externals.srm.SRM.transform": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.075293592875823,
+      "Write_time": 12.64587725396268,
+      "Verify_time": 6.202308445004746,
+      "total_time_seconds": 27.178,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._externals.srm.SRM": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 56.6018765126355,
+      "Verify_time": 12.831744043854997,
+      "total_time_seconds": 69.435,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._externals.srm.SRM.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 3.114094092976302,
+      "Write_time": 20.325061871903017,
+      "Verify_time": 4.004213617183268,
+      "total_time_seconds": 46.104,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools/_externals": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.193881646962836,
+      "Write_time": 46.128205904737115,
+      "Verify_time": 5.856982575263828,
+      "total_time_seconds": 69.652,
+      "graph_searches": 0,
+      "memory_hits": 26
+    },
+    "hypertools._shared.exceptions.HypertoolsError": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 15.066573237068951,
+      "Verify_time": 1.8885514889843762,
+      "total_time_seconds": 22.569,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.exceptions.HypertoolsBackendError": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.249569696141407,
+      "Write_time": 13.786451881984249,
+      "Verify_time": 3.2213791229296476,
+      "total_time_seconds": 25.537,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._shared.exceptions.HypertoolsBackendError.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.079054228030145,
+      "Write_time": 10.757578968070447,
+      "Verify_time": 7.160997114144266,
+      "total_time_seconds": 23.255,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._shared.exceptions.HypertoolsIOError": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 7.5557352639734745,
+      "Write_time": 26.912713857833296,
+      "Verify_time": 3.8094877609983087,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._shared.exceptions.HypertoolsIOError.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.406783884158358,
+      "Write_time": 11.402983679901809,
+      "Verify_time": 5.457498718984425,
+      "total_time_seconds": 26.511,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "hypertools._shared.helpers.center": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.630711486097425,
+      "Write_time": 18.350521503016353,
+      "Verify_time": 6.27030262700282,
+      "total_time_seconds": 30.509,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.check_geo": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.181900185067207,
+      "Write_time": 54.53465754096396,
+      "Verify_time": 10.175159118836746,
+      "total_time_seconds": 76.155,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.get_type": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 52.27930691791698,
+      "Verify_time": 3.78917884407565,
+      "total_time_seconds": 73.045,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.convert_text": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.177913499996066,
+      "Write_time": 19.752035846933722,
+      "Verify_time": 9.95881845196709,
+      "total_time_seconds": 45.134,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._shared.helpers.get_dtype": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.584554155124351,
+      "Write_time": 22.86849606386386,
+      "Verify_time": 6.823909298982471,
+      "total_time_seconds": 40.543,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.group_by_category": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 5.472704489948228,
+      "Write_time": 53.737791270017624,
+      "Verify_time": 3.7851828900165856,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.interp_array": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.46505203587003,
+      "Write_time": 36.48309329710901,
+      "Verify_time": 10.536770300008357,
+      "total_time_seconds": 57.723,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.interp_array_list": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.384335218928754,
+      "Write_time": 23.585672206012532,
+      "Verify_time": 11.627694525988773,
+      "total_time_seconds": 58.397,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools._shared.helpers.is_line": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.286884080851451,
+      "Write_time": 19.37940586800687,
+      "Verify_time": 6.711775774834678,
+      "total_time_seconds": 33.655,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.memoize": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.337674218928441,
+      "Write_time": 16.183840523008257,
+      "Verify_time": 9.314326669089496,
+      "total_time_seconds": 33.108,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.parse_args": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.581066766986623,
+      "Write_time": 27.375920438906178,
+      "Verify_time": 8.192016912158579,
+      "total_time_seconds": 43.436,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.parse_kwargs": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.0571202209685,
+      "Write_time": 18.198360502021387,
+      "Verify_time": 9.967760381055996,
+      "total_time_seconds": 37.492,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.patch_lines": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 2.980987234041095,
+      "Write_time": 38.36417949106544,
+      "Verify_time": 3.8562095020897686,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.reshape_data": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.28570044413209,
+      "Write_time": 21.876494260970503,
+      "Verify_time": 6.164141865912825,
+      "total_time_seconds": 58.461,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.scale": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.687604221981019,
+      "Write_time": 17.768036709167063,
+      "Verify_time": 6.752348787849769,
+      "total_time_seconds": 32.434,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.vals2bins": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 7.83132473914884,
+      "Write_time": 32.45442286483012,
+      "Verify_time": 3.786052371840924,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.helpers.vals2colors": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 5.747234855080023,
+      "Write_time": 88.82969614607282,
+      "Verify_time": 12.020232789916918,
+      "total_time_seconds": 106.872,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools._shared.params.default_params": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.929347452009097,
+      "Write_time": 21.40057360404171,
+      "Verify_time": 7.035000519827008,
+      "total_time_seconds": 44.644,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools/_shared": {
+      "Read_calls": 2,
+      "Write_calls": 4,
+      "Verify_calls": 4,
+      "Finish_calls": 0,
+      "Read_time": 7.972867205971852,
+      "Write_time": 174.12384148291312,
+      "Verify_time": 12.838619316928089,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 21
+    },
+    "hypertools.datageometry.DataGeometry.get_data": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.35387563612312,
+      "Write_time": 22.53484855988063,
+      "Verify_time": 4.804460135055706,
+      "total_time_seconds": 38.943,
+      "graph_searches": 3,
+      "memory_hits": 5
+    },
+    "hypertools.datageometry.DataGeometry.get_formatted_data": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.912913594162092,
+      "Write_time": 21.425154268275946,
+      "Verify_time": 4.896632142132148,
+      "total_time_seconds": 34.448,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "hypertools.datageometry.DataGeometry.plot": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.678420875919983,
+      "Write_time": 25.72280240501277,
+      "Verify_time": 10.27187414211221,
+      "total_time_seconds": 42.926,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.datageometry.DataGeometry.save": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.875162480864674,
+      "Write_time": 23.21328463195823,
+      "Verify_time": 4.617751031881198,
+      "total_time_seconds": 38.961,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools.datageometry.DataGeometry.transform": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.167367488145828,
+      "Write_time": 12.666466601192951,
+      "Verify_time": 8.032571505988017,
+      "total_time_seconds": 33.112,
+      "graph_searches": 3,
+      "memory_hits": 2
+    },
+    "hypertools.datageometry.DataGeometry": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.108426545979455,
+      "Write_time": 37.845860451925546,
+      "Verify_time": 5.202562878839672,
+      "total_time_seconds": 51.598,
+      "graph_searches": 1,
+      "memory_hits": 8
+    },
+    "hypertools.datageometry.DataGeometry.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.803305308101699,
+      "Write_time": 21.596969788894057,
+      "Verify_time": 7.303680178010836,
+      "total_time_seconds": 34.938,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__eq__": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 2.704715218860656,
+      "Write_time": 29.6480791750364,
+      "Verify_time": 3.477361561032012,
+      "total_time_seconds": null,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__getattribute__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.876199825899675,
+      "Write_time": 10.401702678063884,
+      "Verify_time": 7.010398305952549,
+      "total_time_seconds": 31.528,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__hash__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.159193590981886,
+      "Write_time": 10.812790757976472,
+      "Verify_time": 5.788736168062314,
+      "total_time_seconds": 23.038,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__new__": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 6.895200768951327,
+      "Write_time": 37.11245617642999,
+      "Verify_time": 14.427395270438865,
+      "total_time_seconds": 60.491,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.as_ipython": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.370598005130887,
+      "Write_time": 18.789102787850425,
+      "Verify_time": 10.11003906512633,
+      "total_time_seconds": 47.502,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.plot.backend.HypertoolsBackend.as_python": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.503574423724785,
+      "Write_time": 14.114563992014155,
+      "Verify_time": 7.18169091292657,
+      "total_time_seconds": 38.101,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.plot.backend.HypertoolsBackend.normalize": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.83396365819499,
+      "Write_time": 20.69206238607876,
+      "Verify_time": 15.693164328113198,
+      "total_time_seconds": 53.482,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.plot.backend.HypertoolsBackend": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.182952637085691,
+      "Write_time": 32.33688058890402,
+      "Verify_time": 4.298519395990297,
+      "total_time_seconds": 54.162,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.ParrotDict.__contains__": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 24.596508464077488,
+      "Write_time": 47.51860581501387,
+      "Verify_time": 18.337378902826458,
+      "total_time_seconds": 94.404,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "hypertools.plot.backend.ParrotDict.__getitem__": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.56940472102724,
+      "Write_time": 20.0318180040922,
+      "Verify_time": 5.181330574909225,
+      "total_time_seconds": 53.332,
+      "graph_searches": 2,
+      "memory_hits": 3
+    },
+    "hypertools.plot.backend.ParrotDict.__missing__": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 16.847808016929775,
+      "Write_time": 35.40732718911022,
+      "Verify_time": 8.22086165798828,
+      "total_time_seconds": 60.478,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "hypertools.plot.backend.ParrotDict.__setitem__": {
+      "Read_calls": 2,
+      "Write_calls": 4,
+      "Verify_calls": 4,
+      "Finish_calls": 0,
+      "Read_time": 15.279555016895756,
+      "Write_time": 57.97158541390672,
+      "Verify_time": 22.66787810716778,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend.ParrotDict": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.818528014002368,
+      "Write_time": 45.16627600998618,
+      "Verify_time": 10.802349796984345,
+      "total_time_seconds": 73.303,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend.BackendMapping.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.86395788518712,
+      "Write_time": 15.183398628141731,
+      "Verify_time": 2.3546142249833792,
+      "total_time_seconds": 27.642,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend.ParrotDict.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.517601411091164,
+      "Write_time": 21.569842067314312,
+      "Verify_time": 13.566487519070506,
+      "total_time_seconds": 52.805,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.BackendMapping._store_equivalents": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 1.8798270679544657,
+      "Write_time": 23.962579210754484,
+      "Verify_time": 3.5889494298025966,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.BackendMapping": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 5.019145827041939,
+      "Write_time": 29.892642458202317,
+      "Verify_time": 1.9867776350583881,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend._block_greedy_completer_execution": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 7.017721395008266,
+      "Write_time": 42.64214546303265,
+      "Verify_time": 13.945750144775957,
+      "total_time_seconds": 63.897,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend._switch_backend_regular": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.7920523181092,
+      "Write_time": 13.180986173916608,
+      "Verify_time": 6.795614713104442,
+      "total_time_seconds": 43.009,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend._switch_backend_notebook": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.24496602686122,
+      "Write_time": 26.483590466203168,
+      "Verify_time": 7.09065578202717,
+      "total_time_seconds": 51.93,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend._reset_backend_notebook": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.599239980103448,
+      "Write_time": 33.80774976918474,
+      "Verify_time": 9.48659264203161,
+      "total_time_seconds": 62.207,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend._init_backend": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 9.987302091903985,
+      "Write_time": 73.85390936210752,
+      "Verify_time": 6.5776819449383765,
+      "total_time_seconds": 90.421,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "hypertools.plot.backend._get_runtime_args": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.799974461086094,
+      "Write_time": 18.388829845935106,
+      "Verify_time": 7.438719956902787,
+      "total_time_seconds": 36.841,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend._null_backend_context": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.931380240945145,
+      "Write_time": 13.409451843006536,
+      "Verify_time": 6.9643987759482116,
+      "total_time_seconds": 33.569,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.set_interactive_backend.__enter__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.194754936965182,
+      "Write_time": 15.788906936068088,
+      "Verify_time": 5.484567411011085,
+      "total_time_seconds": 33.742,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.plot.backend.set_interactive_backend.__exit__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.219709064811468,
+      "Write_time": 12.617604542057961,
+      "Verify_time": 7.177485507912934,
+      "total_time_seconds": 37.337,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "hypertools.plot.backend.set_interactive_backend": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.250373469199985,
+      "Write_time": 32.12607242097147,
+      "Verify_time": 4.578705873107538,
+      "total_time_seconds": 63.448,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.plot.backend.manage_backend": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.733151144813746,
+      "Write_time": 49.02107850974426,
+      "Verify_time": 9.62377978186123,
+      "total_time_seconds": 70.676,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "hypertools.plot.backend.set_interactive_backend.__init__": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.5625565929804,
+      "Write_time": 15.448001007083803,
+      "Verify_time": 6.805512618971989,
+      "total_time_seconds": 42.075,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "hypertools.plot.draw._draw": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.653450001962483,
+      "Write_time": 76.66150250402279,
+      "Verify_time": 9.38656210503541,
+      "total_time_seconds": 93.974,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.plot.plot.plot": {
+      "Read_calls": 7,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 23.999957872089,
+      "Write_time": 141.10417629196309,
+      "Verify_time": 2.2430720068514347,
+      "total_time_seconds": null,
+      "graph_searches": 4,
+      "memory_hits": 10
+    },
+    "hypertools/plot": {
+      "Read_calls": 2,
+      "Write_calls": 4,
+      "Verify_calls": 4,
+      "Finish_calls": 0,
+      "Read_time": 13.867819175124168,
+      "Write_time": 98.73843984003179,
+      "Verify_time": 12.464558188570663,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 61
+    },
+    "hypertools.tools.align.align": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 18.80538438190706,
+      "Write_time": 94.95554908108898,
+      "Verify_time": 10.966711856191978,
+      "total_time_seconds": 124.981,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "hypertools.tools.analyze.analyze": {
+      "Read_calls": 2,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 11.87061030510813,
+      "Write_time": 92.16714368690737,
+      "Verify_time": 6.306410843972117,
+      "total_time_seconds": 110.348,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "hypertools.tools.cluster.cluster": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.267236064188182,
+      "Write_time": 24.566069666994736,
+      "Verify_time": 6.790219873888418,
+      "total_time_seconds": 45.88,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.describe.get_cdist": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.74080738495104,
+      "Write_time": 33.89334106515162,
+      "Verify_time": 5.76876709703356,
+      "total_time_seconds": 50.617,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.describe.get_corr": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.391951628960669,
+      "Write_time": 18.994193928083405,
+      "Verify_time": 6.646621424937621,
+      "total_time_seconds": 33.325,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.describe.describe": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.403759829001501,
+      "Write_time": 54.14448108803481,
+      "Verify_time": 9.988224684959278,
+      "total_time_seconds": 77.769,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools.tools.df2mat.df2mat": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.854633440030739,
+      "Write_time": 21.69550647889264,
+      "Verify_time": 7.983185523888096,
+      "total_time_seconds": 35.766,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.load._download_example_data": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 11.407094363123178,
+      "Write_time": 62.76043599518016,
+      "Verify_time": 16.2678653949406,
+      "total_time_seconds": 90.721,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.load._load_example_data": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.080230659805238,
+      "Write_time": 41.07866309978999,
+      "Verify_time": 9.47764686611481,
+      "total_time_seconds": 59.874,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.tools.load._load_legacy": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.4991035212297,
+      "Write_time": 15.538890552939847,
+      "Verify_time": 6.7231541180517524,
+      "total_time_seconds": 48.956,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools.tools.load.load": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.107768319081515,
+      "Write_time": 66.12608499499038,
+      "Verify_time": 5.366231771185994,
+      "total_time_seconds": 88.957,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "hypertools.tools.missing_inds.missing_inds": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 29.83926189597696,
+      "Write_time": 84.02121473802254,
+      "Verify_time": 21.65200724871829,
+      "total_time_seconds": null,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "hypertools.tools.normalize.normalize": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 18.210078814066947,
+      "Write_time": 78.00256443605758,
+      "Verify_time": 13.450587569968775,
+      "total_time_seconds": 109.919,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.tools.procrustes.procrustes": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 11.56741149793379,
+      "Write_time": 92.71176579920575,
+      "Verify_time": 11.14720025495626,
+      "total_time_seconds": 115.701,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.tools.reduce.reduce_list": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.6799518649932,
+      "Write_time": 25.430918880039826,
+      "Verify_time": 7.606839852873236,
+      "total_time_seconds": 39.012,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.reduce.reduce": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 10.214955042814836,
+      "Write_time": 117.52940947003663,
+      "Verify_time": 15.281299949157983,
+      "total_time_seconds": 143.291,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "hypertools.tools.text2mat._check_mtype": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.776611665263772,
+      "Write_time": 23.147569600027055,
+      "Verify_time": 8.564635475864634,
+      "total_time_seconds": 49.761,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "hypertools.tools.text2mat._fit_models": {
+      "Read_calls": 1,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 8.285706717986614,
+      "Write_time": 132.276244987268,
+      "Verify_time": 12.973952243337408,
+      "total_time_seconds": 153.831,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.text2mat._transform": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 6.328265928663313,
+      "Write_time": 47.553940654033795,
+      "Verify_time": 3.791592934168875,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "hypertools.tools.text2mat.text2mat": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.574882246088237,
+      "Write_time": 102.75336921284907,
+      "Verify_time": 5.537590206833556,
+      "total_time_seconds": 126.13,
+      "graph_searches": 1,
+      "memory_hits": 5
+    },
+    "hypertools.tools.format_data.fill_missing": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 14.3703710262198,
+      "Write_time": 76.71795500116423,
+      "Verify_time": 7.698897914029658,
+      "total_time_seconds": 98.79,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "hypertools.tools.format_data.format_data": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.180608093040064,
+      "Write_time": 73.70983222895302,
+      "Verify_time": 14.873211967758834,
+      "total_time_seconds": 106.035,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "hypertools/tools": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 16.08279070793651,
+      "Write_time": 153.06531438836828,
+      "Verify_time": 15.173366928007454,
+      "total_time_seconds": 196.869,
+      "graph_searches": 0,
+      "memory_hits": 65
+    },
+    "hypertools": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.471029174746946,
+      "Write_time": 72.10242375009693,
+      "Verify_time": 5.257749899057671,
+      "total_time_seconds": 97.336,
+      "graph_searches": 0,
+      "memory_hits": 1
+    }
+  },
+  "per_component_verify_scores": {
+    "docs.tutorials.tools.nb_to_doc.convert_nb": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs/tutorials/tools": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs/tutorials": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA._calc_var": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA._standardize": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA.fit": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA.load": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA.save": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA.transform": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.825,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.6,
+        "weighted_avg": 0.65,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.ppca.PPCA.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM._compute_shared_response": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM._objective_function": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm._init_w_transforms": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM._srm": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM.fit": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM.transform": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.DetSRM.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.SRM._init_structures": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.SRM._srm": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.SRM.fit": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.SRM.transform": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._externals.srm.SRM": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.65,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8083,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.75
+      }
+    ],
+    "hypertools._externals.srm.SRM.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools/_externals": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8208,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.8083
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9345,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9524
+      }
+    ],
+    "hypertools._shared.exceptions.HypertoolsError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.exceptions.HypertoolsBackendError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.exceptions.HypertoolsBackendError.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.exceptions.HypertoolsIOError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.625,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.3333
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.625,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.3333
+      }
+    ],
+    "hypertools._shared.exceptions.HypertoolsIOError.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.center": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.check_geo": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.get_type": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.convert_text": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.get_dtype": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.group_by_category": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.interp_array": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9
+      }
+    ],
+    "hypertools._shared.helpers.interp_array_list": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.is_line": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.memoize": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.parse_args": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.parse_kwargs": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.patch_lines": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.reshape_data": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.scale": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.vals2bins": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.helpers.vals2colors": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools._shared.params.default_params": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools/_shared": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9485,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9804
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9436,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9706
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9485,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9804
+      },
+      {
+        "attempt": 4,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry.get_data": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry.get_formatted_data": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry.plot": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry.save": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry.transform": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.datageometry.DataGeometry.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.__eq__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.__getattribute__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.__hash__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.__new__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.6667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.as_ipython": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.as_python": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend.normalize": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.HypertoolsBackend": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8417,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.ParrotDict.__contains__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.6
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 0.9667,
+        "conflict_score": 0.6
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.8
+      }
+    ],
+    "hypertools.plot.backend.ParrotDict.__getitem__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.825,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 0.8
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.ParrotDict.__missing__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7083,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7917,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.8
+      }
+    ],
+    "hypertools.plot.backend.ParrotDict.__setitem__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9286,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.8571
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9286,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.8571
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8571,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.7143
+      },
+      {
+        "attempt": 4,
+        "passed": true,
+        "final_score": 0.9286,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.8571
+      }
+    ],
+    "hypertools.plot.backend.ParrotDict": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.8333
+      }
+    ],
+    "hypertools.plot.backend.BackendMapping.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.ParrotDict.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.BackendMapping._store_equivalents": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.BackendMapping": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6167,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 0.5
+      }
+    ],
+    "hypertools.plot.backend._block_greedy_completer_execution": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend._switch_backend_regular": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend._switch_backend_notebook": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend._reset_backend_notebook": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend._init_backend": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.6667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.5
+      }
+    ],
+    "hypertools.plot.backend._get_runtime_args": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend._null_backend_context": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.set_interactive_backend.__enter__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.set_interactive_backend.__exit__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.set_interactive_backend": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.manage_backend": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.backend.set_interactive_backend.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.draw._draw": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.plot.plot.plot": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools/plot": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9042,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 0.9583
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9292,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.9583
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9292,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.9583
+      },
+      {
+        "attempt": 4,
+        "passed": true,
+        "final_score": 0.9292,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.9583
+      }
+    ],
+    "hypertools.tools.align.align": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.analyze.analyze": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.cluster.cluster": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.describe.get_cdist": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.describe.get_corr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.describe.describe": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.df2mat.df2mat": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.load._download_example_data": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.load._load_example_data": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.load._load_legacy": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.load.load": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.missing_inds.missing_inds": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.6,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.normalize.normalize": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.procrustes.procrustes": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.reduce.reduce_list": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.reduce.reduce": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.825,
+        "CONSISTENCY": 0.65,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.65,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.text2mat._check_mtype": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.text2mat._fit_models": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.text2mat._transform": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.text2mat.text2mat": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.format_data.fill_missing": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools.tools.format_data.format_data": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "hypertools/tools": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9048,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 0.9596
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8385,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.7771
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9
+      }
+    ],
+    "hypertools": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9113,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.9226
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9571,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 0.9808
+      },
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "docs.tutorials.tools.nb_to_doc.convert_nb": {
+      "requests": 8,
+      "input_tokens": 45834,
+      "output_tokens": 2469,
+      "cost": 0.0
+    },
+    "docs/tutorials/tools": {
+      "requests": 5,
+      "input_tokens": 27185,
+      "output_tokens": 926,
+      "cost": 0.0
+    },
+    "docs/tutorials": {
+      "requests": 6,
+      "input_tokens": 33189,
+      "output_tokens": 881,
+      "cost": 0.0
+    },
+    "docs": {
+      "requests": 8,
+      "input_tokens": 47867,
+      "output_tokens": 2503,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA._calc_var": {
+      "requests": 5,
+      "input_tokens": 29269,
+      "output_tokens": 1161,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA._standardize": {
+      "requests": 6,
+      "input_tokens": 34987,
+      "output_tokens": 965,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA.fit": {
+      "requests": 8,
+      "input_tokens": 55828,
+      "output_tokens": 2875,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA.load": {
+      "requests": 4,
+      "input_tokens": 18138,
+      "output_tokens": 909,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA.save": {
+      "requests": 6,
+      "input_tokens": 41611,
+      "output_tokens": 1341,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA.transform": {
+      "requests": 4,
+      "input_tokens": 18473,
+      "output_tokens": 937,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA": {
+      "requests": 5,
+      "input_tokens": 34141,
+      "output_tokens": 2030,
+      "cost": 0.0
+    },
+    "hypertools._externals.ppca.PPCA.__init__": {
+      "requests": 7,
+      "input_tokens": 39141,
+      "output_tokens": 702,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM._compute_shared_response": {
+      "requests": 5,
+      "input_tokens": 27537,
+      "output_tokens": 1243,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM._objective_function": {
+      "requests": 6,
+      "input_tokens": 33105,
+      "output_tokens": 1235,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM._srm": {
+      "requests": 4,
+      "input_tokens": 25752,
+      "output_tokens": 1346,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM.fit": {
+      "requests": 5,
+      "input_tokens": 31349,
+      "output_tokens": 1260,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM.transform": {
+      "requests": 6,
+      "input_tokens": 33716,
+      "output_tokens": 1329,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM": {
+      "requests": 7,
+      "input_tokens": 47608,
+      "output_tokens": 2207,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.DetSRM.__init__": {
+      "requests": 4,
+      "input_tokens": 20333,
+      "output_tokens": 950,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.SRM._init_structures": {
+      "requests": 5,
+      "input_tokens": 24442,
+      "output_tokens": 1198,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.SRM._srm": {
+      "requests": 4,
+      "input_tokens": 29754,
+      "output_tokens": 1196,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.SRM.fit": {
+      "requests": 6,
+      "input_tokens": 45518,
+      "output_tokens": 1337,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.SRM.transform": {
+      "requests": 4,
+      "input_tokens": 23130,
+      "output_tokens": 956,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.SRM": {
+      "requests": 6,
+      "input_tokens": 49211,
+      "output_tokens": 2407,
+      "cost": 0.0
+    },
+    "hypertools._externals.srm.SRM.__init__": {
+      "requests": 10,
+      "input_tokens": 50846,
+      "output_tokens": 1476,
+      "cost": 0.0
+    },
+    "hypertools/_externals": {
+      "requests": 7,
+      "input_tokens": 93985,
+      "output_tokens": 2191,
+      "cost": 0.0
+    },
+    "hypertools._shared.exceptions.HypertoolsError": {
+      "requests": 4,
+      "input_tokens": 17911,
+      "output_tokens": 745,
+      "cost": 0.0
+    },
+    "hypertools._shared.exceptions.HypertoolsBackendError": {
+      "requests": 5,
+      "input_tokens": 23861,
+      "output_tokens": 853,
+      "cost": 0.0
+    },
+    "hypertools._shared.exceptions.HypertoolsBackendError.__init__": {
+      "requests": 4,
+      "input_tokens": 18732,
+      "output_tokens": 772,
+      "cost": 0.0
+    },
+    "hypertools._shared.exceptions.HypertoolsIOError.__init__": {
+      "requests": 5,
+      "input_tokens": 23563,
+      "output_tokens": 916,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.center": {
+      "requests": 4,
+      "input_tokens": 18862,
+      "output_tokens": 1006,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.check_geo": {
+      "requests": 7,
+      "input_tokens": 45126,
+      "output_tokens": 2487,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.get_type": {
+      "requests": 8,
+      "input_tokens": 46729,
+      "output_tokens": 2381,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.convert_text": {
+      "requests": 5,
+      "input_tokens": 27863,
+      "output_tokens": 1408,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.get_dtype": {
+      "requests": 4,
+      "input_tokens": 19658,
+      "output_tokens": 1248,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.interp_array": {
+      "requests": 7,
+      "input_tokens": 36707,
+      "output_tokens": 1919,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.interp_array_list": {
+      "requests": 4,
+      "input_tokens": 21540,
+      "output_tokens": 1902,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.is_line": {
+      "requests": 4,
+      "input_tokens": 19343,
+      "output_tokens": 1107,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.memoize": {
+      "requests": 4,
+      "input_tokens": 19103,
+      "output_tokens": 1070,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.parse_args": {
+      "requests": 4,
+      "input_tokens": 20143,
+      "output_tokens": 1427,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.parse_kwargs": {
+      "requests": 4,
+      "input_tokens": 19684,
+      "output_tokens": 1194,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.reshape_data": {
+      "requests": 6,
+      "input_tokens": 31089,
+      "output_tokens": 1946,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.scale": {
+      "requests": 4,
+      "input_tokens": 19455,
+      "output_tokens": 1125,
+      "cost": 0.0
+    },
+    "hypertools._shared.helpers.vals2colors": {
+      "requests": 8,
+      "input_tokens": 49170,
+      "output_tokens": 3356,
+      "cost": 0.0
+    },
+    "hypertools._shared.params.default_params": {
+      "requests": 5,
+      "input_tokens": 23887,
+      "output_tokens": 1343,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry.get_data": {
+      "requests": 7,
+      "input_tokens": 56330,
+      "output_tokens": 1305,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry.get_formatted_data": {
+      "requests": 7,
+      "input_tokens": 41899,
+      "output_tokens": 1171,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry.plot": {
+      "requests": 6,
+      "input_tokens": 47663,
+      "output_tokens": 1481,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry.save": {
+      "requests": 7,
+      "input_tokens": 45649,
+      "output_tokens": 1358,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry.transform": {
+      "requests": 6,
+      "input_tokens": 41861,
+      "output_tokens": 1132,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry": {
+      "requests": 6,
+      "input_tokens": 70032,
+      "output_tokens": 1795,
+      "cost": 0.0
+    },
+    "hypertools.datageometry.DataGeometry.__init__": {
+      "requests": 4,
+      "input_tokens": 23394,
+      "output_tokens": 1236,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__getattribute__": {
+      "requests": 5,
+      "input_tokens": 26039,
+      "output_tokens": 1037,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__hash__": {
+      "requests": 4,
+      "input_tokens": 19075,
+      "output_tokens": 769,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.__new__": {
+      "requests": 8,
+      "input_tokens": 42440,
+      "output_tokens": 2005,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.as_ipython": {
+      "requests": 9,
+      "input_tokens": 49595,
+      "output_tokens": 1482,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.as_python": {
+      "requests": 7,
+      "input_tokens": 37230,
+      "output_tokens": 1128,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend.normalize": {
+      "requests": 8,
+      "input_tokens": 46472,
+      "output_tokens": 1664,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.HypertoolsBackend": {
+      "requests": 8,
+      "input_tokens": 44799,
+      "output_tokens": 1645,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.ParrotDict.__contains__": {
+      "requests": 10,
+      "input_tokens": 65582,
+      "output_tokens": 2997,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.ParrotDict.__getitem__": {
+      "requests": 7,
+      "input_tokens": 39868,
+      "output_tokens": 1749,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.ParrotDict.__missing__": {
+      "requests": 9,
+      "input_tokens": 56446,
+      "output_tokens": 1892,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.ParrotDict": {
+      "requests": 7,
+      "input_tokens": 42498,
+      "output_tokens": 2546,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.BackendMapping.__init__": {
+      "requests": 6,
+      "input_tokens": 33105,
+      "output_tokens": 972,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.ParrotDict.__init__": {
+      "requests": 8,
+      "input_tokens": 40254,
+      "output_tokens": 1839,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._block_greedy_completer_execution": {
+      "requests": 8,
+      "input_tokens": 45481,
+      "output_tokens": 2062,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._switch_backend_regular": {
+      "requests": 6,
+      "input_tokens": 30993,
+      "output_tokens": 1442,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._switch_backend_notebook": {
+      "requests": 6,
+      "input_tokens": 35352,
+      "output_tokens": 1775,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._reset_backend_notebook": {
+      "requests": 8,
+      "input_tokens": 49182,
+      "output_tokens": 2121,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._init_backend": {
+      "requests": 8,
+      "input_tokens": 72726,
+      "output_tokens": 3037,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._get_runtime_args": {
+      "requests": 5,
+      "input_tokens": 24450,
+      "output_tokens": 1264,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend._null_backend_context": {
+      "requests": 5,
+      "input_tokens": 23817,
+      "output_tokens": 1152,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.set_interactive_backend.__enter__": {
+      "requests": 5,
+      "input_tokens": 26217,
+      "output_tokens": 1144,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.set_interactive_backend.__exit__": {
+      "requests": 6,
+      "input_tokens": 30552,
+      "output_tokens": 1171,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.set_interactive_backend": {
+      "requests": 8,
+      "input_tokens": 54289,
+      "output_tokens": 2170,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.manage_backend": {
+      "requests": 7,
+      "input_tokens": 52375,
+      "output_tokens": 2440,
+      "cost": 0.0
+    },
+    "hypertools.plot.backend.set_interactive_backend.__init__": {
+      "requests": 7,
+      "input_tokens": 43509,
+      "output_tokens": 1451,
+      "cost": 0.0
+    },
+    "hypertools.plot.draw._draw": {
+      "requests": 6,
+      "input_tokens": 76656,
+      "output_tokens": 3163,
+      "cost": 0.0
+    },
+    "hypertools.tools.align.align": {
+      "requests": 10,
+      "input_tokens": 95963,
+      "output_tokens": 4247,
+      "cost": 0.0
+    },
+    "hypertools.tools.analyze.analyze": {
+      "requests": 9,
+      "input_tokens": 74021,
+      "output_tokens": 3819,
+      "cost": 0.0
+    },
+    "hypertools.tools.cluster.cluster": {
+      "requests": 6,
+      "input_tokens": 32208,
+      "output_tokens": 1584,
+      "cost": 0.0
+    },
+    "hypertools.tools.describe.get_cdist": {
+      "requests": 7,
+      "input_tokens": 36254,
+      "output_tokens": 1676,
+      "cost": 0.0
+    },
+    "hypertools.tools.describe.get_corr": {
+      "requests": 4,
+      "input_tokens": 19181,
+      "output_tokens": 1159,
+      "cost": 0.0
+    },
+    "hypertools.tools.describe.describe": {
+      "requests": 7,
+      "input_tokens": 49390,
+      "output_tokens": 2682,
+      "cost": 0.0
+    },
+    "hypertools.tools.df2mat.df2mat": {
+      "requests": 4,
+      "input_tokens": 19386,
+      "output_tokens": 1208,
+      "cost": 0.0
+    },
+    "hypertools.tools.load._download_example_data": {
+      "requests": 9,
+      "input_tokens": 55488,
+      "output_tokens": 3133,
+      "cost": 0.0
+    },
+    "hypertools.tools.load._load_example_data": {
+      "requests": 7,
+      "input_tokens": 46926,
+      "output_tokens": 2088,
+      "cost": 0.0
+    },
+    "hypertools.tools.load._load_legacy": {
+      "requests": 5,
+      "input_tokens": 27563,
+      "output_tokens": 1755,
+      "cost": 0.0
+    },
+    "hypertools.tools.load.load": {
+      "requests": 7,
+      "input_tokens": 54616,
+      "output_tokens": 2928,
+      "cost": 0.0
+    },
+    "hypertools.tools.normalize.normalize": {
+      "requests": 9,
+      "input_tokens": 63891,
+      "output_tokens": 3256,
+      "cost": 0.0
+    },
+    "hypertools.tools.procrustes.procrustes": {
+      "requests": 9,
+      "input_tokens": 71438,
+      "output_tokens": 3760,
+      "cost": 0.0
+    },
+    "hypertools.tools.reduce.reduce_list": {
+      "requests": 4,
+      "input_tokens": 19898,
+      "output_tokens": 1241,
+      "cost": 0.0
+    },
+    "hypertools.tools.reduce.reduce": {
+      "requests": 9,
+      "input_tokens": 78054,
+      "output_tokens": 4548,
+      "cost": 0.0
+    },
+    "hypertools.tools.text2mat._check_mtype": {
+      "requests": 8,
+      "input_tokens": 49583,
+      "output_tokens": 1568,
+      "cost": 0.0
+    },
+    "hypertools.tools.text2mat._fit_models": {
+      "requests": 9,
+      "input_tokens": 65899,
+      "output_tokens": 4997,
+      "cost": 0.0
+    },
+    "hypertools.tools.text2mat.text2mat": {
+      "requests": 9,
+      "input_tokens": 91100,
+      "output_tokens": 4090,
+      "cost": 0.0
+    },
+    "hypertools.tools.format_data.fill_missing": {
+      "requests": 9,
+      "input_tokens": 62347,
+      "output_tokens": 3213,
+      "cost": 0.0
+    },
+    "hypertools.tools.format_data.format_data": {
+      "requests": 8,
+      "input_tokens": 97939,
+      "output_tokens": 3515,
+      "cost": 0.0
+    },
+    "hypertools/tools": {
+      "requests": 10,
+      "input_tokens": 248243,
+      "output_tokens": 6093,
+      "cost": 0.0
+    },
+    "hypertools": {
+      "requests": 8,
+      "input_tokens": 48546,
+      "output_tokens": 3026,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 80,
+    "total_fetched_component_types": 109,
+    "redundant_fetch_count": 188,
+    "duplicates": {
+      "hypertools.plot.backend.HypertoolsBackend": {
+        "accessed_by": [
+          "hypertools.plot.backend.HypertoolsBackend.__eq__",
+          "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+          "hypertools.plot.backend.HypertoolsBackend.__hash__",
+          "hypertools.plot.backend.HypertoolsBackend.as_ipython",
+          "hypertools.plot.backend.HypertoolsBackend.as_python",
+          "hypertools.plot.backend.HypertoolsBackend.normalize",
+          "hypertools.plot.backend.ParrotDict.__contains__",
+          "hypertools.plot.backend.ParrotDict.__getitem__",
+          "hypertools.plot.backend.ParrotDict.__missing__",
+          "hypertools.plot.backend.ParrotDict",
+          "hypertools.plot.backend._init_backend",
+          "hypertools.plot.backend.set_interactive_backend.__enter__",
+          "hypertools.plot.backend.set_interactive_backend",
+          "hypertools.plot.backend.manage_backend",
+          "hypertools.plot.backend.set_interactive_backend.__init__",
+          "hypertools/plot"
+        ],
+        "access_count": 16
+      },
+      "hypertools.datageometry.DataGeometry": {
+        "accessed_by": [
+          "hypertools._shared.helpers.check_geo",
+          "hypertools.datageometry.DataGeometry.get_data",
+          "hypertools.datageometry.DataGeometry.get_formatted_data",
+          "hypertools.datageometry.DataGeometry.plot",
+          "hypertools.datageometry.DataGeometry.save",
+          "hypertools.datageometry.DataGeometry.transform",
+          "hypertools.tools.load._load_example_data",
+          "hypertools.tools.load._load_legacy",
+          "hypertools.tools.load.load",
+          "hypertools"
+        ],
+        "access_count": 10
+      },
+      "hypertools.tools.format_data.format_data": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.get_formatted_data",
+          "hypertools.datageometry.DataGeometry.save",
+          "hypertools.datageometry.DataGeometry.transform",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.plot.plot.plot",
+          "hypertools.tools.align.align",
+          "hypertools.tools.missing_inds.missing_inds",
+          "hypertools.tools.normalize.normalize",
+          "hypertools.tools.procrustes.procrustes",
+          "hypertools/tools"
+        ],
+        "access_count": 10
+      },
+      "hypertools._externals.srm._init_w_transforms": {
+        "accessed_by": [
+          "hypertools._externals.srm.DetSRM._compute_shared_response",
+          "hypertools._externals.srm.DetSRM._objective_function",
+          "hypertools._externals.srm.DetSRM._srm",
+          "hypertools._externals.srm.DetSRM.transform",
+          "hypertools._externals.srm.DetSRM",
+          "hypertools._externals.srm.SRM._likelihood",
+          "hypertools._externals.srm.SRM._srm",
+          "hypertools/_externals"
+        ],
+        "access_count": 8
+      },
+      "hypertools._externals.srm.DetSRM": {
+        "accessed_by": [
+          "hypertools._externals.srm.DetSRM._compute_shared_response",
+          "hypertools._externals.srm.DetSRM._objective_function",
+          "hypertools._externals.srm.DetSRM._srm",
+          "hypertools._externals.srm.DetSRM.fit",
+          "hypertools._externals.srm.DetSRM.transform",
+          "hypertools._externals.srm.DetSRM.__init__",
+          "hypertools/_externals"
+        ],
+        "access_count": 7
+      },
+      "hypertools.plot.backend.HypertoolsBackend.normalize": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.transform",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+          "hypertools.plot.backend.set_interactive_backend.__init__",
+          "hypertools/plot",
+          "hypertools.tools.analyze.analyze",
+          "hypertools/tools"
+        ],
+        "access_count": 7
+      },
+      "hypertools._externals.ppca.PPCA": {
+        "accessed_by": [
+          "hypertools._externals.ppca.PPCA._calc_var",
+          "hypertools._externals.ppca.PPCA._standardize",
+          "hypertools._externals.ppca.PPCA.save",
+          "hypertools._externals.ppca.PPCA.__init__",
+          "hypertools/_externals",
+          "hypertools.tools.format_data.fill_missing"
+        ],
+        "access_count": 6
+      },
+      "hypertools._externals.srm.SRM": {
+        "accessed_by": [
+          "hypertools._externals.srm.SRM._likelihood",
+          "hypertools._externals.srm.SRM._srm",
+          "hypertools._externals.srm.SRM.fit",
+          "hypertools._externals.srm.SRM.transform",
+          "hypertools/_externals",
+          "hypertools.tools.align.align"
+        ],
+        "access_count": 6
+      },
+      "hypertools.plot.backend.ParrotDict": {
+        "accessed_by": [
+          "hypertools.plot.backend.ParrotDict.__contains__",
+          "hypertools.plot.backend.ParrotDict.__getitem__",
+          "hypertools.plot.backend.ParrotDict.__missing__",
+          "hypertools.plot.backend.ParrotDict.__setitem__",
+          "hypertools.plot.backend.BackendMapping.__init__",
+          "hypertools/plot"
+        ],
+        "access_count": 6
+      },
+      "hypertools._externals.ppca.PPCA.fit": {
+        "accessed_by": [
+          "hypertools._externals.ppca.PPCA._calc_var",
+          "hypertools._externals.ppca.PPCA._standardize",
+          "hypertools._externals.ppca.PPCA.save",
+          "hypertools._externals.ppca.PPCA.__init__",
+          "hypertools/_externals"
+        ],
+        "access_count": 5
+      },
+      "hypertools._externals.ppca.PPCA.transform": {
+        "accessed_by": [
+          "hypertools._externals.ppca.PPCA._standardize",
+          "hypertools._externals.ppca.PPCA.save",
+          "hypertools._externals.ppca.PPCA.__init__",
+          "hypertools/_externals",
+          "hypertools.datageometry.DataGeometry.get_data"
+        ],
+        "access_count": 5
+      },
+      "hypertools._externals.ppca.PPCA.load": {
+        "accessed_by": [
+          "hypertools._externals.ppca.PPCA.save",
+          "hypertools/_externals",
+          "hypertools.tools.text2mat._check_mtype",
+          "hypertools.tools.text2mat.text2mat",
+          "hypertools/tools"
+        ],
+        "access_count": 5
+      },
+      "hypertools.datageometry.DataGeometry.plot": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.get_data",
+          "hypertools.datageometry.DataGeometry.plot",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools/plot",
+          "hypertools"
+        ],
+        "access_count": 5
+      },
+      "hypertools.tools.normalize.normalize": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.transform",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.plot.backend.set_interactive_backend.__init__",
+          "hypertools.tools.analyze.analyze",
+          "hypertools/tools"
+        ],
+        "access_count": 5
+      },
+      "hypertools.tools.align.align": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.transform",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.tools.analyze.analyze",
+          "hypertools.tools.format_data.format_data",
+          "hypertools/tools"
+        ],
+        "access_count": 5
+      },
+      "hypertools._shared.exceptions.HypertoolsError": {
+        "accessed_by": [
+          "hypertools._shared.exceptions.HypertoolsBackendError",
+          "hypertools._shared.exceptions.HypertoolsIOError",
+          "hypertools._shared.exceptions.HypertoolsIOError.__init__",
+          "hypertools/_shared"
+        ],
+        "access_count": 4
+      },
+      "hypertools._shared.exceptions.HypertoolsIOError": {
+        "accessed_by": [
+          "hypertools._shared.exceptions.HypertoolsIOError.__init__",
+          "hypertools/_shared",
+          "hypertools.tools.load._load_example_data",
+          "hypertools.tools.load._load_legacy"
+        ],
+        "access_count": 4
+      },
+      "hypertools._shared.helpers.get_type": {
+        "accessed_by": [
+          "hypertools._shared.helpers.convert_text",
+          "hypertools/_shared",
+          "hypertools.tools.format_data.fill_missing",
+          "hypertools.tools.format_data.format_data"
+        ],
+        "access_count": 4
+      },
+      "hypertools.plot.plot.plot": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.get_data",
+          "hypertools.datageometry.DataGeometry.plot",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools/plot"
+        ],
+        "access_count": 4
+      },
+      "hypertools.tools.reduce.reduce": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.plot.plot.plot",
+          "hypertools.tools.analyze.analyze",
+          "hypertools/tools"
+        ],
+        "access_count": 4
+      },
+      "hypertools.plot.backend.HypertoolsBackend.as_ipython": {
+        "accessed_by": [
+          "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+          "hypertools.plot.backend.HypertoolsBackend.as_python",
+          "hypertools.plot.backend.HypertoolsBackend.normalize",
+          "hypertools/plot"
+        ],
+        "access_count": 4
+      },
+      "hypertools.plot.backend.HypertoolsBackend.as_python": {
+        "accessed_by": [
+          "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+          "hypertools.plot.backend.HypertoolsBackend.as_ipython",
+          "hypertools.plot.backend.HypertoolsBackend.normalize",
+          "hypertools/plot"
+        ],
+        "access_count": 4
+      },
+      "hypertools.plot.backend.set_interactive_backend": {
+        "accessed_by": [
+          "hypertools.plot.backend.set_interactive_backend.__exit__",
+          "hypertools.plot.backend.manage_backend",
+          "hypertools.plot.backend.set_interactive_backend.__init__",
+          "hypertools/plot"
+        ],
+        "access_count": 4
+      },
+      "hypertools._externals.ppca.PPCA._calc_var": {
+        "accessed_by": [
+          "hypertools._externals.ppca.PPCA._calc_var",
+          "hypertools._externals.ppca.PPCA.__init__",
+          "hypertools/_externals"
+        ],
+        "access_count": 3
+      },
+      "hypertools._externals.srm.DetSRM._srm": {
+        "accessed_by": [
+          "hypertools._externals.srm.DetSRM.fit",
+          "hypertools._externals.srm.SRM.fit",
+          "hypertools/_externals"
+        ],
+        "access_count": 3
+      },
+      "hypertools._externals.srm.SRM._srm": {
+        "accessed_by": [
+          "hypertools._externals.srm.SRM._likelihood",
+          "hypertools._externals.srm.SRM.fit",
+          "hypertools/_externals"
+        ],
+        "access_count": 3
+      },
+      "hypertools._shared.helpers.reshape_data": {
+        "accessed_by": [
+          "hypertools._shared.helpers.reshape_data",
+          "hypertools/_shared",
+          "hypertools.plot.plot.plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools._shared.helpers.convert_text": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.datageometry.DataGeometry.__init__"
+        ],
+        "access_count": 3
+      },
+      "hypertools._shared.helpers.get_dtype": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.datageometry.DataGeometry",
+          "hypertools.datageometry.DataGeometry.__init__"
+        ],
+        "access_count": 3
+      },
+      "hypertools._shared.params.default_params": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.tools.text2mat._check_mtype",
+          "hypertools.tools.text2mat.text2mat"
+        ],
+        "access_count": 3
+      },
+      "hypertools.plot.backend.ParrotDict.__contains__": {
+        "accessed_by": [
+          "hypertools.plot.backend.ParrotDict.__getitem__",
+          "hypertools.plot.backend.ParrotDict.__missing__",
+          "hypertools/plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools.plot.backend.ParrotDict.__setitem__": {
+        "accessed_by": [
+          "hypertools.plot.backend.ParrotDict.__getitem__",
+          "hypertools.plot.backend.ParrotDict.__missing__",
+          "hypertools/plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools.plot.backend.BackendMapping": {
+        "accessed_by": [
+          "hypertools.plot.backend.BackendMapping.__init__",
+          "hypertools.plot.backend._init_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools.plot.backend._switch_backend_regular": {
+        "accessed_by": [
+          "hypertools.plot.backend._switch_backend_notebook",
+          "hypertools.plot.backend._init_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools.plot.backend._switch_backend_notebook": {
+        "accessed_by": [
+          "hypertools.plot.backend._reset_backend_notebook",
+          "hypertools.plot.backend._init_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools.plot.backend._get_runtime_args": {
+        "accessed_by": [
+          "hypertools.plot.backend._get_runtime_args",
+          "hypertools.plot.backend.manage_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 3
+      },
+      "hypertools.tools.format_data.fill_missing": {
+        "accessed_by": [
+          "hypertools.tools.missing_inds.missing_inds",
+          "hypertools.tools.format_data.format_data",
+          "hypertools/tools"
+        ],
+        "access_count": 3
+      },
+      "hypertools.tools.text2mat._check_mtype": {
+        "accessed_by": [
+          "hypertools.tools.text2mat._check_mtype",
+          "hypertools.tools.text2mat.text2mat",
+          "hypertools/tools"
+        ],
+        "access_count": 3
+      },
+      "hypertools.tools.load.load": {
+        "accessed_by": [
+          "hypertools.tools.text2mat._check_mtype",
+          "hypertools.tools.text2mat.text2mat",
+          "hypertools/tools"
+        ],
+        "access_count": 3
+      },
+      "docs.tutorials.tools.nb_to_doc.convert_nb": {
+        "accessed_by": [
+          "docs/tutorials/tools",
+          "docs/tutorials"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.DetSRM._compute_shared_response": {
+        "accessed_by": [
+          "hypertools._externals.srm.DetSRM._srm",
+          "hypertools/_externals"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.DetSRM._objective_function": {
+        "accessed_by": [
+          "hypertools._externals.srm.DetSRM._srm",
+          "hypertools/_externals"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.DetSRM.__init__": {
+        "accessed_by": [
+          "hypertools._externals.srm.DetSRM.fit",
+          "hypertools/_externals"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.SRM._init_structures": {
+        "accessed_by": [
+          "hypertools._externals.srm.SRM._srm",
+          "hypertools/_externals"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.SRM._likelihood": {
+        "accessed_by": [
+          "hypertools._externals.srm.SRM._srm",
+          "hypertools/_externals"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.ppca.PPCA.save": {
+        "accessed_by": [
+          "hypertools/_externals",
+          "hypertools.datageometry.DataGeometry.get_data"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.DetSRM.transform": {
+        "accessed_by": [
+          "hypertools/_externals",
+          "hypertools.datageometry.DataGeometry.get_data"
+        ],
+        "access_count": 2
+      },
+      "hypertools._externals.srm.SRM.transform": {
+        "accessed_by": [
+          "hypertools/_externals",
+          "hypertools.datageometry.DataGeometry.get_data"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.exceptions.HypertoolsBackendError": {
+        "accessed_by": [
+          "hypertools._shared.exceptions.HypertoolsBackendError.__init__",
+          "hypertools/_shared"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.check_geo": {
+        "accessed_by": [
+          "hypertools._shared.helpers.check_geo",
+          "hypertools/_shared"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.interp_array": {
+        "accessed_by": [
+          "hypertools._shared.helpers.interp_array_list",
+          "hypertools/_shared"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.center": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.plot.plot.plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.interp_array_list": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.plot.plot.plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.is_line": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.plot.plot.plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.parse_kwargs": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.plot.plot.plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools._shared.helpers.scale": {
+        "accessed_by": [
+          "hypertools/_shared",
+          "hypertools.plot.plot.plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.datageometry.DataGeometry.get_data": {
+        "accessed_by": [
+          "hypertools.datageometry.DataGeometry.get_data",
+          "hypertools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend.ParrotDict.__missing__": {
+        "accessed_by": [
+          "hypertools.plot.backend.ParrotDict.__getitem__",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend.ParrotDict.__getitem__": {
+        "accessed_by": [
+          "hypertools.plot.backend.ParrotDict.__missing__",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend.BackendMapping._store_equivalents": {
+        "accessed_by": [
+          "hypertools.plot.backend.BackendMapping.__init__",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend._block_greedy_completer_execution": {
+        "accessed_by": [
+          "hypertools.plot.backend._init_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend._reset_backend_notebook": {
+        "accessed_by": [
+          "hypertools.plot.backend._init_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend.set_interactive_backend.__enter__": {
+        "accessed_by": [
+          "hypertools.plot.backend.set_interactive_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend.set_interactive_backend.__exit__": {
+        "accessed_by": [
+          "hypertools.plot.backend.set_interactive_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend._null_backend_context": {
+        "accessed_by": [
+          "hypertools.plot.backend.manage_backend",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.analyze.analyze": {
+        "accessed_by": [
+          "hypertools.plot.plot.plot",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.draw._draw": {
+        "accessed_by": [
+          "hypertools.plot.plot.plot",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.plot.backend.manage_backend": {
+        "accessed_by": [
+          "hypertools.plot.plot.plot",
+          "hypertools/plot"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.cluster.cluster": {
+        "accessed_by": [
+          "hypertools.plot.plot.plot",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.procrustes.procrustes": {
+        "accessed_by": [
+          "hypertools.tools.align.align",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.describe.get_cdist": {
+        "accessed_by": [
+          "hypertools.tools.describe.describe",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.describe.get_corr": {
+        "accessed_by": [
+          "hypertools.tools.describe.describe",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.load._download_example_data": {
+        "accessed_by": [
+          "hypertools.tools.load._load_example_data",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.load._load_example_data": {
+        "accessed_by": [
+          "hypertools.tools.load.load",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.load._load_legacy": {
+        "accessed_by": [
+          "hypertools.tools.load.load",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.reduce.reduce_list": {
+        "accessed_by": [
+          "hypertools.tools.reduce.reduce",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.text2mat._fit_models": {
+        "accessed_by": [
+          "hypertools.tools.text2mat.text2mat",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.text2mat._transform": {
+        "accessed_by": [
+          "hypertools.tools.text2mat.text2mat",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.df2mat.df2mat": {
+        "accessed_by": [
+          "hypertools.tools.format_data.format_data",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      },
+      "hypertools.tools.text2mat.text2mat": {
+        "accessed_by": [
+          "hypertools.tools.format_data.format_data",
+          "hypertools/tools"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 798,
+      "total_input_tokens": 5732790,
+      "total_output_tokens": 234749,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 49.314,
+    "avg_turns_per_component": 6.53,
+    "memory_hit_rate": 0.9005,
+    "total_tokens": 4495555,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 39091.8
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 107,
+      "total_time_seconds": 5177.648,
+      "avg_time_seconds": 48.389,
+      "total_turns": 724,
+      "avg_turns": 6.77,
+      "action_counts": {
+        "Read": 214,
+        "Write": 188,
+        "Verify": 181,
+        "Finish": 89,
+        "Unknown": 52
+      }
+    },
+    "MODULE": {
+      "count": 8,
+      "total_time_seconds": 493.51,
+      "avg_time_seconds": 61.689,
+      "total_turns": 66,
+      "avg_turns": 8.25,
+      "action_counts": {
+        "Read": 20,
+        "Write": 22,
+        "Verify": 19,
+        "Finish": 5
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 97.336,
+      "avg_time_seconds": 97.336,
+      "total_turns": 8,
+      "avg_turns": 8.0,
+      "action_counts": {
+        "Read": 3,
+        "Write": 2,
+        "Verify": 2,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "docs/tutorials/tools": {
+      "total_candidate_pairs": 20,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs.tutorials.tools.nb_to_doc.convert_nb"
+      ]
+    },
+    "docs/tutorials": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs/tutorials/tools"
+      ]
+    },
+    "docs": {
+      "total_candidate_pairs": 16,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 11,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs/tutorials"
+      ]
+    },
+    "hypertools._externals.ppca.PPCA": {
+      "total_candidate_pairs": 49,
+      "entailment_count": 1,
+      "contradiction_count": 3,
+      "neutral_count": 45,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools._externals.ppca.PPCA._calc_var",
+        "hypertools._externals.ppca.PPCA._standardize",
+        "hypertools._externals.ppca.PPCA.fit",
+        "hypertools._externals.ppca.PPCA.load",
+        "hypertools._externals.ppca.PPCA.save",
+        "hypertools._externals.ppca.PPCA.transform"
+      ]
+    },
+    "hypertools._externals.srm.DetSRM": {
+      "total_candidate_pairs": 37,
+      "entailment_count": 0,
+      "contradiction_count": 4,
+      "neutral_count": 33,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools._externals.srm.DetSRM._compute_shared_response",
+        "hypertools._externals.srm.DetSRM._objective_function",
+        "hypertools._externals.srm.DetSRM._srm",
+        "hypertools._externals.srm.DetSRM.fit",
+        "hypertools._externals.srm.DetSRM.transform"
+      ]
+    },
+    "hypertools._externals.srm.SRM": {
+      "total_candidate_pairs": 39,
+      "entailment_count": 5,
+      "contradiction_count": 2,
+      "neutral_count": 32,
+      "conflict_score": 0.25,
+      "dep_ids_checked": [
+        "hypertools._externals.srm.SRM._init_structures",
+        "hypertools._externals.srm.SRM._srm",
+        "hypertools._externals.srm.SRM.fit",
+        "hypertools._externals.srm.SRM.transform"
+      ]
+    },
+    "hypertools/_externals": {
+      "total_candidate_pairs": 66,
+      "entailment_count": 23,
+      "contradiction_count": 1,
+      "neutral_count": 42,
+      "conflict_score": 0.0476,
+      "dep_ids_checked": [
+        "hypertools._externals.ppca.PPCA",
+        "hypertools._externals.ppca.PPCA.__init__",
+        "hypertools._externals.ppca.PPCA._calc_var",
+        "hypertools._externals.ppca.PPCA._standardize",
+        "hypertools._externals.ppca.PPCA.fit",
+        "hypertools._externals.ppca.PPCA.load",
+        "hypertools._externals.ppca.PPCA.save",
+        "hypertools._externals.ppca.PPCA.transform",
+        "hypertools._externals.srm.DetSRM",
+        "hypertools._externals.srm.DetSRM.__init__",
+        "hypertools._externals.srm.DetSRM._compute_shared_response",
+        "hypertools._externals.srm.DetSRM._objective_function",
+        "hypertools._externals.srm.DetSRM._srm",
+        "hypertools._externals.srm.DetSRM.fit",
+        "hypertools._externals.srm.DetSRM.transform",
+        "hypertools._externals.srm.SRM",
+        "hypertools._externals.srm.SRM.__init__",
+        "hypertools._externals.srm.SRM._init_structures",
+        "hypertools._externals.srm.SRM._srm",
+        "hypertools._externals.srm.SRM.fit",
+        "hypertools._externals.srm.SRM.transform"
+      ]
+    },
+    "hypertools._shared.exceptions.HypertoolsBackendError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 1,
+      "contradiction_count": 3,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools._shared.exceptions.HypertoolsError"
+      ]
+    },
+    "hypertools._shared.exceptions.HypertoolsIOError": {
+      "total_candidate_pairs": 15,
+      "entailment_count": 7,
+      "contradiction_count": 1,
+      "neutral_count": 7,
+      "conflict_score": 0.6667,
+      "dep_ids_checked": [
+        "hypertools._shared.exceptions.HypertoolsError"
+      ]
+    },
+    "hypertools._shared.helpers.convert_text": {
+      "total_candidate_pairs": 29,
+      "entailment_count": 10,
+      "contradiction_count": 1,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools._shared.helpers.get_type"
+      ]
+    },
+    "hypertools._shared.helpers.interp_array_list": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools._shared.helpers.interp_array"
+      ]
+    },
+    "hypertools/_shared": {
+      "total_candidate_pairs": 308,
+      "entailment_count": 53,
+      "contradiction_count": 8,
+      "neutral_count": 247,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools._shared.exceptions.HypertoolsBackendError",
+        "hypertools._shared.exceptions.HypertoolsBackendError.__init__",
+        "hypertools._shared.exceptions.HypertoolsError",
+        "hypertools._shared.exceptions.HypertoolsIOError.__init__",
+        "hypertools._shared.helpers.center",
+        "hypertools._shared.helpers.check_geo",
+        "hypertools._shared.helpers.convert_text",
+        "hypertools._shared.helpers.get_dtype",
+        "hypertools._shared.helpers.get_type",
+        "hypertools._shared.helpers.interp_array",
+        "hypertools._shared.helpers.interp_array_list",
+        "hypertools._shared.helpers.is_line",
+        "hypertools._shared.helpers.memoize",
+        "hypertools._shared.helpers.parse_args",
+        "hypertools._shared.helpers.parse_kwargs",
+        "hypertools._shared.helpers.reshape_data",
+        "hypertools._shared.helpers.scale",
+        "hypertools._shared.helpers.vals2colors",
+        "hypertools._shared.params.default_params"
+      ]
+    },
+    "hypertools.datageometry.DataGeometry": {
+      "total_candidate_pairs": 68,
+      "entailment_count": 4,
+      "contradiction_count": 3,
+      "neutral_count": 61,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.datageometry.DataGeometry.get_data",
+        "hypertools.datageometry.DataGeometry.get_formatted_data",
+        "hypertools.datageometry.DataGeometry.plot",
+        "hypertools.datageometry.DataGeometry.save",
+        "hypertools.datageometry.DataGeometry.transform"
+      ]
+    },
+    "hypertools.plot.backend.HypertoolsBackend": {
+      "total_candidate_pairs": 57,
+      "entailment_count": 6,
+      "contradiction_count": 10,
+      "neutral_count": 41,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+        "hypertools.plot.backend.HypertoolsBackend.__hash__",
+        "hypertools.plot.backend.HypertoolsBackend.__new__",
+        "hypertools.plot.backend.HypertoolsBackend.as_ipython",
+        "hypertools.plot.backend.HypertoolsBackend.as_python",
+        "hypertools.plot.backend.HypertoolsBackend.normalize"
+      ]
+    },
+    "hypertools.plot.backend.ParrotDict.__contains__": {
+      "total_candidate_pairs": 21,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 16,
+      "conflict_score": 0.2,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend"
+      ]
+    },
+    "hypertools.plot.backend.ParrotDict.__getitem__": {
+      "total_candidate_pairs": 21,
+      "entailment_count": 6,
+      "contradiction_count": 0,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend"
+      ]
+    },
+    "hypertools.plot.backend.ParrotDict.__missing__": {
+      "total_candidate_pairs": 21,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 16,
+      "conflict_score": 0.2,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend"
+      ]
+    },
+    "hypertools.plot.backend.ParrotDict.__setitem__": {
+      "total_candidate_pairs": 23,
+      "entailment_count": 8,
+      "contradiction_count": 0,
+      "neutral_count": 15,
+      "conflict_score": 0.1429,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend"
+      ]
+    },
+    "hypertools.plot.backend.ParrotDict": {
+      "total_candidate_pairs": 45,
+      "entailment_count": 6,
+      "contradiction_count": 6,
+      "neutral_count": 33,
+      "conflict_score": 0.1667,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend",
+        "hypertools.plot.backend.ParrotDict.__contains__",
+        "hypertools.plot.backend.ParrotDict.__getitem__",
+        "hypertools.plot.backend.ParrotDict.__missing__"
+      ]
+    },
+    "hypertools.plot.backend.BackendMapping.__init__": {
+      "total_candidate_pairs": 22,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 17,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.ParrotDict"
+      ]
+    },
+    "hypertools.plot.backend.BackendMapping": {
+      "total_candidate_pairs": 20,
+      "entailment_count": 2,
+      "contradiction_count": 2,
+      "neutral_count": 16,
+      "conflict_score": 0.5,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.ParrotDict"
+      ]
+    },
+    "hypertools.plot.backend._switch_backend_notebook": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend._switch_backend_regular"
+      ]
+    },
+    "hypertools.plot.backend._reset_backend_notebook": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend._switch_backend_notebook"
+      ]
+    },
+    "hypertools.plot.backend._init_backend": {
+      "total_candidate_pairs": 16,
+      "entailment_count": 2,
+      "contradiction_count": 0,
+      "neutral_count": 14,
+      "conflict_score": 0.5,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend",
+        "hypertools.plot.backend._block_greedy_completer_execution",
+        "hypertools.plot.backend._reset_backend_notebook",
+        "hypertools.plot.backend._switch_backend_notebook",
+        "hypertools.plot.backend._switch_backend_regular"
+      ]
+    },
+    "hypertools.plot.backend.set_interactive_backend.__enter__": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend"
+      ]
+    },
+    "hypertools.plot.backend.set_interactive_backend": {
+      "total_candidate_pairs": 20,
+      "entailment_count": 6,
+      "contradiction_count": 1,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend",
+        "hypertools.plot.backend.set_interactive_backend.__enter__",
+        "hypertools.plot.backend.set_interactive_backend.__exit__"
+      ]
+    },
+    "hypertools.plot.backend.manage_backend": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend",
+        "hypertools.plot.backend._get_runtime_args",
+        "hypertools.plot.backend._null_backend_context",
+        "hypertools.plot.backend.set_interactive_backend"
+      ]
+    },
+    "hypertools.plot.backend.set_interactive_backend.__init__": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 16,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.HypertoolsBackend"
+      ]
+    },
+    "hypertools/plot": {
+      "total_candidate_pairs": 237,
+      "entailment_count": 20,
+      "contradiction_count": 6,
+      "neutral_count": 211,
+      "conflict_score": 0.0417,
+      "dep_ids_checked": [
+        "hypertools.plot.backend.BackendMapping.__init__",
+        "hypertools.plot.backend.HypertoolsBackend",
+        "hypertools.plot.backend.HypertoolsBackend.__getattribute__",
+        "hypertools.plot.backend.HypertoolsBackend.__hash__",
+        "hypertools.plot.backend.HypertoolsBackend.__new__",
+        "hypertools.plot.backend.HypertoolsBackend.as_ipython",
+        "hypertools.plot.backend.HypertoolsBackend.as_python",
+        "hypertools.plot.backend.HypertoolsBackend.normalize",
+        "hypertools.plot.backend.ParrotDict",
+        "hypertools.plot.backend.ParrotDict.__contains__",
+        "hypertools.plot.backend.ParrotDict.__getitem__",
+        "hypertools.plot.backend.ParrotDict.__init__",
+        "hypertools.plot.backend.ParrotDict.__missing__",
+        "hypertools.plot.backend._block_greedy_completer_execution",
+        "hypertools.plot.backend._get_runtime_args",
+        "hypertools.plot.backend._init_backend",
+        "hypertools.plot.backend._null_backend_context",
+        "hypertools.plot.backend._reset_backend_notebook",
+        "hypertools.plot.backend._switch_backend_notebook",
+        "hypertools.plot.backend._switch_backend_regular",
+        "hypertools.plot.backend.manage_backend",
+        "hypertools.plot.backend.set_interactive_backend",
+        "hypertools.plot.backend.set_interactive_backend.__enter__",
+        "hypertools.plot.backend.set_interactive_backend.__exit__",
+        "hypertools.plot.backend.set_interactive_backend.__init__",
+        "hypertools.plot.draw._draw"
+      ]
+    },
+    "hypertools.tools.describe.describe": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.tools.describe.get_cdist",
+        "hypertools.tools.describe.get_corr"
+      ]
+    },
+    "hypertools.tools.load._load_example_data": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.tools.load._download_example_data"
+      ]
+    },
+    "hypertools.tools.load.load": {
+      "total_candidate_pairs": 22,
+      "entailment_count": 4,
+      "contradiction_count": 3,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.tools.load._load_example_data",
+        "hypertools.tools.load._load_legacy"
+      ]
+    },
+    "hypertools.tools.reduce.reduce": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.tools.reduce.reduce_list"
+      ]
+    },
+    "hypertools.tools.text2mat.text2mat": {
+      "total_candidate_pairs": 28,
+      "entailment_count": 2,
+      "contradiction_count": 2,
+      "neutral_count": 24,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.tools.text2mat._check_mtype",
+        "hypertools.tools.text2mat._fit_models"
+      ]
+    },
+    "hypertools.tools.format_data.format_data": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "hypertools.tools.format_data.fill_missing"
+      ]
+    },
+    "hypertools/tools": {
+      "total_candidate_pairs": 370,
+      "entailment_count": 92,
+      "contradiction_count": 49,
+      "neutral_count": 229,
+      "conflict_score": 0.2229,
+      "dep_ids_checked": [
+        "hypertools.tools.align.align",
+        "hypertools.tools.analyze.analyze",
+        "hypertools.tools.cluster.cluster",
+        "hypertools.tools.describe.describe",
+        "hypertools.tools.describe.get_cdist",
+        "hypertools.tools.describe.get_corr",
+        "hypertools.tools.df2mat.df2mat",
+        "hypertools.tools.format_data.fill_missing",
+        "hypertools.tools.format_data.format_data",
+        "hypertools.tools.load._download_example_data",
+        "hypertools.tools.load._load_example_data",
+        "hypertools.tools.load._load_legacy",
+        "hypertools.tools.load.load",
+        "hypertools.tools.normalize.normalize",
+        "hypertools.tools.procrustes.procrustes",
+        "hypertools.tools.reduce.reduce",
+        "hypertools.tools.reduce.reduce_list",
+        "hypertools.tools.text2mat._check_mtype",
+        "hypertools.tools.text2mat._fit_models",
+        "hypertools.tools.text2mat.text2mat"
+      ]
+    },
+    "hypertools": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 202,
+    "first_pass_success": 61,
+    "required_revision": 60,
+    "score_parse_failures": 2,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.8921,
+      "COMPLETENESS": 0.8535,
+      "HELPFULNESS": 0.8518
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.0879,
+      "COMPLETENESS": 0.1026,
+      "HELPFULNESS": 0.094
+    }
+  }
+}

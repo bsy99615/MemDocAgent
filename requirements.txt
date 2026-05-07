@@ -1,0 +1,27 @@
+# Core tree-sitter library (required for multi-language AST parsing)
+tree-sitter
+tree-sitter-python
+tree-sitter-javascript
+tree-sitter-typescript
+tree-sitter-java
+tree-sitter-kotlin
+tree-sitter-c-sharp
+tree-sitter-c
+tree-sitter-cpp
+tree-sitter-php
+
+# Required utilities
+pyyaml
+colorlog
+print_color
+requests
+tiktoken
+
+# LLM providers — install only the ones you need
+anthropic           # for Claude
+openai              # for OpenAI or vLLM (OpenAI-compatible)
+google-generativeai # for Gemini
+
+# NLI-based conflict detection and local model inference (optional)
+transformers
+torch

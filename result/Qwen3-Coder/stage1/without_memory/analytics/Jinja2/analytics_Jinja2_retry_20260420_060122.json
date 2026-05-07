@@ -1,0 +1,3006 @@
+{
+  "run_id": "20260420_045309",
+  "label": "Jinja2_retry_20260420_060122",
+  "total_run_time_seconds": 4092.755,
+  "repo_summary": {
+    "file_count": 11,
+    "function_count": 63,
+    "class_count": 22,
+    "method_count": 83,
+    "total_components": 168,
+    "module_count": 5,
+    "repo_count": 1,
+    "topological_order_count": 168,
+    "topological_order": [
+      "docs.examples.cache_extension.FragmentCacheExtension._cache_support",
+      "docs.examples.cache_extension.FragmentCacheExtension.parse",
+      "docs.examples.cache_extension.FragmentCacheExtension",
+      "docs.examples.cache_extension.FragmentCacheExtension.__init__",
+      "docs.examples.inline_gettext_extension.InlineGettext.filter_stream",
+      "docs.examples.inline_gettext_extension.InlineGettext",
+      "scripts.generate_identifier_pattern.build_pattern",
+      "scripts.generate_identifier_pattern.collapse_ranges",
+      "scripts.generate_identifier_pattern.get_characters",
+      "scripts.generate_identifier_pattern.main",
+      "src.jinja2.async_utils.async_variant",
+      "src.jinja2.async_utils.auto_await",
+      "src.jinja2.async_utils.auto_aiter",
+      "src.jinja2.async_utils.auto_to_list",
+      "src.jinja2.debug.get_template_locals",
+      "src.jinja2.debug.fake_traceback",
+      "src.jinja2.debug.rewrite_traceback_stack",
+      "src.jinja2.lexer.Failure.__init__",
+      "src.jinja2.lexer.Failure.__call__",
+      "src.jinja2.lexer.Failure",
+      "src.jinja2.lexer.OptionalLStrip.__new__",
+      "src.jinja2.lexer.OptionalLStrip",
+      "src.jinja2.lexer._Rule",
+      "src.jinja2.lexer.compile_rules",
+      "src.jinja2.lexer.Lexer.__init__",
+      "src.jinja2.lexer._describe_token_type",
+      "src.jinja2.lexer.describe_token",
+      "src.jinja2.lexer.Token.__str__",
+      "src.jinja2.lexer.Token.test",
+      "src.jinja2.lexer.Token.test_any",
+      "src.jinja2.lexer.Token",
+      "src.jinja2.lexer.TokenStream.__init__",
+      "src.jinja2.lexer.TokenStreamIterator.__init__",
+      "src.jinja2.lexer.count_newlines",
+      "src.jinja2.lexer.Lexer._normalize_newlines",
+      "src.jinja2.lexer.Lexer.tokeniter",
+      "src.jinja2.lexer.TokenStream.__bool__",
+      "src.jinja2.lexer.TokenStreamIterator.__iter__",
+      "src.jinja2.lexer.TokenStreamIterator.__next__",
+      "src.jinja2.lexer.TokenStreamIterator",
+      "src.jinja2.lexer.TokenStream.__iter__",
+      "src.jinja2.lexer.TokenStream.__next__",
+      "src.jinja2.lexer.TokenStream.close",
+      "src.jinja2.lexer.TokenStream.eos",
+      "src.jinja2.lexer.describe_token_expr",
+      "src.jinja2.lexer.TokenStream.expect",
+      "src.jinja2.lexer.TokenStream.look",
+      "src.jinja2.lexer.TokenStream.next_if",
+      "src.jinja2.lexer.TokenStream.push",
+      "src.jinja2.lexer.TokenStream.skip",
+      "src.jinja2.lexer.TokenStream.skip_if",
+      "src.jinja2.lexer.TokenStream",
+      "src.jinja2.lexer.Lexer.tokenize",
+      "src.jinja2.lexer.Lexer.wrap",
+      "src.jinja2.lexer.Lexer",
+      "src.jinja2.lexer.get_lexer",
+      "src.jinja2.nativetypes.NativeCodeGenerator._default_finalize",
+      "src.jinja2.nativetypes.NativeCodeGenerator._output_child_post",
+      "src.jinja2.nativetypes.NativeCodeGenerator._output_child_pre",
+      "src.jinja2.nativetypes.NativeCodeGenerator._output_child_to_const",
+      "src.jinja2.nativetypes.NativeCodeGenerator._output_const_repr",
+      "src.jinja2.nativetypes.NativeCodeGenerator",
+      "src.jinja2.nativetypes.native_concat",
+      "src.jinja2.nativetypes.NativeEnvironment",
+      "src.jinja2.nativetypes.NativeTemplate.render",
+      "src.jinja2.nativetypes.NativeTemplate.render_async",
+      "src.jinja2.nativetypes.NativeTemplate",
+      "src.jinja2.optimizer.Optimizer.__init__",
+      "src.jinja2.optimizer.Optimizer.generic_visit",
+      "src.jinja2.optimizer.Optimizer",
+      "src.jinja2.optimizer.optimize",
+      "src.jinja2.sandbox.unsafe",
+      "src.jinja2.sandbox.modifies_known_mutable",
+      "src.jinja2.sandbox.ImmutableSandboxedEnvironment.is_safe_attribute",
+      "src.jinja2.sandbox.inspect_format_method",
+      "src.jinja2.sandbox.SandboxedEnvironment.call",
+      "src.jinja2.sandbox.SandboxedEnvironment.call_binop",
+      "src.jinja2.sandbox.SandboxedEnvironment.call_unop",
+      "src.jinja2.sandbox.SandboxedFormatter.get_field",
+      "src.jinja2.sandbox.SandboxedFormatter",
+      "src.jinja2.sandbox.SandboxedEscapeFormatter",
+      "src.jinja2.sandbox.SandboxedEnvironment.format_string",
+      "src.jinja2.sandbox.SandboxedEnvironment.getattr",
+      "src.jinja2.sandbox.SandboxedEnvironment.getitem",
+      "src.jinja2.sandbox.is_internal_attribute",
+      "src.jinja2.sandbox.SandboxedEnvironment.is_safe_attribute",
+      "src.jinja2.sandbox.SandboxedEnvironment.is_safe_callable",
+      "src.jinja2.sandbox.SandboxedEnvironment.unsafe_undefined",
+      "src.jinja2.sandbox.safe_range",
+      "src.jinja2.sandbox.SandboxedEnvironment",
+      "src.jinja2.sandbox.ImmutableSandboxedEnvironment",
+      "src.jinja2.sandbox.SandboxedEnvironment.__init__",
+      "src.jinja2.sandbox.SandboxedFormatter.__init__",
+      "src.jinja2.tests.test_boolean",
+      "src.jinja2.tests.test_defined",
+      "src.jinja2.tests.test_divisibleby",
+      "src.jinja2.tests.test_escaped",
+      "src.jinja2.tests.test_even",
+      "src.jinja2.tests.test_false",
+      "src.jinja2.tests.test_filter",
+      "src.jinja2.tests.test_float",
+      "src.jinja2.tests.test_in",
+      "src.jinja2.tests.test_integer",
+      "src.jinja2.tests.test_iterable",
+      "src.jinja2.tests.test_lower",
+      "src.jinja2.tests.test_mapping",
+      "src.jinja2.tests.test_none",
+      "src.jinja2.tests.test_number",
+      "src.jinja2.tests.test_odd",
+      "src.jinja2.tests.test_sameas",
+      "src.jinja2.tests.test_sequence",
+      "src.jinja2.tests.test_string",
+      "src.jinja2.tests.test_test",
+      "src.jinja2.tests.test_true",
+      "src.jinja2.tests.test_undefined",
+      "src.jinja2.tests.test_upper",
+      "src.jinja2.utils.Cycler.current",
+      "src.jinja2.utils.Cycler.next",
+      "src.jinja2.utils.Cycler.reset",
+      "src.jinja2.utils.Cycler",
+      "src.jinja2.utils.Cycler.__init__",
+      "src.jinja2.utils.Joiner.__call__",
+      "src.jinja2.utils.Joiner",
+      "src.jinja2.utils.Joiner.__init__",
+      "src.jinja2.utils.LRUCache.__contains__",
+      "src.jinja2.utils.LRUCache.__delitem__",
+      "src.jinja2.utils.LRUCache.__getitem__",
+      "src.jinja2.utils.LRUCache.__getnewargs__",
+      "src.jinja2.utils.LRUCache.__getstate__",
+      "src.jinja2.utils.LRUCache.__iter__",
+      "src.jinja2.utils.LRUCache.__len__",
+      "src.jinja2.utils.LRUCache.__repr__",
+      "src.jinja2.utils.LRUCache.__reversed__",
+      "src.jinja2.utils.LRUCache.__setitem__",
+      "src.jinja2.utils.LRUCache.__setstate__",
+      "src.jinja2.utils.LRUCache._postinit",
+      "src.jinja2.utils.LRUCache.clear",
+      "src.jinja2.utils.LRUCache.copy",
+      "src.jinja2.utils.LRUCache.get",
+      "src.jinja2.utils.LRUCache.items",
+      "src.jinja2.utils.LRUCache.keys",
+      "src.jinja2.utils.LRUCache.setdefault",
+      "src.jinja2.utils.LRUCache.values",
+      "src.jinja2.utils.LRUCache",
+      "src.jinja2.utils.LRUCache.__init__",
+      "src.jinja2.utils.Namespace.__getattribute__",
+      "src.jinja2.utils.Namespace.__repr__",
+      "src.jinja2.utils.Namespace.__setitem__",
+      "src.jinja2.utils.Namespace",
+      "src.jinja2.utils.Namespace.__init__",
+      "src.jinja2.utils.clear_caches",
+      "src.jinja2.utils.consume",
+      "src.jinja2.utils.generate_lorem_ipsum",
+      "src.jinja2.utils.htmlsafe_json_dumps",
+      "src.jinja2.utils.import_string",
+      "src.jinja2.utils.internalcode",
+      "src.jinja2.utils.is_undefined",
+      "src.jinja2.utils.object_type_repr",
+      "src.jinja2.utils.open_if_exists",
+      "src.jinja2.utils._PassArg.from_obj",
+      "src.jinja2.utils._PassArg",
+      "src.jinja2.utils.pass_context",
+      "src.jinja2.utils.pass_environment",
+      "src.jinja2.utils.pass_eval_context",
+      "src.jinja2.utils.select_autoescape",
+      "src.jinja2.utils.url_quote",
+      "src.jinja2.utils.urlize",
+      "src.jinja2.utils.pformat"
+    ]
+  },
+  "dependency_analysis_time_seconds": null,
+  "action_call_totals": {
+    "Read": 134,
+    "Write": 90,
+    "Verify": 87,
+    "Finish": 50
+  },
+  "action_time_totals_seconds": {
+    "Read": 747.797,
+    "Write": 1592.556,
+    "Verify": 507.136
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 668465,
+      "output_tokens": 21829
+    },
+    "Write": {
+      "input_tokens": 529844,
+      "output_tokens": 49060
+    },
+    "Verify": {
+      "input_tokens": 563072,
+      "output_tokens": 15172
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 90,
+    "total_memory_hits": 0
+  },
+  "per_component_stats": {
+    "docs.examples.cache_extension.FragmentCacheExtension._cache_support": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.232333577005193,
+      "Write_time": 30.870063327995013,
+      "Verify_time": 5.311022301015328,
+      "total_time_seconds": 67.536,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "docs.examples.cache_extension.FragmentCacheExtension.parse": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 14.802454264994594,
+      "Write_time": 31.810798507998697,
+      "Verify_time": 4.9075954309955705,
+      "total_time_seconds": 53.977,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "docs.examples.cache_extension.FragmentCacheExtension": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.200662431001547,
+      "Write_time": 19.18260680200183,
+      "Verify_time": 8.320050007998361,
+      "total_time_seconds": 37.327,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "docs.examples.cache_extension.FragmentCacheExtension.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.113867793013924,
+      "Write_time": 13.202565058003529,
+      "Verify_time": 7.338630637008464,
+      "total_time_seconds": 37.762,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "docs.examples.inline_gettext_extension.InlineGettext.filter_stream": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 20.734859017000417,
+      "Write_time": 22.78442383100628,
+      "Verify_time": 11.60149668501981,
+      "total_time_seconds": 57.961,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "docs.examples.inline_gettext_extension.InlineGettext": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.555479758011643,
+      "Write_time": 42.422046841005795,
+      "Verify_time": 17.119704568001907,
+      "total_time_seconds": 93.501,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "scripts.generate_identifier_pattern.build_pattern": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.243068339012098,
+      "Write_time": 22.078861407004297,
+      "Verify_time": 7.426078338001389,
+      "total_time_seconds": 49.333,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "scripts.generate_identifier_pattern.collapse_ranges": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 13.295315799987293,
+      "Write_time": 54.0430279289867,
+      "Verify_time": 17.203922350003268,
+      "total_time_seconds": 88.226,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "scripts.generate_identifier_pattern.get_characters": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 45.93597129198315,
+      "Verify_time": 9.233846176997758,
+      "total_time_seconds": 70.803,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "scripts.generate_identifier_pattern.main": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.134070829983102,
+      "Write_time": 15.087705664991518,
+      "Verify_time": 8.752827022006386,
+      "total_time_seconds": 55.258,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "src.jinja2.async_utils.auto_aiter": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.250801343994681,
+      "Write_time": 20.28427687799558,
+      "Verify_time": 8.897654733009404,
+      "total_time_seconds": 38.817,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.debug.get_template_locals": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.59725169801095,
+      "Write_time": 55.721367450998514,
+      "Verify_time": 11.135721307000495,
+      "total_time_seconds": 74.225,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.debug.fake_traceback": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 27.058,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "src.jinja2.lexer.Failure.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.277345651993528,
+      "Write_time": 11.201197339993087,
+      "Verify_time": 9.238755734011647,
+      "total_time_seconds": 46.295,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.Failure": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.618779155003722,
+      "Write_time": 15.304874822992133,
+      "Verify_time": 6.209770989007666,
+      "total_time_seconds": 40.66,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.OptionalLStrip": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 14.167901168009848,
+      "Write_time": 35.03477917300188,
+      "Verify_time": 18.273863804002758,
+      "total_time_seconds": 85.632,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer._Rule": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.52270387999306,
+      "Write_time": 18.263994848995935,
+      "Verify_time": 7.292920040999888,
+      "total_time_seconds": 59.1,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.compile_rules": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.472318759013433,
+      "Write_time": 19.602902921003988,
+      "Verify_time": 7.326544358991669,
+      "total_time_seconds": 43.077,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.Lexer.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.66741095398902,
+      "Write_time": 15.053965951999999,
+      "Verify_time": 8.68163898900093,
+      "total_time_seconds": 49.049,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer._describe_token_type": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.274500983010512,
+      "Write_time": 56.99746416398557,
+      "Verify_time": 10.406568553007673,
+      "total_time_seconds": 79.225,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.describe_token": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.00273773902154,
+      "Write_time": 20.156953205005266,
+      "Verify_time": 6.43154640001012,
+      "total_time_seconds": 51.762,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.Token.test": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.863832646020455,
+      "Write_time": 10.72331854699587,
+      "Verify_time": 2.8842613299930235,
+      "total_time_seconds": 48.294,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.Token": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 20.532418688002508,
+      "Write_time": 44.758293516002595,
+      "Verify_time": 11.378827152992017,
+      "total_time_seconds": 88.324,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream.__init__": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 23.82289277201926,
+      "Write_time": 15.556357336012297,
+      "Verify_time": 7.938534889006405,
+      "total_time_seconds": 49.843,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStreamIterator.__init__": {
+      "Read_calls": 6,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 20.52309203200275,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 27.308,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "src.jinja2.lexer.Lexer.tokeniter": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.568593850010075,
+      "Write_time": 36.269251890000305,
+      "Verify_time": 9.473934213994653,
+      "total_time_seconds": 66.553,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream.__bool__": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 38.949829539997154,
+      "Verify_time": 6.707408914997359,
+      "total_time_seconds": 61.239,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "src.jinja2.lexer.TokenStreamIterator.__next__": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.299936650990276,
+      "Write_time": 14.447639785998035,
+      "Verify_time": 9.0103402040113,
+      "total_time_seconds": 47.458,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStreamIterator": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 52.76278174400795,
+      "Verify_time": 10.096012339970912,
+      "total_time_seconds": 78.297,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream.__next__": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 25.099133706986322,
+      "Write_time": 12.387655175989494,
+      "Verify_time": 9.23339140000462,
+      "total_time_seconds": 49.359,
+      "graph_searches": 8,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream.close": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.1722451789974,
+      "Write_time": 11.545939449002617,
+      "Verify_time": 9.117914610003936,
+      "total_time_seconds": 41.337,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.describe_token_expr": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.84597467900312,
+      "Write_time": 67.56507892199443,
+      "Verify_time": 21.574123120997683,
+      "total_time_seconds": 109.367,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream.look": {
+      "Read_calls": 5,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 26.596936243993696,
+      "Write_time": 28.715171667019604,
+      "Verify_time": 19.163505560005433,
+      "total_time_seconds": 88.418,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream.next_if": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.979207009993843,
+      "Write_time": 22.47606583200104,
+      "Verify_time": 5.73580207399209,
+      "total_time_seconds": 46.127,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.TokenStream": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.153040249017067,
+      "Write_time": 50.14641415500955,
+      "Verify_time": 6.48993530900043,
+      "total_time_seconds": 80.783,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.Lexer": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 22.91255479802203,
+      "Write_time": 39.63716255601321,
+      "Verify_time": 5.561413742994773,
+      "total_time_seconds": 156.262,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "src.jinja2.lexer.get_lexer": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 22.011819782012026,
+      "Write_time": 52.46946789001231,
+      "Verify_time": 12.532329927998944,
+      "total_time_seconds": 87.016,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.nativetypes.NativeCodeGenerator._output_child_to_const": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 14.523737779993098,
+      "Write_time": 30.284354507006356,
+      "Verify_time": 14.224756826006342,
+      "total_time_seconds": 78.83,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.nativetypes.NativeCodeGenerator": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 10.857803821985726,
+      "Write_time": 55.15243048299453,
+      "Verify_time": 19.64020891400287,
+      "total_time_seconds": 85.651,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.nativetypes.native_concat": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.977858953003306,
+      "Write_time": 22.403355924005155,
+      "Verify_time": 9.413480716000777,
+      "total_time_seconds": 40.549,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.nativetypes.NativeEnvironment": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 15.172572850002325,
+      "Write_time": 44.41343357200094,
+      "Verify_time": 8.428465384014999,
+      "total_time_seconds": 68.016,
+      "graph_searches": 3,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "src.jinja2.optimizer.Optimizer.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.238595950009767,
+      "Write_time": 9.837015498007531,
+      "Verify_time": 7.357207392007695,
+      "total_time_seconds": 43.68,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.optimizer.optimize": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.5456245940004,
+      "Write_time": 18.555717647992424,
+      "Verify_time": 5.221620559997973,
+      "total_time_seconds": 55.005,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.modifies_known_mutable": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.925955087004695,
+      "Write_time": 17.107750427996507,
+      "Verify_time": 10.052381433997652,
+      "total_time_seconds": 42.958,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.ImmutableSandboxedEnvironment.is_safe_attribute": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.97645123199618,
+      "Write_time": 30.312130594000337,
+      "Verify_time": 13.979713545995764,
+      "total_time_seconds": 63.603,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.inspect_format_method": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.578085925997584,
+      "Write_time": 23.266437682992546,
+      "Verify_time": 9.008695105003426,
+      "total_time_seconds": 55.861,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.SandboxedFormatter": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.5746966949955095,
+      "Write_time": 36.141282440992654,
+      "Verify_time": 9.61571367099532,
+      "total_time_seconds": 57.168,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.SandboxedEscapeFormatter": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.652975173987215,
+      "Write_time": 31.946942163995118,
+      "Verify_time": 8.912527817999944,
+      "total_time_seconds": 70.676,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment.format_string": {
+      "Read_calls": 3,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 13.085811330005527,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 24.366,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "src.jinja2.sandbox.is_internal_attribute": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.792525354016107,
+      "Write_time": 55.80578566600161,
+      "Verify_time": 13.363524222993874,
+      "total_time_seconds": 94.795,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.safe_range": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.52726136201818,
+      "Write_time": 37.12661560399283,
+      "Verify_time": 9.663050921997637,
+      "total_time_seconds": 75.007,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 50.32131827100238,
+      "Verify_time": 1.8840166270092595,
+      "total_time_seconds": 75.158,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.875651545997243,
+      "Write_time": 13.783635421001236,
+      "Verify_time": 5.806705394992605,
+      "total_time_seconds": 36.184,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "src.jinja2.sandbox.SandboxedFormatter.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.69330215700029,
+      "Write_time": 14.488553358998615,
+      "Verify_time": 9.268693751000683,
+      "total_time_seconds": 62.146,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.utils.Cycler.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.03168074200221,
+      "Write_time": 12.13912547599466,
+      "Verify_time": 6.937183269998059,
+      "total_time_seconds": 53.324,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "src.jinja2.utils.Joiner.__call__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.220978241995908,
+      "Write_time": 9.193383060002816,
+      "Verify_time": 6.350570788999903,
+      "total_time_seconds": 41.129,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "src.jinja2.utils.Joiner": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 16.82598964299541,
+      "Verify_time": 0.0,
+      "total_time_seconds": 618.284,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.Joiner.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.319,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache.__delitem__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.49,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache.__getitem__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.351,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache.__iter__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.279,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache.__repr__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.455,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache.__setitem__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.44,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.274,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.LRUCache.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.244,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.Namespace.__getattribute__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.324,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.Namespace.__repr__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.403,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.Namespace.__setitem__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.297,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils.Namespace": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.279,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "src.jinja2.utils._PassArg": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.433,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    }
+  },
+  "per_component_verify_scores": {
+    "docs.examples.cache_extension.FragmentCacheExtension._cache_support": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.examples.cache_extension.FragmentCacheExtension.parse": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.examples.cache_extension.FragmentCacheExtension": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.examples.cache_extension.FragmentCacheExtension.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.examples.inline_gettext_extension.InlineGettext.filter_stream": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.examples.inline_gettext_extension.InlineGettext": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "scripts.generate_identifier_pattern.build_pattern": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "scripts.generate_identifier_pattern.collapse_ranges": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "scripts.generate_identifier_pattern.get_characters": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "scripts.generate_identifier_pattern.main": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.async_utils.auto_aiter": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.debug.get_template_locals": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.Failure.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.Failure": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.OptionalLStrip": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer._Rule": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9917,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.compile_rules": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.Lexer.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer._describe_token_type": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.describe_token": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.Token.test": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.Token": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8417,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.7667
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9
+      }
+    ],
+    "src.jinja2.lexer.TokenStream.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.Lexer.tokeniter": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStream.__bool__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStreamIterator.__next__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStreamIterator": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8917,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStream.__next__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStream.close": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.describe_token_expr": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.8
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.8
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStream.look": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStream.next_if": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.TokenStream": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8707,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.9082
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9124,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9082
+      }
+    ],
+    "src.jinja2.lexer.Lexer": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.lexer.get_lexer": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      }
+    ],
+    "src.jinja2.nativetypes.NativeCodeGenerator._output_child_to_const": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.nativetypes.NativeCodeGenerator": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.775,
+        "CONSISTENCY": 0.6,
+        "COMPLETENESS": 0.5,
+        "HELPFULNESS": 0.55,
+        "weighted_avg": 0.55,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7958,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7167,
+        "conflict_score": 0.875
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8792,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 0.875
+      }
+    ],
+    "src.jinja2.nativetypes.native_concat": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.nativetypes.NativeEnvironment": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.65,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8083,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.optimizer.Optimizer.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.optimizer.optimize": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.modifies_known_mutable": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.ImmutableSandboxedEnvironment.is_safe_attribute": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.inspect_format_method": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.SandboxedFormatter": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.SandboxedEscapeFormatter": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8417,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.is_internal_attribute": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.safe_range": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.SandboxedEnvironment": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7417,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 0.75
+      }
+    ],
+    "src.jinja2.sandbox.SandboxedEnvironment.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.sandbox.SandboxedFormatter.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.utils.Cycler.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "src.jinja2.utils.Joiner.__call__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "docs.examples.cache_extension.FragmentCacheExtension._cache_support": {
+      "requests": 8,
+      "input_tokens": 42240,
+      "output_tokens": 2043,
+      "cost": 0.0
+    },
+    "docs.examples.cache_extension.FragmentCacheExtension.parse": {
+      "requests": 8,
+      "input_tokens": 43889,
+      "output_tokens": 1672,
+      "cost": 0.0
+    },
+    "docs.examples.cache_extension.FragmentCacheExtension": {
+      "requests": 4,
+      "input_tokens": 20020,
+      "output_tokens": 1173,
+      "cost": 0.0
+    },
+    "docs.examples.cache_extension.FragmentCacheExtension.__init__": {
+      "requests": 5,
+      "input_tokens": 24909,
+      "output_tokens": 1170,
+      "cost": 0.0
+    },
+    "docs.examples.inline_gettext_extension.InlineGettext.filter_stream": {
+      "requests": 8,
+      "input_tokens": 53660,
+      "output_tokens": 1792,
+      "cost": 0.0
+    },
+    "docs.examples.inline_gettext_extension.InlineGettext": {
+      "requests": 6,
+      "input_tokens": 35520,
+      "output_tokens": 2749,
+      "cost": 0.0
+    },
+    "scripts.generate_identifier_pattern.build_pattern": {
+      "requests": 4,
+      "input_tokens": 19347,
+      "output_tokens": 1542,
+      "cost": 0.0
+    },
+    "scripts.generate_identifier_pattern.collapse_ranges": {
+      "requests": 9,
+      "input_tokens": 50875,
+      "output_tokens": 2750,
+      "cost": 0.0
+    },
+    "scripts.generate_identifier_pattern.get_characters": {
+      "requests": 5,
+      "input_tokens": 26097,
+      "output_tokens": 2193,
+      "cost": 0.0
+    },
+    "scripts.generate_identifier_pattern.main": {
+      "requests": 5,
+      "input_tokens": 25409,
+      "output_tokens": 1682,
+      "cost": 0.0
+    },
+    "src.jinja2.async_utils.auto_aiter": {
+      "requests": 4,
+      "input_tokens": 19346,
+      "output_tokens": 1217,
+      "cost": 0.0
+    },
+    "src.jinja2.debug.get_template_locals": {
+      "requests": 6,
+      "input_tokens": 35069,
+      "output_tokens": 2296,
+      "cost": 0.0
+    },
+    "src.jinja2.debug.fake_traceback": {
+      "requests": 10,
+      "input_tokens": 54067,
+      "output_tokens": 810,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Failure.__init__": {
+      "requests": 5,
+      "input_tokens": 23445,
+      "output_tokens": 1449,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Failure": {
+      "requests": 4,
+      "input_tokens": 18799,
+      "output_tokens": 1229,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.OptionalLStrip": {
+      "requests": 7,
+      "input_tokens": 40861,
+      "output_tokens": 2638,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer._Rule": {
+      "requests": 4,
+      "input_tokens": 19002,
+      "output_tokens": 1778,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.compile_rules": {
+      "requests": 5,
+      "input_tokens": 26026,
+      "output_tokens": 1336,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Lexer.__init__": {
+      "requests": 5,
+      "input_tokens": 43265,
+      "output_tokens": 1374,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer._describe_token_type": {
+      "requests": 7,
+      "input_tokens": 41362,
+      "output_tokens": 2461,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.describe_token": {
+      "requests": 7,
+      "input_tokens": 36328,
+      "output_tokens": 1543,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Token.test": {
+      "requests": 8,
+      "input_tokens": 39254,
+      "output_tokens": 1468,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Token": {
+      "requests": 9,
+      "input_tokens": 52339,
+      "output_tokens": 2725,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream.__init__": {
+      "requests": 8,
+      "input_tokens": 43162,
+      "output_tokens": 1424,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStreamIterator.__init__": {
+      "requests": 10,
+      "input_tokens": 53666,
+      "output_tokens": 828,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Lexer.tokeniter": {
+      "requests": 9,
+      "input_tokens": 80028,
+      "output_tokens": 2015,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream.__bool__": {
+      "requests": 10,
+      "input_tokens": 51026,
+      "output_tokens": 1885,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStreamIterator.__next__": {
+      "requests": 7,
+      "input_tokens": 37617,
+      "output_tokens": 1405,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStreamIterator": {
+      "requests": 9,
+      "input_tokens": 50484,
+      "output_tokens": 2368,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream.__next__": {
+      "requests": 8,
+      "input_tokens": 45011,
+      "output_tokens": 1476,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream.close": {
+      "requests": 6,
+      "input_tokens": 34006,
+      "output_tokens": 1262,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.describe_token_expr": {
+      "requests": 10,
+      "input_tokens": 61642,
+      "output_tokens": 3289,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream.look": {
+      "requests": 10,
+      "input_tokens": 59534,
+      "output_tokens": 2626,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream.next_if": {
+      "requests": 8,
+      "input_tokens": 43574,
+      "output_tokens": 1363,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.TokenStream": {
+      "requests": 8,
+      "input_tokens": 54712,
+      "output_tokens": 2418,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.Lexer": {
+      "requests": 9,
+      "input_tokens": 91559,
+      "output_tokens": 4680,
+      "cost": 0.0
+    },
+    "src.jinja2.lexer.get_lexer": {
+      "requests": 10,
+      "input_tokens": 77117,
+      "output_tokens": 2634,
+      "cost": 0.0
+    },
+    "src.jinja2.nativetypes.NativeCodeGenerator._output_child_to_const": {
+      "requests": 7,
+      "input_tokens": 38716,
+      "output_tokens": 2394,
+      "cost": 0.0
+    },
+    "src.jinja2.nativetypes.NativeCodeGenerator": {
+      "requests": 8,
+      "input_tokens": 46298,
+      "output_tokens": 2614,
+      "cost": 0.0
+    },
+    "src.jinja2.nativetypes.native_concat": {
+      "requests": 4,
+      "input_tokens": 20044,
+      "output_tokens": 1285,
+      "cost": 0.0
+    },
+    "src.jinja2.nativetypes.NativeEnvironment": {
+      "requests": 10,
+      "input_tokens": 56467,
+      "output_tokens": 2056,
+      "cost": 0.0
+    },
+    "src.jinja2.optimizer.Optimizer.__init__": {
+      "requests": 6,
+      "input_tokens": 27709,
+      "output_tokens": 1338,
+      "cost": 0.0
+    },
+    "src.jinja2.optimizer.optimize": {
+      "requests": 7,
+      "input_tokens": 34823,
+      "output_tokens": 1617,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.modifies_known_mutable": {
+      "requests": 5,
+      "input_tokens": 24071,
+      "output_tokens": 1252,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.ImmutableSandboxedEnvironment.is_safe_attribute": {
+      "requests": 8,
+      "input_tokens": 48563,
+      "output_tokens": 1905,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.inspect_format_method": {
+      "requests": 4,
+      "input_tokens": 19677,
+      "output_tokens": 1690,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.SandboxedFormatter": {
+      "requests": 6,
+      "input_tokens": 32254,
+      "output_tokens": 1742,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.SandboxedEscapeFormatter": {
+      "requests": 7,
+      "input_tokens": 36787,
+      "output_tokens": 2151,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment.format_string": {
+      "requests": 10,
+      "input_tokens": 61013,
+      "output_tokens": 730,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.is_internal_attribute": {
+      "requests": 8,
+      "input_tokens": 47675,
+      "output_tokens": 2835,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.safe_range": {
+      "requests": 7,
+      "input_tokens": 36512,
+      "output_tokens": 2296,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment": {
+      "requests": 10,
+      "input_tokens": 69476,
+      "output_tokens": 2244,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment.__init__": {
+      "requests": 5,
+      "input_tokens": 28308,
+      "output_tokens": 964,
+      "cost": 0.0
+    },
+    "src.jinja2.sandbox.SandboxedFormatter.__init__": {
+      "requests": 5,
+      "input_tokens": 24685,
+      "output_tokens": 1707,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Cycler.__init__": {
+      "requests": 6,
+      "input_tokens": 30253,
+      "output_tokens": 1633,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Joiner.__call__": {
+      "requests": 4,
+      "input_tokens": 18874,
+      "output_tokens": 1291,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Joiner": {
+      "requests": 1,
+      "input_tokens": 4255,
+      "output_tokens": 520,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Joiner.__init__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache.__delitem__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache.__getitem__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache.__iter__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache.__repr__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache.__setitem__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.LRUCache.__init__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Namespace.__getattribute__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Namespace.__repr__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Namespace.__setitem__": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils.Namespace": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "src.jinja2.utils._PassArg": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 15,
+    "total_fetched_component_types": 45,
+    "redundant_fetch_count": 38,
+    "duplicates": {
+      "src.jinja2.lexer.Token": {
+        "accessed_by": [
+          "src.jinja2.lexer.describe_token",
+          "src.jinja2.lexer.Token.test",
+          "src.jinja2.lexer.TokenStream.__init__",
+          "src.jinja2.lexer.TokenStreamIterator.__init__",
+          "src.jinja2.lexer.TokenStream.__next__",
+          "src.jinja2.lexer.TokenStream.close",
+          "src.jinja2.lexer.TokenStream.look",
+          "src.jinja2.lexer.TokenStream",
+          "src.jinja2.lexer.Lexer"
+        ],
+        "access_count": 9
+      },
+      "src.jinja2.lexer.TokenStream": {
+        "accessed_by": [
+          "src.jinja2.lexer.TokenStream.__init__",
+          "src.jinja2.lexer.TokenStreamIterator.__init__",
+          "src.jinja2.lexer.TokenStreamIterator.__next__",
+          "src.jinja2.lexer.TokenStream.__next__",
+          "src.jinja2.lexer.TokenStream.close",
+          "src.jinja2.lexer.TokenStream.look",
+          "src.jinja2.lexer.TokenStream.next_if"
+        ],
+        "access_count": 7
+      },
+      "src.jinja2.lexer.describe_token": {
+        "accessed_by": [
+          "src.jinja2.lexer.describe_token",
+          "src.jinja2.lexer.Token.test",
+          "src.jinja2.lexer.Token",
+          "src.jinja2.lexer.TokenStreamIterator.__init__",
+          "src.jinja2.lexer.TokenStream"
+        ],
+        "access_count": 5
+      },
+      "src.jinja2.lexer._describe_token_type": {
+        "accessed_by": [
+          "src.jinja2.lexer.describe_token",
+          "src.jinja2.lexer.Token",
+          "src.jinja2.lexer.describe_token_expr",
+          "src.jinja2.lexer.TokenStream"
+        ],
+        "access_count": 4
+      },
+      "docs.examples.cache_extension.FragmentCacheExtension": {
+        "accessed_by": [
+          "docs.examples.cache_extension.FragmentCacheExtension._cache_support",
+          "docs.examples.cache_extension.FragmentCacheExtension.parse",
+          "docs.examples.cache_extension.FragmentCacheExtension.__init__"
+        ],
+        "access_count": 3
+      },
+      "src.jinja2.lexer.Lexer": {
+        "accessed_by": [
+          "src.jinja2.lexer.Lexer.__init__",
+          "src.jinja2.lexer.Lexer.tokeniter",
+          "src.jinja2.lexer.get_lexer"
+        ],
+        "access_count": 3
+      },
+      "src.jinja2.lexer.TokenStreamIterator": {
+        "accessed_by": [
+          "src.jinja2.lexer.TokenStreamIterator.__init__",
+          "src.jinja2.lexer.TokenStreamIterator.__next__",
+          "src.jinja2.lexer.TokenStream.look"
+        ],
+        "access_count": 3
+      },
+      "src.jinja2.lexer.TokenStream.__next__": {
+        "accessed_by": [
+          "src.jinja2.lexer.TokenStream.__next__",
+          "src.jinja2.lexer.TokenStream.close",
+          "src.jinja2.lexer.TokenStream.look"
+        ],
+        "access_count": 3
+      },
+      "src.jinja2.sandbox.SandboxedEnvironment": {
+        "accessed_by": [
+          "src.jinja2.sandbox.ImmutableSandboxedEnvironment.is_safe_attribute",
+          "src.jinja2.sandbox.SandboxedEnvironment.format_string",
+          "src.jinja2.sandbox.SandboxedEnvironment.__init__"
+        ],
+        "access_count": 3
+      },
+      "src.jinja2.sandbox.SandboxedFormatter": {
+        "accessed_by": [
+          "src.jinja2.sandbox.SandboxedEscapeFormatter",
+          "src.jinja2.sandbox.SandboxedEnvironment.format_string",
+          "src.jinja2.sandbox.SandboxedFormatter.__init__"
+        ],
+        "access_count": 3
+      },
+      "docs.examples.cache_extension.FragmentCacheExtension._cache_support": {
+        "accessed_by": [
+          "docs.examples.cache_extension.FragmentCacheExtension._cache_support",
+          "docs.examples.cache_extension.FragmentCacheExtension.parse"
+        ],
+        "access_count": 2
+      },
+      "src.jinja2.lexer.Failure": {
+        "accessed_by": [
+          "src.jinja2.lexer.Failure.__init__",
+          "src.jinja2.lexer.Lexer"
+        ],
+        "access_count": 2
+      },
+      "src.jinja2.lexer.compile_rules": {
+        "accessed_by": [
+          "src.jinja2.lexer.Lexer.__init__",
+          "src.jinja2.lexer.Lexer"
+        ],
+        "access_count": 2
+      },
+      "src.jinja2.nativetypes.NativeCodeGenerator": {
+        "accessed_by": [
+          "src.jinja2.nativetypes.NativeCodeGenerator._output_child_to_const",
+          "src.jinja2.nativetypes.NativeEnvironment"
+        ],
+        "access_count": 2
+      },
+      "src.jinja2.optimizer.Optimizer": {
+        "accessed_by": [
+          "src.jinja2.optimizer.Optimizer.__init__",
+          "src.jinja2.optimizer.optimize"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {},
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 58.465,
+    "avg_turns_per_component": 5.16,
+    "memory_hit_rate": 0.0,
+    "total_tokens": 2385754,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 34082.2
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 70,
+      "total_time_seconds": 4092.547,
+      "avg_time_seconds": 58.465,
+      "total_turns": 393,
+      "avg_turns": 5.61,
+      "action_counts": {
+        "Read": 134,
+        "Write": 90,
+        "Verify": 87,
+        "Finish": 48,
+        "Unknown": 34
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "docs.examples.cache_extension.FragmentCacheExtension": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs.examples.cache_extension.FragmentCacheExtension._cache_support",
+        "docs.examples.cache_extension.FragmentCacheExtension.parse"
+      ]
+    },
+    "docs.examples.inline_gettext_extension.InlineGettext": {
+      "total_candidate_pairs": 10,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs.examples.inline_gettext_extension.InlineGettext.filter_stream"
+      ]
+    },
+    "scripts.generate_identifier_pattern.main": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "scripts.generate_identifier_pattern.build_pattern",
+        "scripts.generate_identifier_pattern.collapse_ranges",
+        "scripts.generate_identifier_pattern.get_characters"
+      ]
+    },
+    "src.jinja2.lexer.Failure": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Failure.__call__"
+      ]
+    },
+    "src.jinja2.lexer.OptionalLStrip": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.OptionalLStrip.__new__"
+      ]
+    },
+    "src.jinja2.lexer._Rule": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 0,
+      "contradiction_count": 2,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Failure"
+      ]
+    },
+    "src.jinja2.lexer.Lexer.__init__": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Failure",
+        "src.jinja2.lexer.OptionalLStrip",
+        "src.jinja2.lexer._Rule",
+        "src.jinja2.lexer.compile_rules"
+      ]
+    },
+    "src.jinja2.lexer.describe_token": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 2,
+      "contradiction_count": 0,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer._describe_token_type"
+      ]
+    },
+    "src.jinja2.lexer.Token": {
+      "total_candidate_pairs": 42,
+      "entailment_count": 10,
+      "contradiction_count": 4,
+      "neutral_count": 28,
+      "conflict_score": 0.2333,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token.__str__",
+        "src.jinja2.lexer.Token.test",
+        "src.jinja2.lexer.Token.test_any",
+        "src.jinja2.lexer.describe_token"
+      ]
+    },
+    "src.jinja2.lexer.TokenStream.__init__": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 18,
+      "contradiction_count": 2,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token"
+      ]
+    },
+    "src.jinja2.lexer.Lexer.tokeniter": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Failure",
+        "src.jinja2.lexer.OptionalLStrip"
+      ]
+    },
+    "src.jinja2.lexer.TokenStreamIterator.__next__": {
+      "total_candidate_pairs": 25,
+      "entailment_count": 8,
+      "contradiction_count": 0,
+      "neutral_count": 17,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token"
+      ]
+    },
+    "src.jinja2.lexer.TokenStreamIterator": {
+      "total_candidate_pairs": 23,
+      "entailment_count": 4,
+      "contradiction_count": 0,
+      "neutral_count": 19,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token",
+        "src.jinja2.lexer.TokenStreamIterator.__iter__",
+        "src.jinja2.lexer.TokenStreamIterator.__next__"
+      ]
+    },
+    "src.jinja2.lexer.TokenStream.__next__": {
+      "total_candidate_pairs": 27,
+      "entailment_count": 9,
+      "contradiction_count": 4,
+      "neutral_count": 14,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token"
+      ]
+    },
+    "src.jinja2.lexer.TokenStream.close": {
+      "total_candidate_pairs": 22,
+      "entailment_count": 3,
+      "contradiction_count": 1,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token"
+      ]
+    },
+    "src.jinja2.lexer.describe_token_expr": {
+      "total_candidate_pairs": 20,
+      "entailment_count": 7,
+      "contradiction_count": 2,
+      "neutral_count": 11,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer._describe_token_type"
+      ]
+    },
+    "src.jinja2.lexer.TokenStream.look": {
+      "total_candidate_pairs": 25,
+      "entailment_count": 6,
+      "contradiction_count": 1,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token"
+      ]
+    },
+    "src.jinja2.lexer.TokenStream.next_if": {
+      "total_candidate_pairs": 27,
+      "entailment_count": 12,
+      "contradiction_count": 2,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token"
+      ]
+    },
+    "src.jinja2.lexer.TokenStream": {
+      "total_candidate_pairs": 113,
+      "entailment_count": 21,
+      "contradiction_count": 5,
+      "neutral_count": 87,
+      "conflict_score": 0.0918,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Token",
+        "src.jinja2.lexer.TokenStream.__bool__",
+        "src.jinja2.lexer.TokenStream.__iter__",
+        "src.jinja2.lexer.TokenStream.__next__",
+        "src.jinja2.lexer.TokenStream.close",
+        "src.jinja2.lexer.TokenStream.eos",
+        "src.jinja2.lexer.TokenStream.expect",
+        "src.jinja2.lexer.TokenStream.look",
+        "src.jinja2.lexer.TokenStream.next_if",
+        "src.jinja2.lexer.TokenStream.push",
+        "src.jinja2.lexer.TokenStream.skip",
+        "src.jinja2.lexer.TokenStream.skip_if",
+        "src.jinja2.lexer.TokenStreamIterator",
+        "src.jinja2.lexer.describe_token",
+        "src.jinja2.lexer.describe_token_expr"
+      ]
+    },
+    "src.jinja2.lexer.Lexer": {
+      "total_candidate_pairs": 69,
+      "entailment_count": 6,
+      "contradiction_count": 3,
+      "neutral_count": 60,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Failure",
+        "src.jinja2.lexer.Lexer._normalize_newlines",
+        "src.jinja2.lexer.Lexer.tokeniter",
+        "src.jinja2.lexer.Lexer.tokenize",
+        "src.jinja2.lexer.Lexer.wrap",
+        "src.jinja2.lexer.OptionalLStrip",
+        "src.jinja2.lexer.Token",
+        "src.jinja2.lexer.TokenStream",
+        "src.jinja2.lexer._Rule",
+        "src.jinja2.lexer.compile_rules"
+      ]
+    },
+    "src.jinja2.lexer.get_lexer": {
+      "total_candidate_pairs": 25,
+      "entailment_count": 5,
+      "contradiction_count": 0,
+      "neutral_count": 20,
+      "conflict_score": 0.5,
+      "dep_ids_checked": [
+        "src.jinja2.lexer.Lexer"
+      ]
+    },
+    "src.jinja2.nativetypes.NativeCodeGenerator": {
+      "total_candidate_pairs": 69,
+      "entailment_count": 6,
+      "contradiction_count": 6,
+      "neutral_count": 57,
+      "conflict_score": 0.125,
+      "dep_ids_checked": [
+        "src.jinja2.nativetypes.NativeCodeGenerator._default_finalize",
+        "src.jinja2.nativetypes.NativeCodeGenerator._output_child_post",
+        "src.jinja2.nativetypes.NativeCodeGenerator._output_child_pre",
+        "src.jinja2.nativetypes.NativeCodeGenerator._output_child_to_const",
+        "src.jinja2.nativetypes.NativeCodeGenerator._output_const_repr"
+      ]
+    },
+    "src.jinja2.nativetypes.NativeEnvironment": {
+      "total_candidate_pairs": 34,
+      "entailment_count": 2,
+      "contradiction_count": 4,
+      "neutral_count": 28,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.nativetypes.NativeCodeGenerator",
+        "src.jinja2.nativetypes.native_concat"
+      ]
+    },
+    "src.jinja2.optimizer.optimize": {
+      "total_candidate_pairs": 15,
+      "entailment_count": 4,
+      "contradiction_count": 1,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.optimizer.Optimizer"
+      ]
+    },
+    "src.jinja2.sandbox.modifies_known_mutable": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 1,
+      "contradiction_count": 3,
+      "neutral_count": 8,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.sandbox.unsafe"
+      ]
+    },
+    "src.jinja2.sandbox.ImmutableSandboxedEnvironment.is_safe_attribute": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.sandbox.modifies_known_mutable"
+      ]
+    },
+    "src.jinja2.sandbox.SandboxedFormatter": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.sandbox.SandboxedFormatter.get_field"
+      ]
+    },
+    "src.jinja2.sandbox.SandboxedEscapeFormatter": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 3,
+      "contradiction_count": 0,
+      "neutral_count": 14,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.sandbox.SandboxedFormatter"
+      ]
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment": {
+      "total_candidate_pairs": 38,
+      "entailment_count": 1,
+      "contradiction_count": 6,
+      "neutral_count": 31,
+      "conflict_score": 0.25,
+      "dep_ids_checked": [
+        "src.jinja2.sandbox.SandboxedEnvironment.call",
+        "src.jinja2.sandbox.SandboxedEnvironment.call_binop",
+        "src.jinja2.sandbox.SandboxedEnvironment.call_unop",
+        "src.jinja2.sandbox.SandboxedEnvironment.getattr",
+        "src.jinja2.sandbox.SandboxedEnvironment.getitem",
+        "src.jinja2.sandbox.SandboxedEnvironment.is_safe_attribute",
+        "src.jinja2.sandbox.SandboxedEnvironment.is_safe_callable",
+        "src.jinja2.sandbox.SandboxedEnvironment.unsafe_undefined",
+        "src.jinja2.sandbox.SandboxedEscapeFormatter",
+        "src.jinja2.sandbox.SandboxedFormatter",
+        "src.jinja2.sandbox.inspect_format_method",
+        "src.jinja2.sandbox.is_internal_attribute",
+        "src.jinja2.sandbox.safe_range"
+      ]
+    },
+    "src.jinja2.sandbox.SandboxedEnvironment.__init__": {
+      "total_candidate_pairs": 16,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "src.jinja2.sandbox.safe_range"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 87,
+    "first_pass_success": 29,
+    "required_revision": 27,
+    "score_parse_failures": 1,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9019,
+      "COMPLETENESS": 0.8623,
+      "HELPFULNESS": 0.8575
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.0942,
+      "COMPLETENESS": 0.1212,
+      "HELPFULNESS": 0.1096
+    }
+  }
+}

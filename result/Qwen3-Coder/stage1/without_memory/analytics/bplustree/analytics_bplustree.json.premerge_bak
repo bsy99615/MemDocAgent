@@ -1,0 +1,1629 @@
+{
+  "run_id": "20260419_073606",
+  "label": "bplustree",
+  "total_run_time_seconds": 2249.997,
+  "repo_summary": {
+    "file_count": 2,
+    "function_count": 2,
+    "class_count": 1,
+    "method_count": 30,
+    "total_components": 33,
+    "module_count": 1,
+    "repo_count": 1,
+    "topological_order_count": 33,
+    "topological_order": [
+      "bplustree.tree.BPlusTree.__bool__",
+      "bplustree.tree.BPlusTree.__contains__",
+      "bplustree.tree.BPlusTree.__enter__",
+      "bplustree.tree.BPlusTree.__exit__",
+      "bplustree.tree.BPlusTree.__getitem__",
+      "bplustree.tree.BPlusTree.__iter__",
+      "bplustree.tree.BPlusTree.__len__",
+      "bplustree.tree.BPlusTree.__length_hint__",
+      "bplustree.tree.BPlusTree.__repr__",
+      "bplustree.tree.BPlusTree.__setitem__",
+      "bplustree.tree.BPlusTree._create_new_root",
+      "bplustree.tree.BPlusTree._create_overflow",
+      "bplustree.tree.BPlusTree._create_partials",
+      "bplustree.tree.BPlusTree._get_value_from_record",
+      "bplustree.tree.BPlusTree._initialize_empty_tree",
+      "bplustree.tree.BPlusTree._iter_slice",
+      "bplustree.tree.BPlusTree._left_record_node",
+      "bplustree.tree.BPlusTree._read_from_overflow",
+      "bplustree.tree.BPlusTree._root_node",
+      "bplustree.tree.BPlusTree._search_in_tree",
+      "bplustree.tree.BPlusTree._split_leaf",
+      "bplustree.tree.BPlusTree._split_parent",
+      "bplustree.tree.BPlusTree.batch_insert",
+      "bplustree.tree.BPlusTree.checkpoint",
+      "bplustree.tree.BPlusTree.close",
+      "bplustree.tree.BPlusTree.get",
+      "bplustree.tree.BPlusTree.insert",
+      "bplustree.tree.BPlusTree.items",
+      "bplustree.tree.BPlusTree.values",
+      "bplustree.tree.BPlusTree",
+      "bplustree.tree.BPlusTree.__init__",
+      "bplustree.utils.iter_slice",
+      "bplustree.utils.pairwise"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 84,
+    "Write": 55,
+    "Verify": 53,
+    "Finish": 34
+  },
+  "action_time_totals_seconds": {
+    "Read": 555.042,
+    "Write": 1040.338,
+    "Verify": 368.762
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 530992,
+      "output_tokens": 14754
+    },
+    "Write": {
+      "input_tokens": 486211,
+      "output_tokens": 28957
+    },
+    "Verify": {
+      "input_tokens": 498682,
+      "output_tokens": 9683
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 179,
+    "total_memory_hits": 0
+  },
+  "per_component_stats": {
+    "bplustree.tree.BPlusTree.__bool__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.755692136000107,
+      "Write_time": 15.398369543999252,
+      "Verify_time": 7.296070559999862,
+      "total_time_seconds": 60.355,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__contains__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.367176183999618,
+      "Write_time": 14.155127061000712,
+      "Verify_time": 12.164943511999809,
+      "total_time_seconds": 53.692,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__enter__": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 26.82369277899943,
+      "Write_time": 12.70902524900066,
+      "Verify_time": 11.106837925000036,
+      "total_time_seconds": 69.151,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__exit__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.122461442000713,
+      "Write_time": 14.40010280200022,
+      "Verify_time": 9.771333243999834,
+      "total_time_seconds": 37.253,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__getitem__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.32706085800055,
+      "Write_time": 19.568986133999715,
+      "Verify_time": 3.4301497920005204,
+      "total_time_seconds": 57.146,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__iter__": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 17.456398923999586,
+      "Write_time": 46.258095297999716,
+      "Verify_time": 15.76248275099988,
+      "total_time_seconds": 81.733,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__len__": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 24.640763946000334,
+      "Write_time": 17.069883169000605,
+      "Verify_time": 10.541091815000073,
+      "total_time_seconds": 54.644,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__length_hint__": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.109760544000892,
+      "Write_time": 35.077674574999946,
+      "Verify_time": 6.11924034599997,
+      "total_time_seconds": 61.643,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__repr__": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.508159320000232,
+      "Write_time": 18.631381385000168,
+      "Verify_time": 7.780803003999608,
+      "total_time_seconds": 41.79,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__setitem__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.1667696510003225,
+      "Write_time": 35.10339213899988,
+      "Verify_time": 28.73132367100061,
+      "total_time_seconds": 72.886,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._create_new_root": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 26.009436709999136,
+      "Write_time": 58.810303386999294,
+      "Verify_time": 6.649231295999925,
+      "total_time_seconds": 101.808,
+      "graph_searches": 1,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "bplustree.tree.BPlusTree._create_overflow": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.802828418999525,
+      "Write_time": 35.05507737199878,
+      "Verify_time": 19.531258631000128,
+      "total_time_seconds": 64.979,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._create_partials": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.40293111399933,
+      "Write_time": 12.600538429000153,
+      "Verify_time": 3.0447664419998546,
+      "total_time_seconds": 31.399,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._get_value_from_record": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 20.63743235399943,
+      "Write_time": 33.57756566799981,
+      "Verify_time": 6.260102316000484,
+      "total_time_seconds": 62.732,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._initialize_empty_tree": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.930072629999813,
+      "Write_time": 13.904141521000383,
+      "Verify_time": 10.424028143999749,
+      "total_time_seconds": 58.763,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._iter_slice": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.856469864001156,
+      "Write_time": 18.278548620000038,
+      "Verify_time": 6.760334720999708,
+      "total_time_seconds": 44.531,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._left_record_node": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.90054304899877,
+      "Write_time": 14.919059906000257,
+      "Verify_time": 11.082257741999456,
+      "total_time_seconds": 45.972,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._read_from_overflow": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.470245854000495,
+      "Write_time": 33.46715252800004,
+      "Verify_time": 6.115407834000507,
+      "total_time_seconds": 61.77,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._root_node": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 24.972374027000114,
+      "Write_time": 20.68166113799998,
+      "Verify_time": 13.555466005999733,
+      "total_time_seconds": 79.54,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._search_in_tree": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 25.936678019999817,
+      "Write_time": 21.774186198999814,
+      "Verify_time": 10.207140649999928,
+      "total_time_seconds": 61.872,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._split_leaf": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 23.28471228900071,
+      "Write_time": 50.53382311200039,
+      "Verify_time": 8.540123310000126,
+      "total_time_seconds": 107.681,
+      "graph_searches": 6,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree._split_parent": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 29.02943139799936,
+      "Write_time": 21.999446218999765,
+      "Verify_time": 10.11913494700002,
+      "total_time_seconds": 63.836,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.batch_insert": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 19.306283500000063,
+      "Write_time": 44.316586930000994,
+      "Verify_time": 12.549340783000844,
+      "total_time_seconds": 78.898,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.checkpoint": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.956858430000466,
+      "Write_time": 12.617990501999884,
+      "Verify_time": 8.393494966999242,
+      "total_time_seconds": 42.279,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.close": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 14.508155595999597,
+      "Verify_time": 9.883806835000541,
+      "total_time_seconds": 36.327,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.get": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.73655314499956,
+      "Write_time": 30.53737547699984,
+      "Verify_time": 5.681768429999465,
+      "total_time_seconds": 56.714,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.insert": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.295973387999766,
+      "Write_time": 35.427610267999626,
+      "Verify_time": 10.009577415999956,
+      "total_time_seconds": 87.935,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.items": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.904551602000538,
+      "Write_time": 15.835358659999656,
+      "Verify_time": 10.248390224000104,
+      "total_time_seconds": 42.809,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.values": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.867127661999803,
+      "Write_time": 16.286415240999304,
+      "Verify_time": 11.539199026999995,
+      "total_time_seconds": 44.457,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.500531480000063,
+      "Write_time": 99.64308807499947,
+      "Verify_time": 20.706400168000073,
+      "total_time_seconds": 138.646,
+      "graph_searches": 9,
+      "memory_hits": 0
+    },
+    "bplustree.tree.BPlusTree.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 46.849444290000974,
+      "Verify_time": 6.222632914999849,
+      "total_time_seconds": 68.221,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "bplustree.utils.iter_slice": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.654682545000469,
+      "Write_time": 17.85540291899997,
+      "Verify_time": 9.287238448001517,
+      "total_time_seconds": 37.351,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "bplustree.utils.pairwise": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.203833360001227,
+      "Write_time": 17.406757198001287,
+      "Verify_time": 8.569281513999158,
+      "total_time_seconds": 45.953,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "bplustree": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.442779353001242,
+      "Write_time": 66.13043937200018,
+      "Verify_time": 20.070506911000848,
+      "total_time_seconds": 113.0,
+      "graph_searches": 33,
+      "memory_hits": 0
+    }
+  },
+  "per_component_verify_scores": {
+    "bplustree.tree.BPlusTree.__bool__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__contains__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__enter__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__exit__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__getitem__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__iter__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__len__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__length_hint__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__repr__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.__setitem__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._create_new_root": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._create_overflow": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._create_partials": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._get_value_from_record": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._initialize_empty_tree": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._iter_slice": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._left_record_node": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._read_from_overflow": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._root_node": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._search_in_tree": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._split_leaf": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree._split_parent": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.batch_insert": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.checkpoint": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.close": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.get": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.insert": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.items": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree.values": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.tree.BPlusTree": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.825,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 0.9167
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8917,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 0.9167
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9167
+      }
+    ],
+    "bplustree.tree.BPlusTree.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7667,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.utils.iter_slice": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree.utils.pairwise": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "bplustree": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8524,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 0.9048
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9036,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 0.9405
+      },
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "bplustree.tree.BPlusTree.__bool__": {
+      "requests": 6,
+      "input_tokens": 43387,
+      "output_tokens": 1645,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__contains__": {
+      "requests": 5,
+      "input_tokens": 36439,
+      "output_tokens": 1487,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__enter__": {
+      "requests": 7,
+      "input_tokens": 77673,
+      "output_tokens": 1871,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__exit__": {
+      "requests": 5,
+      "input_tokens": 35007,
+      "output_tokens": 985,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__getitem__": {
+      "requests": 5,
+      "input_tokens": 37529,
+      "output_tokens": 1541,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__iter__": {
+      "requests": 10,
+      "input_tokens": 83000,
+      "output_tokens": 2174,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__len__": {
+      "requests": 7,
+      "input_tokens": 49337,
+      "output_tokens": 1468,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__length_hint__": {
+      "requests": 8,
+      "input_tokens": 61957,
+      "output_tokens": 1642,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__repr__": {
+      "requests": 6,
+      "input_tokens": 42935,
+      "output_tokens": 1125,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__setitem__": {
+      "requests": 6,
+      "input_tokens": 46548,
+      "output_tokens": 1959,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._create_new_root": {
+      "requests": 10,
+      "input_tokens": 75480,
+      "output_tokens": 2712,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._create_overflow": {
+      "requests": 6,
+      "input_tokens": 47780,
+      "output_tokens": 1717,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._create_partials": {
+      "requests": 5,
+      "input_tokens": 35527,
+      "output_tokens": 812,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._get_value_from_record": {
+      "requests": 9,
+      "input_tokens": 64383,
+      "output_tokens": 1628,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._initialize_empty_tree": {
+      "requests": 5,
+      "input_tokens": 35888,
+      "output_tokens": 1579,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._iter_slice": {
+      "requests": 6,
+      "input_tokens": 46042,
+      "output_tokens": 1157,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._left_record_node": {
+      "requests": 6,
+      "input_tokens": 44046,
+      "output_tokens": 1235,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._read_from_overflow": {
+      "requests": 8,
+      "input_tokens": 63735,
+      "output_tokens": 1637,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._root_node": {
+      "requests": 5,
+      "input_tokens": 36551,
+      "output_tokens": 1945,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._search_in_tree": {
+      "requests": 6,
+      "input_tokens": 42788,
+      "output_tokens": 1568,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._split_leaf": {
+      "requests": 8,
+      "input_tokens": 80675,
+      "output_tokens": 2602,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree._split_parent": {
+      "requests": 7,
+      "input_tokens": 54289,
+      "output_tokens": 1657,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.batch_insert": {
+      "requests": 8,
+      "input_tokens": 70414,
+      "output_tokens": 2160,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.checkpoint": {
+      "requests": 6,
+      "input_tokens": 40060,
+      "output_tokens": 1139,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.close": {
+      "requests": 4,
+      "input_tokens": 18931,
+      "output_tokens": 1003,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.get": {
+      "requests": 9,
+      "input_tokens": 68010,
+      "output_tokens": 1590,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.insert": {
+      "requests": 8,
+      "input_tokens": 66963,
+      "output_tokens": 2503,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.items": {
+      "requests": 5,
+      "input_tokens": 36898,
+      "output_tokens": 1246,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.values": {
+      "requests": 5,
+      "input_tokens": 36803,
+      "output_tokens": 1308,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree": {
+      "requests": 9,
+      "input_tokens": 117064,
+      "output_tokens": 3797,
+      "cost": 0.0
+    },
+    "bplustree.tree.BPlusTree.__init__": {
+      "requests": 9,
+      "input_tokens": 49682,
+      "output_tokens": 2033,
+      "cost": 0.0
+    },
+    "bplustree.utils.iter_slice": {
+      "requests": 4,
+      "input_tokens": 18932,
+      "output_tokens": 1116,
+      "cost": 0.0
+    },
+    "bplustree.utils.pairwise": {
+      "requests": 4,
+      "input_tokens": 18663,
+      "output_tokens": 1393,
+      "cost": 0.0
+    },
+    "bplustree": {
+      "requests": 6,
+      "input_tokens": 68613,
+      "output_tokens": 3429,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 21,
+    "total_fetched_component_types": 33,
+    "redundant_fetch_count": 74,
+    "duplicates": {
+      "bplustree.tree.BPlusTree": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__bool__",
+          "bplustree.tree.BPlusTree.__contains__",
+          "bplustree.tree.BPlusTree.__enter__",
+          "bplustree.tree.BPlusTree.__exit__",
+          "bplustree.tree.BPlusTree.__getitem__",
+          "bplustree.tree.BPlusTree.__iter__",
+          "bplustree.tree.BPlusTree.__len__",
+          "bplustree.tree.BPlusTree.__length_hint__",
+          "bplustree.tree.BPlusTree.__repr__",
+          "bplustree.tree.BPlusTree.__setitem__",
+          "bplustree.tree.BPlusTree._create_new_root",
+          "bplustree.tree.BPlusTree._create_overflow",
+          "bplustree.tree.BPlusTree._create_partials",
+          "bplustree.tree.BPlusTree._get_value_from_record",
+          "bplustree.tree.BPlusTree._initialize_empty_tree",
+          "bplustree.tree.BPlusTree._iter_slice",
+          "bplustree.tree.BPlusTree._left_record_node",
+          "bplustree.tree.BPlusTree._read_from_overflow",
+          "bplustree.tree.BPlusTree._root_node",
+          "bplustree.tree.BPlusTree._search_in_tree",
+          "bplustree.tree.BPlusTree._split_leaf",
+          "bplustree.tree.BPlusTree._split_parent",
+          "bplustree.tree.BPlusTree.batch_insert",
+          "bplustree.tree.BPlusTree.checkpoint",
+          "bplustree.tree.BPlusTree.get",
+          "bplustree.tree.BPlusTree.insert",
+          "bplustree.tree.BPlusTree.items",
+          "bplustree.tree.BPlusTree.values",
+          "bplustree"
+        ],
+        "access_count": 29
+      },
+      "bplustree.tree.BPlusTree._get_value_from_record": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__getitem__",
+          "bplustree.tree.BPlusTree.get",
+          "bplustree.tree.BPlusTree.items",
+          "bplustree.tree.BPlusTree.values",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 6
+      },
+      "bplustree.tree.BPlusTree._search_in_tree": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._iter_slice",
+          "bplustree.tree.BPlusTree.batch_insert",
+          "bplustree.tree.BPlusTree.get",
+          "bplustree.tree.BPlusTree.insert",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 6
+      },
+      "bplustree.tree.BPlusTree._iter_slice": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__getitem__",
+          "bplustree.tree.BPlusTree.__iter__",
+          "bplustree.tree.BPlusTree.items",
+          "bplustree.tree.BPlusTree.values",
+          "bplustree"
+        ],
+        "access_count": 5
+      },
+      "bplustree.tree.BPlusTree._create_overflow": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._read_from_overflow",
+          "bplustree.tree.BPlusTree.batch_insert",
+          "bplustree.tree.BPlusTree.insert",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 5
+      },
+      "bplustree.tree.BPlusTree._split_leaf": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._split_parent",
+          "bplustree.tree.BPlusTree.batch_insert",
+          "bplustree.tree.BPlusTree.insert",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 5
+      },
+      "bplustree.tree.BPlusTree._create_new_root": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._split_leaf",
+          "bplustree.tree.BPlusTree._split_parent",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 4
+      },
+      "bplustree.tree.BPlusTree._split_parent": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._split_leaf",
+          "bplustree.tree.BPlusTree._split_parent",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 4
+      },
+      "bplustree.tree.BPlusTree.get": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__contains__",
+          "bplustree.tree.BPlusTree.__getitem__",
+          "bplustree"
+        ],
+        "access_count": 3
+      },
+      "bplustree.tree.BPlusTree.close": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__enter__",
+          "bplustree.tree.BPlusTree.__exit__",
+          "bplustree"
+        ],
+        "access_count": 3
+      },
+      "bplustree.utils.iter_slice": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._create_overflow",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 3
+      },
+      "bplustree.tree.BPlusTree._read_from_overflow": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._get_value_from_record",
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 3
+      },
+      "bplustree.tree.BPlusTree._left_record_node": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._iter_slice",
+          "bplustree.tree.BPlusTree._left_record_node",
+          "bplustree"
+        ],
+        "access_count": 3
+      },
+      "bplustree.tree.BPlusTree.__iter__": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__bool__",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.tree.BPlusTree.__exit__": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__enter__",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.tree.BPlusTree.__contains__": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__getitem__",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.tree.BPlusTree.insert": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.__setitem__",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.tree.BPlusTree._initialize_empty_tree": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree._initialize_empty_tree",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.tree.BPlusTree.__init__": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.insert",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.tree.BPlusTree.items": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree.items",
+          "bplustree"
+        ],
+        "access_count": 2
+      },
+      "bplustree.utils.pairwise": {
+        "accessed_by": [
+          "bplustree.tree.BPlusTree",
+          "bplustree"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 230,
+      "total_input_tokens": 1860927,
+      "total_output_tokens": 61250,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 63.758,
+    "avg_turns_per_component": 6.65,
+    "memory_hit_rate": 0.0,
+    "total_tokens": 1810892,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 53261.5
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 33,
+      "total_time_seconds": 2054.766,
+      "avg_time_seconds": 62.266,
+      "total_turns": 217,
+      "avg_turns": 6.58,
+      "action_counts": {
+        "Read": 81,
+        "Write": 51,
+        "Verify": 49,
+        "Finish": 31,
+        "Unknown": 5
+      }
+    },
+    "MODULE": {
+      "count": 1,
+      "total_time_seconds": 113.0,
+      "avg_time_seconds": 113.0,
+      "total_turns": 7,
+      "avg_turns": 7.0,
+      "action_counts": {
+        "Read": 2,
+        "Write": 2,
+        "Verify": 2,
+        "Finish": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 113.0,
+      "avg_time_seconds": 113.0,
+      "total_turns": 6,
+      "avg_turns": 6.0,
+      "action_counts": {
+        "Read": 1,
+        "Write": 2,
+        "Verify": 2,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "bplustree.tree.BPlusTree": {
+      "total_candidate_pairs": 126,
+      "entailment_count": 11,
+      "contradiction_count": 10,
+      "neutral_count": 105,
+      "conflict_score": 0.0833,
+      "dep_ids_checked": [
+        "bplustree.tree.BPlusTree.__bool__",
+        "bplustree.tree.BPlusTree.__enter__",
+        "bplustree.tree.BPlusTree.__exit__",
+        "bplustree.tree.BPlusTree.__getitem__",
+        "bplustree.tree.BPlusTree.__iter__",
+        "bplustree.tree.BPlusTree.__len__",
+        "bplustree.tree.BPlusTree.__length_hint__",
+        "bplustree.tree.BPlusTree.__repr__",
+        "bplustree.tree.BPlusTree.__setitem__",
+        "bplustree.tree.BPlusTree._create_partials",
+        "bplustree.tree.BPlusTree._initialize_empty_tree",
+        "bplustree.tree.BPlusTree._left_record_node",
+        "bplustree.tree.BPlusTree._root_node",
+        "bplustree.tree.BPlusTree.batch_insert",
+        "bplustree.tree.BPlusTree.checkpoint",
+        "bplustree.tree.BPlusTree.close",
+        "bplustree.tree.BPlusTree.get",
+        "bplustree.tree.BPlusTree.insert",
+        "bplustree.tree.BPlusTree.items",
+        "bplustree.tree.BPlusTree.values"
+      ]
+    },
+    "bplustree": {
+      "total_candidate_pairs": 37,
+      "entailment_count": 3,
+      "contradiction_count": 0,
+      "neutral_count": 34,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "bplustree"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 53,
+    "first_pass_success": 19,
+    "required_revision": 14,
+    "score_parse_failures": 3,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9258,
+      "COMPLETENESS": 0.9016,
+      "HELPFULNESS": 0.8968
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.075,
+      "COMPLETENESS": 0.0833,
+      "HELPFULNESS": 0.0792
+    }
+  },
+  "retry_runs": [
+    {
+      "retry_run_id": "20260420_045304",
+      "empty_before": 9,
+      "redone": 9,
+      "failed": [],
+      "empty_after": 0,
+      "elapsed_seconds": 478.498,
+      "targets": [
+        "bplustree.tree.BPlusTree.__contains__",
+        "bplustree.tree.BPlusTree._create_new_root",
+        "bplustree.tree.BPlusTree._create_overflow",
+        "bplustree.tree.BPlusTree._get_value_from_record",
+        "bplustree.tree.BPlusTree._iter_slice",
+        "bplustree.tree.BPlusTree._read_from_overflow",
+        "bplustree.tree.BPlusTree._search_in_tree",
+        "bplustree.tree.BPlusTree._split_leaf",
+        "bplustree.tree.BPlusTree._split_parent"
+      ]
+    }
+  ]
+}

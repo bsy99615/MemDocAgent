@@ -1,0 +1,3687 @@
+{
+  "run_id": "20260424_163718",
+  "label": "trailscraper",
+  "total_run_time_seconds": 6209.233,
+  "repo_summary": {
+    "file_count": 12,
+    "function_count": 35,
+    "class_count": 9,
+    "method_count": 39,
+    "total_components": 83,
+    "module_count": 2,
+    "repo_count": 1,
+    "topological_order_count": 83,
+    "topological_order": [
+      "setup.read_file",
+      "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe",
+      "trailscraper.cloudtrail.LogFile.filename",
+      "trailscraper.cloudtrail.LogFile.has_valid_filename",
+      "trailscraper.boto_service_definitions.boto_service_definition_files",
+      "trailscraper.boto_service_definitions.service_definition_file",
+      "trailscraper.boto_service_definitions.operation_definition",
+      "trailscraper.cloudtrail.Record.__eq__",
+      "trailscraper.cloudtrail.Record.__hash__",
+      "trailscraper.cloudtrail.Record.__ne__",
+      "trailscraper.cloudtrail.Record.__repr__",
+      "trailscraper.cloudtrail.Record._event_name_to_iam_action",
+      "trailscraper.cloudtrail.Record._source_to_iam_prefix",
+      "trailscraper.iam.Action._base_action",
+      "trailscraper.iam.Action.json_repr",
+      "trailscraper.iam._parse_action",
+      "trailscraper.iam.all_known_iam_permissions",
+      "trailscraper.iam.known_iam_actions",
+      "trailscraper.iam.Action.matching_actions",
+      "trailscraper.iam.BaseElement.__eq__",
+      "trailscraper.iam.BaseElement.__hash__",
+      "trailscraper.iam.BaseElement.__ne__",
+      "trailscraper.iam.BaseElement.__repr__",
+      "trailscraper.iam.BaseElement.json_repr",
+      "trailscraper.iam.BaseElement",
+      "trailscraper.iam.Action",
+      "trailscraper.iam.Statement.__action_list_strings",
+      "trailscraper.iam.Statement.__lt__",
+      "trailscraper.iam.Statement.json_repr",
+      "trailscraper.iam.Statement.merge",
+      "trailscraper.iam.Statement",
+      "trailscraper.cloudtrail.Record._to_api_gateway_statement",
+      "trailscraper.cloudtrail.Record.to_statement",
+      "trailscraper.cloudtrail.Record",
+      "trailscraper.cloudtrail._assumed_role_arn",
+      "trailscraper.cloudtrail._resource_arns",
+      "trailscraper.cloudtrail._parse_record",
+      "trailscraper.cloudtrail.parse_records",
+      "trailscraper.cloudtrail.LogFile.records",
+      "trailscraper.cloudtrail.LogFile.timestamp",
+      "trailscraper.cloudtrail.LogFile",
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files",
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir",
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir",
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource",
+      "trailscraper.collection_utils.consume",
+      "trailscraper.s3_download._s3_download_recursive",
+      "trailscraper.s3_download._s3_key_prefix",
+      "trailscraper.s3_download._s3_key_prefix_for_org_trails",
+      "trailscraper.s3_download._s3_key_prefixes",
+      "trailscraper.s3_download.download_cloudtrail_logs",
+      "trailscraper.cli.download",
+      "trailscraper.cli.generate",
+      "trailscraper.guess._guess_actions",
+      "trailscraper.guess._extend_statement",
+      "trailscraper.iam.IAMJSONEncoder.default",
+      "trailscraper.iam.IAMJSONEncoder",
+      "trailscraper.iam.PolicyDocument.json_repr",
+      "trailscraper.iam.PolicyDocument.to_json",
+      "trailscraper.iam.PolicyDocument",
+      "trailscraper.guess.guess_statements",
+      "trailscraper.iam._parse_statement",
+      "trailscraper.iam._parse_statements",
+      "trailscraper.iam.parse_policy_document",
+      "trailscraper.cli.guess",
+      "trailscraper.cli.last_event_timestamp",
+      "trailscraper.cli.root_group",
+      "trailscraper.cloudtrail._by_role_arns",
+      "trailscraper.cloudtrail._by_timeframe",
+      "trailscraper.cloudtrail.filter_records",
+      "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api",
+      "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource",
+      "trailscraper.cli.select",
+      "trailscraper.cloudtrail.LogFile.__init__",
+      "trailscraper.cloudtrail.Record.__init__",
+      "trailscraper.iam.Action.__init__",
+      "trailscraper.iam.PolicyDocument.__init__",
+      "trailscraper.iam.Statement.__init__",
+      "trailscraper.policy_generator._combine_statements_by",
+      "trailscraper.policy_generator.generate_policy",
+      "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.__init__",
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__",
+      "trailscraper.time_utils.parse_human_readable_time"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 80,
+    "Write": 105,
+    "Verify": 92,
+    "Finish": 84
+  },
+  "action_time_totals_seconds": {
+    "Read": 773.224,
+    "Write": 3514.415,
+    "Verify": 1531.525
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 348639,
+      "output_tokens": 50745
+    },
+    "Write": {
+      "input_tokens": 659558,
+      "output_tokens": 249544
+    },
+    "Verify": {
+      "input_tokens": 680502,
+      "output_tokens": 99003
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 43,
+    "total_memory_hits": 185
+  },
+  "per_component_stats": {
+    "setup.read_file": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.878064310993068,
+      "Write_time": 34.39615121204406,
+      "Verify_time": 13.434604742971715,
+      "total_time_seconds": 57.472,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.311900119006168,
+      "Write_time": 29.441583095001988,
+      "Verify_time": 9.9100281339488,
+      "total_time_seconds": 48.478,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail.LogFile.filename": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.510028448945377,
+      "Write_time": 31.718664833984803,
+      "Verify_time": 25.042118513025343,
+      "total_time_seconds": 63.519,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.LogFile.has_valid_filename": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.394160782976542,
+      "Write_time": 29.743522089032922,
+      "Verify_time": 13.84380776801845,
+      "total_time_seconds": 60.877,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.boto_service_definitions.boto_service_definition_files": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.194885101984255,
+      "Write_time": 35.370683462999295,
+      "Verify_time": 7.418071741005406,
+      "total_time_seconds": 57.17,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.boto_service_definitions.service_definition_file": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.371696880029049,
+      "Write_time": 29.13190947799012,
+      "Verify_time": 23.451379690959584,
+      "total_time_seconds": 60.096,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.boto_service_definitions.operation_definition": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 10.04400918900501,
+      "Write_time": 32.33097268000711,
+      "Verify_time": 0.0,
+      "total_time_seconds": 44.527,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.Record.__eq__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.097742174984887,
+      "Write_time": 26.696376294014044,
+      "Verify_time": 13.778101271018386,
+      "total_time_seconds": 48.039,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail.Record.__hash__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.010170718014706,
+      "Write_time": 50.28765862603905,
+      "Verify_time": 28.725273338030092,
+      "total_time_seconds": 91.307,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.Record.__ne__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.180632497009356,
+      "Write_time": 16.382132668979466,
+      "Verify_time": 12.275378888996784,
+      "total_time_seconds": 39.672,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "trailscraper.cloudtrail.Record.__repr__": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 31.675453084055334,
+      "Verify_time": 25.732795032963622,
+      "total_time_seconds": 59.889,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail.Record._event_name_to_iam_action": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.361089829995763,
+      "Write_time": 50.08116422704188,
+      "Verify_time": 26.021595959959086,
+      "total_time_seconds": 84.777,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.Record._source_to_iam_prefix": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.891291429987177,
+      "Write_time": 36.61378443602007,
+      "Verify_time": 0.0,
+      "total_time_seconds": 51.43,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.Action._base_action": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.03270798001904,
+      "Write_time": 17.447196630993858,
+      "Verify_time": 20.142616653989535,
+      "total_time_seconds": 48.577,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.Action.json_repr": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.254105800995603,
+      "Write_time": 24.457290625025053,
+      "Verify_time": 7.767729219980538,
+      "total_time_seconds": 43.095,
+      "graph_searches": 4,
+      "memory_hits": 1
+    },
+    "trailscraper.iam._parse_action": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.214995436021127,
+      "Write_time": 33.742323546961416,
+      "Verify_time": 36.33690786495572,
+      "total_time_seconds": 82.809,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.all_known_iam_permissions": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.338718550046906,
+      "Write_time": 26.145416006969754,
+      "Verify_time": 0.0,
+      "total_time_seconds": 40.987,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.known_iam_actions": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 14.133799352974165,
+      "Write_time": 83.03544796293136,
+      "Verify_time": 36.152233035012614,
+      "total_time_seconds": 135.349,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "trailscraper.iam.Action.matching_actions": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.0006085020140745,
+      "Write_time": 35.23223002697341,
+      "Verify_time": 20.40574768400984,
+      "total_time_seconds": 64.097,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.iam.BaseElement.__eq__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 7.9429101219866425,
+      "Write_time": 33.229816130013205,
+      "Verify_time": 0.0,
+      "total_time_seconds": 43.711,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.BaseElement.__hash__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.953550917969551,
+      "Write_time": 22.570163614989724,
+      "Verify_time": 7.586416895035654,
+      "total_time_seconds": 37.266,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.BaseElement.__ne__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.950639548012987,
+      "Write_time": 21.629708233987913,
+      "Verify_time": 10.395803627034184,
+      "total_time_seconds": 42.94,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.BaseElement.__repr__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.41960616200231,
+      "Write_time": 20.829142085975036,
+      "Verify_time": 12.01059493701905,
+      "total_time_seconds": 42.389,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "trailscraper.iam.BaseElement.json_repr": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.21186433400726,
+      "Write_time": 20.720868050993886,
+      "Verify_time": 12.482994849036913,
+      "total_time_seconds": 44.535,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.BaseElement": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 25.85800071299309,
+      "Write_time": 32.18499816599069,
+      "Verify_time": 21.42877713101916,
+      "total_time_seconds": 81.369,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.Action": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.866683304018807,
+      "Write_time": 35.22219063696684,
+      "Verify_time": 19.830633407982532,
+      "total_time_seconds": 63.791,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.iam.Statement.__action_list_strings": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.416888774023391,
+      "Write_time": 22.385993844014592,
+      "Verify_time": 13.788620516017545,
+      "total_time_seconds": 46.485,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.Statement.__lt__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.08090117899701,
+      "Write_time": 45.94551108800806,
+      "Verify_time": 32.39621089200955,
+      "total_time_seconds": 89.549,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.Statement.json_repr": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 22.071634320018347,
+      "Verify_time": 11.648363401996903,
+      "total_time_seconds": 36.517,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.Statement.merge": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.614250315993559,
+      "Write_time": 35.04503116500564,
+      "Verify_time": 26.778284872998483,
+      "total_time_seconds": 72.037,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.iam.Statement": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 43.197390443994664,
+      "Verify_time": 28.678634225972928,
+      "total_time_seconds": 73.995,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail.Record._to_api_gateway_statement": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.683919118018821,
+      "Write_time": 41.75154207798187,
+      "Verify_time": 27.277465315011796,
+      "total_time_seconds": 79.121,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "trailscraper.cloudtrail.Record.to_statement": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.223855749005452,
+      "Write_time": 38.150396909040865,
+      "Verify_time": 17.20362412201939,
+      "total_time_seconds": 67.714,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "trailscraper.cloudtrail.Record": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 111.44980790896807,
+      "Verify_time": 39.63338061096147,
+      "total_time_seconds": 153.517,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail._assumed_role_arn": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.704845295986161,
+      "Write_time": 56.027724401967134,
+      "Verify_time": 47.650187417981215,
+      "total_time_seconds": 112.902,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail._resource_arns": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.73428644001251,
+      "Write_time": 72.21755241701612,
+      "Verify_time": 39.68358394497773,
+      "total_time_seconds": 132.721,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail._parse_record": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.803702107979916,
+      "Write_time": 54.297133613959886,
+      "Verify_time": 26.399680934031494,
+      "total_time_seconds": 95.566,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "trailscraper.cloudtrail.parse_records": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.66024797904538,
+      "Write_time": 44.236146937997546,
+      "Verify_time": 15.278486374008935,
+      "total_time_seconds": 70.46,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.LogFile.records": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.304738652019296,
+      "Write_time": 47.91396135301329,
+      "Verify_time": 23.810790963994805,
+      "total_time_seconds": 87.948,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.cloudtrail.LogFile.timestamp": {
+      "Read_calls": 1,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 13.316847900045104,
+      "Write_time": 141.5427277549752,
+      "Verify_time": 88.47303530998761,
+      "total_time_seconds": 244.863,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.LogFile": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.346356196969282,
+      "Write_time": 85.88445330801187,
+      "Verify_time": 23.662251772009768,
+      "total_time_seconds": 120.375,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 12.544222814030945,
+      "Write_time": 61.026443885988556,
+      "Verify_time": 0.0,
+      "total_time_seconds": 84.011,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 20.973136175016407,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 108.831,
+      "graph_searches": 1,
+      "memory_hits": 3,
+      "Finish(exception)_calls": 1
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 11.946642283990514,
+      "Write_time": 51.99363997700857,
+      "Verify_time": 0.0,
+      "total_time_seconds": 67.047,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.843392547976691,
+      "Write_time": 80.15762437798548,
+      "Verify_time": 34.93656692298828,
+      "total_time_seconds": 134.077,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.collection_utils.consume": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 42.64765198103851,
+      "Verify_time": 9.455924643960316,
+      "total_time_seconds": 54.517,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.s3_download._s3_download_recursive": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.847936458012555,
+      "Write_time": 56.02322831895435,
+      "Verify_time": 30.466567595954984,
+      "total_time_seconds": 100.388,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.s3_download._s3_key_prefix": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.543513969983906,
+      "Write_time": 44.872059155022725,
+      "Verify_time": 14.57335368101485,
+      "total_time_seconds": 70.65,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.s3_download._s3_key_prefix_for_org_trails": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.259838929981925,
+      "Write_time": 35.51849657500861,
+      "Verify_time": 17.31236599100521,
+      "total_time_seconds": 66.39,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.s3_download._s3_key_prefixes": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.748389969987329,
+      "Write_time": 55.838634118961636,
+      "Verify_time": 23.68685071100481,
+      "total_time_seconds": 89.554,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.s3_download.download_cloudtrail_logs": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.58290533197578,
+      "Write_time": 41.55090282502351,
+      "Verify_time": 15.67530322499806,
+      "total_time_seconds": 68.036,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "trailscraper.cli.download": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 122.12597782403463,
+      "Verify_time": 44.723155636980664,
+      "total_time_seconds": 175.641,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.cli.generate": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.406935166043695,
+      "Write_time": 36.919114238000475,
+      "Verify_time": 14.591365650005173,
+      "total_time_seconds": 61.022,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.guess._guess_actions": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.865148984012194,
+      "Write_time": 43.40405458101304,
+      "Verify_time": 18.471601477998774,
+      "total_time_seconds": 79.756,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "trailscraper.guess._extend_statement": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 7.492528387985658,
+      "Write_time": 31.130770261981525,
+      "Verify_time": 0.0,
+      "total_time_seconds": 43.227,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "trailscraper.iam.IAMJSONEncoder.default": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 25.35509634495247,
+      "Verify_time": 12.26791527599562,
+      "total_time_seconds": 40.555,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.IAMJSONEncoder": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 30.951523857016582,
+      "Verify_time": 11.231772407016251,
+      "total_time_seconds": 44.724,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.PolicyDocument.json_repr": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.520627032034099,
+      "Write_time": 36.669772179971915,
+      "Verify_time": 29.401140006026253,
+      "total_time_seconds": 75.867,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.PolicyDocument.to_json": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.138142530980986,
+      "Write_time": 23.227105515950825,
+      "Verify_time": 9.930288341012783,
+      "total_time_seconds": 41.729,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.iam.PolicyDocument": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.850383735029027,
+      "Write_time": 37.20174669800326,
+      "Verify_time": 19.19165145099396,
+      "total_time_seconds": 68.072,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.guess.guess_statements": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 8.375837608007714,
+      "Write_time": 30.381486658006907,
+      "Verify_time": 0.0,
+      "total_time_seconds": 42.242,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "trailscraper.iam._parse_statement": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.110837804968469,
+      "Write_time": 26.16398847399978,
+      "Verify_time": 16.66523474897258,
+      "total_time_seconds": 51.223,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.iam._parse_statements": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.964980405988172,
+      "Write_time": 36.23718978301622,
+      "Verify_time": 15.766417418024503,
+      "total_time_seconds": 59.924,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.parse_policy_document": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 5.3044951889896765,
+      "Write_time": 27.25618843297707,
+      "Verify_time": 0.0,
+      "total_time_seconds": 35.152,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "trailscraper.cli.guess": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.133499873045366,
+      "Write_time": 34.32360130699817,
+      "Verify_time": 13.02419273898704,
+      "total_time_seconds": 61.54,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "trailscraper.cli.last_event_timestamp": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.1261331149726175,
+      "Write_time": 25.51368818001356,
+      "Verify_time": 10.909206727985293,
+      "total_time_seconds": 44.027,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "trailscraper.cli.root_group": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.0376065440359525,
+      "Write_time": 34.01024269597838,
+      "Verify_time": 18.13109734497266,
+      "total_time_seconds": 60.419,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail._by_role_arns": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 27.02603214397095,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 33.312,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail._by_timeframe": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.011994139000308,
+      "Write_time": 24.94911361200502,
+      "Verify_time": 12.886415536981076,
+      "total_time_seconds": 45.398,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "trailscraper.cloudtrail.filter_records": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 16.255586067039985,
+      "Write_time": 39.76689411397092,
+      "Verify_time": 0.0,
+      "total_time_seconds": 59.156,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 98.53778574801981,
+      "Verify_time": 60.191853149968665,
+      "total_time_seconds": 161.18,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.112119132012594,
+      "Write_time": 40.866936548030935,
+      "Verify_time": 22.8058787920163,
+      "total_time_seconds": 77.178,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.cli.select": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.102858975995332,
+      "Write_time": 75.84146144299302,
+      "Verify_time": 31.00111916300375,
+      "total_time_seconds": 121.031,
+      "graph_searches": 1,
+      "memory_hits": 6
+    },
+    "trailscraper.cloudtrail.LogFile.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.173183940001763,
+      "Write_time": 20.164068718033377,
+      "Verify_time": 10.904802625998855,
+      "total_time_seconds": 41.941,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.cloudtrail.Record.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.239268331031781,
+      "Write_time": 37.58839982497739,
+      "Verify_time": 19.05245726200519,
+      "total_time_seconds": 64.696,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.Action.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.645981832989492,
+      "Write_time": 19.822438227012753,
+      "Verify_time": 7.768350389960688,
+      "total_time_seconds": 40.492,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.iam.PolicyDocument.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 26.25453849299811,
+      "Verify_time": 7.357946367003024,
+      "total_time_seconds": 35.828,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.iam.Statement.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 21.202385117008816,
+      "Verify_time": 9.160169993992895,
+      "total_time_seconds": 35.747,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "trailscraper.policy_generator._combine_statements_by": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 12.36190334398998,
+      "Write_time": 38.63873639696976,
+      "Verify_time": 0.0,
+      "total_time_seconds": 53.537,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "trailscraper.policy_generator.generate_policy": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 15.91345536900917,
+      "Write_time": 52.448814673000015,
+      "Verify_time": 0.0,
+      "total_time_seconds": 75.26,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.080078416969627,
+      "Write_time": 25.026371410000138,
+      "Verify_time": 10.555286755959969,
+      "total_time_seconds": 44.949,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.113753684971016,
+      "Write_time": 19.124336634995416,
+      "Verify_time": 10.910456917947158,
+      "total_time_seconds": 38.967,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper/record_sources": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.255064968019724,
+      "Write_time": 51.11257074197056,
+      "Verify_time": 16.533972106990404,
+      "total_time_seconds": 79.396,
+      "graph_searches": 0,
+      "memory_hits": 8
+    },
+    "trailscraper.time_utils.parse_human_readable_time": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.170322913036216,
+      "Write_time": 34.952882920973934,
+      "Verify_time": 25.57497484696796,
+      "total_time_seconds": 77.797,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "trailscraper": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.703433148970362,
+      "Write_time": 115.18325779703446,
+      "Verify_time": 39.87302251299843,
+      "total_time_seconds": 175.079,
+      "graph_searches": 0,
+      "memory_hits": 2
+    }
+  },
+  "per_component_verify_scores": {
+    "setup.read_file": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile.filename": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5667,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.5667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile.has_valid_filename": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.boto_service_definitions.boto_service_definition_files": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.boto_service_definitions.service_definition_file": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record.__eq__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record.__hash__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.96,
+        "COMPLETENESS": 0.94,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record.__ne__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record.__repr__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5833,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.5833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record._event_name_to_iam_action": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.2667,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.2,
+        "HELPFULNESS": 0.2,
+        "weighted_avg": 0.2667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Action._base_action": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Action.json_repr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.96,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.96,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam._parse_action": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.known_iam_actions": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.725,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.45,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.6688,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4,
+        "conflict_score": 0.9375
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.96,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.92,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Action.matching_actions": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.BaseElement.__hash__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9233,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.BaseElement.__ne__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.BaseElement.__repr__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.BaseElement.json_repr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.BaseElement": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Action": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Statement.__action_list_strings": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Statement.__lt__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8967,
+        "CONSISTENCY": 0.87,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8967,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Statement.json_repr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Statement.merge": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.93,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Statement": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record._to_api_gateway_statement": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record.to_statement": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9467,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.8933,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9278,
+        "CONSISTENCY": 0.93,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9389
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9827,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 0.98,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9767,
+        "conflict_score": 0.9886
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9967,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.98,
+        "weighted_avg": 0.9933,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail._assumed_role_arn": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7167,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail._resource_arns": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail._parse_record": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9567,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9133,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.parse_records": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile.records": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile.timestamp": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.collection_utils.consume": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9433,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9433,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.s3_download._s3_download_recursive": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.965,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.93,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.s3_download._s3_key_prefix": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.s3_download._s3_key_prefix_for_org_trails": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.s3_download._s3_key_prefixes": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.s3_download.download_cloudtrail_logs": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cli.download": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.3,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.3667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9042,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 0.875
+      }
+    ],
+    "trailscraper.cli.generate": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.guess._guess_actions": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.IAMJSONEncoder.default": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.93,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.IAMJSONEncoder": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9767,
+        "CONSISTENCY": 0.97,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.94,
+        "weighted_avg": 0.9533,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.PolicyDocument.json_repr": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.PolicyDocument.to_json": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.PolicyDocument": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam._parse_statement": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam._parse_statements": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9633,
+        "CONSISTENCY": 0.96,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9267,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cli.guess": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cli.last_event_timestamp": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cli.root_group": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.45,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.45,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail._by_timeframe": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6917,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.3833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.3,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.97,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cli.select": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6917,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.35,
+        "weighted_avg": 0.3833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.LogFile.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.cloudtrail.Record.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Action.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.PolicyDocument.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.93,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.94,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.93,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.iam.Statement.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9733,
+        "CONSISTENCY": 0.99,
+        "COMPLETENESS": 0.98,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9733,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper/record_sources": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper.time_utils.parse_human_readable_time": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.91,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.91,
+        "conflict_score": 1.0
+      }
+    ],
+    "trailscraper": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.815,
+        "CONSISTENCY": 0.28,
+        "COMPLETENESS": 0.78,
+        "HELPFULNESS": 0.83,
+        "weighted_avg": 0.63,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.96,
+        "COMPLETENESS": 0.94,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "setup.read_file": {
+      "requests": 4,
+      "input_tokens": 19110,
+      "output_tokens": 4089,
+      "cost": 0.0053199
+    },
+    "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe": {
+      "requests": 4,
+      "input_tokens": 20338,
+      "output_tokens": 4005,
+      "cost": 0.0054537
+    },
+    "trailscraper.cloudtrail.LogFile.filename": {
+      "requests": 6,
+      "input_tokens": 32062,
+      "output_tokens": 5266,
+      "cost": 0.0079689
+    },
+    "trailscraper.cloudtrail.LogFile.has_valid_filename": {
+      "requests": 4,
+      "input_tokens": 19854,
+      "output_tokens": 4842,
+      "cost": 0.0058832999999999976
+    },
+    "trailscraper.boto_service_definitions.boto_service_definition_files": {
+      "requests": 4,
+      "input_tokens": 19649,
+      "output_tokens": 4486,
+      "cost": 0.00563895
+    },
+    "trailscraper.boto_service_definitions.service_definition_file": {
+      "requests": 4,
+      "input_tokens": 23004,
+      "output_tokens": 4097,
+      "cost": 0.005908800000000002
+    },
+    "trailscraper.boto_service_definitions.operation_definition": {
+      "requests": 3,
+      "input_tokens": 16951,
+      "output_tokens": 3510,
+      "cost": 0.004648649999999997
+    },
+    "trailscraper.cloudtrail.Record.__eq__": {
+      "requests": 4,
+      "input_tokens": 22838,
+      "output_tokens": 3845,
+      "cost": 0.0057327
+    },
+    "trailscraper.cloudtrail.Record.__hash__": {
+      "requests": 6,
+      "input_tokens": 39942,
+      "output_tokens": 6505,
+      "cost": 0.009894299999999995
+    },
+    "trailscraper.cloudtrail.Record.__ne__": {
+      "requests": 4,
+      "input_tokens": 24825,
+      "output_tokens": 3429,
+      "cost": 0.005781149999999999
+    },
+    "trailscraper.cloudtrail.Record.__repr__": {
+      "requests": 5,
+      "input_tokens": 25600,
+      "output_tokens": 5360,
+      "cost": 0.007055999999999993
+    },
+    "trailscraper.cloudtrail.Record._event_name_to_iam_action": {
+      "requests": 6,
+      "input_tokens": 45811,
+      "output_tokens": 6488,
+      "cost": 0.010764450000000009
+    },
+    "trailscraper.cloudtrail.Record._source_to_iam_prefix": {
+      "requests": 3,
+      "input_tokens": 16697,
+      "output_tokens": 2870,
+      "cost": 0.0042265500000000095
+    },
+    "trailscraper.iam.Action._base_action": {
+      "requests": 4,
+      "input_tokens": 19696,
+      "output_tokens": 4282,
+      "cost": 0.00552359999999999
+    },
+    "trailscraper.iam.Action.json_repr": {
+      "requests": 4,
+      "input_tokens": 19730,
+      "output_tokens": 3608,
+      "cost": 0.005124299999999998
+    },
+    "trailscraper.iam._parse_action": {
+      "requests": 6,
+      "input_tokens": 29951,
+      "output_tokens": 7260,
+      "cost": 0.00884865
+    },
+    "trailscraper.iam.all_known_iam_permissions": {
+      "requests": 3,
+      "input_tokens": 13871,
+      "output_tokens": 3439,
+      "cost": 0.00414405000000001
+    },
+    "trailscraper.iam.known_iam_actions": {
+      "requests": 10,
+      "input_tokens": 86165,
+      "output_tokens": 10353,
+      "cost": 0.01913654999999999
+    },
+    "trailscraper.iam.Action.matching_actions": {
+      "requests": 4,
+      "input_tokens": 26000,
+      "output_tokens": 5595,
+      "cost": 0.0072570000000000134
+    },
+    "trailscraper.iam.BaseElement.__eq__": {
+      "requests": 3,
+      "input_tokens": 13619,
+      "output_tokens": 3539,
+      "cost": 0.0041662499999999825
+    },
+    "trailscraper.iam.BaseElement.__hash__": {
+      "requests": 4,
+      "input_tokens": 18863,
+      "output_tokens": 3525,
+      "cost": 0.004944450000000017
+    },
+    "trailscraper.iam.BaseElement.__ne__": {
+      "requests": 4,
+      "input_tokens": 18957,
+      "output_tokens": 3810,
+      "cost": 0.0051295500000000105
+    },
+    "trailscraper.iam.BaseElement.__repr__": {
+      "requests": 4,
+      "input_tokens": 18666,
+      "output_tokens": 3734,
+      "cost": 0.0050402999999999976
+    },
+    "trailscraper.iam.BaseElement.json_repr": {
+      "requests": 4,
+      "input_tokens": 18711,
+      "output_tokens": 3357,
+      "cost": 0.004820850000000015
+    },
+    "trailscraper.iam.BaseElement": {
+      "requests": 4,
+      "input_tokens": 20613,
+      "output_tokens": 6430,
+      "cost": 0.00694995000000001
+    },
+    "trailscraper.iam.Action": {
+      "requests": 4,
+      "input_tokens": 31566,
+      "output_tokens": 4983,
+      "cost": 0.007724700000000001
+    },
+    "trailscraper.iam.Statement.__action_list_strings": {
+      "requests": 4,
+      "input_tokens": 24758,
+      "output_tokens": 3600,
+      "cost": 0.005873699999999982
+    },
+    "trailscraper.iam.Statement.__lt__": {
+      "requests": 6,
+      "input_tokens": 33826,
+      "output_tokens": 6350,
+      "cost": 0.0088839
+    },
+    "trailscraper.iam.Statement.json_repr": {
+      "requests": 3,
+      "input_tokens": 13453,
+      "output_tokens": 2605,
+      "cost": 0.0035809499999999994
+    },
+    "trailscraper.iam.Statement.merge": {
+      "requests": 4,
+      "input_tokens": 26003,
+      "output_tokens": 3599,
+      "cost": 0.0060598500000000055
+    },
+    "trailscraper.iam.Statement": {
+      "requests": 3,
+      "input_tokens": 18166,
+      "output_tokens": 4845,
+      "cost": 0.005631900000000023
+    },
+    "trailscraper.cloudtrail.Record._to_api_gateway_statement": {
+      "requests": 4,
+      "input_tokens": 36720,
+      "output_tokens": 4035,
+      "cost": 0.00792900000000002
+    },
+    "trailscraper.cloudtrail.Record.to_statement": {
+      "requests": 4,
+      "input_tokens": 35370,
+      "output_tokens": 4457,
+      "cost": 0.007979700000000034
+    },
+    "trailscraper.cloudtrail.Record": {
+      "requests": 7,
+      "input_tokens": 74642,
+      "output_tokens": 10335,
+      "cost": 0.017397300000000032
+    },
+    "trailscraper.cloudtrail._assumed_role_arn": {
+      "requests": 6,
+      "input_tokens": 35977,
+      "output_tokens": 7250,
+      "cost": 0.009746549999999993
+    },
+    "trailscraper.cloudtrail._resource_arns": {
+      "requests": 6,
+      "input_tokens": 34862,
+      "output_tokens": 7008,
+      "cost": 0.009434099999999945
+    },
+    "trailscraper.cloudtrail._parse_record": {
+      "requests": 4,
+      "input_tokens": 34463,
+      "output_tokens": 5444,
+      "cost": 0.008435849999999967
+    },
+    "trailscraper.cloudtrail.parse_records": {
+      "requests": 4,
+      "input_tokens": 25253,
+      "output_tokens": 3768,
+      "cost": 0.006048749999999992
+    },
+    "trailscraper.cloudtrail.LogFile.records": {
+      "requests": 4,
+      "input_tokens": 23876,
+      "output_tokens": 4494,
+      "cost": 0.0062777999999999445
+    },
+    "trailscraper.cloudtrail.LogFile.timestamp": {
+      "requests": 9,
+      "input_tokens": 60324,
+      "output_tokens": 10676,
+      "cost": 0.015454199999999974
+    },
+    "trailscraper.cloudtrail.LogFile": {
+      "requests": 4,
+      "input_tokens": 27542,
+      "output_tokens": 4954,
+      "cost": 0.007103699999999991
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files": {
+      "requests": 3,
+      "input_tokens": 19611,
+      "output_tokens": 3671,
+      "cost": 0.005144250000000017
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir": {
+      "requests": 2,
+      "input_tokens": 12189,
+      "output_tokens": 5125,
+      "cost": 0.004903349999999973
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir": {
+      "requests": 3,
+      "input_tokens": 22670,
+      "output_tokens": 3860,
+      "cost": 0.005716500000000013
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource": {
+      "requests": 4,
+      "input_tokens": 30320,
+      "output_tokens": 6581,
+      "cost": 0.008496599999999965
+    },
+    "trailscraper.collection_utils.consume": {
+      "requests": 3,
+      "input_tokens": 14783,
+      "output_tokens": 3191,
+      "cost": 0.004132049999999998
+    },
+    "trailscraper.s3_download._s3_download_recursive": {
+      "requests": 4,
+      "input_tokens": 28653,
+      "output_tokens": 5237,
+      "cost": 0.007440149999999979
+    },
+    "trailscraper.s3_download._s3_key_prefix": {
+      "requests": 4,
+      "input_tokens": 19590,
+      "output_tokens": 3625,
+      "cost": 0.0051135000000000486
+    },
+    "trailscraper.s3_download._s3_key_prefix_for_org_trails": {
+      "requests": 4,
+      "input_tokens": 19897,
+      "output_tokens": 3890,
+      "cost": 0.005318550000000033
+    },
+    "trailscraper.s3_download._s3_key_prefixes": {
+      "requests": 4,
+      "input_tokens": 29492,
+      "output_tokens": 5790,
+      "cost": 0.007897799999999955
+    },
+    "trailscraper.s3_download.download_cloudtrail_logs": {
+      "requests": 4,
+      "input_tokens": 33151,
+      "output_tokens": 4553,
+      "cost": 0.007704449999999974
+    },
+    "trailscraper.cli.download": {
+      "requests": 6,
+      "input_tokens": 46391,
+      "output_tokens": 11321,
+      "cost": 0.013751250000000104
+    },
+    "trailscraper.cli.generate": {
+      "requests": 4,
+      "input_tokens": 24411,
+      "output_tokens": 4195,
+      "cost": 0.006178650000000008
+    },
+    "trailscraper.guess._guess_actions": {
+      "requests": 4,
+      "input_tokens": 30211,
+      "output_tokens": 5270,
+      "cost": 0.007693649999999996
+    },
+    "trailscraper.guess._extend_statement": {
+      "requests": 3,
+      "input_tokens": 20809,
+      "output_tokens": 3207,
+      "cost": 0.00504555000000001
+    },
+    "trailscraper.iam.IAMJSONEncoder.default": {
+      "requests": 3,
+      "input_tokens": 14154,
+      "output_tokens": 3124,
+      "cost": 0.003997499999999987
+    },
+    "trailscraper.iam.IAMJSONEncoder": {
+      "requests": 3,
+      "input_tokens": 15744,
+      "output_tokens": 3307,
+      "cost": 0.004345800000000011
+    },
+    "trailscraper.iam.PolicyDocument.json_repr": {
+      "requests": 6,
+      "input_tokens": 33017,
+      "output_tokens": 5622,
+      "cost": 0.008325749999999965
+    },
+    "trailscraper.iam.PolicyDocument.to_json": {
+      "requests": 4,
+      "input_tokens": 23556,
+      "output_tokens": 2987,
+      "cost": 0.005325600000000041
+    },
+    "trailscraper.iam.PolicyDocument": {
+      "requests": 4,
+      "input_tokens": 30495,
+      "output_tokens": 4765,
+      "cost": 0.007433249999999947
+    },
+    "trailscraper.guess.guess_statements": {
+      "requests": 3,
+      "input_tokens": 24415,
+      "output_tokens": 3097,
+      "cost": 0.00552045000000001
+    },
+    "trailscraper.iam._parse_statement": {
+      "requests": 4,
+      "input_tokens": 29270,
+      "output_tokens": 3796,
+      "cost": 0.00666810000000001
+    },
+    "trailscraper.iam._parse_statements": {
+      "requests": 4,
+      "input_tokens": 23904,
+      "output_tokens": 4377,
+      "cost": 0.0062117999999999896
+    },
+    "trailscraper.iam.parse_policy_document": {
+      "requests": 3,
+      "input_tokens": 20008,
+      "output_tokens": 3194,
+      "cost": 0.004917600000000022
+    },
+    "trailscraper.cli.guess": {
+      "requests": 4,
+      "input_tokens": 29830,
+      "output_tokens": 5804,
+      "cost": 0.007956900000000044
+    },
+    "trailscraper.cli.last_event_timestamp": {
+      "requests": 4,
+      "input_tokens": 27038,
+      "output_tokens": 4484,
+      "cost": 0.006746100000000033
+    },
+    "trailscraper.cli.root_group": {
+      "requests": 6,
+      "input_tokens": 33511,
+      "output_tokens": 5716,
+      "cost": 0.008456250000000054
+    },
+    "trailscraper.cloudtrail._by_role_arns": {
+      "requests": 2,
+      "input_tokens": 9914,
+      "output_tokens": 3513,
+      "cost": 0.003594900000000012
+    },
+    "trailscraper.cloudtrail._by_timeframe": {
+      "requests": 4,
+      "input_tokens": 20327,
+      "output_tokens": 4448,
+      "cost": 0.005717850000000024
+    },
+    "trailscraper.cloudtrail.filter_records": {
+      "requests": 4,
+      "input_tokens": 23371,
+      "output_tokens": 4981,
+      "cost": 0.006494250000000035
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api": {
+      "requests": 7,
+      "input_tokens": 45463,
+      "output_tokens": 10360,
+      "cost": 0.013035449999999948
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource": {
+      "requests": 4,
+      "input_tokens": 26860,
+      "output_tokens": 5910,
+      "cost": 0.007574999999999998
+    },
+    "trailscraper.cli.select": {
+      "requests": 6,
+      "input_tokens": 85443,
+      "output_tokens": 10013,
+      "cost": 0.018824250000000098
+    },
+    "trailscraper.cloudtrail.LogFile.__init__": {
+      "requests": 4,
+      "input_tokens": 25701,
+      "output_tokens": 2920,
+      "cost": 0.005607150000000005
+    },
+    "trailscraper.cloudtrail.Record.__init__": {
+      "requests": 4,
+      "input_tokens": 24633,
+      "output_tokens": 3885,
+      "cost": 0.006025949999999947
+    },
+    "trailscraper.iam.Action.__init__": {
+      "requests": 4,
+      "input_tokens": 23742,
+      "output_tokens": 2388,
+      "cost": 0.004994100000000001
+    },
+    "trailscraper.iam.PolicyDocument.__init__": {
+      "requests": 3,
+      "input_tokens": 13992,
+      "output_tokens": 2244,
+      "cost": 0.003445200000000037
+    },
+    "trailscraper.iam.Statement.__init__": {
+      "requests": 3,
+      "input_tokens": 14040,
+      "output_tokens": 2430,
+      "cost": 0.0035639999999999006
+    },
+    "trailscraper.policy_generator._combine_statements_by": {
+      "requests": 3,
+      "input_tokens": 18527,
+      "output_tokens": 3778,
+      "cost": 0.005045850000000018
+    },
+    "trailscraper.policy_generator.generate_policy": {
+      "requests": 4,
+      "input_tokens": 43179,
+      "output_tokens": 5162,
+      "cost": 0.00957405
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.__init__": {
+      "requests": 4,
+      "input_tokens": 23673,
+      "output_tokens": 2789,
+      "cost": 0.005224349999999989
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__": {
+      "requests": 4,
+      "input_tokens": 24262,
+      "output_tokens": 2304,
+      "cost": 0.005021700000000018
+    },
+    "trailscraper/record_sources": {
+      "requests": 4,
+      "input_tokens": 45101,
+      "output_tokens": 4480,
+      "cost": 0.00945314999999991
+    },
+    "trailscraper.time_utils.parse_human_readable_time": {
+      "requests": 4,
+      "input_tokens": 19650,
+      "output_tokens": 4174,
+      "cost": 0.005451899999999954
+    },
+    "trailscraper": {
+      "requests": 6,
+      "input_tokens": 42783,
+      "output_tokens": 9062,
+      "cost": 0.011854650000000078
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 61,
+    "total_fetched_component_types": 85,
+    "redundant_fetch_count": 142,
+    "duplicates": {
+      "trailscraper.iam.Statement": {
+        "accessed_by": [
+          "trailscraper.iam.Statement.__action_list_strings",
+          "trailscraper.iam.Statement.__lt__",
+          "trailscraper.iam.Statement.merge",
+          "trailscraper.cloudtrail.Record._to_api_gateway_statement",
+          "trailscraper.cloudtrail.Record.to_statement",
+          "trailscraper.guess._guess_actions",
+          "trailscraper.guess._extend_statement",
+          "trailscraper.guess.guess_statements",
+          "trailscraper.iam._parse_statement",
+          "trailscraper.policy_generator._combine_statements_by",
+          "trailscraper.policy_generator.generate_policy",
+          "trailscraper"
+        ],
+        "access_count": 12
+      },
+      "trailscraper.cloudtrail.LogFile": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe",
+          "trailscraper.cloudtrail.LogFile.filename",
+          "trailscraper.cloudtrail.LogFile.has_valid_filename",
+          "trailscraper.cloudtrail.LogFile.records",
+          "trailscraper.cloudtrail.LogFile.timestamp",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource",
+          "trailscraper.cloudtrail.LogFile.__init__",
+          "trailscraper"
+        ],
+        "access_count": 11
+      },
+      "trailscraper.iam.Action": {
+        "accessed_by": [
+          "trailscraper.iam.Action._base_action",
+          "trailscraper.iam.Action.json_repr",
+          "trailscraper.iam._parse_action",
+          "trailscraper.iam.known_iam_actions",
+          "trailscraper.iam.Action.matching_actions",
+          "trailscraper.iam.Statement.__action_list_strings",
+          "trailscraper.iam.Statement.merge",
+          "trailscraper.cloudtrail.Record._to_api_gateway_statement",
+          "trailscraper.cloudtrail.Record.to_statement",
+          "trailscraper.iam.Action.__init__",
+          "trailscraper"
+        ],
+        "access_count": 11
+      },
+      "trailscraper.cloudtrail.Record": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.Record.__eq__",
+          "trailscraper.cloudtrail.Record.__hash__",
+          "trailscraper.cloudtrail.Record.__ne__",
+          "trailscraper.cloudtrail.Record._event_name_to_iam_action",
+          "trailscraper.cloudtrail.Record._source_to_iam_prefix",
+          "trailscraper.cloudtrail.Record.to_statement",
+          "trailscraper.cloudtrail._parse_record",
+          "trailscraper.cloudtrail.Record.__init__",
+          "trailscraper.policy_generator.generate_policy",
+          "trailscraper"
+        ],
+        "access_count": 10
+      },
+      "trailscraper.iam.BaseElement": {
+        "accessed_by": [
+          "trailscraper.iam.BaseElement.__eq__",
+          "trailscraper.iam.BaseElement.__hash__",
+          "trailscraper.iam.BaseElement.__ne__",
+          "trailscraper.iam.BaseElement.__repr__",
+          "trailscraper.iam.BaseElement.json_repr",
+          "trailscraper.iam.Action",
+          "trailscraper.iam.PolicyDocument",
+          "trailscraper"
+        ],
+        "access_count": 8
+      },
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource": {
+        "accessed_by": [
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir",
+          "trailscraper.cli.last_event_timestamp",
+          "trailscraper.cli.select",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 7
+      },
+      "trailscraper.cloudtrail.parse_records": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.parse_records",
+          "trailscraper.cloudtrail.LogFile.records",
+          "trailscraper.cloudtrail.LogFile",
+          "trailscraper.cli.generate",
+          "trailscraper.cli.select",
+          "trailscraper"
+        ],
+        "access_count": 6
+      },
+      "trailscraper.iam.PolicyDocument": {
+        "accessed_by": [
+          "trailscraper.iam.PolicyDocument.json_repr",
+          "trailscraper.iam.PolicyDocument.to_json",
+          "trailscraper.guess.guess_statements",
+          "trailscraper.iam.parse_policy_document",
+          "trailscraper.policy_generator.generate_policy",
+          "trailscraper"
+        ],
+        "access_count": 6
+      },
+      "trailscraper.iam._parse_action": {
+        "accessed_by": [
+          "trailscraper.iam._parse_action",
+          "trailscraper.iam.known_iam_actions",
+          "trailscraper.iam._parse_statement",
+          "trailscraper"
+        ],
+        "access_count": 4
+      },
+      "trailscraper.cloudtrail._parse_record": {
+        "accessed_by": [
+          "trailscraper.cloudtrail._parse_record",
+          "trailscraper.cloudtrail.parse_records",
+          "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource",
+          "trailscraper"
+        ],
+        "access_count": 4
+      },
+      "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe",
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.cloudtrail.Record.__init__": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.Record.__hash__",
+          "trailscraper.cloudtrail.Record.__ne__",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam.BaseElement.json_repr": {
+        "accessed_by": [
+          "trailscraper.iam.Action.json_repr",
+          "trailscraper.iam.BaseElement.__repr__",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam.PolicyDocument.json_repr": {
+        "accessed_by": [
+          "trailscraper.iam.Action.json_repr",
+          "trailscraper.iam.PolicyDocument.json_repr",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam.all_known_iam_permissions": {
+        "accessed_by": [
+          "trailscraper.iam.all_known_iam_permissions",
+          "trailscraper.iam.known_iam_actions",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam.known_iam_actions": {
+        "accessed_by": [
+          "trailscraper.iam.Action.matching_actions",
+          "trailscraper.iam.Action",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.cloudtrail._assumed_role_arn": {
+        "accessed_by": [
+          "trailscraper.cloudtrail._assumed_role_arn",
+          "trailscraper.cloudtrail._parse_record",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.cloudtrail._resource_arns": {
+        "accessed_by": [
+          "trailscraper.cloudtrail._resource_arns",
+          "trailscraper.cloudtrail._parse_record",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir": {
+        "accessed_by": [
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir",
+          "trailscraper.cli.last_event_timestamp",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.s3_download._s3_download_recursive": {
+        "accessed_by": [
+          "trailscraper.s3_download._s3_download_recursive",
+          "trailscraper.s3_download.download_cloudtrail_logs",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.s3_download._s3_key_prefix_for_org_trails": {
+        "accessed_by": [
+          "trailscraper.s3_download._s3_key_prefix_for_org_trails",
+          "trailscraper.s3_download._s3_key_prefixes",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.guess._guess_actions": {
+        "accessed_by": [
+          "trailscraper.guess._guess_actions",
+          "trailscraper.guess._extend_statement",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.guess._extend_statement": {
+        "accessed_by": [
+          "trailscraper.guess._extend_statement",
+          "trailscraper.guess.guess_statements",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam.IAMJSONEncoder": {
+        "accessed_by": [
+          "trailscraper.iam.PolicyDocument.to_json",
+          "trailscraper.iam.PolicyDocument",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.guess.guess_statements": {
+        "accessed_by": [
+          "trailscraper.guess.guess_statements",
+          "trailscraper.cli.guess",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam._parse_statements": {
+        "accessed_by": [
+          "trailscraper.iam._parse_statements",
+          "trailscraper.iam.parse_policy_document",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.iam.parse_policy_document": {
+        "accessed_by": [
+          "trailscraper.iam.parse_policy_document",
+          "trailscraper.cli.guess",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.cloudtrail._by_timeframe": {
+        "accessed_by": [
+          "trailscraper.cloudtrail._by_timeframe",
+          "trailscraper.cloudtrail.filter_records",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.cloudtrail.filter_records": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.filter_records",
+          "trailscraper.cli.select",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource": {
+        "accessed_by": [
+          "trailscraper.cli.select",
+          "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.__init__",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.time_utils.parse_human_readable_time": {
+        "accessed_by": [
+          "trailscraper.cli.select",
+          "trailscraper.time_utils.parse_human_readable_time",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "trailscraper.policy_generator._combine_statements_by": {
+        "accessed_by": [
+          "trailscraper.policy_generator._combine_statements_by",
+          "trailscraper.policy_generator.generate_policy",
+          "trailscraper"
+        ],
+        "access_count": 3
+      },
+      "setup.read_file": {
+        "accessed_by": [
+          "setup.read_file",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.LogFile.timestamp": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.LogFile.has_valid_filename": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.LogFile.has_valid_filename",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.boto_service_definitions.boto_service_definition_files": {
+        "accessed_by": [
+          "trailscraper.boto_service_definitions.service_definition_file",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.boto_service_definitions.service_definition_file": {
+        "accessed_by": [
+          "trailscraper.boto_service_definitions.operation_definition",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.Record.__hash__": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.Record.__hash__",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.Record.__eq__": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.Record.__ne__",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.Record._source_to_iam_prefix": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.Record._source_to_iam_prefix",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.iam.Action._base_action": {
+        "accessed_by": [
+          "trailscraper.iam.Action._base_action",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.iam.Action.json_repr": {
+        "accessed_by": [
+          "trailscraper.iam.Action.json_repr",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.iam.Statement.json_repr": {
+        "accessed_by": [
+          "trailscraper.iam.Action.json_repr",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.iam.BaseElement.__repr__": {
+        "accessed_by": [
+          "trailscraper.iam.BaseElement.__repr__",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.boto_service_definitions.operation_definition": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.Record._to_api_gateway_statement",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files": {
+        "accessed_by": [
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.last_event_timestamp_in_dir",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.LogFile.records": {
+        "accessed_by": [
+          "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.collection_utils.consume": {
+        "accessed_by": [
+          "trailscraper.s3_download._s3_download_recursive",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.s3_download._s3_key_prefix": {
+        "accessed_by": [
+          "trailscraper.s3_download._s3_key_prefixes",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.s3_download._s3_key_prefixes": {
+        "accessed_by": [
+          "trailscraper.s3_download.download_cloudtrail_logs",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.s3_download.download_cloudtrail_logs": {
+        "accessed_by": [
+          "trailscraper.s3_download.download_cloudtrail_logs",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.policy_generator.generate_policy": {
+        "accessed_by": [
+          "trailscraper.cli.generate",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.iam.Action.matching_actions": {
+        "accessed_by": [
+          "trailscraper.guess._guess_actions",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.iam._parse_statement": {
+        "accessed_by": [
+          "trailscraper.iam._parse_statements",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cli.last_event_timestamp": {
+        "accessed_by": [
+          "trailscraper.cli.last_event_timestamp",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__": {
+        "accessed_by": [
+          "trailscraper.cli.last_event_timestamp",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cli.root_group": {
+        "accessed_by": [
+          "trailscraper.cli.root_group",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail._by_role_arns": {
+        "accessed_by": [
+          "trailscraper.cloudtrail.filter_records",
+          "trailscraper"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api": {
+        "accessed_by": [
+          "trailscraper.cli.select",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir": {
+        "accessed_by": [
+          "trailscraper.cli.select",
+          "trailscraper/record_sources"
+        ],
+        "access_count": 2
+      },
+      "trailscraper.cloudtrail.Record.to_statement": {
+        "accessed_by": [
+          "trailscraper.policy_generator.generate_policy",
+          "trailscraper"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 363,
+      "total_input_tokens": 2450834,
+      "total_output_tokens": 415483,
+      "total_cost_usd": 0.6169149000000002
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 71.9,
+    "avg_turns_per_component": 4.25,
+    "memory_hit_rate": 0.8114,
+    "total_tokens": 2766862,
+    "estimated_cost_usd": 0.5999,
+    "avg_tokens_per_component": 32551.3
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 83,
+      "total_time_seconds": 5857.028,
+      "avg_time_seconds": 70.567,
+      "total_turns": 350,
+      "avg_turns": 4.22,
+      "action_counts": {
+        "Read": 77,
+        "Write": 102,
+        "Verify": 89,
+        "Finish": 82
+      }
+    },
+    "MODULE": {
+      "count": 2,
+      "total_time_seconds": 254.475,
+      "avg_time_seconds": 127.238,
+      "total_turns": 5,
+      "avg_turns": 2.5,
+      "action_counts": {
+        "Read": 2,
+        "Write": 1,
+        "Verify": 1,
+        "Finish": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 175.079,
+      "avg_time_seconds": 175.079,
+      "total_turns": 6,
+      "avg_turns": 6.0,
+      "action_counts": {
+        "Read": 1,
+        "Write": 2,
+        "Verify": 2,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "trailscraper.boto_service_definitions.service_definition_file": {
+      "total_candidate_pairs": 58,
+      "entailment_count": 52,
+      "contradiction_count": 0,
+      "neutral_count": 6,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.boto_service_definitions.boto_service_definition_files"
+      ]
+    },
+    "trailscraper.iam.known_iam_actions": {
+      "total_candidate_pairs": 97,
+      "entailment_count": 68,
+      "contradiction_count": 4,
+      "neutral_count": 25,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam._parse_action",
+        "trailscraper.iam.all_known_iam_permissions"
+      ]
+    },
+    "trailscraper.iam.Action.matching_actions": {
+      "total_candidate_pairs": 71,
+      "entailment_count": 71,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.known_iam_actions"
+      ]
+    },
+    "trailscraper.iam.BaseElement": {
+      "total_candidate_pairs": 184,
+      "entailment_count": 113,
+      "contradiction_count": 11,
+      "neutral_count": 60,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.BaseElement.__eq__",
+        "trailscraper.iam.BaseElement.__hash__",
+        "trailscraper.iam.BaseElement.__ne__",
+        "trailscraper.iam.BaseElement.__repr__",
+        "trailscraper.iam.BaseElement.json_repr"
+      ]
+    },
+    "trailscraper.iam.Action": {
+      "total_candidate_pairs": 267,
+      "entailment_count": 157,
+      "contradiction_count": 23,
+      "neutral_count": 87,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.Action._base_action",
+        "trailscraper.iam.Action.json_repr",
+        "trailscraper.iam.Action.matching_actions",
+        "trailscraper.iam.BaseElement",
+        "trailscraper.iam.known_iam_actions"
+      ]
+    },
+    "trailscraper.iam.Statement": {
+      "total_candidate_pairs": 276,
+      "entailment_count": 195,
+      "contradiction_count": 18,
+      "neutral_count": 63,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.Action",
+        "trailscraper.iam.BaseElement",
+        "trailscraper.iam.Statement.__action_list_strings",
+        "trailscraper.iam.Statement.__lt__",
+        "trailscraper.iam.Statement.json_repr",
+        "trailscraper.iam.Statement.merge"
+      ]
+    },
+    "trailscraper.cloudtrail.Record._to_api_gateway_statement": {
+      "total_candidate_pairs": 240,
+      "entailment_count": 152,
+      "contradiction_count": 19,
+      "neutral_count": 69,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.boto_service_definitions.operation_definition",
+        "trailscraper.iam.Action",
+        "trailscraper.iam.Statement"
+      ]
+    },
+    "trailscraper.cloudtrail.Record.to_statement": {
+      "total_candidate_pairs": 183,
+      "entailment_count": 151,
+      "contradiction_count": 3,
+      "neutral_count": 29,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.Action",
+        "trailscraper.iam.Statement"
+      ]
+    },
+    "trailscraper.cloudtrail.Record": {
+      "total_candidate_pairs": 462,
+      "entailment_count": 160,
+      "contradiction_count": 81,
+      "neutral_count": 221,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.boto_service_definitions.operation_definition",
+        "trailscraper.cloudtrail.Record.__eq__",
+        "trailscraper.cloudtrail.Record.__hash__",
+        "trailscraper.cloudtrail.Record.__ne__",
+        "trailscraper.cloudtrail.Record.__repr__",
+        "trailscraper.cloudtrail.Record._event_name_to_iam_action",
+        "trailscraper.cloudtrail.Record._source_to_iam_prefix",
+        "trailscraper.cloudtrail.Record._to_api_gateway_statement",
+        "trailscraper.cloudtrail.Record.to_statement",
+        "trailscraper.iam.Action",
+        "trailscraper.iam.Statement"
+      ]
+    },
+    "trailscraper.cloudtrail._parse_record": {
+      "total_candidate_pairs": 183,
+      "entailment_count": 90,
+      "contradiction_count": 17,
+      "neutral_count": 76,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail.Record",
+        "trailscraper.cloudtrail._assumed_role_arn",
+        "trailscraper.cloudtrail._resource_arns"
+      ]
+    },
+    "trailscraper.cloudtrail.parse_records": {
+      "total_candidate_pairs": 84,
+      "entailment_count": 80,
+      "contradiction_count": 2,
+      "neutral_count": 2,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail._parse_record"
+      ]
+    },
+    "trailscraper.cloudtrail.LogFile.records": {
+      "total_candidate_pairs": 54,
+      "entailment_count": 22,
+      "contradiction_count": 4,
+      "neutral_count": 28,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail.parse_records"
+      ]
+    },
+    "trailscraper.cloudtrail.LogFile": {
+      "total_candidate_pairs": 274,
+      "entailment_count": 209,
+      "contradiction_count": 14,
+      "neutral_count": 51,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail.LogFile.contains_events_for_timeframe",
+        "trailscraper.cloudtrail.LogFile.filename",
+        "trailscraper.cloudtrail.LogFile.has_valid_filename",
+        "trailscraper.cloudtrail.LogFile.records",
+        "trailscraper.cloudtrail.LogFile.timestamp",
+        "trailscraper.cloudtrail.parse_records"
+      ]
+    },
+    "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource": {
+      "total_candidate_pairs": 208,
+      "entailment_count": 147,
+      "contradiction_count": 4,
+      "neutral_count": 57,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail.LogFile",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir"
+      ]
+    },
+    "trailscraper.s3_download._s3_download_recursive": {
+      "total_candidate_pairs": 44,
+      "entailment_count": 9,
+      "contradiction_count": 5,
+      "neutral_count": 30,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.collection_utils.consume"
+      ]
+    },
+    "trailscraper.s3_download._s3_key_prefixes": {
+      "total_candidate_pairs": 94,
+      "entailment_count": 20,
+      "contradiction_count": 10,
+      "neutral_count": 64,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.s3_download._s3_key_prefix",
+        "trailscraper.s3_download._s3_key_prefix_for_org_trails"
+      ]
+    },
+    "trailscraper.s3_download.download_cloudtrail_logs": {
+      "total_candidate_pairs": 153,
+      "entailment_count": 31,
+      "contradiction_count": 11,
+      "neutral_count": 111,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.s3_download._s3_download_recursive",
+        "trailscraper.s3_download._s3_key_prefixes"
+      ]
+    },
+    "trailscraper.cli.download": {
+      "total_candidate_pairs": 162,
+      "entailment_count": 39,
+      "contradiction_count": 6,
+      "neutral_count": 117,
+      "conflict_score": 0.125,
+      "dep_ids_checked": [
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource",
+        "trailscraper.s3_download.download_cloudtrail_logs"
+      ]
+    },
+    "trailscraper.cli.generate": {
+      "total_candidate_pairs": 59,
+      "entailment_count": 50,
+      "contradiction_count": 5,
+      "neutral_count": 4,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail.parse_records"
+      ]
+    },
+    "trailscraper.iam.IAMJSONEncoder": {
+      "total_candidate_pairs": 38,
+      "entailment_count": 27,
+      "contradiction_count": 7,
+      "neutral_count": 4,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.IAMJSONEncoder.default"
+      ]
+    },
+    "trailscraper.iam.PolicyDocument.to_json": {
+      "total_candidate_pairs": 59,
+      "entailment_count": 53,
+      "contradiction_count": 0,
+      "neutral_count": 6,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.IAMJSONEncoder"
+      ]
+    },
+    "trailscraper.iam.PolicyDocument": {
+      "total_candidate_pairs": 321,
+      "entailment_count": 209,
+      "contradiction_count": 24,
+      "neutral_count": 88,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.BaseElement",
+        "trailscraper.iam.IAMJSONEncoder",
+        "trailscraper.iam.PolicyDocument.json_repr",
+        "trailscraper.iam.PolicyDocument.to_json",
+        "trailscraper.iam.Statement"
+      ]
+    },
+    "trailscraper.iam._parse_statement": {
+      "total_candidate_pairs": 169,
+      "entailment_count": 149,
+      "contradiction_count": 1,
+      "neutral_count": 19,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam.Statement",
+        "trailscraper.iam._parse_action"
+      ]
+    },
+    "trailscraper.iam._parse_statements": {
+      "total_candidate_pairs": 70,
+      "entailment_count": 64,
+      "contradiction_count": 4,
+      "neutral_count": 2,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.iam._parse_statement"
+      ]
+    },
+    "trailscraper.cli.guess": {
+      "total_candidate_pairs": 137,
+      "entailment_count": 91,
+      "contradiction_count": 19,
+      "neutral_count": 27,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.guess.guess_statements",
+        "trailscraper.iam.parse_policy_document"
+      ]
+    },
+    "trailscraper.cli.last_event_timestamp": {
+      "total_candidate_pairs": 86,
+      "entailment_count": 81,
+      "contradiction_count": 1,
+      "neutral_count": 4,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource"
+      ]
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api": {
+      "total_candidate_pairs": 77,
+      "entailment_count": 45,
+      "contradiction_count": 2,
+      "neutral_count": 30,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail._parse_record"
+      ]
+    },
+    "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource": {
+      "total_candidate_pairs": 133,
+      "entailment_count": 118,
+      "contradiction_count": 1,
+      "neutral_count": 14,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail._parse_record",
+        "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api"
+      ]
+    },
+    "trailscraper.cli.select": {
+      "total_candidate_pairs": 235,
+      "entailment_count": 96,
+      "contradiction_count": 10,
+      "neutral_count": 129,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.cloudtrail.filter_records",
+        "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource"
+      ]
+    },
+    "trailscraper/record_sources": {
+      "total_candidate_pairs": 289,
+      "entailment_count": 97,
+      "contradiction_count": 17,
+      "neutral_count": 175,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource",
+        "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.__init__",
+        "trailscraper.record_sources.cloudtrail_api_record_source.CloudTrailAPIRecordSource.load_from_api",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.__init__",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource._valid_log_files",
+        "trailscraper.record_sources.local_directory_record_source.LocalDirectoryRecordSource.load_from_dir"
+      ]
+    },
+    "trailscraper": {
+      "total_candidate_pairs": 43,
+      "entailment_count": 10,
+      "contradiction_count": 1,
+      "neutral_count": 32,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "setup.read_file"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 92,
+    "first_pass_success": 56,
+    "required_revision": 17,
+    "score_parse_failures": 0,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.8541,
+      "COMPLETENESS": 0.858,
+      "HELPFULNESS": 0.8568
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.3753,
+      "COMPLETENESS": 0.2988,
+      "HELPFULNESS": 0.2424
+    }
+  }
+}

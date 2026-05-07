@@ -1,0 +1,598 @@
+{
+  "repo_path": "/repos/Security/zxcvbn-python",
+  "elapsed_seconds": 55.037,
+  "components": {
+    "zxcvbn.matching.omnimatch": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.dictionary_match",
+        "zxcvbn.matching.sequence_match",
+        "zxcvbn.matching.spatial_match",
+        "zxcvbn.matching.date_match",
+        "zxcvbn.matching.regex_match",
+        "zxcvbn.matching.l33t_match",
+        "zxcvbn.matching.repeat_match",
+        "zxcvbn.matching.reverse_dictionary_match"
+      ]
+    },
+    "zxcvbn.scoring.most_guessable_match_sequence": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.estimate_guesses"
+      ]
+    },
+    "zxcvbn.time_estimates.estimate_attack_times": {
+      "file_path": "zxcvbn/time_estimates.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.time_estimates.display_time",
+        "zxcvbn.time_estimates.float_to_decimal",
+        "zxcvbn.time_estimates.guesses_to_score"
+      ]
+    },
+    "zxcvbn.feedback.get_feedback": {
+      "file_path": "zxcvbn/feedback.py",
+      "component_type": "function",
+      "confidence": 0.9167,
+      "documentation": "## Summary:\nGenerates human-readable feedback for password strength based on match analysis and score.\n\n## Description:\nThis function provides user-friendly suggestions and warnings to help users create stronger passwords. It analyzes the most significant match in a sequence of password matches and generates appropriate feedback based on the password strength score.\n\nThe function is designed to be called during password strength evaluation to provide actionable feedback to users. It's extracted into its own function to separate the logic of generating feedback from the core matching and scoring algorithms.\n\n## Args:\n    score (int): The password strength score (typically 0-4). Higher values indicate stronger passwords.\n    sequence (list[dict]): List of match objects containing pattern information and token data.\n\n## Returns:\n    dict: A dictionary with 'warning' string and 'suggestions' list containing feedback strings for improving password strength.\n\n## Raises:\n    None explicitly raised, but may raise exceptions from underlying get_match_feedback function calls.\n\n## Constraints:\n    Preconditions:\n    - score should be an integer representing password strength\n    - sequence should be a list of match dictionaries with 'pattern' and 'token' keys\n    \n    Postconditions:\n    - Returns a dictionary with 'warning' and 'suggestions' keys\n    - Suggestions list contains only strings\n\n## Side Effects:\n    None\n\n## Control Flow:\n```mermaid\nflowchart TD\n    A[get_feedback] --> B{len(sequence) == 0?}\n    B -- Yes --> C[Return basic suggestions]\n    B -- No --> D{score > 2?}\n    D -- Yes --> E[Return empty suggestions]\n    D -- No --> F[Find longest match]\n    F --> G[Call get_match_feedback]\n    G --> H{get_match_feedback result?}\n    H -- Yes --> I[Insert extra feedback at beginning]\n    H -- No --> J[Create new feedback with extra feedback]\n    I --> K[Return feedback]\n    J --> K\n```\n\n## Examples:\n    >>> get_feedback(0, [{'token': 'password', 'pattern': 'dictionary'}])\n    {'warning': 'This is a commonly used password.', 'suggestions': ['Add another word or two. Uncommon words are better.']}\n    \n    >>> get_feedback(3, [{'token': 'mypassword', 'pattern': 'dictionary'}])\n    {'warning': '', 'suggestions': []}\n    \n    >>> get_feedback(1, [])\n    {'warning': '', 'suggestions': ['Use a few words, avoid common phrases.', 'No need for symbols, digits, or uppercase letters.']}\n```",
+      "claims": [
+        "Generates human-readable feedback for password strength based on match analysis and score.",
+        "This function provides user-friendly suggestions and warnings to help users create stronger passwords.",
+        "It analyzes the most significant match in a sequence of password matches and generates appropriate feedback based on the password strength score.",
+        "The function is designed to be called during password strength evaluation to provide actionable feedback to users.",
+        "It's extracted into its own function to separate the logic of generating feedback from the core matching and scoring algorithms.",
+        "score (int): The password strength score (typically 0-4).",
+        "Higher values indicate stronger passwords.",
+        "sequence (list[dict]): List of match objects containing pattern information and token data.",
+        "dict: A dictionary with 'warning' string and 'suggestions' list containing feedback strings for improving password strength.",
+        "None explicitly raised, but may raise exceptions from underlying get_match_feedback function calls.",
+        "score should be an integer representing password strength",
+        "sequence should be a list of match dictionaries with 'pattern' and 'token' keys",
+        "Returns a dictionary with 'warning' and 'suggestions' keys",
+        "Suggestions list contains only strings",
+        ">>> get_feedback(0, [{'token': 'password', 'pattern': 'dictionary'}])",
+        "{'warning': 'This is a commonly used password.', 'suggestions': ['Add another word or two.",
+        "Uncommon words are better.']}",
+        ">>> get_feedback(3, [{'token': 'mypassword', 'pattern': 'dictionary'}])",
+        "{'warning': '', 'suggestions': []}",
+        "{'warning': '', 'suggestions': ['Use a few words, avoid common phrases.', 'No need for symbols, digits, or uppercase letters.']}"
+      ],
+      "depends_on": [
+        "zxcvbn.feedback.get_match_feedback"
+      ]
+    },
+    "zxcvbn.matching.build_ranked_dict": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.__init__.zxcvbn": {
+      "file_path": "zxcvbn/__init__.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.__main__.JSONEncoder.default": {
+      "file_path": "zxcvbn/__main__.py",
+      "component_type": "method",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.__main__.JSONEncoder"
+      ]
+    },
+    "zxcvbn.__main__.JSONEncoder": {
+      "file_path": "zxcvbn/__main__.py",
+      "component_type": "class",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.__main__.JSONEncoder.default",
+        "zxcvbn.__main__.JSONEncoder"
+      ]
+    },
+    "zxcvbn.__main__.cli": {
+      "file_path": "zxcvbn/__main__.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.__main__.JSONEncoder"
+      ]
+    },
+    "zxcvbn.feedback.get_dictionary_match_feedback": {
+      "file_path": "zxcvbn/feedback.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.feedback.get_match_feedback": {
+      "file_path": "zxcvbn/feedback.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.feedback.get_dictionary_match_feedback"
+      ]
+    },
+    "zxcvbn.matching.add_frequency_lists": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.build_ranked_dict"
+      ]
+    },
+    "zxcvbn.matching.map_ints_to_dm": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.two_to_four_digit_year": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.map_ints_to_dmy": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.map_ints_to_dm",
+        "zxcvbn.matching.two_to_four_digit_year"
+      ]
+    },
+    "zxcvbn.matching.date_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.map_ints_to_dmy"
+      ]
+    },
+    "zxcvbn.matching.dictionary_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.enumerate_l33t_subs": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.relevant_l33t_subtable": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.translate": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.l33t_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.dictionary_match",
+        "zxcvbn.matching.enumerate_l33t_subs",
+        "zxcvbn.matching.translate",
+        "zxcvbn.matching.relevant_l33t_subtable"
+      ]
+    },
+    "zxcvbn.matching.regex_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.bruteforce_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.date_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.nCk": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.l33t_variations": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.nCk"
+      ]
+    },
+    "zxcvbn.scoring.uppercase_variations": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.nCk"
+      ]
+    },
+    "zxcvbn.scoring.dictionary_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.l33t_variations",
+        "zxcvbn.scoring.uppercase_variations"
+      ]
+    },
+    "zxcvbn.scoring.regex_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.repeat_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.sequence_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.scoring.spatial_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.nCk"
+      ]
+    },
+    "zxcvbn.scoring.estimate_guesses": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.regex_guesses",
+        "zxcvbn.scoring.sequence_guesses",
+        "zxcvbn.scoring.date_guesses",
+        "zxcvbn.scoring.spatial_guesses",
+        "zxcvbn.scoring.repeat_guesses",
+        "zxcvbn.scoring.bruteforce_guesses",
+        "zxcvbn.scoring.dictionary_guesses"
+      ]
+    },
+    "zxcvbn.matching.repeat_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.scoring.most_guessable_match_sequence",
+        "zxcvbn.matching.omnimatch"
+      ]
+    },
+    "zxcvbn.matching.reverse_dictionary_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.dictionary_match"
+      ]
+    },
+    "zxcvbn.matching.sequence_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.spatial_match_helper": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.matching.spatial_match": {
+      "file_path": "zxcvbn/matching.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": [
+        "zxcvbn.matching.spatial_match_helper"
+      ]
+    },
+    "zxcvbn.scoring.calc_average_degree": {
+      "file_path": "zxcvbn/scoring.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.time_estimates.display_time": {
+      "file_path": "zxcvbn/time_estimates.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.time_estimates.float_to_decimal": {
+      "file_path": "zxcvbn/time_estimates.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    },
+    "zxcvbn.time_estimates.guesses_to_score": {
+      "file_path": "zxcvbn/time_estimates.py",
+      "component_type": "function",
+      "confidence": 0.0,
+      "documentation": "",
+      "claims": [],
+      "depends_on": []
+    }
+  },
+  "modules": {
+    "zxcvbn": {
+      "module_path": "zxcvbn",
+      "component_ids": [
+        "zxcvbn.__init__.zxcvbn",
+        "zxcvbn.__main__.JSONEncoder.default",
+        "zxcvbn.__main__.JSONEncoder",
+        "zxcvbn.__main__.cli",
+        "zxcvbn.feedback.get_dictionary_match_feedback",
+        "zxcvbn.feedback.get_match_feedback",
+        "zxcvbn.feedback.get_feedback",
+        "zxcvbn.matching.build_ranked_dict",
+        "zxcvbn.matching.add_frequency_lists",
+        "zxcvbn.matching.map_ints_to_dm",
+        "zxcvbn.matching.two_to_four_digit_year",
+        "zxcvbn.matching.map_ints_to_dmy",
+        "zxcvbn.matching.date_match",
+        "zxcvbn.matching.dictionary_match",
+        "zxcvbn.matching.enumerate_l33t_subs",
+        "zxcvbn.matching.relevant_l33t_subtable",
+        "zxcvbn.matching.translate",
+        "zxcvbn.matching.l33t_match",
+        "zxcvbn.matching.regex_match",
+        "zxcvbn.scoring.bruteforce_guesses",
+        "zxcvbn.scoring.date_guesses",
+        "zxcvbn.scoring.nCk",
+        "zxcvbn.scoring.l33t_variations",
+        "zxcvbn.scoring.uppercase_variations",
+        "zxcvbn.scoring.dictionary_guesses",
+        "zxcvbn.scoring.regex_guesses",
+        "zxcvbn.scoring.repeat_guesses",
+        "zxcvbn.scoring.sequence_guesses",
+        "zxcvbn.scoring.spatial_guesses",
+        "zxcvbn.scoring.estimate_guesses",
+        "zxcvbn.scoring.most_guessable_match_sequence",
+        "zxcvbn.matching.repeat_match",
+        "zxcvbn.matching.reverse_dictionary_match",
+        "zxcvbn.matching.sequence_match",
+        "zxcvbn.matching.spatial_match_helper",
+        "zxcvbn.matching.spatial_match",
+        "zxcvbn.matching.omnimatch",
+        "zxcvbn.scoring.calc_average_degree",
+        "zxcvbn.time_estimates.display_time",
+        "zxcvbn.time_estimates.float_to_decimal",
+        "zxcvbn.time_estimates.guesses_to_score",
+        "zxcvbn.time_estimates.estimate_attack_times"
+      ],
+      "child_module_paths": [],
+      "documentation": "## Tree:\nzxcvbn/\n├── __init__.py\n├── __main__.py\n├── feedback.py\n├── matching.py\n├── scoring.py\n└── time_estimates.py\n\n## Role:\nEvaluates password strength by analyzing patterns and estimating guessability\n\n## Description:\nThe zxcvbn module provides a comprehensive password strength estimation system that analyzes various patterns in passwords to compute how long it would take to crack them. It's designed to replace simple password complexity requirements with intelligent analysis of actual password characteristics.\n\nThis module is primarily used by the main zxcvbn function to assess password security and provide detailed feedback to users about their password choices. It's consumed by both the command-line interface and any application requiring robust password strength checking.\n\nThe components are grouped together because they form a cohesive system for password strength analysis, with matching identifying patterns, scoring calculating guess probabilities, and feedback providing user guidance.\n\n## Components:\n*   `zxcvbn.__init__.zxcvbn` - Main function that orchestrates password strength analysis\n*   `zxcvbn.__main__.JSONEncoder` - Custom JSON encoder for serializing results\n*   `zxcvbn.__main__.cli` - Command-line interface function\n*   `zxcvbn.feedback.get_dictionary_match_feedback` - Provides feedback for dictionary-based matches\n*   `zxcvbn.feedback.get_feedback` - Generates overall feedback based on password analysis\n*   `zxcvbn.feedback.get_match_feedback` - Provides feedback for specific match patterns\n*   `zxcvbn.matching.add_frequency_lists` - Adds custom frequency lists to the matching engine\n*   `zxcvbn.matching.build_ranked_dict` - Creates ranked dictionaries from ordered lists\n*   `zxcvbn.matching.date_match` - Identifies date patterns in passwords\n*   `zxcvbn.matching.dictionary_match` - Finds dictionary words in passwords\n*   `zxcvbn.matching.enumerate_l33t_subs` - Enumerates possible l33t substitutions\n*   `zxcvbn.matching.l33t_match` - Detects l33t-speak patterns in passwords\n*   `zxcvbn.matching.map_ints_to_dm` - Maps integers to day/month format\n*   `zxcvbn.matching.map_ints_to_dmy` - Maps integers to day/month/year format\n*   `zxcvbn.matching.omnimatch` - Runs all matching functions on a password\n*   `zxcvbn.matching.regex_match` - Identifies regex pattern matches\n*   `zxcvbn.matching.relevant_l33t_subtable` - Determines relevant l33t substitutions for a password\n*   `zxcvbn.matching.repeat_match` - Finds repeated character/sequence patterns\n*   `zxcvbn.matching.reverse_dictionary_match` - Detects reversed dictionary words\n*   `zxcvbn.matching.sequence_match` - Identifies sequential character patterns\n*   `zxcvbn.matching.spatial_match` - Finds spatial patterns on keyboards\n*   `zxcvbn.matching.spatial_match_helper` - Helper function for spatial pattern matching\n*   `zxcvbn.matching.translate` - Translates characters using substitution maps\n*   `zxcvbn.matching.two_to_four_digit_year` - Converts 2-digit years to 4-digit format\n*   `zxcvbn.scoring.bruteforce_guesses` - Estimates guesses for brute force attacks\n*   `zxcvbn.scoring.calc_average_degree` - Calculates average degree of a graph\n*   `zxcvbn.scoring.date_guesses` - Estimates guesses for date patterns\n*   `zxcvbn.scoring.dictionary_guesses` - Calculates guesses for dictionary matches\n*   `zxcvbn.scoring.estimate_guesses` - Estimates total guesses for a match\n*   `zxcvbn.scoring.l33t_variations` - Calculates variations for l33t substitutions\n*   `zxcvbn.scoring.most_guessable_match_sequence` - Finds the most likely match sequence\n*   `zxcvbn.scoring.nCk` - Computes combinations (n choose k)\n*   `zxcvbn.scoring.regex_guesses` - Estimates guesses for regex patterns\n*   `zxcvbn.scoring.repeat_guesses` - Calculates guesses for repeated patterns\n*   `zxcvbn.scoring.sequence_guesses` - Estimates guesses for sequential patterns\n*   `zxcvbn.scoring.spatial_guesses` - Calculates guesses for spatial keyboard patterns\n*   `zxcvbn.scoring.uppercase_variations` - Computes variations for uppercase letters\n*   `zxcvbn.time_estimates.display_time` - Formats time estimates for display\n*   `zxcvbn.time_estimates.estimate_attack_times` - Calculates attack time estimates\n*   `zxcvbn.time_estimates.float_to_decimal` - Converts floats to decimals for precision\n*   `zxcvbn.time_estimates.guesses_to_score` - Converts guess count to security score\n\n```mermaid\ngraph TD\n    A[zxcvbn.__init__.zxcvbn] --> B[zxcvbn.matching.omnimatch]\n    A --> C[zxcvbn.scoring.most_guessable_match_sequence]\n    A --> D[zxcvbn.time_estimates.estimate_attack_times]\n    A --> E[zxcvbn.feedback.get_feedback]\n    B --> F[zxcvbn.matching.dictionary_match]\n    B --> G[zxcvbn.matching.reverse_dictionary_match]\n    B --> H[zxcvbn.matching.l33t_match]\n    B --> I[zxcvbn.matching.spatial_match]\n    B --> J[zxcvbn.matching.repeat_match]\n    B --> K[zxcvbn.matching.sequence_match]\n    B --> L[zxcvbn.matching.regex_match]\n    B --> M[zxcvbn.matching.date_match]\n    C --> N[zxcvbn.scoring.estimate_guesses]\n    C --> O[zxcvbn.scoring.bruteforce_guesses]\n    C --> P[zxcvbn.scoring.dictionary_guesses]\n    C --> Q[zxcvbn.scoring.spatial_guesses]\n    C --> R[zxcvbn.scoring.repeat_guesses]\n    C --> S[zxcvbn.scoring.sequence_guesses]\n    C --> T[zxcvbn.scoring.regex_guesses]\n    C --> U[zxcvbn.scoring.date_guesses]\n    D --> V[zxcvbn.time_estimates.guesses_to_score]\n    D --> W[zxcvbn.time_estimates.display_time]\n    E --> X[zxcvbn.feedback.get_match_feedback]\n    X --> Y[zxcvbn.feedback.get_dictionary_match_feedback]\n```\n\n## Public API:\n*   `zxcvbn(password, user_inputs=None)` - Main function to analyze password strength\n    *   Analyzes password for various patterns and estimates guessability\n    *   Returns comprehensive analysis including score, time estimates, and feedback\n*   `zxcvbn.__main__.cli()` - Command-line interface for password analysis\n    *   Reads password from stdin or prompts user\n    *   Outputs JSON-formatted analysis results using JSONEncoder\n*   `zxcvbn.matching.add_frequency_lists(frequency_lists_)` - Adds custom frequency lists\n    *   Allows extending the dictionary matching with custom word lists\n\n## Dependencies:\n*   Internal imports:\n    *   `zxcvbn.matching` - Pattern matching functionality\n    *   `zxcvbn.scoring` - Guess estimation calculations\n    *   `zxcvbn.time_estimates` - Attack time calculations\n    *   `zxcvbn.feedback` - User feedback generation\n*   External imports:\n    *   `datetime` - Time measurement for performance tracking\n    *   `json` - JSON serialization for CLI output only\n    *   `getpass` - Secure password input from terminal\n    *   `select` - Input handling for CLI\n    *   `re` - Regular expression matching for pattern detection\n    *   `math` - Mathematical operations for calculations\n    *   `decimal` - High-precision decimal arithmetic for guess calculations\n\n## Constraints:\n*   Password analysis is computationally intensive for very long passwords\n*   All functions expect properly formatted inputs (strings, lists, etc.)\n*   The module assumes standard ASCII character sets for pattern matching\n*   Thread-safe: No shared mutable state between function calls\n*   Initialization: No special setup required, all functions are self-contained",
+      "claims": [
+        "Evaluates password strength by analyzing patterns and estimating guessability",
+        "The zxcvbn module provides a comprehensive password strength estimation system that analyzes various patterns in passwords to compute how long it would take to crack them.",
+        "It's designed to replace simple password complexity requirements with intelligent analysis of actual password characteristics.",
+        "This module is primarily used by the main zxcvbn function to assess password security and provide detailed feedback to users about their password choices.",
+        "It's consumed by both the command-line interface and any application requiring robust password strength checking.",
+        "The components are grouped together because they form a cohesive system for password strength analysis, with matching identifying patterns, scoring calculating guess probabilities, and feedback providing user guidance.",
+        "zxcvbn.__init__.zxcvbn - Main function that orchestrates password strength analysis",
+        "zxcvbn.__main__.JSONEncoder - Custom JSON encoder for serializing results",
+        "zxcvbn.__main__.cli - Command-line interface function",
+        "zxcvbn.feedback.get_dictionary_match_feedback - Provides feedback for dictionary-based matches",
+        "zxcvbn.feedback.get_feedback - Generates overall feedback based on password analysis",
+        "zxcvbn.feedback.get_match_feedback - Provides feedback for specific match patterns",
+        "zxcvbn.matching.add_frequency_lists - Adds custom frequency lists to the matching engine",
+        "zxcvbn.matching.build_ranked_dict - Creates ranked dictionaries from ordered lists",
+        "zxcvbn.matching.date_match - Identifies date patterns in passwords",
+        "zxcvbn.matching.dictionary_match - Finds dictionary words in passwords",
+        "zxcvbn.matching.enumerate_l33t_subs - Enumerates possible l33t substitutions",
+        "zxcvbn.matching.l33t_match - Detects l33t-speak patterns in passwords",
+        "zxcvbn.matching.map_ints_to_dm - Maps integers to day/month format",
+        "zxcvbn.matching.map_ints_to_dmy - Maps integers to day/month/year format",
+        "zxcvbn.matching.omnimatch - Runs all matching functions on a password",
+        "zxcvbn.matching.regex_match - Identifies regex pattern matches",
+        "zxcvbn.matching.relevant_l33t_subtable - Determines relevant l33t substitutions for a password",
+        "zxcvbn.matching.repeat_match - Finds repeated character/sequence patterns",
+        "zxcvbn.matching.reverse_dictionary_match - Detects reversed dictionary words",
+        "zxcvbn.matching.sequence_match - Identifies sequential character patterns",
+        "zxcvbn.matching.spatial_match - Finds spatial patterns on keyboards",
+        "zxcvbn.matching.spatial_match_helper - Helper function for spatial pattern matching",
+        "zxcvbn.matching.translate - Translates characters using substitution maps",
+        "zxcvbn.matching.two_to_four_digit_year - Converts 2-digit years to 4-digit format",
+        "zxcvbn.scoring.bruteforce_guesses - Estimates guesses for brute force attacks",
+        "zxcvbn.scoring.calc_average_degree - Calculates average degree of a graph",
+        "zxcvbn.scoring.date_guesses - Estimates guesses for date patterns",
+        "zxcvbn.scoring.dictionary_guesses - Calculates guesses for dictionary matches",
+        "zxcvbn.scoring.estimate_guesses - Estimates total guesses for a match",
+        "zxcvbn.scoring.l33t_variations - Calculates variations for l33t substitutions",
+        "zxcvbn.scoring.most_guessable_match_sequence - Finds the most likely match sequence",
+        "zxcvbn.scoring.nCk - Computes combinations (n choose k)",
+        "zxcvbn.scoring.regex_guesses - Estimates guesses for regex patterns",
+        "zxcvbn.scoring.repeat_guesses - Calculates guesses for repeated patterns",
+        "zxcvbn.scoring.sequence_guesses - Estimates guesses for sequential patterns",
+        "zxcvbn.scoring.spatial_guesses - Calculates guesses for spatial keyboard patterns",
+        "zxcvbn.scoring.uppercase_variations - Computes variations for uppercase letters",
+        "zxcvbn.time_estimates.display_time - Formats time estimates for display",
+        "zxcvbn.time_estimates.estimate_attack_times - Calculates attack time estimates",
+        "zxcvbn.time_estimates.float_to_decimal - Converts floats to decimals for precision",
+        "zxcvbn.time_estimates.guesses_to_score - Converts guess count to security score",
+        "zxcvbn(password, user_inputs=None) - Main function to analyze password strength",
+        "Analyzes password for various patterns and estimates guessability",
+        "Returns comprehensive analysis including score, time estimates, and feedback",
+        "zxcvbn.__main__.cli() - Command-line interface for password analysis",
+        "Reads password from stdin or prompts user",
+        "Outputs JSON-formatted analysis results using JSONEncoder",
+        "zxcvbn.matching.add_frequency_lists(frequency_lists_) - Adds custom frequency lists",
+        "Allows extending the dictionary matching with custom word lists",
+        "zxcvbn.matching - Pattern matching functionality",
+        "zxcvbn.scoring - Guess estimation calculations",
+        "zxcvbn.time_estimates - Attack time calculations",
+        "zxcvbn.feedback - User feedback generation",
+        "datetime - Time measurement for performance tracking",
+        "json - JSON serialization for CLI output only",
+        "getpass - Secure password input from terminal",
+        "select - Input handling for CLI",
+        "re - Regular expression matching for pattern detection",
+        "math - Mathematical operations for calculations",
+        "decimal - High-precision decimal arithmetic for guess calculations",
+        "Password analysis is computationally intensive for very long passwords",
+        "All functions expect properly formatted inputs (strings, lists, etc.)",
+        "The module assumes standard ASCII character sets for pattern matching",
+        "Thread-safe: No shared mutable state between function calls",
+        "Initialization: No special setup required, all functions are self-contained"
+      ]
+    }
+  },
+  "repository": {
+    "documentation": "## Tree:\n```\nzxcvbn-python/\n└── zxcvbn/\n    ├── __init__.py\n    ├── __main__.py\n    ├── feedback.py\n    ├── matching.py\n    ├── scoring.py\n    └── time_estimates.py\n```\n\n### Responsibilities:\n- **zxcvbn/__init__.py**: Main entry point providing the `zxcvbn()` function that evaluates password strength\n- **zxcvbn/__main__.py**: Command-line interface for interactive password strength checking\n- **zxcvbn/feedback.py**: Provides user-friendly feedback and suggestions based on password analysis\n- **zxcvbn/matching.py**: Implements various pattern matching algorithms to identify common password patterns\n- **zxcvbn/scoring.py**: Calculates the number of guesses required to crack passwords based on identified patterns\n- **zxcvbn/time_estimates.py**: Estimates how long it would take to crack passwords under different attack scenarios\n\n## Purpose:\nThe zxcvbn-python library is a password strength estimation tool that goes beyond simple character counting to provide meaningful security assessments. It analyzes passwords for common patterns, dictionary words, sequences, and other predictable elements to estimate how long it would take to crack them using various attack methods.\n\n### Target Users:\n- Security engineers building authentication systems\n- Application developers integrating password strength validation\n- System administrators enforcing password policies\n- Developers creating password quality tools\n\n### Usage Scenarios:\n- Real-time password validation in web applications\n- Batch processing of password databases for security auditing\n- Educational tools to teach password security concepts\n- Password policy enforcement systems\n\n## Architecture:\n```mermaid\nflowchart TD\n    A[Password Input] --> B[zxcvbn Function]\n    B --> C[Pattern Matching]\n    C --> D[Dictionary Matches]\n    C --> E[Sequence Matches]\n    C --> F[Spatial Pattern Matches]\n    C --> G[Repeat Pattern Matches]\n    C --> H[Regex Matches]\n    C --> I[Date Pattern Matches]\n    C --> J[Reverse Dictionary Matches]\n    C --> K[L33t Substitution Matches]\n    B --> L[Scoring Engine]\n    L --> M[Guess Estimation]\n    L --> N[Most Guessable Sequence]\n    B --> O[Time Estimation]\n    O --> P[Attack Time Calculation]\n    B --> Q[Feedback Generation]\n    Q --> R[User Feedback]\n    Q --> S[Security Suggestions]\n    B --> T[Result Output]\n    T --> U[JSON Response]\n```\n\n### Key Abstractions:\n- **Pattern Matching Pipeline**: Sequential application of multiple matching algorithms to identify password weaknesses\n- **Scoring Algorithm**: Uses dynamic programming to find the most likely way to guess the password\n- **Attack Time Estimator**: Computes cracking times for various attack scenarios (online/offline, with/without throttling)\n- **Feedback Generator**: Translates technical results into human-readable security advice\n\n## Entry Points:\n### Importable API:\n- **`zxcvbn(password, user_inputs=None)`**: Main function that returns comprehensive password strength analysis\n  - **Args**:\n    - `password` (str): Password to analyze\n    - `user_inputs` (list[str], optional): User-specific information to check against\n  - **Returns**: Dictionary containing strength metrics, attack times, and feedback\n\n### Command-Line Interface:\n- **`python -m zxcvbn`**: Interactive command-line tool for password analysis\n  - **Usage**: Run without arguments to enter password interactively, or pipe password via stdin\n  - **Args**: `--user-input` flag to provide user-specific information for analysis\n\n## Core Features:\n- **Pattern Recognition**: Identifies dictionary words, sequences, spatial patterns, repeated characters, and more\n- **Advanced Scoring**: Uses sophisticated algorithms to calculate minimum guesses needed to crack passwords\n- **Multi-Scenario Timing**: Estimates cracking times for online attacks (with throttling), offline attacks (fast/slow hashing)\n- **Human-Friendly Feedback**: Provides actionable security suggestions based on password weaknesses\n- **Customizable Inputs**: Allows inclusion of user-specific information in password analysis\n- **Comprehensive Reporting**: Returns detailed metrics including guess counts, attack times, and security score\n\n## Dependencies:\n- **Python Standard Library**: Uses `datetime`, `json`, `re`, `select`, `getpass`, `math`, `decimal`, `collections`, `itertools`\n- **External Libraries**: None - pure Python implementation\n\n## Configuration:\nNone - the library uses hardcoded dictionaries and constants for its analysis. All configuration happens through function parameters.\n\n## Extension Points:\n- **Pattern Matching**: New pattern matchers can be added to the `omnimatch` function\n- **Dictionary Lists**: Additional frequency lists can be added via `add_frequency_lists` function\n- **Scoring Algorithms**: Custom guess estimation functions can be implemented\n- **Feedback Logic**: New feedback rules can be added to the feedback module",
+    "module_paths": [
+      "zxcvbn"
+    ],
+    "claims": [
+      "zxcvbn/__init__.py: Main entry point providing the zxcvbn() function that evaluates password strength",
+      "zxcvbn/__main__.py: Command-line interface for interactive password strength checking",
+      "zxcvbn/feedback.py: Provides user-friendly feedback and suggestions based on password analysis",
+      "zxcvbn/matching.py: Implements various pattern matching algorithms to identify common password patterns",
+      "zxcvbn/scoring.py: Calculates the number of guesses required to crack passwords based on identified patterns",
+      "zxcvbn/time_estimates.py: Estimates how long it would take to crack passwords under different attack scenarios",
+      "The zxcvbn-python library is a password strength estimation tool that goes beyond simple character counting to provide meaningful security assessments.",
+      "It analyzes passwords for common patterns, dictionary words, sequences, and other predictable elements to estimate how long it would take to crack them using various attack methods.",
+      "Security engineers building authentication systems",
+      "Application developers integrating password strength validation",
+      "System administrators enforcing password policies",
+      "Developers creating password quality tools",
+      "Real-time password validation in web applications",
+      "Batch processing of password databases for security auditing",
+      "Educational tools to teach password security concepts",
+      "Password policy enforcement systems",
+      "Pattern Matching Pipeline: Sequential application of multiple matching algorithms to identify password weaknesses",
+      "Scoring Algorithm: Uses dynamic programming to find the most likely way to guess the password",
+      "Attack Time Estimator: Computes cracking times for various attack scenarios (online/offline, with/without throttling)",
+      "Feedback Generator: Translates technical results into human-readable security advice",
+      "zxcvbn(password, user_inputs=None): Main function that returns comprehensive password strength analysis",
+      "password (str): Password to analyze",
+      "user_inputs (list[str], optional): User-specific information to check against",
+      "Returns: Dictionary containing strength metrics, attack times, and feedback",
+      "python -m zxcvbn: Interactive command-line tool for password analysis",
+      "Usage: Run without arguments to enter password interactively, or pipe password via stdin",
+      "Args: --user-input flag to provide user-specific information for analysis",
+      "Pattern Recognition: Identifies dictionary words, sequences, spatial patterns, repeated characters, and more",
+      "Advanced Scoring: Uses sophisticated algorithms to calculate minimum guesses needed to crack passwords",
+      "Multi-Scenario Timing: Estimates cracking times for online attacks (with throttling), offline attacks (fast/slow hashing)",
+      "Human-Friendly Feedback: Provides actionable security suggestions based on password weaknesses",
+      "Customizable Inputs: Allows inclusion of user-specific information in password analysis",
+      "Comprehensive Reporting: Returns detailed metrics including guess counts, attack times, and security score",
+      "Python Standard Library: Uses datetime, json, re, select, getpass, math, decimal, collections, itertools",
+      "External Libraries: None - pure Python implementation",
+      "None - the library uses hardcoded dictionaries and constants for its analysis.",
+      "All configuration happens through function parameters.",
+      "Pattern Matching: New pattern matchers can be added to the omnimatch function",
+      "Dictionary Lists: Additional frequency lists can be added via add_frequency_lists function",
+      "Scoring Algorithms: Custom guess estimation functions can be implemented",
+      "Feedback Logic: New feedback rules can be added to the feedback module"
+    ]
+  }
+}

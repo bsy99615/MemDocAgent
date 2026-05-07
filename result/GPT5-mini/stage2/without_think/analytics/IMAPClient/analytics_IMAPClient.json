@@ -1,0 +1,3699 @@
+{
+  "run_id": "20260423_101534",
+  "label": "IMAPClient",
+  "total_run_time_seconds": 6362.891,
+  "repo_summary": {
+    "file_count": 13,
+    "function_count": 35,
+    "class_count": 13,
+    "method_count": 36,
+    "total_components": 84,
+    "module_count": 1,
+    "repo_count": 1,
+    "topological_order_count": 84,
+    "topological_order": [
+      "imapclient.config.refresh_oauth2_token",
+      "imapclient.config.get_oauth2_token",
+      "imapclient.config.create_client_from_config",
+      "imapclient.config._read_config_section",
+      "imapclient.config.getenv",
+      "imapclient.config.get_config_defaults",
+      "imapclient.config.get_string_config_defaults",
+      "imapclient.config.parse_config_file",
+      "imapclient.datetime_util.datetime_to_INTERNALDATE",
+      "imapclient.datetime_util.format_criteria_date",
+      "imapclient.datetime_util._munge",
+      "imapclient.datetime_util.datetime_to_native",
+      "imapclient.datetime_util.parse_to_datetime",
+      "imapclient.fixed_offset.FixedOffset.dst",
+      "imapclient.fixed_offset.FixedOffset.for_system",
+      "imapclient.fixed_offset.FixedOffset.tzname",
+      "imapclient.fixed_offset.FixedOffset.utcoffset",
+      "imapclient.fixed_offset.FixedOffset",
+      "imapclient.fixed_offset.FixedOffset.__init__",
+      "imapclient.imap4.IMAP4WithTimeout._create_socket",
+      "imapclient.imap4.IMAP4WithTimeout.open",
+      "imapclient.imap4.IMAP4WithTimeout",
+      "imapclient.imap4.IMAP4WithTimeout.__init__",
+      "imapclient.imap_utf7.base64_utf7_decode",
+      "imapclient.imap_utf7.decode",
+      "imapclient.imap_utf7.base64_utf7_encode",
+      "imapclient.imap_utf7.encode",
+      "imapclient.interact.command_line",
+      "imapclient.interact.main",
+      "imapclient.response_lexer.PushableIterator.__iter__",
+      "imapclient.response_lexer.PushableIterator.__next__",
+      "imapclient.response_lexer.PushableIterator.push",
+      "imapclient.response_lexer.PushableIterator",
+      "imapclient.response_lexer.LiteralHandlingIter.__iter__",
+      "imapclient.response_lexer.LiteralHandlingIter",
+      "imapclient.response_lexer.Lexer.__init__",
+      "imapclient.response_lexer.LiteralHandlingIter.__init__",
+      "imapclient.response_lexer.PushableIterator.__init__",
+      "imapclient.response_lexer.Lexer.__iter__",
+      "imapclient.response_lexer.Lexer.read_token_stream",
+      "imapclient.response_lexer.Lexer.read_until",
+      "imapclient.response_lexer.Lexer",
+      "imapclient.response_lexer.TokenSource.__iter__",
+      "imapclient.response_lexer.TokenSource.current_literal",
+      "imapclient.response_lexer.TokenSource",
+      "imapclient.response_lexer.TokenSource.__init__",
+      "imapclient.response_parser._convert_ENVELOPE",
+      "imapclient.response_parser._convert_INTERNALDATE",
+      "imapclient.response_parser._int_or_error",
+      "imapclient.response_parser._fmt_tuple",
+      "imapclient.response_parser.parse_tuple",
+      "imapclient.response_parser.atom",
+      "imapclient.response_parser.gen_parsed_response",
+      "imapclient.response_parser.parse_fetch_response",
+      "imapclient.response_parser.parse_response",
+      "imapclient.response_parser.parse_message_list",
+      "imapclient.response_types.Address.__str__",
+      "imapclient.response_types.Address",
+      "imapclient.response_types.BodyData.create",
+      "imapclient.response_types.BodyData.is_multipart",
+      "imapclient.response_types.BodyData",
+      "imapclient.response_types.Envelope",
+      "imapclient.response_types.SearchIds",
+      "imapclient.response_types.SearchIds.__init__",
+      "imapclient.testable_imapclient.MockIMAP4.__init__",
+      "imapclient.testable_imapclient.MockIMAP4._new_tag",
+      "imapclient.testable_imapclient.MockIMAP4.send",
+      "imapclient.testable_imapclient.MockIMAP4",
+      "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4",
+      "imapclient.testable_imapclient.TestableIMAPClient",
+      "imapclient.testable_imapclient.TestableIMAPClient.__init__",
+      "imapclient.tls.wrap_socket",
+      "imapclient.tls.IMAP4_TLS.open",
+      "imapclient.tls.IMAP4_TLS.read",
+      "imapclient.tls.IMAP4_TLS.readline",
+      "imapclient.tls.IMAP4_TLS.send",
+      "imapclient.tls.IMAP4_TLS.shutdown",
+      "imapclient.tls.IMAP4_TLS",
+      "imapclient.tls.IMAP4_TLS.__init__",
+      "imapclient.util.assert_imap_protocol",
+      "imapclient.util.chunk",
+      "imapclient.util.to_bytes",
+      "imapclient.util.to_unicode",
+      "imapclient.version._imapclient_version_string"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 91,
+    "Write": 123,
+    "Verify": 110,
+    "Finish": 81
+  },
+  "action_time_totals_seconds": {
+    "Read": 763.089,
+    "Write": 3301.517,
+    "Verify": 1728.413
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 401531,
+      "output_tokens": 57307
+    },
+    "Write": {
+      "input_tokens": 710885,
+      "output_tokens": 275452
+    },
+    "Verify": {
+      "input_tokens": 773510,
+      "output_tokens": 129390
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 39,
+    "total_memory_hits": 184
+  },
+  "per_component_stats": {
+    "imapclient.config.refresh_oauth2_token": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 79.42928189900704,
+      "Verify_time": 38.39047791797202,
+      "total_time_seconds": 121.126,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.config.get_oauth2_token": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 12.942681141023058,
+      "Write_time": 40.425178793026134,
+      "Verify_time": 0.0,
+      "total_time_seconds": 58.356,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.config.create_client_from_config": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 18.016206365951803,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 79.431,
+      "graph_searches": 1,
+      "memory_hits": 1,
+      "Finish(exception)_calls": 1
+    },
+    "imapclient.config._read_config_section": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 50.47360716201365,
+      "Verify_time": 18.143409722018987,
+      "total_time_seconds": 73.157,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.config.getenv": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 36.32175986398943,
+      "Verify_time": 10.485638854035642,
+      "total_time_seconds": 56.25,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.config.get_config_defaults": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.322134234011173,
+      "Write_time": 41.50431920599658,
+      "Verify_time": 24.92905698902905,
+      "total_time_seconds": 75.037,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.config.get_string_config_defaults": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.481609291979112,
+      "Write_time": 51.47427944501396,
+      "Verify_time": 29.806457786995452,
+      "total_time_seconds": 89.482,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.config.parse_config_file": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.92249988403637,
+      "Write_time": 34.924690667015966,
+      "Verify_time": 38.023185038997326,
+      "total_time_seconds": 98.257,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.datetime_util.datetime_to_INTERNALDATE": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.96686948800925,
+      "Write_time": 85.52556528500281,
+      "Verify_time": 22.55994637607364,
+      "total_time_seconds": 128.657,
+      "graph_searches": 3,
+      "memory_hits": 1
+    },
+    "imapclient.datetime_util.format_criteria_date": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 9.23259870801121,
+      "Write_time": 74.6409541980247,
+      "Verify_time": 47.11030963098165,
+      "total_time_seconds": 134.201,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.datetime_util._munge": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 61.980185308959335,
+      "Verify_time": 29.15983481402509,
+      "total_time_seconds": 93.942,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.datetime_util.datetime_to_native": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.297311352973338,
+      "Write_time": 48.264814022986684,
+      "Verify_time": 38.79218451306224,
+      "total_time_seconds": 96.975,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.datetime_util.parse_to_datetime": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.323587838967796,
+      "Write_time": 47.27880944503704,
+      "Verify_time": 14.569351085985545,
+      "total_time_seconds": 74.187,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.fixed_offset.FixedOffset.dst": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 7.272259998018853,
+      "Write_time": 29.917783021985088,
+      "Verify_time": 0.0,
+      "total_time_seconds": 44.807,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.fixed_offset.FixedOffset.for_system": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.643633275991306,
+      "Write_time": 24.953498307964765,
+      "Verify_time": 0.0,
+      "total_time_seconds": 37.956,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.fixed_offset.FixedOffset.tzname": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 7.228619761008304,
+      "Write_time": 21.748699402960483,
+      "Verify_time": 0.0,
+      "total_time_seconds": 32.636,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.fixed_offset.FixedOffset.utcoffset": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.024665695964359,
+      "Write_time": 22.97916378098307,
+      "Verify_time": 0.0,
+      "total_time_seconds": 39.607,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.fixed_offset.FixedOffset": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.080812525004148,
+      "Write_time": 34.88514765998116,
+      "Verify_time": 22.9186080530053,
+      "total_time_seconds": 70.804,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "imapclient.fixed_offset.FixedOffset.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 5.4693547819624655,
+      "Write_time": 71.01386111800093,
+      "Verify_time": 48.05655377503717,
+      "total_time_seconds": 124.542,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.imap4.IMAP4WithTimeout._create_socket": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.7297611820395105,
+      "Write_time": 31.503734019002877,
+      "Verify_time": 24.819833732035477,
+      "total_time_seconds": 64.872,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.imap4.IMAP4WithTimeout.open": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.086409270006698,
+      "Write_time": 31.833982828014996,
+      "Verify_time": 14.12450681295013,
+      "total_time_seconds": 56.196,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.imap4.IMAP4WithTimeout": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.28911611699732,
+      "Write_time": 49.2817943279515,
+      "Verify_time": 28.63107790000504,
+      "total_time_seconds": 91.27,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.imap4.IMAP4WithTimeout.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.636888245004229,
+      "Write_time": 26.456213526020292,
+      "Verify_time": 8.638786625990178,
+      "total_time_seconds": 42.665,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.imap_utf7.base64_utf7_decode": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 29.959536484035198,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 35.285,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.imap_utf7.decode": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.820557232014835,
+      "Write_time": 41.64861569303321,
+      "Verify_time": 30.211816734983586,
+      "total_time_seconds": 86.101,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.imap_utf7.base64_utf7_encode": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 5.389502722013276,
+      "Write_time": 87.11848723900039,
+      "Verify_time": 40.228103508998174,
+      "total_time_seconds": 134.407,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.imap_utf7.encode": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.7320968979620375,
+      "Write_time": 28.3598239570274,
+      "Verify_time": 15.125912001007237,
+      "total_time_seconds": 49.242,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.interact.command_line": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 3.5689138689776883,
+      "Write_time": 51.42216639500111,
+      "Verify_time": 23.465833828027826,
+      "total_time_seconds": 80.323,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.interact.main": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.533962535962928,
+      "Write_time": 24.82702742400579,
+      "Verify_time": 0.0,
+      "total_time_seconds": 36.783,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.response_lexer.PushableIterator.__iter__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.531405223009642,
+      "Write_time": 24.95854652801063,
+      "Verify_time": 8.023933481017593,
+      "total_time_seconds": 40.34,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.response_lexer.PushableIterator.__next__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.057146098988596,
+      "Write_time": 13.095765645965002,
+      "Verify_time": 19.43520772503689,
+      "total_time_seconds": 39.843,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.PushableIterator.push": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.468135157017969,
+      "Write_time": 34.26560206600698,
+      "Verify_time": 25.141496183990967,
+      "total_time_seconds": 68.657,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.PushableIterator": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 35.113025113008916,
+      "Verify_time": 13.047348182008136,
+      "total_time_seconds": 50.845,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.response_lexer.LiteralHandlingIter.__iter__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.917502299998887,
+      "Write_time": 14.044761381985154,
+      "Verify_time": 10.190299651992973,
+      "total_time_seconds": 35.743,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.LiteralHandlingIter": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 6.192650867975317,
+      "Write_time": 27.390888853988145,
+      "Verify_time": 0.0,
+      "total_time_seconds": 36.628,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "imapclient.response_lexer.Lexer.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.200581375975162,
+      "Write_time": 22.03435842099134,
+      "Verify_time": 10.140215018996969,
+      "total_time_seconds": 39.455,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.LiteralHandlingIter.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.663894453959074,
+      "Write_time": 43.47299681097502,
+      "Verify_time": 26.146066202025395,
+      "total_time_seconds": 77.714,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.PushableIterator.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.230025212978944,
+      "Write_time": 17.803027073969133,
+      "Verify_time": 12.124835484020878,
+      "total_time_seconds": 36.961,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.Lexer.__iter__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.353306183009408,
+      "Write_time": 37.231746583012864,
+      "Verify_time": 24.51671846298268,
+      "total_time_seconds": 70.378,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.response_lexer.Lexer.read_token_stream": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 8.769573354977183,
+      "Write_time": 38.68215629301267,
+      "Verify_time": 0.0,
+      "total_time_seconds": 51.67,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.response_lexer.Lexer.read_until": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 62.65403792099096,
+      "Verify_time": 92.64441299403552,
+      "total_time_seconds": 159.071,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.response_lexer.Lexer": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 23.61139885999728,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 93.367,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(exception)_calls": 1
+    },
+    "imapclient.response_lexer.TokenSource.__iter__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.781093597004656,
+      "Write_time": 20.23928869504016,
+      "Verify_time": 22.7145061789779,
+      "total_time_seconds": 50.781,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.response_lexer.TokenSource.current_literal": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 17.96711773693096,
+      "Write_time": 74.67970683798194,
+      "Verify_time": 43.22066737303976,
+      "total_time_seconds": 138.604,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "imapclient.response_lexer.TokenSource": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 21.600257077021524,
+      "Write_time": 74.34492862696061,
+      "Verify_time": 36.662611398962326,
+      "total_time_seconds": 135.042,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "imapclient.response_lexer.TokenSource.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.87683260004269,
+      "Write_time": 23.973412806983106,
+      "Verify_time": 16.35163857898442,
+      "total_time_seconds": 57.889,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "imapclient.response_parser._convert_ENVELOPE": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 91.7138441010029,
+      "Verify_time": 33.128087691031396,
+      "total_time_seconds": 127.826,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.response_parser._convert_INTERNALDATE": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.136411034036428,
+      "Write_time": 43.73615114600398,
+      "Verify_time": 16.315528303966857,
+      "total_time_seconds": 72.32,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.response_parser._int_or_error": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.676544686954003,
+      "Write_time": 67.87102838698775,
+      "Verify_time": 42.55109988898039,
+      "total_time_seconds": 126.704,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.response_parser._fmt_tuple": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 18.610719706048258,
+      "Write_time": 33.71817484399071,
+      "Verify_time": 0.0,
+      "total_time_seconds": 57.046,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.response_parser.parse_tuple": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.920471087039914,
+      "Write_time": 25.792085680994205,
+      "Verify_time": 39.63180694903713,
+      "total_time_seconds": 82.05,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "imapclient.response_parser.atom": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 17.37788190797437,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 113.357,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(exception)_calls": 1
+    },
+    "imapclient.response_parser.gen_parsed_response": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.633768242027145,
+      "Write_time": 85.17034115793649,
+      "Verify_time": 40.41650648601353,
+      "total_time_seconds": 139.505,
+      "graph_searches": 1,
+      "memory_hits": 4
+    },
+    "imapclient.response_parser.parse_fetch_response": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.426047316985205,
+      "Write_time": 109.38500301004387,
+      "Verify_time": 56.75566189008532,
+      "total_time_seconds": 179.899,
+      "graph_searches": 1,
+      "memory_hits": 4
+    },
+    "imapclient.response_parser.parse_response": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 8.884577516990248,
+      "Write_time": 31.60239672800526,
+      "Verify_time": 0.0,
+      "total_time_seconds": 43.134,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.response_parser.parse_message_list": {
+      "Read_calls": 5,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 54.77413479599636,
+      "Write_time": 84.58279146498535,
+      "Verify_time": 43.52307688299334,
+      "total_time_seconds": 184.644,
+      "graph_searches": 2,
+      "memory_hits": 6
+    },
+    "imapclient.response_types.Address.__str__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.054717111052014,
+      "Write_time": 52.0923340379959,
+      "Verify_time": 39.6381063410081,
+      "total_time_seconds": 104.082,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "imapclient.response_types.Address": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 67.94355146505404,
+      "Verify_time": 76.5877570270095,
+      "total_time_seconds": 147.595,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.response_types.BodyData.create": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.416694490006194,
+      "Write_time": 76.86105140700238,
+      "Verify_time": 30.4933330679778,
+      "total_time_seconds": 120.551,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.response_types.BodyData.is_multipart": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.671957170008682,
+      "Write_time": 41.27569295302965,
+      "Verify_time": 23.980607880977914,
+      "total_time_seconds": 83.359,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.response_types.BodyData": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.628357792971656,
+      "Write_time": 33.353219220996834,
+      "Verify_time": 24.978780708042905,
+      "total_time_seconds": 75.978,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "imapclient.response_types.Envelope": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.962963055004366,
+      "Write_time": 30.704240700986702,
+      "Verify_time": 12.169805263052694,
+      "total_time_seconds": 52.359,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.response_types.SearchIds": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 37.0653035910218,
+      "Verify_time": 21.32002812094288,
+      "total_time_seconds": 59.905,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.response_types.SearchIds.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.619476544030476,
+      "Write_time": 16.20575437694788,
+      "Verify_time": 14.432951876020525,
+      "total_time_seconds": 38.412,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.testable_imapclient.MockIMAP4.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.859605756006204,
+      "Write_time": 17.66987764899386,
+      "Verify_time": 12.265555065008812,
+      "total_time_seconds": 39.709,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.testable_imapclient.MockIMAP4._new_tag": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.763159808004275,
+      "Write_time": 8.99494268296985,
+      "Verify_time": 11.042361539963167,
+      "total_time_seconds": 27.373,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "imapclient.testable_imapclient.MockIMAP4.send": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.361013802990783,
+      "Write_time": 22.6418414679938,
+      "Verify_time": 11.256480493058916,
+      "total_time_seconds": 47.448,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "imapclient.testable_imapclient.MockIMAP4": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 21.761468778015114,
+      "Verify_time": 12.085794530983549,
+      "total_time_seconds": 36.033,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.375048932968639,
+      "Write_time": 12.938412029994652,
+      "Verify_time": 11.800223883998115,
+      "total_time_seconds": 35.239,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.415432822017465,
+      "Write_time": 26.563452896021772,
+      "Verify_time": 11.140836722042877,
+      "total_time_seconds": 45.677,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.328633814002387,
+      "Write_time": 17.124591397994664,
+      "Verify_time": 7.0774175060214475,
+      "total_time_seconds": 31.288,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.tls.wrap_socket": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 4.416327890998218,
+      "Write_time": 64.8923615939566,
+      "Verify_time": 19.213507436972577,
+      "total_time_seconds": 97.81,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.tls.IMAP4_TLS.open": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.135528947983403,
+      "Write_time": 54.12772438500542,
+      "Verify_time": 19.793011707952246,
+      "total_time_seconds": 82.416,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "imapclient.tls.IMAP4_TLS.read": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 5.56725711398758,
+      "Write_time": 15.585361827979796,
+      "Verify_time": 0.0,
+      "total_time_seconds": 24.561,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.tls.IMAP4_TLS.readline": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 5.0124578900286,
+      "Write_time": 19.14113676000852,
+      "Verify_time": 0.0,
+      "total_time_seconds": 27.645,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.tls.IMAP4_TLS.send": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.104565035027917,
+      "Write_time": 36.97957964806119,
+      "Verify_time": 24.553981921984814,
+      "total_time_seconds": 74.175,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.tls.IMAP4_TLS.shutdown": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.215416560997255,
+      "Write_time": 27.154791294015013,
+      "Verify_time": 19.014007856952958,
+      "total_time_seconds": 61.887,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.tls.IMAP4_TLS": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.1134041249752045,
+      "Write_time": 53.588722564978525,
+      "Verify_time": 30.537380949012004,
+      "total_time_seconds": 93.325,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.tls.IMAP4_TLS.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 5.564657497976441,
+      "Write_time": 46.26365307398373,
+      "Verify_time": 31.441507188021205,
+      "total_time_seconds": 83.272,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "imapclient.util.assert_imap_protocol": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 17.22570198494941,
+      "Write_time": 24.266252578003332,
+      "Verify_time": 0.0,
+      "total_time_seconds": 45.01,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "imapclient.util.chunk": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.721856080985162,
+      "Write_time": 39.65171813801862,
+      "Verify_time": 18.267921520979144,
+      "total_time_seconds": 67.505,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.util.to_bytes": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 3.3277093280339614,
+      "Write_time": 29.438087115006056,
+      "Verify_time": 21.717011975997593,
+      "total_time_seconds": 60.969,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient.util.to_unicode": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.060932575026527,
+      "Write_time": 19.56875311996555,
+      "Verify_time": 11.53855073300656,
+      "total_time_seconds": 39.346,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "imapclient.version._imapclient_version_string": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.753291369997896,
+      "Write_time": 19.91318302700529,
+      "Verify_time": 11.193227599025704,
+      "total_time_seconds": 39.029,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "imapclient": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 6.188487397041172,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 50.854,
+      "graph_searches": 0,
+      "memory_hits": 84,
+      "Finish(exception)_calls": 1
+    },
+    "IMAPClient": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 7.591029459028505,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 53.669,
+      "graph_searches": 0,
+      "memory_hits": 1,
+      "Finish(exception)_calls": 1
+    }
+  },
+  "per_component_verify_scores": {
+    "imapclient.config.refresh_oauth2_token": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.35,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9633,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.96,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9633,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.config._read_config_section": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.config.getenv": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.config.get_config_defaults": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.config.get_string_config_defaults": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8417,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9767,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.96,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9533,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.config.parse_config_file": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9467,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8933,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.datetime_util.datetime_to_INTERNALDATE": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8767,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8767,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9267,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.94,
+        "weighted_avg": 0.9267,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.datetime_util.format_criteria_date": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.6,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.4,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.datetime_util._munge": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8733,
+        "CONSISTENCY": 0.88,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.86,
+        "weighted_avg": 0.8733,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.96,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.94,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.datetime_util.datetime_to_native": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.datetime_util.parse_to_datetime": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.fixed_offset.FixedOffset": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.fixed_offset.FixedOffset.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.4333,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap4.IMAP4WithTimeout._create_socket": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7167,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap4.IMAP4WithTimeout.open": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap4.IMAP4WithTimeout": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.3,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.35,
+        "weighted_avg": 0.3667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap4.IMAP4WithTimeout.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9267,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.93,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9267,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap_utf7.decode": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap_utf7.base64_utf7_encode": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.4667,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.5,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.imap_utf7.encode": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9633,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.93,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9267,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.interact.command_line": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8433,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8433,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.PushableIterator.__iter__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.PushableIterator.__next__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.PushableIterator.push": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4333,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.PushableIterator": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.93,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.LiteralHandlingIter.__iter__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.Lexer.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.LiteralHandlingIter.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.93,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.93,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.PushableIterator.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.Lexer.__iter__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.Lexer.read_until": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.3833,
+        "CONSISTENCY": 0.3,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.3833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.TokenSource.__iter__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9233,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.TokenSource.current_literal": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8767,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8767,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.TokenSource": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6583,
+        "CONSISTENCY": 0.25,
+        "COMPLETENESS": 0.35,
+        "HELPFULNESS": 0.35,
+        "weighted_avg": 0.3167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_lexer.TokenSource.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser._convert_ENVELOPE": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser._convert_INTERNALDATE": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser._int_or_error": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5667,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.5667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser.parse_tuple": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.97,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser.gen_parsed_response": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7083,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser.parse_fetch_response": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.725,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.45,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.965,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.93,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_parser.parse_message_list": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6917,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.35,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.3833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.Address.__str__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9433,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.98,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9433,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.Address": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5929,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.35,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4167,
+        "conflict_score": 0.7692
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8313,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8933,
+        "conflict_score": 0.7692
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.965,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.93,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.BodyData.create": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.55,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.55,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.BodyData.is_multipart": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4333,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.BodyData": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.Envelope": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.SearchIds": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.5,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.response_types.SearchIds.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.MockIMAP4.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.MockIMAP4._new_tag": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.MockIMAP4.send": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.6,
+        "weighted_avg": 0.5,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.MockIMAP4": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.TestableIMAPClient": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.testable_imapclient.TestableIMAPClient.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.tls.wrap_socket": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5667,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.5667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.tls.IMAP4_TLS.open": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.6917,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.3833,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.tls.IMAP4_TLS.send": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9433,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9433,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.tls.IMAP4_TLS.shutdown": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.tls.IMAP4_TLS": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.65,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.tls.IMAP4_TLS.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.45,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.45,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.45,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.45,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.util.chunk": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.3667,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.35,
+        "weighted_avg": 0.3667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.util.to_bytes": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4,
+        "CONSISTENCY": 0.35,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.util.to_unicode": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "imapclient.version._imapclient_version_string": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "imapclient.config.refresh_oauth2_token": {
+      "requests": 5,
+      "input_tokens": 32976,
+      "output_tokens": 7454,
+      "cost": 0.009418799999999998
+    },
+    "imapclient.config.get_oauth2_token": {
+      "requests": 3,
+      "input_tokens": 17877,
+      "output_tokens": 3523,
+      "cost": 0.004795349999999999
+    },
+    "imapclient.config.create_client_from_config": {
+      "requests": 2,
+      "input_tokens": 11306,
+      "output_tokens": 4939,
+      "cost": 0.0046593
+    },
+    "imapclient.config._read_config_section": {
+      "requests": 3,
+      "input_tokens": 18105,
+      "output_tokens": 4529,
+      "cost": 0.005433150000000001
+    },
+    "imapclient.config.getenv": {
+      "requests": 3,
+      "input_tokens": 14926,
+      "output_tokens": 3757,
+      "cost": 0.0044931
+    },
+    "imapclient.config.get_config_defaults": {
+      "requests": 4,
+      "input_tokens": 24910,
+      "output_tokens": 4559,
+      "cost": 0.006471900000000003
+    },
+    "imapclient.config.get_string_config_defaults": {
+      "requests": 6,
+      "input_tokens": 43059,
+      "output_tokens": 6463,
+      "cost": 0.010336649999999989
+    },
+    "imapclient.config.parse_config_file": {
+      "requests": 4,
+      "input_tokens": 28402,
+      "output_tokens": 5958,
+      "cost": 0.007835100000000005
+    },
+    "imapclient.datetime_util.datetime_to_INTERNALDATE": {
+      "requests": 7,
+      "input_tokens": 43396,
+      "output_tokens": 8347,
+      "cost": 0.01151760000000001
+    },
+    "imapclient.datetime_util.format_criteria_date": {
+      "requests": 8,
+      "input_tokens": 50953,
+      "output_tokens": 9989,
+      "cost": 0.013636349999999992
+    },
+    "imapclient.datetime_util._munge": {
+      "requests": 5,
+      "input_tokens": 29336,
+      "output_tokens": 6768,
+      "cost": 0.008461200000000002
+    },
+    "imapclient.datetime_util.datetime_to_native": {
+      "requests": 6,
+      "input_tokens": 33725,
+      "output_tokens": 7288,
+      "cost": 0.009431549999999997
+    },
+    "imapclient.datetime_util.parse_to_datetime": {
+      "requests": 4,
+      "input_tokens": 26907,
+      "output_tokens": 5121,
+      "cost": 0.007108649999999994
+    },
+    "imapclient.fixed_offset.FixedOffset.dst": {
+      "requests": 3,
+      "input_tokens": 13442,
+      "output_tokens": 3616,
+      "cost": 0.004185899999999992
+    },
+    "imapclient.fixed_offset.FixedOffset.for_system": {
+      "requests": 3,
+      "input_tokens": 13905,
+      "output_tokens": 3250,
+      "cost": 0.004035750000000005
+    },
+    "imapclient.fixed_offset.FixedOffset.tzname": {
+      "requests": 3,
+      "input_tokens": 13390,
+      "output_tokens": 2651,
+      "cost": 0.003599100000000008
+    },
+    "imapclient.fixed_offset.FixedOffset.utcoffset": {
+      "requests": 3,
+      "input_tokens": 13386,
+      "output_tokens": 2670,
+      "cost": 0.0036098999999999992
+    },
+    "imapclient.fixed_offset.FixedOffset": {
+      "requests": 4,
+      "input_tokens": 30022,
+      "output_tokens": 5186,
+      "cost": 0.007614900000000022
+    },
+    "imapclient.fixed_offset.FixedOffset.__init__": {
+      "requests": 7,
+      "input_tokens": 50240,
+      "output_tokens": 10287,
+      "cost": 0.013708200000000004
+    },
+    "imapclient.imap4.IMAP4WithTimeout._create_socket": {
+      "requests": 6,
+      "input_tokens": 31449,
+      "output_tokens": 5292,
+      "cost": 0.007892550000000026
+    },
+    "imapclient.imap4.IMAP4WithTimeout.open": {
+      "requests": 4,
+      "input_tokens": 21522,
+      "output_tokens": 4283,
+      "cost": 0.0057981000000000005
+    },
+    "imapclient.imap4.IMAP4WithTimeout": {
+      "requests": 6,
+      "input_tokens": 38284,
+      "output_tokens": 8876,
+      "cost": 0.0110682
+    },
+    "imapclient.imap4.IMAP4WithTimeout.__init__": {
+      "requests": 4,
+      "input_tokens": 23040,
+      "output_tokens": 3877,
+      "cost": 0.005782199999999987
+    },
+    "imapclient.imap_utf7.base64_utf7_decode": {
+      "requests": 2,
+      "input_tokens": 9790,
+      "output_tokens": 4236,
+      "cost": 0.004010099999999989
+    },
+    "imapclient.imap_utf7.decode": {
+      "requests": 7,
+      "input_tokens": 43129,
+      "output_tokens": 8893,
+      "cost": 0.011805150000000014
+    },
+    "imapclient.imap_utf7.base64_utf7_encode": {
+      "requests": 8,
+      "input_tokens": 50793,
+      "output_tokens": 11682,
+      "cost": 0.014628149999999979
+    },
+    "imapclient.imap_utf7.encode": {
+      "requests": 4,
+      "input_tokens": 23992,
+      "output_tokens": 5206,
+      "cost": 0.006722399999999962
+    },
+    "imapclient.interact.command_line": {
+      "requests": 6,
+      "input_tokens": 60608,
+      "output_tokens": 9785,
+      "cost": 0.014962199999999981
+    },
+    "imapclient.interact.main": {
+      "requests": 3,
+      "input_tokens": 20888,
+      "output_tokens": 4062,
+      "cost": 0.005570400000000003
+    },
+    "imapclient.response_lexer.PushableIterator.__iter__": {
+      "requests": 4,
+      "input_tokens": 18123,
+      "output_tokens": 2612,
+      "cost": 0.004285650000000002
+    },
+    "imapclient.response_lexer.PushableIterator.__next__": {
+      "requests": 4,
+      "input_tokens": 18614,
+      "output_tokens": 3091,
+      "cost": 0.004646699999999976
+    },
+    "imapclient.response_lexer.PushableIterator.push": {
+      "requests": 6,
+      "input_tokens": 30118,
+      "output_tokens": 5791,
+      "cost": 0.007992300000000008
+    },
+    "imapclient.response_lexer.PushableIterator": {
+      "requests": 3,
+      "input_tokens": 16008,
+      "output_tokens": 3975,
+      "cost": 0.004786200000000018
+    },
+    "imapclient.response_lexer.LiteralHandlingIter.__iter__": {
+      "requests": 4,
+      "input_tokens": 22022,
+      "output_tokens": 2875,
+      "cost": 0.0050282999999999856
+    },
+    "imapclient.response_lexer.LiteralHandlingIter": {
+      "requests": 3,
+      "input_tokens": 18196,
+      "output_tokens": 3442,
+      "cost": 0.004794599999999982
+    },
+    "imapclient.response_lexer.Lexer.__init__": {
+      "requests": 4,
+      "input_tokens": 24449,
+      "output_tokens": 3529,
+      "cost": 0.005784750000000005
+    },
+    "imapclient.response_lexer.LiteralHandlingIter.__init__": {
+      "requests": 6,
+      "input_tokens": 39370,
+      "output_tokens": 5594,
+      "cost": 0.009261900000000045
+    },
+    "imapclient.response_lexer.PushableIterator.__init__": {
+      "requests": 4,
+      "input_tokens": 21917,
+      "output_tokens": 2802,
+      "cost": 0.004968749999999966
+    },
+    "imapclient.response_lexer.Lexer.__iter__": {
+      "requests": 6,
+      "input_tokens": 34080,
+      "output_tokens": 7140,
+      "cost": 0.009396000000000015
+    },
+    "imapclient.response_lexer.Lexer.read_token_stream": {
+      "requests": 3,
+      "input_tokens": 18459,
+      "output_tokens": 4099,
+      "cost": 0.00522824999999999
+    },
+    "imapclient.response_lexer.Lexer.read_until": {
+      "requests": 5,
+      "input_tokens": 31081,
+      "output_tokens": 10467,
+      "cost": 0.01094234999999999
+    },
+    "imapclient.response_lexer.Lexer": {
+      "requests": 2,
+      "input_tokens": 12763,
+      "output_tokens": 5424,
+      "cost": 0.005168850000000003
+    },
+    "imapclient.response_lexer.TokenSource.__iter__": {
+      "requests": 4,
+      "input_tokens": 18311,
+      "output_tokens": 3502,
+      "cost": 0.004847850000000042
+    },
+    "imapclient.response_lexer.TokenSource.current_literal": {
+      "requests": 10,
+      "input_tokens": 55695,
+      "output_tokens": 8286,
+      "cost": 0.013325849999999972
+    },
+    "imapclient.response_lexer.TokenSource": {
+      "requests": 8,
+      "input_tokens": 46634,
+      "output_tokens": 7897,
+      "cost": 0.011733299999999947
+    },
+    "imapclient.response_lexer.TokenSource.__init__": {
+      "requests": 5,
+      "input_tokens": 27642,
+      "output_tokens": 3438,
+      "cost": 0.006209099999999967
+    },
+    "imapclient.response_parser._convert_ENVELOPE": {
+      "requests": 5,
+      "input_tokens": 36828,
+      "output_tokens": 7358,
+      "cost": 0.009939000000000031
+    },
+    "imapclient.response_parser._convert_INTERNALDATE": {
+      "requests": 4,
+      "input_tokens": 26574,
+      "output_tokens": 4582,
+      "cost": 0.0067353
+    },
+    "imapclient.response_parser._int_or_error": {
+      "requests": 6,
+      "input_tokens": 32892,
+      "output_tokens": 7096,
+      "cost": 0.00919139999999996
+    },
+    "imapclient.response_parser._fmt_tuple": {
+      "requests": 3,
+      "input_tokens": 13741,
+      "output_tokens": 3284,
+      "cost": 0.004031549999999995
+    },
+    "imapclient.response_parser.parse_tuple": {
+      "requests": 4,
+      "input_tokens": 27057,
+      "output_tokens": 5092,
+      "cost": 0.00711375000000003
+    },
+    "imapclient.response_parser.atom": {
+      "requests": 2,
+      "input_tokens": 11893,
+      "output_tokens": 4812,
+      "cost": 0.004671150000000013
+    },
+    "imapclient.response_parser.gen_parsed_response": {
+      "requests": 7,
+      "input_tokens": 51385,
+      "output_tokens": 9542,
+      "cost": 0.013432949999999999
+    },
+    "imapclient.response_parser.parse_fetch_response": {
+      "requests": 6,
+      "input_tokens": 78269,
+      "output_tokens": 10585,
+      "cost": 0.018091350000000006
+    },
+    "imapclient.response_parser.parse_response": {
+      "requests": 3,
+      "input_tokens": 17086,
+      "output_tokens": 2766,
+      "cost": 0.004222500000000018
+    },
+    "imapclient.response_parser.parse_message_list": {
+      "requests": 10,
+      "input_tokens": 106549,
+      "output_tokens": 11305,
+      "cost": 0.022765350000000018
+    },
+    "imapclient.response_types.Address.__str__": {
+      "requests": 6,
+      "input_tokens": 32208,
+      "output_tokens": 7388,
+      "cost": 0.009263999999999994
+    },
+    "imapclient.response_types.Address": {
+      "requests": 6,
+      "input_tokens": 37786,
+      "output_tokens": 9313,
+      "cost": 0.01125569999999998
+    },
+    "imapclient.response_types.BodyData.create": {
+      "requests": 6,
+      "input_tokens": 35213,
+      "output_tokens": 7758,
+      "cost": 0.00993675000000005
+    },
+    "imapclient.response_types.BodyData.is_multipart": {
+      "requests": 6,
+      "input_tokens": 31113,
+      "output_tokens": 6473,
+      "cost": 0.008550749999999996
+    },
+    "imapclient.response_types.BodyData": {
+      "requests": 5,
+      "input_tokens": 31452,
+      "output_tokens": 5947,
+      "cost": 0.00828599999999996
+    },
+    "imapclient.response_types.Envelope": {
+      "requests": 4,
+      "input_tokens": 24098,
+      "output_tokens": 4926,
+      "cost": 0.006570299999999973
+    },
+    "imapclient.response_types.SearchIds": {
+      "requests": 5,
+      "input_tokens": 27888,
+      "output_tokens": 6714,
+      "cost": 0.008211599999999986
+    },
+    "imapclient.response_types.SearchIds.__init__": {
+      "requests": 4,
+      "input_tokens": 20780,
+      "output_tokens": 3484,
+      "cost": 0.005207399999999862
+    },
+    "imapclient.testable_imapclient.MockIMAP4.__init__": {
+      "requests": 4,
+      "input_tokens": 19042,
+      "output_tokens": 3262,
+      "cost": 0.004813500000000026
+    },
+    "imapclient.testable_imapclient.MockIMAP4._new_tag": {
+      "requests": 4,
+      "input_tokens": 20191,
+      "output_tokens": 2433,
+      "cost": 0.004488449999999977
+    },
+    "imapclient.testable_imapclient.MockIMAP4.send": {
+      "requests": 7,
+      "input_tokens": 36715,
+      "output_tokens": 5001,
+      "cost": 0.008507849999999983
+    },
+    "imapclient.testable_imapclient.MockIMAP4": {
+      "requests": 3,
+      "input_tokens": 16225,
+      "output_tokens": 4017,
+      "cost": 0.004843950000000041
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4": {
+      "requests": 4,
+      "input_tokens": 22484,
+      "output_tokens": 3143,
+      "cost": 0.005258399999999996
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient": {
+      "requests": 4,
+      "input_tokens": 23808,
+      "output_tokens": 4657,
+      "cost": 0.0063654000000000766
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient.__init__": {
+      "requests": 4,
+      "input_tokens": 21705,
+      "output_tokens": 3256,
+      "cost": 0.0052093500000000015
+    },
+    "imapclient.tls.wrap_socket": {
+      "requests": 6,
+      "input_tokens": 36063,
+      "output_tokens": 8180,
+      "cost": 0.010317450000000061
+    },
+    "imapclient.tls.IMAP4_TLS.open": {
+      "requests": 7,
+      "input_tokens": 51108,
+      "output_tokens": 9613,
+      "cost": 0.013434000000000057
+    },
+    "imapclient.tls.IMAP4_TLS.read": {
+      "requests": 3,
+      "input_tokens": 13656,
+      "output_tokens": 2652,
+      "cost": 0.003639599999999965
+    },
+    "imapclient.tls.IMAP4_TLS.readline": {
+      "requests": 3,
+      "input_tokens": 13695,
+      "output_tokens": 2573,
+      "cost": 0.0035980500000000193
+    },
+    "imapclient.tls.IMAP4_TLS.send": {
+      "requests": 6,
+      "input_tokens": 33721,
+      "output_tokens": 6767,
+      "cost": 0.009118349999999942
+    },
+    "imapclient.tls.IMAP4_TLS.shutdown": {
+      "requests": 6,
+      "input_tokens": 32101,
+      "output_tokens": 7101,
+      "cost": 0.009075749999999938
+    },
+    "imapclient.tls.IMAP4_TLS": {
+      "requests": 6,
+      "input_tokens": 48465,
+      "output_tokens": 9513,
+      "cost": 0.012977550000000115
+    },
+    "imapclient.tls.IMAP4_TLS.__init__": {
+      "requests": 7,
+      "input_tokens": 40905,
+      "output_tokens": 8873,
+      "cost": 0.011459550000000096
+    },
+    "imapclient.util.assert_imap_protocol": {
+      "requests": 4,
+      "input_tokens": 19093,
+      "output_tokens": 4200,
+      "cost": 0.005383950000000026
+    },
+    "imapclient.util.chunk": {
+      "requests": 6,
+      "input_tokens": 34360,
+      "output_tokens": 7855,
+      "cost": 0.00986700000000007
+    },
+    "imapclient.util.to_bytes": {
+      "requests": 6,
+      "input_tokens": 33630,
+      "output_tokens": 6461,
+      "cost": 0.008921100000000015
+    },
+    "imapclient.util.to_unicode": {
+      "requests": 4,
+      "input_tokens": 19652,
+      "output_tokens": 3817,
+      "cost": 0.005237999999999965
+    },
+    "imapclient.version._imapclient_version_string": {
+      "requests": 4,
+      "input_tokens": 19748,
+      "output_tokens": 4339,
+      "cost": 0.005565599999999948
+    },
+    "imapclient": {
+      "requests": 2,
+      "input_tokens": 94698,
+      "output_tokens": 4740,
+      "cost": 0.017048700000000028
+    },
+    "IMAPClient": {
+      "requests": 2,
+      "input_tokens": 7898,
+      "output_tokens": 4703,
+      "cost": 0.004006500000000024
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 57,
+    "total_fetched_component_types": 85,
+    "redundant_fetch_count": 123,
+    "duplicates": {
+      "imapclient.fixed_offset.FixedOffset": {
+        "accessed_by": [
+          "imapclient.datetime_util.datetime_to_INTERNALDATE",
+          "imapclient.datetime_util.datetime_to_native",
+          "imapclient.fixed_offset.FixedOffset.dst",
+          "imapclient.fixed_offset.FixedOffset.for_system",
+          "imapclient.fixed_offset.FixedOffset.tzname",
+          "imapclient.fixed_offset.FixedOffset.utcoffset",
+          "imapclient.fixed_offset.FixedOffset",
+          "imapclient.fixed_offset.FixedOffset.__init__",
+          "imapclient"
+        ],
+        "access_count": 9
+      },
+      "imapclient.response_lexer.PushableIterator": {
+        "accessed_by": [
+          "imapclient.response_lexer.PushableIterator.__iter__",
+          "imapclient.response_lexer.PushableIterator.__next__",
+          "imapclient.response_lexer.PushableIterator.push",
+          "imapclient.response_lexer.LiteralHandlingIter.__iter__",
+          "imapclient.response_lexer.LiteralHandlingIter",
+          "imapclient.response_lexer.PushableIterator.__init__",
+          "imapclient.response_lexer.Lexer.read_token_stream",
+          "imapclient.response_lexer.Lexer",
+          "imapclient"
+        ],
+        "access_count": 9
+      },
+      "imapclient.response_lexer.Lexer": {
+        "accessed_by": [
+          "imapclient.response_lexer.Lexer.__init__",
+          "imapclient.response_lexer.Lexer.__iter__",
+          "imapclient.response_lexer.Lexer.read_token_stream",
+          "imapclient.response_lexer.TokenSource.current_literal",
+          "imapclient.response_lexer.TokenSource",
+          "imapclient.response_lexer.TokenSource.__init__",
+          "imapclient"
+        ],
+        "access_count": 7
+      },
+      "imapclient.response_lexer.TokenSource": {
+        "accessed_by": [
+          "imapclient.response_lexer.TokenSource.__iter__",
+          "imapclient.response_lexer.TokenSource.current_literal",
+          "imapclient.response_lexer.TokenSource.__init__",
+          "imapclient.response_parser.parse_tuple",
+          "imapclient.response_parser.atom",
+          "imapclient.response_parser.gen_parsed_response",
+          "imapclient"
+        ],
+        "access_count": 7
+      },
+      "imapclient.testable_imapclient.MockIMAP4": {
+        "accessed_by": [
+          "imapclient.testable_imapclient.MockIMAP4.__init__",
+          "imapclient.testable_imapclient.MockIMAP4._new_tag",
+          "imapclient.testable_imapclient.MockIMAP4.send",
+          "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4",
+          "imapclient.testable_imapclient.TestableIMAPClient",
+          "imapclient"
+        ],
+        "access_count": 6
+      },
+      "imapclient.tls.IMAP4_TLS": {
+        "accessed_by": [
+          "imapclient.tls.IMAP4_TLS.open",
+          "imapclient.tls.IMAP4_TLS.read",
+          "imapclient.tls.IMAP4_TLS.readline",
+          "imapclient.tls.IMAP4_TLS.send",
+          "imapclient.tls.IMAP4_TLS.shutdown",
+          "imapclient"
+        ],
+        "access_count": 6
+      },
+      "imapclient.fixed_offset.FixedOffset.for_system": {
+        "accessed_by": [
+          "imapclient.datetime_util.datetime_to_INTERNALDATE",
+          "imapclient.datetime_util.datetime_to_native",
+          "imapclient.fixed_offset.FixedOffset.for_system",
+          "imapclient.fixed_offset.FixedOffset",
+          "imapclient"
+        ],
+        "access_count": 5
+      },
+      "imapclient.imap4.IMAP4WithTimeout": {
+        "accessed_by": [
+          "imapclient.imap4.IMAP4WithTimeout._create_socket",
+          "imapclient.imap4.IMAP4WithTimeout.open",
+          "imapclient.imap4.IMAP4WithTimeout",
+          "imapclient.imap4.IMAP4WithTimeout.__init__",
+          "imapclient"
+        ],
+        "access_count": 5
+      },
+      "imapclient.response_lexer.LiteralHandlingIter": {
+        "accessed_by": [
+          "imapclient.response_lexer.LiteralHandlingIter.__iter__",
+          "imapclient.response_lexer.Lexer.__init__",
+          "imapclient.response_lexer.LiteralHandlingIter.__init__",
+          "imapclient.response_lexer.Lexer",
+          "imapclient"
+        ],
+        "access_count": 5
+      },
+      "imapclient.config.get_config_defaults": {
+        "accessed_by": [
+          "imapclient.config.get_config_defaults",
+          "imapclient.config.get_string_config_defaults",
+          "imapclient.interact.command_line",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.util.assert_imap_protocol": {
+        "accessed_by": [
+          "imapclient.response_lexer.LiteralHandlingIter",
+          "imapclient.response_lexer.Lexer",
+          "imapclient.util.assert_imap_protocol",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.response_parser.atom": {
+        "accessed_by": [
+          "imapclient.response_parser.parse_tuple",
+          "imapclient.response_parser.atom",
+          "imapclient.response_parser.gen_parsed_response",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.response_parser.gen_parsed_response": {
+        "accessed_by": [
+          "imapclient.response_parser.gen_parsed_response",
+          "imapclient.response_parser.parse_fetch_response",
+          "imapclient.response_parser.parse_response",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.response_types.Address": {
+        "accessed_by": [
+          "imapclient.response_types.Address.__str__",
+          "imapclient.response_types.BodyData",
+          "imapclient.response_types.Envelope",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.response_types.BodyData": {
+        "accessed_by": [
+          "imapclient.response_types.BodyData.create",
+          "imapclient.response_types.BodyData.is_multipart",
+          "imapclient.response_types.BodyData",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.tls.wrap_socket": {
+        "accessed_by": [
+          "imapclient.tls.wrap_socket",
+          "imapclient.tls.IMAP4_TLS.open",
+          "imapclient.tls.IMAP4_TLS",
+          "imapclient"
+        ],
+        "access_count": 4
+      },
+      "imapclient.config.get_oauth2_token": {
+        "accessed_by": [
+          "imapclient.config.get_oauth2_token",
+          "imapclient.config.create_client_from_config",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.config.create_client_from_config": {
+        "accessed_by": [
+          "imapclient.config.create_client_from_config",
+          "imapclient.interact.main",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.fixed_offset.FixedOffset.tzname": {
+        "accessed_by": [
+          "imapclient.fixed_offset.FixedOffset.tzname",
+          "imapclient.fixed_offset.FixedOffset",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.imap_utf7.base64_utf7_encode": {
+        "accessed_by": [
+          "imapclient.imap_utf7.base64_utf7_encode",
+          "imapclient.imap_utf7.encode",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.response_parser._convert_INTERNALDATE": {
+        "accessed_by": [
+          "imapclient.response_parser._convert_INTERNALDATE",
+          "imapclient.response_parser.parse_fetch_response",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.response_parser._int_or_error": {
+        "accessed_by": [
+          "imapclient.response_parser._int_or_error",
+          "imapclient.response_parser.parse_fetch_response",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.response_parser._fmt_tuple": {
+        "accessed_by": [
+          "imapclient.response_parser._fmt_tuple",
+          "imapclient.response_parser.parse_tuple",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.response_types.SearchIds": {
+        "accessed_by": [
+          "imapclient.response_parser.parse_message_list",
+          "imapclient.response_types.SearchIds.__init__",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.util.to_unicode": {
+        "accessed_by": [
+          "imapclient.response_types.Address.__str__",
+          "imapclient.util.to_unicode",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.response_types.Envelope": {
+        "accessed_by": [
+          "imapclient.response_types.BodyData",
+          "imapclient.response_types.Envelope",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.testable_imapclient.TestableIMAPClient": {
+        "accessed_by": [
+          "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4",
+          "imapclient.testable_imapclient.TestableIMAPClient.__init__",
+          "imapclient"
+        ],
+        "access_count": 3
+      },
+      "imapclient.config.refresh_oauth2_token": {
+        "accessed_by": [
+          "imapclient.config.get_oauth2_token",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.config.getenv": {
+        "accessed_by": [
+          "imapclient.config.get_config_defaults",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.config.get_string_config_defaults": {
+        "accessed_by": [
+          "imapclient.config.parse_config_file",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.config._read_config_section": {
+        "accessed_by": [
+          "imapclient.config.parse_config_file",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.datetime_util.datetime_to_INTERNALDATE": {
+        "accessed_by": [
+          "imapclient.datetime_util.datetime_to_INTERNALDATE",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.datetime_util.format_criteria_date": {
+        "accessed_by": [
+          "imapclient.datetime_util.format_criteria_date",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.datetime_util._munge": {
+        "accessed_by": [
+          "imapclient.datetime_util.parse_to_datetime",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.datetime_util.datetime_to_native": {
+        "accessed_by": [
+          "imapclient.datetime_util.parse_to_datetime",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.fixed_offset.FixedOffset.dst": {
+        "accessed_by": [
+          "imapclient.fixed_offset.FixedOffset",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.fixed_offset.FixedOffset.utcoffset": {
+        "accessed_by": [
+          "imapclient.fixed_offset.FixedOffset",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.imap4.IMAP4WithTimeout._create_socket": {
+        "accessed_by": [
+          "imapclient.imap4.IMAP4WithTimeout.open",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.imap_utf7.base64_utf7_decode": {
+        "accessed_by": [
+          "imapclient.imap_utf7.decode",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.config.parse_config_file": {
+        "accessed_by": [
+          "imapclient.interact.command_line",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.interact.command_line": {
+        "accessed_by": [
+          "imapclient.interact.main",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_lexer.LiteralHandlingIter.__iter__": {
+        "accessed_by": [
+          "imapclient.response_lexer.LiteralHandlingIter",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_lexer.TokenSource.current_literal": {
+        "accessed_by": [
+          "imapclient.response_lexer.TokenSource.current_literal",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.datetime_util.parse_to_datetime": {
+        "accessed_by": [
+          "imapclient.response_parser._convert_INTERNALDATE",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_parser.parse_tuple": {
+        "accessed_by": [
+          "imapclient.response_parser.atom",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_parser._convert_ENVELOPE": {
+        "accessed_by": [
+          "imapclient.response_parser.parse_fetch_response",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_parser.parse_fetch_response": {
+        "accessed_by": [
+          "imapclient.response_parser.parse_fetch_response",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_parser.parse_response": {
+        "accessed_by": [
+          "imapclient.response_parser.parse_message_list",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_parser.parse_message_list": {
+        "accessed_by": [
+          "imapclient.response_parser.parse_message_list",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.response_types.BodyData.is_multipart": {
+        "accessed_by": [
+          "imapclient.response_types.BodyData.is_multipart",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.testable_imapclient.MockIMAP4._new_tag": {
+        "accessed_by": [
+          "imapclient.testable_imapclient.MockIMAP4._new_tag",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.testable_imapclient.MockIMAP4.__init__": {
+        "accessed_by": [
+          "imapclient.testable_imapclient.MockIMAP4._new_tag",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.testable_imapclient.MockIMAP4.send": {
+        "accessed_by": [
+          "imapclient.testable_imapclient.MockIMAP4.send",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.tls.IMAP4_TLS.open": {
+        "accessed_by": [
+          "imapclient.tls.IMAP4_TLS.open",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.util.chunk": {
+        "accessed_by": [
+          "imapclient.util.chunk",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.util.to_bytes": {
+        "accessed_by": [
+          "imapclient.util.to_bytes",
+          "imapclient"
+        ],
+        "access_count": 2
+      },
+      "imapclient.version._imapclient_version_string": {
+        "accessed_by": [
+          "imapclient.version._imapclient_version_string",
+          "imapclient"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 408,
+      "total_input_tokens": 2589015,
+      "total_output_tokens": 492092,
+      "total_cost_usd": 0.6836074500000001
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 73.983,
+    "avg_turns_per_component": 4.71,
+    "memory_hit_rate": 0.8251,
+    "total_tokens": 3081107,
+    "estimated_cost_usd": 0.6836,
+    "avg_tokens_per_component": 35826.8
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 84,
+      "total_time_seconds": 6257.985,
+      "avg_time_seconds": 74.5,
+      "total_turns": 401,
+      "avg_turns": 4.77,
+      "action_counts": {
+        "Write": 123,
+        "Verify": 110,
+        "Finish": 79,
+        "Read": 89
+      }
+    },
+    "MODULE": {
+      "count": 1,
+      "total_time_seconds": 50.854,
+      "avg_time_seconds": 50.854,
+      "total_turns": 1,
+      "avg_turns": 1.0,
+      "action_counts": {
+        "Read": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 53.669,
+      "avg_time_seconds": 53.669,
+      "total_turns": 1,
+      "avg_turns": 1.0,
+      "action_counts": {
+        "Read": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "imapclient.config.get_config_defaults": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.config.getenv"
+      ]
+    },
+    "imapclient.config.get_string_config_defaults": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.config.get_config_defaults"
+      ]
+    },
+    "imapclient.config.parse_config_file": {
+      "total_candidate_pairs": 39,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 36,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.config._read_config_section",
+        "imapclient.config.get_string_config_defaults"
+      ]
+    },
+    "imapclient.datetime_util.parse_to_datetime": {
+      "total_candidate_pairs": 90,
+      "entailment_count": 69,
+      "contradiction_count": 4,
+      "neutral_count": 17,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.datetime_util._munge",
+        "imapclient.datetime_util.datetime_to_native"
+      ]
+    },
+    "imapclient.fixed_offset.FixedOffset": {
+      "total_candidate_pairs": 145,
+      "entailment_count": 112,
+      "contradiction_count": 3,
+      "neutral_count": 30,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.fixed_offset.FixedOffset.dst",
+        "imapclient.fixed_offset.FixedOffset.for_system",
+        "imapclient.fixed_offset.FixedOffset.tzname",
+        "imapclient.fixed_offset.FixedOffset.utcoffset"
+      ]
+    },
+    "imapclient.imap4.IMAP4WithTimeout": {
+      "total_candidate_pairs": 84,
+      "entailment_count": 48,
+      "contradiction_count": 2,
+      "neutral_count": 34,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.imap4.IMAP4WithTimeout._create_socket",
+        "imapclient.imap4.IMAP4WithTimeout.open"
+      ]
+    },
+    "imapclient.imap_utf7.encode": {
+      "total_candidate_pairs": 48,
+      "entailment_count": 45,
+      "contradiction_count": 2,
+      "neutral_count": 1,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.imap_utf7.base64_utf7_encode"
+      ]
+    },
+    "imapclient.response_lexer.PushableIterator": {
+      "total_candidate_pairs": 80,
+      "entailment_count": 34,
+      "contradiction_count": 4,
+      "neutral_count": 42,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_lexer.PushableIterator.__iter__",
+        "imapclient.response_lexer.PushableIterator.__next__",
+        "imapclient.response_lexer.PushableIterator.push"
+      ]
+    },
+    "imapclient.response_lexer.LiteralHandlingIter.__iter__": {
+      "total_candidate_pairs": 65,
+      "entailment_count": 57,
+      "contradiction_count": 0,
+      "neutral_count": 8,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_lexer.PushableIterator"
+      ]
+    },
+    "imapclient.response_lexer.Lexer.__init__": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_lexer.LiteralHandlingIter"
+      ]
+    },
+    "imapclient.response_lexer.TokenSource": {
+      "total_candidate_pairs": 65,
+      "entailment_count": 40,
+      "contradiction_count": 3,
+      "neutral_count": 22,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_lexer.TokenSource.__iter__",
+        "imapclient.response_lexer.TokenSource.current_literal"
+      ]
+    },
+    "imapclient.response_parser.parse_tuple": {
+      "total_candidate_pairs": 37,
+      "entailment_count": 1,
+      "contradiction_count": 16,
+      "neutral_count": 20,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_parser._fmt_tuple"
+      ]
+    },
+    "imapclient.response_parser.parse_fetch_response": {
+      "total_candidate_pairs": 246,
+      "entailment_count": 60,
+      "contradiction_count": 25,
+      "neutral_count": 161,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_parser._convert_ENVELOPE",
+        "imapclient.response_parser._convert_INTERNALDATE",
+        "imapclient.response_parser._int_or_error",
+        "imapclient.response_parser.gen_parsed_response"
+      ]
+    },
+    "imapclient.response_parser.parse_message_list": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_parser.parse_response"
+      ]
+    },
+    "imapclient.response_types.Address": {
+      "total_candidate_pairs": 38,
+      "entailment_count": 35,
+      "contradiction_count": 0,
+      "neutral_count": 3,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_types.Address.__str__"
+      ]
+    },
+    "imapclient.response_types.BodyData": {
+      "total_candidate_pairs": 29,
+      "entailment_count": 18,
+      "contradiction_count": 6,
+      "neutral_count": 5,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.response_types.BodyData.create",
+        "imapclient.response_types.BodyData.is_multipart"
+      ]
+    },
+    "imapclient.testable_imapclient.MockIMAP4": {
+      "total_candidate_pairs": 62,
+      "entailment_count": 50,
+      "contradiction_count": 4,
+      "neutral_count": 8,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.testable_imapclient.MockIMAP4._new_tag",
+        "imapclient.testable_imapclient.MockIMAP4.send"
+      ]
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4": {
+      "total_candidate_pairs": 70,
+      "entailment_count": 28,
+      "contradiction_count": 4,
+      "neutral_count": 38,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.testable_imapclient.MockIMAP4"
+      ]
+    },
+    "imapclient.testable_imapclient.TestableIMAPClient": {
+      "total_candidate_pairs": 25,
+      "entailment_count": 13,
+      "contradiction_count": 1,
+      "neutral_count": 11,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.testable_imapclient.MockIMAP4",
+        "imapclient.testable_imapclient.TestableIMAPClient._create_IMAP4"
+      ]
+    },
+    "imapclient.tls.IMAP4_TLS.open": {
+      "total_candidate_pairs": 61,
+      "entailment_count": 41,
+      "contradiction_count": 1,
+      "neutral_count": 19,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.tls.wrap_socket"
+      ]
+    },
+    "imapclient.tls.IMAP4_TLS": {
+      "total_candidate_pairs": 260,
+      "entailment_count": 162,
+      "contradiction_count": 18,
+      "neutral_count": 80,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "imapclient.tls.IMAP4_TLS.open",
+        "imapclient.tls.IMAP4_TLS.read",
+        "imapclient.tls.IMAP4_TLS.readline",
+        "imapclient.tls.IMAP4_TLS.send",
+        "imapclient.tls.IMAP4_TLS.shutdown",
+        "imapclient.tls.wrap_socket"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 110,
+    "first_pass_success": 30,
+    "required_revision": 37,
+    "score_parse_failures": 0,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.6812,
+      "COMPLETENESS": 0.726,
+      "HELPFULNESS": 0.7222
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.4243,
+      "COMPLETENESS": 0.3346,
+      "HELPFULNESS": 0.3114
+    }
+  }
+}

@@ -1,0 +1,3879 @@
+{
+  "run_id": "20260421_230717",
+  "label": "PyJWT",
+  "total_run_time_seconds": 4148.033,
+  "repo_summary": {
+    "file_count": 9,
+    "function_count": 4,
+    "class_count": 24,
+    "method_count": 54,
+    "total_components": 82,
+    "module_count": 2,
+    "repo_count": 1,
+    "topological_order_count": 82,
+    "topological_order": [
+      "docs.conf.read",
+      "docs.conf.find_version",
+      "jwt.api_jwk.PyJWK.__init__",
+      "jwt.api_jwk.PyJWK.from_dict",
+      "jwt.api_jwk.PyJWK.from_json",
+      "jwt.api_jwk.PyJWK.key_id",
+      "jwt.api_jwk.PyJWK.key_type",
+      "jwt.api_jwk.PyJWK.public_key_use",
+      "jwt.api_jwk.PyJWK",
+      "jwt.api_jwk.PyJWKSet.__init__",
+      "jwt.api_jwk.PyJWKSet.__getitem__",
+      "jwt.api_jwk.PyJWKSet.from_dict",
+      "jwt.api_jwk.PyJWKSet.from_json",
+      "jwt.api_jwk.PyJWKSet",
+      "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set",
+      "jwt.api_jwk.PyJWTSetWithTimestamp.get_timestamp",
+      "jwt.api_jwk.PyJWTSetWithTimestamp",
+      "jwt.api_jwk.PyJWTSetWithTimestamp.__init__",
+      "jwt.api_jws.PyJWS._get_default_options",
+      "jwt.api_jws.PyJWS._load",
+      "jwt.api_jws.PyJWS._validate_headers",
+      "jwt.api_jws.PyJWS._validate_kid",
+      "jwt.api_jws.PyJWS._verify_signature",
+      "jwt.api_jws.PyJWS.decode",
+      "jwt.api_jws.PyJWS.decode_complete",
+      "jwt.api_jws.PyJWS.encode",
+      "jwt.api_jws.PyJWS.get_algorithm_by_name",
+      "jwt.api_jws.PyJWS.get_algorithms",
+      "jwt.api_jws.PyJWS.get_unverified_header",
+      "jwt.api_jws.PyJWS.register_algorithm",
+      "jwt.api_jws.PyJWS.unregister_algorithm",
+      "jwt.api_jws.PyJWS",
+      "jwt.api_jws.PyJWS.__init__",
+      "jwt.api_jwt.PyJWT._decode_payload",
+      "jwt.api_jwt.PyJWT._encode_payload",
+      "jwt.api_jwt.PyJWT._get_default_options",
+      "jwt.api_jwt.PyJWT._validate_aud",
+      "jwt.api_jwt.PyJWT._validate_claims",
+      "jwt.api_jwt.PyJWT._validate_exp",
+      "jwt.api_jwt.PyJWT._validate_iat",
+      "jwt.api_jwt.PyJWT._validate_iss",
+      "jwt.api_jwt.PyJWT._validate_nbf",
+      "jwt.api_jwt.PyJWT._validate_required_claims",
+      "jwt.api_jwt.PyJWT.decode",
+      "jwt.api_jwt.PyJWT.decode_complete",
+      "jwt.api_jwt.PyJWT.encode",
+      "jwt.api_jwt.PyJWT",
+      "jwt.api_jwt.PyJWT.__init__",
+      "jwt.exceptions.PyJWTError",
+      "jwt.exceptions.InvalidTokenError",
+      "jwt.exceptions.ExpiredSignatureError",
+      "jwt.exceptions.ImmatureSignatureError",
+      "jwt.exceptions.InvalidAlgorithmError",
+      "jwt.exceptions.InvalidAudienceError",
+      "jwt.exceptions.InvalidIssuedAtError",
+      "jwt.exceptions.InvalidIssuerError",
+      "jwt.exceptions.InvalidKeyError",
+      "jwt.exceptions.DecodeError",
+      "jwt.exceptions.InvalidSignatureError",
+      "jwt.exceptions.MissingRequiredClaimError.__str__",
+      "jwt.exceptions.MissingRequiredClaimError",
+      "jwt.exceptions.MissingRequiredClaimError.__init__",
+      "jwt.exceptions.PyJWKClientError",
+      "jwt.exceptions.PyJWKClientConnectionError",
+      "jwt.exceptions.PyJWKError",
+      "jwt.exceptions.PyJWKSetError",
+      "jwt.help.info",
+      "jwt.help.main",
+      "jwt.jwk_set_cache.JWKSetCache.get",
+      "jwt.jwk_set_cache.JWKSetCache.is_expired",
+      "jwt.jwk_set_cache.JWKSetCache.put",
+      "jwt.jwk_set_cache.JWKSetCache",
+      "jwt.jwk_set_cache.JWKSetCache.__init__",
+      "jwt.jwks_client.PyJWKClient.fetch_data",
+      "jwt.jwks_client.PyJWKClient.get_jwk_set",
+      "jwt.jwks_client.PyJWKClient.get_signing_key",
+      "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt",
+      "jwt.jwks_client.PyJWKClient.get_signing_keys",
+      "jwt.jwks_client.PyJWKClient.match_kid",
+      "jwt.jwks_client.PyJWKClient",
+      "jwt.jwks_client.PyJWKClient.__init__",
+      "jwt.warnings.RemovedInPyjwt3Warning"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 149,
+    "Write": 133,
+    "Verify": 129,
+    "Finish": 78
+  },
+  "action_time_totals_seconds": {
+    "Read": 503.751,
+    "Write": 1986.479,
+    "Verify": 321.413
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 762611,
+      "output_tokens": 12389
+    },
+    "Write": {
+      "input_tokens": 735347,
+      "output_tokens": 51594
+    },
+    "Verify": {
+      "input_tokens": 756071,
+      "output_tokens": 7733
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 16,
+    "total_memory_hits": 909
+  },
+  "per_component_stats": {
+    "docs.conf.read": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9321544200065546,
+      "Write_time": 16.815511733992025,
+      "Verify_time": 2.4194038979767356,
+      "total_time_seconds": 38.72,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "docs.conf.find_version": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.884211315016728,
+      "Write_time": 15.595598497020546,
+      "Verify_time": 8.242013453011168,
+      "total_time_seconds": 43.585,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "docs": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.308429203985725,
+      "Write_time": 15.741273991006892,
+      "Verify_time": 2.8197014190081973,
+      "total_time_seconds": 38.322,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "jwt.api_jwk.PyJWK.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 7.495584210992092,
+      "Write_time": 62.03924736601766,
+      "Verify_time": 7.23973464401206,
+      "total_time_seconds": 109.723,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWK.from_dict": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.924707793019479,
+      "Write_time": 11.497677670005942,
+      "Verify_time": 2.423014478001278,
+      "total_time_seconds": 33.052,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWK.from_json": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.732608448015526,
+      "Write_time": 12.342201220977586,
+      "Verify_time": 2.4243624999944586,
+      "total_time_seconds": 34.721,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.api_jwk.PyJWK.key_id": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.952845054998761,
+      "Write_time": 7.059136599011254,
+      "Verify_time": 2.4239135019888636,
+      "total_time_seconds": 28.038,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jwk.PyJWK.key_type": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.807888720999472,
+      "Write_time": 7.490430170990294,
+      "Verify_time": 2.4043777670012787,
+      "total_time_seconds": 28.229,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWK.public_key_use": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.742977955000242,
+      "Write_time": 7.999110164993908,
+      "Verify_time": 2.3839792179933283,
+      "total_time_seconds": 28.563,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWK": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.326434315007646,
+      "Write_time": 42.42527583500487,
+      "Verify_time": 5.622925083967857,
+      "total_time_seconds": 63.76,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jwk.PyJWKSet.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.946180463011842,
+      "Write_time": 26.402828912978293,
+      "Verify_time": 4.785505008010659,
+      "total_time_seconds": 58.914,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jwk.PyJWKSet.__getitem__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.753376021020813,
+      "Write_time": 8.220005937007954,
+      "Verify_time": 2.378661266004201,
+      "total_time_seconds": 29.956,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWKSet.from_dict": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9510658430226613,
+      "Write_time": 9.782669378997525,
+      "Verify_time": 2.3934616849874146,
+      "total_time_seconds": 30.889,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWKSet.from_json": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.7072235780069605,
+      "Write_time": 25.655136223998852,
+      "Verify_time": 4.7898974569980055,
+      "total_time_seconds": 57.046,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "jwt.api_jwk.PyJWKSet": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.39538990901201,
+      "Write_time": 20.817497807001928,
+      "Verify_time": 2.643992477998836,
+      "total_time_seconds": 31.363,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.7661623829917517,
+      "Write_time": 7.134125914017204,
+      "Verify_time": 2.4626739909872413,
+      "total_time_seconds": 27.86,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_timestamp": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9890470189857297,
+      "Write_time": 7.184212374995695,
+      "Verify_time": 2.3753174360026605,
+      "total_time_seconds": 27.989,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.849772123998264,
+      "Write_time": 34.802924196003005,
+      "Verify_time": 5.419575573003385,
+      "total_time_seconds": 66.649,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.92550805900828,
+      "Write_time": 27.0557343630353,
+      "Verify_time": 5.208805556991138,
+      "total_time_seconds": 55.405,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.api_jws.PyJWS._get_default_options": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.988175525009865,
+      "Write_time": 5.478096661972813,
+      "Verify_time": 2.4391674709913787,
+      "total_time_seconds": 11.381,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "jwt.api_jws.PyJWS._load": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.828975410986459,
+      "Write_time": 25.730999724008143,
+      "Verify_time": 4.825886418984737,
+      "total_time_seconds": 64.708,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jws.PyJWS._validate_headers": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.638216585997725,
+      "Write_time": 21.31230046998826,
+      "Verify_time": 4.841618343023583,
+      "total_time_seconds": 39.852,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.api_jws.PyJWS._validate_kid": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.7735371330054477,
+      "Write_time": 8.455276338005206,
+      "Verify_time": 2.3804945060110185,
+      "total_time_seconds": 30.847,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jws.PyJWS._verify_signature": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 11.816627723019337,
+      "Write_time": 26.503715735016158,
+      "Verify_time": 4.7806681460060645,
+      "total_time_seconds": 50.401,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "jwt.api_jws.PyJWS.decode": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.842160820000572,
+      "Write_time": 18.43360681302147,
+      "Verify_time": 2.42147267999826,
+      "total_time_seconds": 48.388,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jws.PyJWS.decode_complete": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.681210622977233,
+      "Write_time": 19.74059926701011,
+      "Verify_time": 2.4333905289822724,
+      "total_time_seconds": 50.708,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jws.PyJWS.encode": {
+      "Read_calls": 5,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 15.881801073002862,
+      "Write_time": 71.39707231303328,
+      "Verify_time": 4.856989807012724,
+      "total_time_seconds": 92.14,
+      "graph_searches": 1,
+      "memory_hits": 2,
+      "Finish(max_turns)_calls": 1
+    },
+    "jwt.api_jws.PyJWS.get_algorithm_by_name": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.755853720009327,
+      "Write_time": 26.59766858999501,
+      "Verify_time": 4.789715748978779,
+      "total_time_seconds": 53.292,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jws.PyJWS.get_algorithms": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.7470193300105166,
+      "Write_time": 9.093352822994348,
+      "Verify_time": 2.4211508030130062,
+      "total_time_seconds": 30.852,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jws.PyJWS.get_unverified_header": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.8122245259583,
+      "Write_time": 27.301195926003857,
+      "Verify_time": 4.799612981005339,
+      "total_time_seconds": 59.295,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "jwt.api_jws.PyJWS.register_algorithm": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9117105009790976,
+      "Write_time": 11.517943799000932,
+      "Verify_time": 2.408234470000025,
+      "total_time_seconds": 35.193,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jws.PyJWS.unregister_algorithm": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.763271239004098,
+      "Write_time": 21.396102555037942,
+      "Verify_time": 4.7790828620200045,
+      "total_time_seconds": 47.293,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jws.PyJWS": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.993789973988896,
+      "Write_time": 29.858498046000022,
+      "Verify_time": 2.7338612290041056,
+      "total_time_seconds": 131.127,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.api_jws.PyJWS.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 9.798971783951856,
+      "Write_time": 24.220612123026513,
+      "Verify_time": 4.739276645967038,
+      "total_time_seconds": 54.471,
+      "graph_searches": 0,
+      "memory_hits": 1,
+      "Finish(max_turns)_calls": 1
+    },
+    "jwt.api_jwt.PyJWT._decode_payload": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.730712219985435,
+      "Write_time": 18.19098448799923,
+      "Verify_time": 4.737270006997278,
+      "total_time_seconds": 31.237,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._encode_payload": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.7372242450073827,
+      "Write_time": 23.652387762005674,
+      "Verify_time": 4.728272331965854,
+      "total_time_seconds": 34.723,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._get_default_options": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.763301737984875,
+      "Write_time": 10.902424979984062,
+      "Verify_time": 2.4031026450102217,
+      "total_time_seconds": 34.664,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._validate_aud": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 29.65511412001797,
+      "Verify_time": 4.721745588030899,
+      "total_time_seconds": 41.592,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._validate_claims": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.591183380020084,
+      "Write_time": 38.865986357966904,
+      "Verify_time": 4.771032197983004,
+      "total_time_seconds": 78.859,
+      "graph_searches": 5,
+      "memory_hits": 7
+    },
+    "jwt.api_jwt.PyJWT._validate_exp": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.7623696280061267,
+      "Write_time": 14.580595097999321,
+      "Verify_time": 2.3772911110136192,
+      "total_time_seconds": 38.934,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._validate_iat": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.736188957991544,
+      "Write_time": 26.34077830100432,
+      "Verify_time": 4.7791931410029065,
+      "total_time_seconds": 39.699,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._validate_iss": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.729125103011029,
+      "Write_time": 27.59032010001829,
+      "Verify_time": 4.727480072004255,
+      "total_time_seconds": 53.491,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._validate_nbf": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.77238421398215,
+      "Write_time": 14.530605935986387,
+      "Verify_time": 2.3584035230160225,
+      "total_time_seconds": 39.13,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT._validate_required_claims": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 2.7707868500147015,
+      "Write_time": 27.92107441398548,
+      "Verify_time": 4.7478207719977945,
+      "total_time_seconds": 53.522,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT.decode": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.2131303590140305,
+      "Write_time": 48.234780830011005,
+      "Verify_time": 4.783906397991814,
+      "total_time_seconds": 91.82,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.api_jwt.PyJWT.decode_complete": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 11.08032739997725,
+      "Write_time": 72.91982940601883,
+      "Verify_time": 7.257408937002765,
+      "total_time_seconds": 126.007,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.api_jwt.PyJWT.encode": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 19.428622712031938,
+      "Write_time": 51.84290069699637,
+      "Verify_time": 4.820766549004475,
+      "total_time_seconds": 79.977,
+      "graph_searches": 0,
+      "memory_hits": 2,
+      "Finish(max_turns)_calls": 1
+    },
+    "jwt.api_jwt.PyJWT": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.103126475005411,
+      "Write_time": 32.66138507600408,
+      "Verify_time": 2.7974774909962434,
+      "total_time_seconds": 138.369,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.api_jwt.PyJWT.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9109294200025033,
+      "Write_time": 12.481722755008377,
+      "Verify_time": 2.362221311981557,
+      "total_time_seconds": 37.616,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.exceptions.PyJWTError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.731592352996813,
+      "Write_time": 10.836460766993696,
+      "Verify_time": 2.371431275998475,
+      "total_time_seconds": 16.421,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.exceptions.InvalidTokenError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.602715269982582,
+      "Write_time": 12.069725303008454,
+      "Verify_time": 2.4623710559972096,
+      "total_time_seconds": 30.668,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.ExpiredSignatureError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.5024926269834395,
+      "Write_time": 12.598376115987776,
+      "Verify_time": 2.479201212001499,
+      "total_time_seconds": 31.124,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.ImmatureSignatureError": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 5.830971945018973,
+      "Write_time": 50.587456748005934,
+      "Verify_time": 7.506739594013197,
+      "total_time_seconds": 63.927,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "jwt.exceptions.InvalidAlgorithmError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.5016535939939786,
+      "Write_time": 13.531741800019518,
+      "Verify_time": 2.484848388005048,
+      "total_time_seconds": 31.916,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.InvalidAudienceError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.2561232619918883,
+      "Write_time": 13.458967494982062,
+      "Verify_time": 2.4334841079835314,
+      "total_time_seconds": 31.527,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.InvalidIssuedAtError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9065963169850875,
+      "Write_time": 16.08952651298023,
+      "Verify_time": 2.459001925017219,
+      "total_time_seconds": 33.941,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.InvalidIssuerError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.909157129994128,
+      "Write_time": 13.540826863987604,
+      "Verify_time": 2.4581873060087673,
+      "total_time_seconds": 31.252,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.InvalidKeyError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.3502891380048823,
+      "Write_time": 13.176524837006582,
+      "Verify_time": 2.468523476010887,
+      "total_time_seconds": 31.444,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.DecodeError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.9083318580233026,
+      "Write_time": 12.190214308997383,
+      "Verify_time": 2.448255691007944,
+      "total_time_seconds": 30.066,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.InvalidSignatureError": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 10.626167698996142,
+      "Write_time": 40.50428804301191,
+      "Verify_time": 7.506027849041857,
+      "total_time_seconds": 58.639,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "jwt.exceptions.MissingRequiredClaimError.__str__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.951287712989142,
+      "Write_time": 6.781018904992379,
+      "Verify_time": 2.4002964069950394,
+      "total_time_seconds": 25.386,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "jwt.exceptions.MissingRequiredClaimError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.5466946180094965,
+      "Write_time": 13.244453321007313,
+      "Verify_time": 2.470931753021432,
+      "total_time_seconds": 33.54,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.MissingRequiredClaimError.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.974374155019177,
+      "Write_time": 8.518824277009116,
+      "Verify_time": 2.3994184659968596,
+      "total_time_seconds": 27.354,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.PyJWKClientError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.491453463997459,
+      "Write_time": 12.525560529000359,
+      "Verify_time": 2.4892215300060343,
+      "total_time_seconds": 31.105,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.PyJWKClientConnectionError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.978125972003909,
+      "Write_time": 14.380583690013736,
+      "Verify_time": 2.48136347901891,
+      "total_time_seconds": 32.46,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.PyJWKError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 3.257047822989989,
+      "Write_time": 11.906149980990449,
+      "Verify_time": 2.4550735910015646,
+      "total_time_seconds": 30.216,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.exceptions.PyJWKSetError": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 6.795182625995949,
+      "Write_time": 39.54953491903143,
+      "Verify_time": 7.685749207972549,
+      "total_time_seconds": 66.742,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.help.info": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 10.422763604990905,
+      "Write_time": 67.5849825500336,
+      "Verify_time": 4.798408436996397,
+      "total_time_seconds": 90.591,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "jwt.help.main": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.856050829985179,
+      "Write_time": 11.83757571800379,
+      "Verify_time": 2.5053436269809026,
+      "total_time_seconds": 37.89,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "jwt.jwk_set_cache.JWKSetCache.get": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.531911202007905,
+      "Write_time": 17.441602022998268,
+      "Verify_time": 4.76199691198417,
+      "total_time_seconds": 45.165,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "jwt.jwk_set_cache.JWKSetCache.is_expired": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.771085336979013,
+      "Write_time": 19.923024746007286,
+      "Verify_time": 4.775644740991993,
+      "total_time_seconds": 49.979,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.jwk_set_cache.JWKSetCache.put": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.900261490984121,
+      "Write_time": 20.979341086989734,
+      "Verify_time": 4.7818151760147884,
+      "total_time_seconds": 47.975,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "jwt.jwk_set_cache.JWKSetCache": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.006174939015182,
+      "Write_time": 18.82368395899539,
+      "Verify_time": 2.565695337980287,
+      "total_time_seconds": 25.881,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.jwk_set_cache.JWKSetCache.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.7682071500166785,
+      "Write_time": 10.477421869989485,
+      "Verify_time": 2.393857282004319,
+      "total_time_seconds": 30.478,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.jwks_client.PyJWKClient.fetch_data": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 2.7637414509954397,
+      "Write_time": 38.644275498983916,
+      "Verify_time": 7.18259273696458,
+      "total_time_seconds": 69.591,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.jwks_client.PyJWKClient.get_jwk_set": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 13.55689205499948,
+      "Write_time": 41.84614755996154,
+      "Verify_time": 7.144881349959178,
+      "total_time_seconds": 82.169,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.jwks_client.PyJWKClient.get_signing_key": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.085677039984148,
+      "Write_time": 24.650880013999995,
+      "Verify_time": 4.809666790999472,
+      "total_time_seconds": 58.569,
+      "graph_searches": 3,
+      "memory_hits": 3
+    },
+    "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 10.694854347995715,
+      "Write_time": 27.064256796002155,
+      "Verify_time": 2.4290790950180963,
+      "total_time_seconds": 49.705,
+      "graph_searches": 0,
+      "memory_hits": 5,
+      "Finish(max_turns)_calls": 1
+    },
+    "jwt.jwks_client.PyJWKClient.get_signing_keys": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 14.553123386023799,
+      "Write_time": 33.44487652598764,
+      "Verify_time": 4.85645920803654,
+      "total_time_seconds": 73.065,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "jwt.jwks_client.PyJWKClient.match_kid": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 2.780204014998162,
+      "Write_time": 8.922714936023112,
+      "Verify_time": 2.404349879012443,
+      "total_time_seconds": 14.581,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt.jwks_client.PyJWKClient": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.141096832987387,
+      "Write_time": 79.34925104200374,
+      "Verify_time": 8.012908292963402,
+      "total_time_seconds": 99.505,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "jwt.jwks_client.PyJWKClient.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.938123489002464,
+      "Write_time": 22.51210566298687,
+      "Verify_time": 2.411097595002502,
+      "total_time_seconds": 50.019,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "jwt.warnings.RemovedInPyjwt3Warning": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 3.498765349999303,
+      "Write_time": 29.449394062015926,
+      "Verify_time": 4.776375083980383,
+      "total_time_seconds": 50.482,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "jwt": {
+      "Read_calls": 10,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 30.825552936061285,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 30.958,
+      "graph_searches": 0,
+      "memory_hits": 800,
+      "Finish(max_turns)_calls": 1
+    },
+    "PyJWT": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.581330728018656,
+      "Write_time": 34.56836179399397,
+      "Verify_time": 2.4570118240080774,
+      "total_time_seconds": 51.024,
+      "graph_searches": 0,
+      "memory_hits": 4
+    }
+  },
+  "per_component_verify_scores": {
+    "docs.conf.read": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.conf.find_version": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK.from_dict": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK.from_json": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK.key_id": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK.key_type": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK.public_key_use": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWK": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWKSet.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.775,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 0.8
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9
+      }
+    ],
+    "jwt.api_jwk.PyJWKSet.__getitem__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWKSet.from_dict": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWKSet.from_json": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.875,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWKSet": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_timestamp": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWTSetWithTimestamp": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwk.PyJWTSetWithTimestamp.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS._get_default_options": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS._load": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS._validate_headers": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS._validate_kid": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS._verify_signature": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.decode": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.decode_complete": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.encode": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.get_algorithm_by_name": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.get_algorithms": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.get_unverified_header": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.register_algorithm": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.unregister_algorithm": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jws.PyJWS.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._decode_payload": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._encode_payload": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._get_default_options": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_aud": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_claims": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_exp": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_iat": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_iss": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_nbf": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT._validate_required_claims": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT.decode": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT.decode_complete": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT.encode": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.api_jwt.PyJWT.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.PyJWTError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.InvalidTokenError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.ExpiredSignatureError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.ImmatureSignatureError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7417,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.7417,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 0.5
+      }
+    ],
+    "jwt.exceptions.InvalidAlgorithmError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.InvalidAudienceError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.InvalidIssuedAtError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.InvalidIssuerError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.InvalidKeyError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.DecodeError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.InvalidSignatureError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.5
+      }
+    ],
+    "jwt.exceptions.MissingRequiredClaimError.__str__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.MissingRequiredClaimError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.MissingRequiredClaimError.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.PyJWKClientError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.PyJWKClientConnectionError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.PyJWKError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.exceptions.PyJWKSetError": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.45,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 0.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.4917,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 0.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9917,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.help.info": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.help.main": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwk_set_cache.JWKSetCache.get": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwk_set_cache.JWKSetCache.is_expired": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwk_set_cache.JWKSetCache.put": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwk_set_cache.JWKSetCache": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwk_set_cache.JWKSetCache.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.fetch_data": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.get_jwk_set": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.get_signing_key": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.get_signing_keys": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.match_kid": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7417,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8083,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.75
+      }
+    ],
+    "jwt.jwks_client.PyJWKClient.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "jwt.warnings.RemovedInPyjwt3Warning": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "PyJWT": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "docs.conf.read": {
+      "requests": 4,
+      "input_tokens": 17536,
+      "output_tokens": 992,
+      "cost": 0.0
+    },
+    "docs.conf.find_version": {
+      "requests": 4,
+      "input_tokens": 18954,
+      "output_tokens": 975,
+      "cost": 0.0
+    },
+    "docs": {
+      "requests": 6,
+      "input_tokens": 36266,
+      "output_tokens": 972,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK.__init__": {
+      "requests": 9,
+      "input_tokens": 54678,
+      "output_tokens": 2821,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK.from_dict": {
+      "requests": 4,
+      "input_tokens": 19404,
+      "output_tokens": 848,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK.from_json": {
+      "requests": 4,
+      "input_tokens": 20492,
+      "output_tokens": 880,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK.key_id": {
+      "requests": 4,
+      "input_tokens": 19087,
+      "output_tokens": 718,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK.key_type": {
+      "requests": 4,
+      "input_tokens": 17160,
+      "output_tokens": 727,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK.public_key_use": {
+      "requests": 4,
+      "input_tokens": 17200,
+      "output_tokens": 744,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWK": {
+      "requests": 9,
+      "input_tokens": 62390,
+      "output_tokens": 1614,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWKSet.__init__": {
+      "requests": 7,
+      "input_tokens": 38517,
+      "output_tokens": 1495,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWKSet.__getitem__": {
+      "requests": 4,
+      "input_tokens": 17430,
+      "output_tokens": 777,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWKSet.from_dict": {
+      "requests": 4,
+      "input_tokens": 18237,
+      "output_tokens": 805,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWKSet.from_json": {
+      "requests": 8,
+      "input_tokens": 46741,
+      "output_tokens": 1474,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWKSet": {
+      "requests": 5,
+      "input_tokens": 31954,
+      "output_tokens": 794,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set": {
+      "requests": 4,
+      "input_tokens": 17155,
+      "output_tokens": 718,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_timestamp": {
+      "requests": 4,
+      "input_tokens": 17353,
+      "output_tokens": 726,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp": {
+      "requests": 8,
+      "input_tokens": 46054,
+      "output_tokens": 1700,
+      "cost": 0.0
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.__init__": {
+      "requests": 7,
+      "input_tokens": 38566,
+      "output_tokens": 1405,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS._get_default_options": {
+      "requests": 4,
+      "input_tokens": 23182,
+      "output_tokens": 281,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS._load": {
+      "requests": 7,
+      "input_tokens": 37227,
+      "output_tokens": 1669,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS._validate_headers": {
+      "requests": 9,
+      "input_tokens": 63136,
+      "output_tokens": 1012,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS._validate_kid": {
+      "requests": 4,
+      "input_tokens": 17598,
+      "output_tokens": 802,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS._verify_signature": {
+      "requests": 10,
+      "input_tokens": 52672,
+      "output_tokens": 1300,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.decode": {
+      "requests": 5,
+      "input_tokens": 29770,
+      "output_tokens": 1253,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.decode_complete": {
+      "requests": 5,
+      "input_tokens": 31993,
+      "output_tokens": 1301,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.encode": {
+      "requests": 10,
+      "input_tokens": 81083,
+      "output_tokens": 2364,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.get_algorithm_by_name": {
+      "requests": 6,
+      "input_tokens": 28626,
+      "output_tokens": 1385,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.get_algorithms": {
+      "requests": 4,
+      "input_tokens": 17470,
+      "output_tokens": 798,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.get_unverified_header": {
+      "requests": 7,
+      "input_tokens": 45618,
+      "output_tokens": 1540,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.register_algorithm": {
+      "requests": 4,
+      "input_tokens": 24012,
+      "output_tokens": 916,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.unregister_algorithm": {
+      "requests": 6,
+      "input_tokens": 28094,
+      "output_tokens": 1231,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS": {
+      "requests": 5,
+      "input_tokens": 50812,
+      "output_tokens": 3381,
+      "cost": 0.0
+    },
+    "jwt.api_jws.PyJWS.__init__": {
+      "requests": 10,
+      "input_tokens": 53252,
+      "output_tokens": 1408,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._decode_payload": {
+      "requests": 7,
+      "input_tokens": 33575,
+      "output_tokens": 808,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._encode_payload": {
+      "requests": 7,
+      "input_tokens": 33935,
+      "output_tokens": 901,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._get_default_options": {
+      "requests": 4,
+      "input_tokens": 18024,
+      "output_tokens": 904,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_aud": {
+      "requests": 6,
+      "input_tokens": 32713,
+      "output_tokens": 1088,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_claims": {
+      "requests": 7,
+      "input_tokens": 45750,
+      "output_tokens": 2053,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_exp": {
+      "requests": 4,
+      "input_tokens": 18330,
+      "output_tokens": 1020,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_iat": {
+      "requests": 7,
+      "input_tokens": 34649,
+      "output_tokens": 1029,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_iss": {
+      "requests": 6,
+      "input_tokens": 28598,
+      "output_tokens": 1397,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_nbf": {
+      "requests": 4,
+      "input_tokens": 18414,
+      "output_tokens": 1027,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT._validate_required_claims": {
+      "requests": 6,
+      "input_tokens": 28502,
+      "output_tokens": 1401,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT.decode": {
+      "requests": 9,
+      "input_tokens": 56643,
+      "output_tokens": 2384,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT.decode_complete": {
+      "requests": 10,
+      "input_tokens": 71180,
+      "output_tokens": 3239,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT.encode": {
+      "requests": 10,
+      "input_tokens": 59075,
+      "output_tokens": 2029,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT": {
+      "requests": 4,
+      "input_tokens": 35864,
+      "output_tokens": 3598,
+      "cost": 0.0
+    },
+    "jwt.api_jwt.PyJWT.__init__": {
+      "requests": 4,
+      "input_tokens": 19225,
+      "output_tokens": 978,
+      "cost": 0.0
+    },
+    "jwt.exceptions.PyJWTError": {
+      "requests": 4,
+      "input_tokens": 16624,
+      "output_tokens": 423,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidTokenError": {
+      "requests": 4,
+      "input_tokens": 17662,
+      "output_tokens": 785,
+      "cost": 0.0
+    },
+    "jwt.exceptions.ExpiredSignatureError": {
+      "requests": 4,
+      "input_tokens": 17783,
+      "output_tokens": 796,
+      "cost": 0.0
+    },
+    "jwt.exceptions.ImmatureSignatureError": {
+      "requests": 8,
+      "input_tokens": 42920,
+      "output_tokens": 1650,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidAlgorithmError": {
+      "requests": 4,
+      "input_tokens": 17817,
+      "output_tokens": 818,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidAudienceError": {
+      "requests": 4,
+      "input_tokens": 17833,
+      "output_tokens": 818,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidIssuedAtError": {
+      "requests": 4,
+      "input_tokens": 17886,
+      "output_tokens": 880,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidIssuerError": {
+      "requests": 4,
+      "input_tokens": 17720,
+      "output_tokens": 811,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidKeyError": {
+      "requests": 4,
+      "input_tokens": 17726,
+      "output_tokens": 816,
+      "cost": 0.0
+    },
+    "jwt.exceptions.DecodeError": {
+      "requests": 4,
+      "input_tokens": 17630,
+      "output_tokens": 776,
+      "cost": 0.0
+    },
+    "jwt.exceptions.InvalidSignatureError": {
+      "requests": 9,
+      "input_tokens": 48874,
+      "output_tokens": 1491,
+      "cost": 0.0
+    },
+    "jwt.exceptions.MissingRequiredClaimError.__str__": {
+      "requests": 4,
+      "input_tokens": 16770,
+      "output_tokens": 654,
+      "cost": 0.0
+    },
+    "jwt.exceptions.MissingRequiredClaimError": {
+      "requests": 4,
+      "input_tokens": 18173,
+      "output_tokens": 858,
+      "cost": 0.0
+    },
+    "jwt.exceptions.MissingRequiredClaimError.__init__": {
+      "requests": 4,
+      "input_tokens": 17650,
+      "output_tokens": 706,
+      "cost": 0.0
+    },
+    "jwt.exceptions.PyJWKClientError": {
+      "requests": 4,
+      "input_tokens": 17712,
+      "output_tokens": 796,
+      "cost": 0.0
+    },
+    "jwt.exceptions.PyJWKClientConnectionError": {
+      "requests": 4,
+      "input_tokens": 17887,
+      "output_tokens": 840,
+      "cost": 0.0
+    },
+    "jwt.exceptions.PyJWKError": {
+      "requests": 4,
+      "input_tokens": 17666,
+      "output_tokens": 784,
+      "cost": 0.0
+    },
+    "jwt.exceptions.PyJWKSetError": {
+      "requests": 9,
+      "input_tokens": 49680,
+      "output_tokens": 1709,
+      "cost": 0.0
+    },
+    "jwt.help.info": {
+      "requests": 10,
+      "input_tokens": 55538,
+      "output_tokens": 2323,
+      "cost": 0.0
+    },
+    "jwt.help.main": {
+      "requests": 4,
+      "input_tokens": 18798,
+      "output_tokens": 978,
+      "cost": 0.0
+    },
+    "jwt.jwk_set_cache.JWKSetCache.get": {
+      "requests": 7,
+      "input_tokens": 32650,
+      "output_tokens": 1168,
+      "cost": 0.0
+    },
+    "jwt.jwk_set_cache.JWKSetCache.is_expired": {
+      "requests": 8,
+      "input_tokens": 42288,
+      "output_tokens": 1275,
+      "cost": 0.0
+    },
+    "jwt.jwk_set_cache.JWKSetCache.put": {
+      "requests": 7,
+      "input_tokens": 39538,
+      "output_tokens": 1231,
+      "cost": 0.0
+    },
+    "jwt.jwk_set_cache.JWKSetCache": {
+      "requests": 4,
+      "input_tokens": 22136,
+      "output_tokens": 655,
+      "cost": 0.0
+    },
+    "jwt.jwk_set_cache.JWKSetCache.__init__": {
+      "requests": 4,
+      "input_tokens": 17162,
+      "output_tokens": 787,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.fetch_data": {
+      "requests": 8,
+      "input_tokens": 41130,
+      "output_tokens": 1798,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.get_jwk_set": {
+      "requests": 10,
+      "input_tokens": 56459,
+      "output_tokens": 2110,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.get_signing_key": {
+      "requests": 7,
+      "input_tokens": 43804,
+      "output_tokens": 1503,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt": {
+      "requests": 10,
+      "input_tokens": 61189,
+      "output_tokens": 1245,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.get_signing_keys": {
+      "requests": 9,
+      "input_tokens": 56919,
+      "output_tokens": 1867,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.match_kid": {
+      "requests": 4,
+      "input_tokens": 17744,
+      "output_tokens": 369,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient": {
+      "requests": 9,
+      "input_tokens": 82754,
+      "output_tokens": 2493,
+      "cost": 0.0
+    },
+    "jwt.jwks_client.PyJWKClient.__init__": {
+      "requests": 5,
+      "input_tokens": 29026,
+      "output_tokens": 1292,
+      "cost": 0.0
+    },
+    "jwt.warnings.RemovedInPyjwt3Warning": {
+      "requests": 6,
+      "input_tokens": 27065,
+      "output_tokens": 1301,
+      "cost": 0.0
+    },
+    "jwt": {
+      "requests": 10,
+      "input_tokens": 70442,
+      "output_tokens": 700,
+      "cost": 0.0
+    },
+    "PyJWT": {
+      "requests": 9,
+      "input_tokens": 48425,
+      "output_tokens": 1262,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 40,
+    "total_fetched_component_types": 84,
+    "redundant_fetch_count": 94,
+    "duplicates": {
+      "jwt.exceptions.InvalidTokenError": {
+        "accessed_by": [
+          "jwt.exceptions.ExpiredSignatureError",
+          "jwt.exceptions.ImmatureSignatureError",
+          "jwt.exceptions.InvalidAlgorithmError",
+          "jwt.exceptions.InvalidAudienceError",
+          "jwt.exceptions.InvalidIssuedAtError",
+          "jwt.exceptions.InvalidIssuerError",
+          "jwt.exceptions.DecodeError",
+          "jwt.exceptions.InvalidSignatureError",
+          "jwt.exceptions.MissingRequiredClaimError",
+          "jwt"
+        ],
+        "access_count": 10
+      },
+      "jwt.api_jwk.PyJWK": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWK.from_dict",
+          "jwt.api_jwk.PyJWK.from_json",
+          "jwt.api_jwk.PyJWK.key_id",
+          "jwt.api_jwk.PyJWK",
+          "jwt.api_jwk.PyJWKSet.__init__",
+          "jwt.api_jwk.PyJWKSet",
+          "jwt.jwks_client.PyJWKClient.get_signing_keys",
+          "jwt.jwks_client.PyJWKClient",
+          "jwt"
+        ],
+        "access_count": 9
+      },
+      "jwt.api_jwk.PyJWKSet": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWKSet.from_dict",
+          "jwt.api_jwk.PyJWKSet.from_json",
+          "jwt.api_jwk.PyJWKSet",
+          "jwt.api_jwk.PyJWTSetWithTimestamp",
+          "jwt.api_jwk.PyJWTSetWithTimestamp.__init__",
+          "jwt.jwk_set_cache.JWKSetCache.put",
+          "jwt.jwk_set_cache.JWKSetCache",
+          "jwt.jwks_client.PyJWKClient.get_signing_keys",
+          "jwt"
+        ],
+        "access_count": 9
+      },
+      "jwt.api_jws.PyJWS": {
+        "accessed_by": [
+          "jwt.api_jws.PyJWS._get_default_options",
+          "jwt.api_jws.PyJWS._validate_headers",
+          "jwt.api_jws.PyJWS.decode",
+          "jwt.api_jws.PyJWS.decode_complete",
+          "jwt.api_jws.PyJWS.encode",
+          "jwt.api_jws.PyJWS.get_unverified_header",
+          "jwt.api_jws.PyJWS.register_algorithm",
+          "jwt.api_jws.PyJWS",
+          "jwt"
+        ],
+        "access_count": 9
+      },
+      "jwt.exceptions.PyJWTError": {
+        "accessed_by": [
+          "jwt.exceptions.InvalidTokenError",
+          "jwt.exceptions.ImmatureSignatureError",
+          "jwt.exceptions.InvalidKeyError",
+          "jwt.exceptions.PyJWKClientError",
+          "jwt.exceptions.PyJWKError",
+          "jwt.exceptions.PyJWKSetError",
+          "jwt"
+        ],
+        "access_count": 7
+      },
+      "jwt.api_jwk.PyJWTSetWithTimestamp": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWTSetWithTimestamp.get_timestamp",
+          "jwt.api_jwk.PyJWTSetWithTimestamp.__init__",
+          "jwt.jwk_set_cache.JWKSetCache.is_expired",
+          "jwt.jwk_set_cache.JWKSetCache.put",
+          "jwt.jwk_set_cache.JWKSetCache",
+          "jwt"
+        ],
+        "access_count": 6
+      },
+      "jwt.jwk_set_cache.JWKSetCache": {
+        "accessed_by": [
+          "jwt.jwk_set_cache.JWKSetCache.get",
+          "jwt.jwk_set_cache.JWKSetCache.is_expired",
+          "jwt.jwk_set_cache.JWKSetCache.put",
+          "jwt.jwks_client.PyJWKClient",
+          "jwt.jwks_client.PyJWKClient.__init__",
+          "jwt"
+        ],
+        "access_count": 6
+      },
+      "jwt.api_jwk.PyJWKSet.from_dict": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWKSet.from_json",
+          "jwt.api_jwk.PyJWKSet",
+          "jwt.jwks_client.PyJWKClient",
+          "jwt"
+        ],
+        "access_count": 4
+      },
+      "jwt.api_jws.PyJWS.decode_complete": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT.decode",
+          "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt",
+          "jwt.jwks_client.PyJWKClient",
+          "jwt"
+        ],
+        "access_count": 4
+      },
+      "jwt.jwks_client.PyJWKClient": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_key",
+          "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt",
+          "jwt.jwks_client.PyJWKClient.__init__",
+          "jwt"
+        ],
+        "access_count": 4
+      },
+      "jwt.api_jwk.PyJWK.from_dict": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWK.from_json",
+          "jwt.api_jwk.PyJWKSet.from_json",
+          "jwt"
+        ],
+        "access_count": 3
+      },
+      "jwt.api_jws.PyJWS._validate_headers": {
+        "accessed_by": [
+          "jwt.api_jws.PyJWS.encode",
+          "jwt.api_jws.PyJWS.get_unverified_header",
+          "jwt"
+        ],
+        "access_count": 3
+      },
+      "jwt.api_jws.PyJWS._get_default_options": {
+        "accessed_by": [
+          "jwt.api_jws.PyJWS.__init__",
+          "jwt.api_jwt.PyJWT.__init__",
+          "jwt"
+        ],
+        "access_count": 3
+      },
+      "jwt.exceptions.MissingRequiredClaimError": {
+        "accessed_by": [
+          "jwt.exceptions.MissingRequiredClaimError.__str__",
+          "jwt.exceptions.MissingRequiredClaimError.__init__",
+          "jwt"
+        ],
+        "access_count": 3
+      },
+      "jwt.exceptions.PyJWKClientError": {
+        "accessed_by": [
+          "jwt.exceptions.PyJWKClientConnectionError",
+          "jwt.jwks_client.PyJWKClient",
+          "jwt"
+        ],
+        "access_count": 3
+      },
+      "jwt.api_jwt.PyJWT.decode_complete": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt",
+          "jwt.jwks_client.PyJWKClient",
+          "jwt"
+        ],
+        "access_count": 3
+      },
+      "docs.conf.read": {
+        "accessed_by": [
+          "docs.conf.find_version",
+          "docs"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwk.PyJWKSet.__getitem__": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWKSet",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwk.PyJWKSet.from_json": {
+        "accessed_by": [
+          "jwt.api_jwk.PyJWKSet",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jws.PyJWS.get_algorithm_by_name": {
+        "accessed_by": [
+          "jwt.api_jws.PyJWS.encode",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jws.PyJWS._load": {
+        "accessed_by": [
+          "jwt.api_jws.PyJWS.get_unverified_header",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_required_claims": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT._validate_claims",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_iat": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT._validate_claims",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_nbf": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT._validate_claims",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_exp": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT._validate_claims",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_iss": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT._validate_claims",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_aud": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT._validate_claims",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._decode_payload": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT.decode_complete",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._validate_claims": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT.decode_complete",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._encode_payload": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT.encode",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwt.PyJWT._get_default_options": {
+        "accessed_by": [
+          "jwt.api_jwt.PyJWT.__init__",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.exceptions.DecodeError": {
+        "accessed_by": [
+          "jwt.exceptions.InvalidSignatureError",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.help.info": {
+        "accessed_by": [
+          "jwt.help.main",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.jwk_set_cache.JWKSetCache.is_expired": {
+        "accessed_by": [
+          "jwt.jwk_set_cache.JWKSetCache.get",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.jwks_client.PyJWKClient.fetch_data": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_jwk_set",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.jwks_client.PyJWKClient.get_signing_keys": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_key",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.jwks_client.PyJWKClient.match_kid": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_key",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.jwks_client.PyJWKClient.get_signing_key": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_keys",
+          "jwt"
+        ],
+        "access_count": 2
+      },
+      "jwt.jwks_client.PyJWKClient.get_jwk_set": {
+        "accessed_by": [
+          "jwt.jwks_client.PyJWKClient.get_signing_keys",
+          "jwt"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 511,
+      "total_input_tokens": 2843276,
+      "total_output_tokens": 106450,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 48.797,
+    "avg_turns_per_component": 5.75,
+    "memory_hit_rate": 0.9827,
+    "total_tokens": 2949726,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 34702.7
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 82,
+      "total_time_seconds": 4027.423,
+      "avg_time_seconds": 49.115,
+      "total_turns": 486,
+      "avg_turns": 5.93,
+      "action_counts": {
+        "Read": 133,
+        "Write": 131,
+        "Verify": 127,
+        "Finish": 73,
+        "Unknown": 22
+      }
+    },
+    "MODULE": {
+      "count": 2,
+      "total_time_seconds": 69.28,
+      "avg_time_seconds": 34.64,
+      "total_turns": 16,
+      "avg_turns": 8.0,
+      "action_counts": {
+        "Read": 13,
+        "Write": 1,
+        "Verify": 1,
+        "Finish": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 51.024,
+      "avg_time_seconds": 51.024,
+      "total_turns": 9,
+      "avg_turns": 9.0,
+      "action_counts": {
+        "Read": 3,
+        "Unknown": 3,
+        "Write": 1,
+        "Verify": 1,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "docs.conf.find_version": {
+      "total_candidate_pairs": 15,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 14,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs.conf.read"
+      ]
+    },
+    "docs": {
+      "total_candidate_pairs": 34,
+      "entailment_count": 20,
+      "contradiction_count": 1,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs.conf.find_version",
+        "docs.conf.read"
+      ]
+    },
+    "jwt.api_jwk.PyJWK": {
+      "total_candidate_pairs": 51,
+      "entailment_count": 9,
+      "contradiction_count": 0,
+      "neutral_count": 42,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jwk.PyJWK.from_dict",
+        "jwt.api_jwk.PyJWK.from_json",
+        "jwt.api_jwk.PyJWK.key_id",
+        "jwt.api_jwk.PyJWK.key_type",
+        "jwt.api_jwk.PyJWK.public_key_use"
+      ]
+    },
+    "jwt.api_jwk.PyJWKSet.__init__": {
+      "total_candidate_pairs": 18,
+      "entailment_count": 4,
+      "contradiction_count": 1,
+      "neutral_count": 13,
+      "conflict_score": 0.2,
+      "dep_ids_checked": [
+        "jwt.api_jwk.PyJWK"
+      ]
+    },
+    "jwt.api_jwk.PyJWKSet": {
+      "total_candidate_pairs": 41,
+      "entailment_count": 8,
+      "contradiction_count": 3,
+      "neutral_count": 30,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jwk.PyJWK",
+        "jwt.api_jwk.PyJWKSet.__getitem__",
+        "jwt.api_jwk.PyJWKSet.from_dict",
+        "jwt.api_jwk.PyJWKSet.from_json"
+      ]
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 11,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jwk.PyJWKSet"
+      ]
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp": {
+      "total_candidate_pairs": 31,
+      "entailment_count": 12,
+      "contradiction_count": 2,
+      "neutral_count": 17,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jwk.PyJWKSet",
+        "jwt.api_jwk.PyJWTSetWithTimestamp.get_jwk_set",
+        "jwt.api_jwk.PyJWTSetWithTimestamp.get_timestamp"
+      ]
+    },
+    "jwt.api_jwk.PyJWTSetWithTimestamp.__init__": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 12,
+      "contradiction_count": 0,
+      "neutral_count": 5,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jwk.PyJWKSet"
+      ]
+    },
+    "jwt.api_jws.PyJWS": {
+      "total_candidate_pairs": 85,
+      "entailment_count": 11,
+      "contradiction_count": 1,
+      "neutral_count": 73,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jws.PyJWS._get_default_options",
+        "jwt.api_jws.PyJWS._load",
+        "jwt.api_jws.PyJWS._validate_headers",
+        "jwt.api_jws.PyJWS._validate_kid",
+        "jwt.api_jws.PyJWS._verify_signature",
+        "jwt.api_jws.PyJWS.decode",
+        "jwt.api_jws.PyJWS.decode_complete",
+        "jwt.api_jws.PyJWS.encode",
+        "jwt.api_jws.PyJWS.get_algorithm_by_name",
+        "jwt.api_jws.PyJWS.get_algorithms",
+        "jwt.api_jws.PyJWS.get_unverified_header",
+        "jwt.api_jws.PyJWS.register_algorithm",
+        "jwt.api_jws.PyJWS.unregister_algorithm"
+      ]
+    },
+    "jwt.api_jwt.PyJWT": {
+      "total_candidate_pairs": 93,
+      "entailment_count": 13,
+      "contradiction_count": 1,
+      "neutral_count": 79,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.api_jwt.PyJWT._decode_payload",
+        "jwt.api_jwt.PyJWT._encode_payload",
+        "jwt.api_jwt.PyJWT._get_default_options",
+        "jwt.api_jwt.PyJWT._validate_aud",
+        "jwt.api_jwt.PyJWT._validate_claims",
+        "jwt.api_jwt.PyJWT._validate_exp",
+        "jwt.api_jwt.PyJWT._validate_iat",
+        "jwt.api_jwt.PyJWT._validate_iss",
+        "jwt.api_jwt.PyJWT._validate_nbf",
+        "jwt.api_jwt.PyJWT._validate_required_claims",
+        "jwt.api_jwt.PyJWT.decode",
+        "jwt.api_jwt.PyJWT.decode_complete",
+        "jwt.api_jwt.PyJWT.encode"
+      ]
+    },
+    "jwt.exceptions.InvalidTokenError": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 1,
+      "contradiction_count": 2,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.PyJWTError"
+      ]
+    },
+    "jwt.exceptions.ExpiredSignatureError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 4,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.ImmatureSignatureError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 1,
+      "contradiction_count": 1,
+      "neutral_count": 11,
+      "conflict_score": 0.5,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.InvalidAlgorithmError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 4,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.InvalidAudienceError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 4,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.InvalidIssuedAtError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 3,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.InvalidIssuerError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 4,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.InvalidKeyError": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.PyJWTError"
+      ]
+    },
+    "jwt.exceptions.DecodeError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 1,
+      "contradiction_count": 4,
+      "neutral_count": 8,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError"
+      ]
+    },
+    "jwt.exceptions.InvalidSignatureError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 2,
+      "contradiction_count": 3,
+      "neutral_count": 8,
+      "conflict_score": 0.5,
+      "dep_ids_checked": [
+        "jwt.exceptions.DecodeError"
+      ]
+    },
+    "jwt.exceptions.MissingRequiredClaimError": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 0,
+      "contradiction_count": 3,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.InvalidTokenError",
+        "jwt.exceptions.MissingRequiredClaimError.__str__"
+      ]
+    },
+    "jwt.exceptions.PyJWKClientError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 1,
+      "contradiction_count": 5,
+      "neutral_count": 7,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.PyJWTError"
+      ]
+    },
+    "jwt.exceptions.PyJWKClientConnectionError": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 4,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.PyJWKClientError"
+      ]
+    },
+    "jwt.exceptions.PyJWKError": {
+      "total_candidate_pairs": 11,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 8,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.PyJWTError"
+      ]
+    },
+    "jwt.exceptions.PyJWKSetError": {
+      "total_candidate_pairs": 12,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.exceptions.PyJWTError"
+      ]
+    },
+    "jwt.help.main": {
+      "total_candidate_pairs": 19,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.help.info"
+      ]
+    },
+    "jwt.jwk_set_cache.JWKSetCache": {
+      "total_candidate_pairs": 23,
+      "entailment_count": 4,
+      "contradiction_count": 1,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "jwt.jwk_set_cache.JWKSetCache.get",
+        "jwt.jwk_set_cache.JWKSetCache.is_expired",
+        "jwt.jwk_set_cache.JWKSetCache.put"
+      ]
+    },
+    "jwt.jwks_client.PyJWKClient": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 27,
+      "conflict_score": 0.25,
+      "dep_ids_checked": [
+        "jwt.jwks_client.PyJWKClient.fetch_data",
+        "jwt.jwks_client.PyJWKClient.get_jwk_set",
+        "jwt.jwks_client.PyJWKClient.get_signing_key",
+        "jwt.jwks_client.PyJWKClient.get_signing_key_from_jwt",
+        "jwt.jwks_client.PyJWKClient.get_signing_keys",
+        "jwt.jwks_client.PyJWKClient.match_kid"
+      ]
+    },
+    "PyJWT": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "docs"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 129,
+    "first_pass_success": 46,
+    "required_revision": 37,
+    "score_parse_failures": 1,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9018,
+      "COMPLETENESS": 0.8833,
+      "HELPFULNESS": 0.8452
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.0875,
+      "COMPLETENESS": 0.0792,
+      "HELPFULNESS": 0.0958
+    }
+  }
+}

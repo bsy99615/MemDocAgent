@@ -1,0 +1,3816 @@
+{
+  "run_id": "20260420_025834",
+  "label": "online-judge-tools",
+  "total_run_time_seconds": 5372.323,
+  "repo_summary": {
+    "file_count": 7,
+    "function_count": 58,
+    "class_count": 13,
+    "method_count": 17,
+    "total_components": 88,
+    "module_count": 1,
+    "repo_count": 1,
+    "topological_order_count": 88,
+    "topological_order": [
+      "onlinejudge_command.download_history.DownloadHistory._flush",
+      "onlinejudge_command.download_history.DownloadHistory.add",
+      "onlinejudge_command.download_history.DownloadHistory.get",
+      "onlinejudge_command.download_history.DownloadHistory.remove",
+      "onlinejudge_command.download_history.DownloadHistory",
+      "onlinejudge_command.download_history.DownloadHistory.__init__",
+      "onlinejudge_command.format_utils.percentsplit",
+      "onlinejudge_command.format_utils.percentformat",
+      "onlinejudge_command.format_utils.match_with_format",
+      "onlinejudge_command.format_utils.construct_relationship_of_files",
+      "onlinejudge_command.format_utils.is_backup_or_hidden_file",
+      "onlinejudge_command.format_utils.drop_backup_or_hidden_files",
+      "onlinejudge_command.format_utils.glob_with_format",
+      "onlinejudge_command.format_utils.path_from_format",
+      "onlinejudge_command.format_utils.percentparse",
+      "onlinejudge_command.log_formatter.LogFormatter.format",
+      "onlinejudge_command.log_formatter.LogFormatter",
+      "onlinejudge_command.log_formatter.LogFormatter.__init__",
+      "onlinejudge_command.output_comparators.OutputComparator.__call__",
+      "onlinejudge_command.output_comparators.OutputComparator",
+      "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__",
+      "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__call__",
+      "onlinejudge_command.output_comparators.FloatingPointNumberComparator",
+      "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__init__",
+      "onlinejudge_command.output_comparators.SplitComparator.__init__",
+      "onlinejudge_command.output_comparators.SplitLinesComparator.__call__",
+      "onlinejudge_command.output_comparators.SplitLinesComparator",
+      "onlinejudge_command.output_comparators.SplitLinesComparator.__init__",
+      "onlinejudge_command.pretty_printers._PrettyTokenType",
+      "onlinejudge_command.pretty_printers._PrettyToken",
+      "onlinejudge_command.pretty_printers._replace_whitespace",
+      "onlinejudge_command.pretty_printers._render_tokens",
+      "onlinejudge_command.pretty_printers._decode_with_recovery",
+      "onlinejudge_command.pretty_printers._tokenize_str",
+      "onlinejudge_command.pretty_printers._tokenize_line",
+      "onlinejudge_command.pretty_printers._warn_if_empty",
+      "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping",
+      "onlinejudge_command.pretty_printers.make_pretty_all",
+      "onlinejudge_command.output_comparators.CompareMode",
+      "onlinejudge_command.pretty_printers._get_terminal_size",
+      "onlinejudge_command.pretty_printers._MergedDiffOp",
+      "onlinejudge_command.pretty_printers._add_dots_between_gaps",
+      "onlinejudge_command.pretty_printers._LineDiffOp",
+      "onlinejudge_command.pretty_printers._reconstruct_entire_diff",
+      "onlinejudge_command.pretty_printers._add_lines_around_diff_lines",
+      "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__",
+      "onlinejudge_command.output_comparators.CRLFInsensitiveComparator",
+      "onlinejudge_command.output_comparators.ExactComparator.__call__",
+      "onlinejudge_command.output_comparators.ExactComparator",
+      "onlinejudge_command.output_comparators.SplitComparator.__call__",
+      "onlinejudge_command.output_comparators.SplitComparator",
+      "onlinejudge_command.output_comparators.check_lines_match",
+      "onlinejudge_command.pretty_printers._optimize_tokens",
+      "onlinejudge_command.pretty_printers._skip_whitespaces",
+      "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word",
+      "onlinejudge_command.pretty_printers._tokenize_str_with_highlight",
+      "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib",
+      "onlinejudge_command.pretty_printers._make_diff_between_line_and_line",
+      "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line",
+      "onlinejudge_command.pretty_printers._tokenize_line_with_highlight",
+      "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_difflib",
+      "onlinejudge_command.pretty_printers._make_diff_between_file_and_file",
+      "onlinejudge_command.pretty_printers._summary_token_of_diff_ops",
+      "onlinejudge_command.pretty_printers._len_of_tokens",
+      "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops",
+      "onlinejudge_command.pretty_printers._tokenize_pretty_diff",
+      "onlinejudge_command.pretty_printers.make_pretty_diff",
+      "onlinejudge_command.pretty_printers._tokenize_large_file_content",
+      "onlinejudge_command.pretty_printers.make_pretty_large_file_content",
+      "onlinejudge_command.update_checking.describe_status_code",
+      "onlinejudge_command.update_checking.request",
+      "onlinejudge_command.update_checking.get_latest_version_from_pypi",
+      "onlinejudge_command.update_checking.is_update_available_on_pypi",
+      "onlinejudge_command.update_checking.run_for_package",
+      "onlinejudge_command.update_checking.run",
+      "onlinejudge_command.utils.exec_command",
+      "onlinejudge_command.utils.failure",
+      "onlinejudge_command.utils.get_default_command",
+      "onlinejudge_command.utils.green",
+      "onlinejudge_command.utils.green_diff",
+      "onlinejudge_command.utils.new_session_with_our_user_agent",
+      "onlinejudge_command.utils.red",
+      "onlinejudge_command.utils.red_diff",
+      "onlinejudge_command.utils.remove_suffix",
+      "onlinejudge_command.utils.success",
+      "onlinejudge_command.utils.textfile",
+      "onlinejudge_command.utils.is_windows_subsystem_for_linux",
+      "onlinejudge_command.utils.webbrowser_register_explorer_exe"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 195,
+    "Write": 133,
+    "Verify": 130,
+    "Finish": 80
+  },
+  "action_time_totals_seconds": {
+    "Read": 1018.731,
+    "Write": 2713.81,
+    "Verify": 675.215
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 1038433,
+      "output_tokens": 31441
+    },
+    "Write": {
+      "input_tokens": 826698,
+      "output_tokens": 86874
+    },
+    "Verify": {
+      "input_tokens": 893382,
+      "output_tokens": 21363
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 21,
+    "total_memory_hits": 238
+  },
+  "per_component_stats": {
+    "onlinejudge_command.download_history.DownloadHistory._flush": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.157704512996133,
+      "Write_time": 25.377822478010785,
+      "Verify_time": 13.865644151999732,
+      "total_time_seconds": 46.929,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.add": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.544310562996543,
+      "Write_time": 27.685930748004466,
+      "Verify_time": 10.558236535987817,
+      "total_time_seconds": 56.757,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.download_history.DownloadHistory.get": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.060122251001303,
+      "Write_time": 13.060974626001553,
+      "Verify_time": 8.94619379901269,
+      "total_time_seconds": 34.375,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.remove": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.615867600005004,
+      "Write_time": 14.814169227989623,
+      "Verify_time": 6.945640664998791,
+      "total_time_seconds": 44.292,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.download_history.DownloadHistory": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.6007646869984455,
+      "Write_time": 36.31854725100857,
+      "Verify_time": 11.57117434500833,
+      "total_time_seconds": 79.587,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.__init__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 9.904276756002218,
+      "Verify_time": 7.4808206200104905,
+      "total_time_seconds": 31.259,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.format_utils.percentsplit": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.49310900400451,
+      "Write_time": 53.9505931409949,
+      "Verify_time": 23.297784713009605,
+      "total_time_seconds": 92.991,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.format_utils.percentformat": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.258143387007294,
+      "Write_time": 21.562681727009476,
+      "Verify_time": 7.046721328995773,
+      "total_time_seconds": 57.694,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.format_utils.match_with_format": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 19.106143445009366,
+      "Write_time": 38.592694057006156,
+      "Verify_time": 10.808798719997867,
+      "total_time_seconds": 79.601,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.format_utils.construct_relationship_of_files": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.107576987997163,
+      "Write_time": 27.82304944199859,
+      "Verify_time": 7.860063560001436,
+      "total_time_seconds": 66.126,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.format_utils.is_backup_or_hidden_file": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 18.436610749995452,
+      "Verify_time": 8.674053850001656,
+      "total_time_seconds": 46.592,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.format_utils.drop_backup_or_hidden_files": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.818738157002372,
+      "Write_time": 39.34622247998777,
+      "Verify_time": 4.956208001996856,
+      "total_time_seconds": 60.268,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.format_utils.glob_with_format": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 16.05183553500683,
+      "Write_time": 68.76539226199384,
+      "Verify_time": 7.63811865299067,
+      "total_time_seconds": 95.017,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.format_utils.path_from_format": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.593268503987929,
+      "Write_time": 22.45761090099404,
+      "Verify_time": 7.029920220011263,
+      "total_time_seconds": 59.93,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.format_utils.percentparse": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.313767145999009,
+      "Write_time": 25.32012768299319,
+      "Verify_time": 7.49153466700227,
+      "total_time_seconds": 45.069,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.log_formatter.LogFormatter.format": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.512331823003478,
+      "Write_time": 52.20928304300469,
+      "Verify_time": 19.942966988994158,
+      "total_time_seconds": 87.437,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.log_formatter.LogFormatter": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 10.7130944810051,
+      "Write_time": 54.333227380004246,
+      "Verify_time": 13.508322790003149,
+      "total_time_seconds": 78.556,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.log_formatter.LogFormatter.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.76118118899467,
+      "Write_time": 10.591269140990335,
+      "Verify_time": 9.903916779003339,
+      "total_time_seconds": 34.774,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.output_comparators.OutputComparator.__call__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.046475231996737,
+      "Write_time": 9.869544506000238,
+      "Verify_time": 7.86873718300194,
+      "total_time_seconds": 47.815,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.output_comparators.OutputComparator": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.029086291993735,
+      "Write_time": 15.72781053300423,
+      "Verify_time": 6.280173596998793,
+      "total_time_seconds": 39.872,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.287626681019901,
+      "Write_time": 10.708025430998532,
+      "Verify_time": 8.562422442002571,
+      "total_time_seconds": 36.837,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__call__": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 24.7797271580057,
+      "Verify_time": 5.213541117002023,
+      "total_time_seconds": 49.016,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.523467983002774,
+      "Write_time": 17.204241395011195,
+      "Verify_time": 6.947825187002309,
+      "total_time_seconds": 47.453,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.755042573000537,
+      "Write_time": 10.569150488008745,
+      "Verify_time": 4.899460802989779,
+      "total_time_seconds": 26.792,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.output_comparators.SplitComparator.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.115884829981951,
+      "Write_time": 14.803377691001515,
+      "Verify_time": 2.7473728230106644,
+      "total_time_seconds": 46.93,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.output_comparators.SplitLinesComparator.__call__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.771007402989198,
+      "Write_time": 15.0924016880017,
+      "Verify_time": 7.19798126599926,
+      "total_time_seconds": 40.798,
+      "graph_searches": 3,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.output_comparators.SplitLinesComparator": {
+      "Read_calls": 3,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 11.712128710001707,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 21.52,
+      "graph_searches": 0,
+      "memory_hits": 2,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.output_comparators.SplitLinesComparator.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 9.775511346000712,
+      "Write_time": 33.865140446985606,
+      "Verify_time": 6.339600241015432,
+      "total_time_seconds": 52.326,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.pretty_printers._PrettyTokenType": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.08733043599932,
+      "Write_time": 16.312516595004126,
+      "Verify_time": 5.525861875008559,
+      "total_time_seconds": 49.673,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.pretty_printers._PrettyToken": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.741248428996187,
+      "Write_time": 35.55547121602285,
+      "Verify_time": 5.299664189995383,
+      "total_time_seconds": 60.82,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.pretty_printers._replace_whitespace": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.1177625250129495,
+      "Write_time": 15.517452190993936,
+      "Verify_time": 8.500145707002957,
+      "total_time_seconds": 43.07,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.pretty_printers._render_tokens": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 14.047511051991023,
+      "Write_time": 59.78425768300076,
+      "Verify_time": 5.078843246999895,
+      "total_time_seconds": 81.992,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._decode_with_recovery": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.42151115197339,
+      "Write_time": 17.019324545006384,
+      "Verify_time": 2.3928187569981674,
+      "total_time_seconds": 39.095,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._tokenize_str": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.324188944985508,
+      "Write_time": 49.06863733800128,
+      "Verify_time": 4.678989763997379,
+      "total_time_seconds": 88.706,
+      "graph_searches": 1,
+      "memory_hits": 4
+    },
+    "onlinejudge_command.pretty_printers._tokenize_line": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.165336242993362,
+      "Write_time": 31.395659253001213,
+      "Verify_time": 8.675965239992365,
+      "total_time_seconds": 74.114,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._warn_if_empty": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.506230562983546,
+      "Write_time": 25.58437025701278,
+      "Verify_time": 7.851200279998011,
+      "total_time_seconds": 172.223,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.590275801994721,
+      "Write_time": 25.17677835399809,
+      "Verify_time": 7.468606861992157,
+      "total_time_seconds": 49.754,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "onlinejudge_command.pretty_printers.make_pretty_all": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.33130914098001,
+      "Write_time": 19.194348767996416,
+      "Verify_time": 2.5406546050071483,
+      "total_time_seconds": 35.371,
+      "graph_searches": 1,
+      "memory_hits": 7
+    },
+    "onlinejudge_command.output_comparators.CompareMode": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.2792912339937175,
+      "Write_time": 13.692197590993601,
+      "Verify_time": 6.281423519001692,
+      "total_time_seconds": 28.032,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.pretty_printers._get_terminal_size": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 27.950011111985077,
+      "Verify_time": 12.718799623995437,
+      "total_time_seconds": 56.669,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.pretty_printers._MergedDiffOp": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.401703474999522,
+      "Write_time": 41.43240859899379,
+      "Verify_time": 4.895729357012897,
+      "total_time_seconds": 64.22,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.pretty_printers._add_dots_between_gaps": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 26.194,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.pretty_printers._LineDiffOp": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.188369941999554,
+      "Write_time": 19.005762410990428,
+      "Verify_time": 2.8479486190044554,
+      "total_time_seconds": 47.796,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.pretty_printers._reconstruct_entire_diff": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 15.676295417011715,
+      "Write_time": 86.23785252400558,
+      "Verify_time": 14.484063084004447,
+      "total_time_seconds": 116.402,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.pretty_printers._add_lines_around_diff_lines": {
+      "Read_calls": 5,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 21.08258853298321,
+      "Write_time": 72.62600489601027,
+      "Verify_time": 4.83037515199976,
+      "total_time_seconds": 98.543,
+      "graph_searches": 1,
+      "memory_hits": 3,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.981488813005853,
+      "Write_time": 24.36477927301894,
+      "Verify_time": 4.536810625999351,
+      "total_time_seconds": 46.817,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.645649009995395,
+      "Write_time": 16.546973610995337,
+      "Verify_time": 9.09303974499926,
+      "total_time_seconds": 41.213,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.output_comparators.ExactComparator.__call__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 23.821,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.output_comparators.ExactComparator": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.020191519986838,
+      "Write_time": 13.718974180999794,
+      "Verify_time": 2.513611285990919,
+      "total_time_seconds": 42.033,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.output_comparators.SplitComparator.__call__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.877732617023867,
+      "Write_time": 14.764556226989953,
+      "Verify_time": 6.9220360339968465,
+      "total_time_seconds": 37.811,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "onlinejudge_command.output_comparators.SplitComparator": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.282860435007024,
+      "Write_time": 38.012018184002955,
+      "Verify_time": 5.587754648004193,
+      "total_time_seconds": 56.452,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.output_comparators.check_lines_match": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.96837347303517,
+      "Write_time": 24.49857442000939,
+      "Verify_time": 2.395313654997153,
+      "total_time_seconds": 59.37,
+      "graph_searches": 0,
+      "memory_hits": 7
+    },
+    "onlinejudge_command.pretty_printers._optimize_tokens": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.830788369014044,
+      "Write_time": 23.28989817299589,
+      "Verify_time": 6.682019515006687,
+      "total_time_seconds": 50.161,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.pretty_printers._skip_whitespaces": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.38844336399052,
+      "Write_time": 55.63663152400113,
+      "Verify_time": 5.375741958006984,
+      "total_time_seconds": 80.655,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.487248549994547,
+      "Write_time": 87.2346771920129,
+      "Verify_time": 9.866193447000114,
+      "total_time_seconds": 111.07,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.pretty_printers._tokenize_str_with_highlight": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.5326369810063625,
+      "Write_time": 19.432456989001366,
+      "Verify_time": 7.848562562998268,
+      "total_time_seconds": 43.353,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 17.4041779590043,
+      "Write_time": 80.87016294100613,
+      "Verify_time": 7.284615455006133,
+      "total_time_seconds": 107.67,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.04547966500104,
+      "Write_time": 18.318294653989142,
+      "Verify_time": 9.108162231990718,
+      "total_time_seconds": 37.738,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.939072801018483,
+      "Write_time": 30.15415981299884,
+      "Verify_time": 8.489365583009203,
+      "total_time_seconds": 57.679,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "onlinejudge_command.pretty_printers._tokenize_line_with_highlight": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.435720434994437,
+      "Write_time": 19.92405746001168,
+      "Verify_time": 2.7246124039957067,
+      "total_time_seconds": 60.709,
+      "graph_searches": 1,
+      "memory_hits": 4
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_difflib": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 37.98424076400988,
+      "Verify_time": 4.539518175995909,
+      "total_time_seconds": 69.522,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 20.488679789021262,
+      "Write_time": 25.272519382997416,
+      "Verify_time": 9.219656631001271,
+      "total_time_seconds": 57.159,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "onlinejudge_command.pretty_printers._summary_token_of_diff_ops": {
+      "Read_calls": 5,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 23.367000835991348,
+      "Write_time": 60.76756683499843,
+      "Verify_time": 5.193399693001993,
+      "total_time_seconds": 92.632,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.pretty_printers._len_of_tokens": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 12.580967677014996,
+      "Write_time": 22.13840457701008,
+      "Verify_time": 0.0,
+      "total_time_seconds": 46.175,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 19.673778497992316,
+      "Write_time": 112.81036554799357,
+      "Verify_time": 7.112154238988296,
+      "total_time_seconds": 139.598,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.pretty_printers._tokenize_pretty_diff": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 23.313350314972922,
+      "Write_time": 33.38071084000694,
+      "Verify_time": 9.64502400100173,
+      "total_time_seconds": 68.639,
+      "graph_searches": 0,
+      "memory_hits": 11
+    },
+    "onlinejudge_command.pretty_printers.make_pretty_diff": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.160077275984804,
+      "Write_time": 50.17649447200529,
+      "Verify_time": 5.567695043995627,
+      "total_time_seconds": 91.4,
+      "graph_searches": 0,
+      "memory_hits": 9
+    },
+    "onlinejudge_command.pretty_printers._tokenize_large_file_content": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.052036504988791,
+      "Write_time": 34.9418570780108,
+      "Verify_time": 10.447266859991942,
+      "total_time_seconds": 55.188,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "onlinejudge_command.pretty_printers.make_pretty_large_file_content": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 5.916195058991434,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 21.841,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.update_checking.describe_status_code": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 29.38521060801577,
+      "Verify_time": 9.462704161996953,
+      "total_time_seconds": 53.235,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.update_checking.request": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 22.235376296986942,
+      "Verify_time": 7.766827380997711,
+      "total_time_seconds": 49.354,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.update_checking.get_latest_version_from_pypi": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.750936337004532,
+      "Write_time": 22.475382845994318,
+      "Verify_time": 10.498781215996132,
+      "total_time_seconds": 71.952,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "onlinejudge_command.update_checking.is_update_available_on_pypi": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 21.70379230301478,
+      "Write_time": 43.671874470994226,
+      "Verify_time": 5.000477568988572,
+      "total_time_seconds": 72.255,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.update_checking.run_for_package": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.308844422004768,
+      "Write_time": 26.625035876000766,
+      "Verify_time": 7.832426020002458,
+      "total_time_seconds": 77.303,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command.update_checking.run": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 26.45179221102444,
+      "Write_time": 24.884779535001144,
+      "Verify_time": 8.496738233006909,
+      "total_time_seconds": 79.1,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "onlinejudge_command.utils.exec_command": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.713397364001139,
+      "Write_time": 30.63352972100256,
+      "Verify_time": 9.243614135004464,
+      "total_time_seconds": 78.166,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.failure": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.860779662994901,
+      "Write_time": 10.802753270996618,
+      "Verify_time": 8.104546403992572,
+      "total_time_seconds": 53.268,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.get_default_command": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.5789164940069895,
+      "Write_time": 12.559989949004375,
+      "Verify_time": 7.470150847002515,
+      "total_time_seconds": 30.096,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.green": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 13.834201794001274,
+      "Verify_time": 7.757922606004286,
+      "total_time_seconds": 35.632,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.green_diff": {
+      "Read_calls": 0,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 67.96455137101293,
+      "Verify_time": 6.81197368199355,
+      "total_time_seconds": 90.956,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "onlinejudge_command.utils.new_session_with_our_user_agent": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.19645817099081,
+      "Write_time": 19.028268695998122,
+      "Verify_time": 9.742728355995496,
+      "total_time_seconds": 52.023,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.red": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 15.577965599994059,
+      "Verify_time": 8.219447393988958,
+      "total_time_seconds": 26.463,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.red_diff": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.30372148200695,
+      "Write_time": 18.159107404993847,
+      "Verify_time": 8.739753533998737,
+      "total_time_seconds": 37.426,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.remove_suffix": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 18.513245937007014,
+      "Verify_time": 9.737100466998527,
+      "total_time_seconds": 46.033,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.success": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.165943101004814,
+      "Write_time": 14.526989924997906,
+      "Verify_time": 7.1582861240021884,
+      "total_time_seconds": 32.858,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.textfile": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 19.16011871700175,
+      "Verify_time": 10.672486224008026,
+      "total_time_seconds": 47.168,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.is_windows_subsystem_for_linux": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.168629758991301,
+      "Write_time": 13.985945665001054,
+      "Verify_time": 6.6620454889925895,
+      "total_time_seconds": 45.46,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "onlinejudge_command.utils.webbrowser_register_explorer_exe": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.617393961016205,
+      "Write_time": 31.770916529989336,
+      "Verify_time": 5.016090378994704,
+      "total_time_seconds": 50.459,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "onlinejudge_command": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 4.809785192002892,
+      "Write_time": 57.48914532798517,
+      "Verify_time": 21.70459341102105,
+      "total_time_seconds": 86.591,
+      "graph_searches": 0,
+      "memory_hits": 88
+    },
+    "online-judge-tools": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 16.02373984697624,
+      "Write_time": 87.56456490200071,
+      "Verify_time": 11.309342066990212,
+      "total_time_seconds": 118.277,
+      "graph_searches": 0,
+      "memory_hits": 1
+    }
+  },
+  "per_component_verify_scores": {
+    "onlinejudge_command.download_history.DownloadHistory._flush": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.download_history.DownloadHistory.add": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.download_history.DownloadHistory.get": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.download_history.DownloadHistory.remove": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.download_history.DownloadHistory": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.download_history.DownloadHistory.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.percentsplit": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.percentformat": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.match_with_format": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.construct_relationship_of_files": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.is_backup_or_hidden_file": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.drop_backup_or_hidden_files": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.glob_with_format": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.path_from_format": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.format_utils.percentparse": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.log_formatter.LogFormatter.format": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.log_formatter.LogFormatter": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6,
+        "CONSISTENCY": 0.6,
+        "COMPLETENESS": 0.55,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.6,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.log_formatter.LogFormatter.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.OutputComparator.__call__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.OutputComparator": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__call__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.SplitComparator.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.SplitLinesComparator.__call__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.SplitLinesComparator.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._PrettyTokenType": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._PrettyToken": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._replace_whitespace": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._render_tokens": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._decode_with_recovery": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_str": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_line": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._warn_if_empty": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers.make_pretty_all": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.CompareMode": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._get_terminal_size": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._MergedDiffOp": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._LineDiffOp": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._reconstruct_entire_diff": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._add_lines_around_diff_lines": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.ExactComparator": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.SplitComparator.__call__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.SplitComparator": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.output_comparators.check_lines_match": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._optimize_tokens": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._skip_whitespaces": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_str_with_highlight": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_line_with_highlight": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_difflib": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.65,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.65,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._summary_token_of_diff_ops": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_pretty_diff": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers.make_pretty_diff": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.pretty_printers._tokenize_large_file_content": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.update_checking.describe_status_code": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.update_checking.request": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.update_checking.get_latest_version_from_pypi": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.update_checking.is_update_available_on_pypi": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.update_checking.run_for_package": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.update_checking.run": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.exec_command": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.failure": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.get_default_command": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.green": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.green_diff": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.new_session_with_our_user_agent": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.red": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.red_diff": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.remove_suffix": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.success": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.textfile": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.is_windows_subsystem_for_linux": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command.utils.webbrowser_register_explorer_exe": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "onlinejudge_command": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6167,
+        "CONSISTENCY": 0.6,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.55,
+        "weighted_avg": 0.6167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      }
+    ],
+    "online-judge-tools": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9067,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "onlinejudge_command.download_history.DownloadHistory._flush": {
+      "requests": 6,
+      "input_tokens": 30477,
+      "output_tokens": 1535,
+      "cost": 0.0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.add": {
+      "requests": 7,
+      "input_tokens": 42426,
+      "output_tokens": 1873,
+      "cost": 0.0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.get": {
+      "requests": 4,
+      "input_tokens": 19246,
+      "output_tokens": 1095,
+      "cost": 0.0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.remove": {
+      "requests": 4,
+      "input_tokens": 20460,
+      "output_tokens": 1462,
+      "cost": 0.0
+    },
+    "onlinejudge_command.download_history.DownloadHistory": {
+      "requests": 6,
+      "input_tokens": 36692,
+      "output_tokens": 2678,
+      "cost": 0.0
+    },
+    "onlinejudge_command.download_history.DownloadHistory.__init__": {
+      "requests": 5,
+      "input_tokens": 23127,
+      "output_tokens": 1043,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.percentsplit": {
+      "requests": 9,
+      "input_tokens": 51958,
+      "output_tokens": 3034,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.percentformat": {
+      "requests": 4,
+      "input_tokens": 21494,
+      "output_tokens": 1834,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.match_with_format": {
+      "requests": 7,
+      "input_tokens": 42687,
+      "output_tokens": 2608,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.construct_relationship_of_files": {
+      "requests": 5,
+      "input_tokens": 28319,
+      "output_tokens": 2120,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.is_backup_or_hidden_file": {
+      "requests": 3,
+      "input_tokens": 14060,
+      "output_tokens": 1491,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.drop_backup_or_hidden_files": {
+      "requests": 8,
+      "input_tokens": 44845,
+      "output_tokens": 1916,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.glob_with_format": {
+      "requests": 10,
+      "input_tokens": 63909,
+      "output_tokens": 2998,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.path_from_format": {
+      "requests": 4,
+      "input_tokens": 21151,
+      "output_tokens": 1845,
+      "cost": 0.0
+    },
+    "onlinejudge_command.format_utils.percentparse": {
+      "requests": 4,
+      "input_tokens": 22250,
+      "output_tokens": 1422,
+      "cost": 0.0
+    },
+    "onlinejudge_command.log_formatter.LogFormatter.format": {
+      "requests": 9,
+      "input_tokens": 53848,
+      "output_tokens": 2810,
+      "cost": 0.0
+    },
+    "onlinejudge_command.log_formatter.LogFormatter": {
+      "requests": 8,
+      "input_tokens": 44908,
+      "output_tokens": 2512,
+      "cost": 0.0
+    },
+    "onlinejudge_command.log_formatter.LogFormatter.__init__": {
+      "requests": 5,
+      "input_tokens": 23101,
+      "output_tokens": 1090,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.OutputComparator.__call__": {
+      "requests": 6,
+      "input_tokens": 28323,
+      "output_tokens": 1519,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.OutputComparator": {
+      "requests": 5,
+      "input_tokens": 23619,
+      "output_tokens": 1296,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__": {
+      "requests": 6,
+      "input_tokens": 29918,
+      "output_tokens": 1179,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__call__": {
+      "requests": 8,
+      "input_tokens": 41270,
+      "output_tokens": 1589,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator": {
+      "requests": 5,
+      "input_tokens": 26320,
+      "output_tokens": 1525,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__init__": {
+      "requests": 5,
+      "input_tokens": 24912,
+      "output_tokens": 834,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.SplitComparator.__init__": {
+      "requests": 6,
+      "input_tokens": 31717,
+      "output_tokens": 1466,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.SplitLinesComparator.__call__": {
+      "requests": 6,
+      "input_tokens": 32283,
+      "output_tokens": 1328,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.SplitLinesComparator": {
+      "requests": 10,
+      "input_tokens": 54525,
+      "output_tokens": 651,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.SplitLinesComparator.__init__": {
+      "requests": 9,
+      "input_tokens": 46032,
+      "output_tokens": 1663,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._PrettyTokenType": {
+      "requests": 6,
+      "input_tokens": 29662,
+      "output_tokens": 1571,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._PrettyToken": {
+      "requests": 9,
+      "input_tokens": 48870,
+      "output_tokens": 1940,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._replace_whitespace": {
+      "requests": 4,
+      "input_tokens": 18786,
+      "output_tokens": 1391,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._render_tokens": {
+      "requests": 8,
+      "input_tokens": 58775,
+      "output_tokens": 2626,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._decode_with_recovery": {
+      "requests": 7,
+      "input_tokens": 40811,
+      "output_tokens": 1221,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_str": {
+      "requests": 9,
+      "input_tokens": 59307,
+      "output_tokens": 2869,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_line": {
+      "requests": 6,
+      "input_tokens": 39071,
+      "output_tokens": 2386,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._warn_if_empty": {
+      "requests": 6,
+      "input_tokens": 33047,
+      "output_tokens": 5689,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping": {
+      "requests": 5,
+      "input_tokens": 35046,
+      "output_tokens": 1614,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers.make_pretty_all": {
+      "requests": 6,
+      "input_tokens": 49471,
+      "output_tokens": 1150,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.CompareMode": {
+      "requests": 4,
+      "input_tokens": 18342,
+      "output_tokens": 930,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._get_terminal_size": {
+      "requests": 5,
+      "input_tokens": 25079,
+      "output_tokens": 1856,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._MergedDiffOp": {
+      "requests": 8,
+      "input_tokens": 46405,
+      "output_tokens": 2108,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._add_dots_between_gaps": {
+      "requests": 10,
+      "input_tokens": 54712,
+      "output_tokens": 861,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._LineDiffOp": {
+      "requests": 6,
+      "input_tokens": 34158,
+      "output_tokens": 1577,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._reconstruct_entire_diff": {
+      "requests": 10,
+      "input_tokens": 85439,
+      "output_tokens": 3793,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._add_lines_around_diff_lines": {
+      "requests": 10,
+      "input_tokens": 73567,
+      "output_tokens": 3127,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__": {
+      "requests": 9,
+      "input_tokens": 48303,
+      "output_tokens": 1489,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.CRLFInsensitiveComparator": {
+      "requests": 6,
+      "input_tokens": 31887,
+      "output_tokens": 1315,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.ExactComparator.__call__": {
+      "requests": 10,
+      "input_tokens": 45684,
+      "output_tokens": 742,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.ExactComparator": {
+      "requests": 6,
+      "input_tokens": 30447,
+      "output_tokens": 1365,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.SplitComparator.__call__": {
+      "requests": 6,
+      "input_tokens": 31829,
+      "output_tokens": 1232,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.SplitComparator": {
+      "requests": 7,
+      "input_tokens": 40634,
+      "output_tokens": 1840,
+      "cost": 0.0
+    },
+    "onlinejudge_command.output_comparators.check_lines_match": {
+      "requests": 8,
+      "input_tokens": 57365,
+      "output_tokens": 1930,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._optimize_tokens": {
+      "requests": 7,
+      "input_tokens": 38695,
+      "output_tokens": 1630,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._skip_whitespaces": {
+      "requests": 9,
+      "input_tokens": 62860,
+      "output_tokens": 2622,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word": {
+      "requests": 10,
+      "input_tokens": 79395,
+      "output_tokens": 3640,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_str_with_highlight": {
+      "requests": 4,
+      "input_tokens": 24534,
+      "output_tokens": 1424,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib": {
+      "requests": 10,
+      "input_tokens": 91868,
+      "output_tokens": 3342,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_line_and_line": {
+      "requests": 5,
+      "input_tokens": 33368,
+      "output_tokens": 1196,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line": {
+      "requests": 6,
+      "input_tokens": 46659,
+      "output_tokens": 1729,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_line_with_highlight": {
+      "requests": 7,
+      "input_tokens": 49040,
+      "output_tokens": 1866,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_difflib": {
+      "requests": 10,
+      "input_tokens": 64194,
+      "output_tokens": 2089,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._make_diff_between_file_and_file": {
+      "requests": 7,
+      "input_tokens": 50892,
+      "output_tokens": 1773,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._summary_token_of_diff_ops": {
+      "requests": 10,
+      "input_tokens": 71840,
+      "output_tokens": 2959,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._len_of_tokens": {
+      "requests": 10,
+      "input_tokens": 65247,
+      "output_tokens": 1464,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops": {
+      "requests": 10,
+      "input_tokens": 86007,
+      "output_tokens": 4287,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_pretty_diff": {
+      "requests": 7,
+      "input_tokens": 72039,
+      "output_tokens": 2089,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers.make_pretty_diff": {
+      "requests": 9,
+      "input_tokens": 85705,
+      "output_tokens": 2784,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers._tokenize_large_file_content": {
+      "requests": 4,
+      "input_tokens": 32798,
+      "output_tokens": 1689,
+      "cost": 0.0
+    },
+    "onlinejudge_command.pretty_printers.make_pretty_large_file_content": {
+      "requests": 10,
+      "input_tokens": 67545,
+      "output_tokens": 643,
+      "cost": 0.0
+    },
+    "onlinejudge_command.update_checking.describe_status_code": {
+      "requests": 7,
+      "input_tokens": 34961,
+      "output_tokens": 1624,
+      "cost": 0.0
+    },
+    "onlinejudge_command.update_checking.request": {
+      "requests": 6,
+      "input_tokens": 30677,
+      "output_tokens": 1518,
+      "cost": 0.0
+    },
+    "onlinejudge_command.update_checking.get_latest_version_from_pypi": {
+      "requests": 6,
+      "input_tokens": 36125,
+      "output_tokens": 2207,
+      "cost": 0.0
+    },
+    "onlinejudge_command.update_checking.is_update_available_on_pypi": {
+      "requests": 9,
+      "input_tokens": 56346,
+      "output_tokens": 2200,
+      "cost": 0.0
+    },
+    "onlinejudge_command.update_checking.run_for_package": {
+      "requests": 6,
+      "input_tokens": 36382,
+      "output_tokens": 2432,
+      "cost": 0.0
+    },
+    "onlinejudge_command.update_checking.run": {
+      "requests": 7,
+      "input_tokens": 45397,
+      "output_tokens": 2425,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.exec_command": {
+      "requests": 4,
+      "input_tokens": 24037,
+      "output_tokens": 2450,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.failure": {
+      "requests": 4,
+      "input_tokens": 18670,
+      "output_tokens": 1676,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.get_default_command": {
+      "requests": 4,
+      "input_tokens": 18900,
+      "output_tokens": 938,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.green": {
+      "requests": 3,
+      "input_tokens": 13854,
+      "output_tokens": 1108,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.green_diff": {
+      "requests": 10,
+      "input_tokens": 56065,
+      "output_tokens": 2833,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.new_session_with_our_user_agent": {
+      "requests": 6,
+      "input_tokens": 31537,
+      "output_tokens": 1583,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.red": {
+      "requests": 3,
+      "input_tokens": 13977,
+      "output_tokens": 822,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.red_diff": {
+      "requests": 4,
+      "input_tokens": 19454,
+      "output_tokens": 1155,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.remove_suffix": {
+      "requests": 3,
+      "input_tokens": 14163,
+      "output_tokens": 1380,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.success": {
+      "requests": 4,
+      "input_tokens": 19026,
+      "output_tokens": 1010,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.textfile": {
+      "requests": 3,
+      "input_tokens": 14475,
+      "output_tokens": 1473,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.is_windows_subsystem_for_linux": {
+      "requests": 4,
+      "input_tokens": 19028,
+      "output_tokens": 1403,
+      "cost": 0.0
+    },
+    "onlinejudge_command.utils.webbrowser_register_explorer_exe": {
+      "requests": 8,
+      "input_tokens": 45483,
+      "output_tokens": 1545,
+      "cost": 0.0
+    },
+    "onlinejudge_command": {
+      "requests": 8,
+      "input_tokens": 43768,
+      "output_tokens": 2684,
+      "cost": 0.0
+    },
+    "online-judge-tools": {
+      "requests": 9,
+      "input_tokens": 60980,
+      "output_tokens": 3617,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 57,
+    "total_fetched_component_types": 89,
+    "redundant_fetch_count": 147,
+    "duplicates": {
+      "onlinejudge_command.pretty_printers._PrettyToken": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._PrettyToken",
+          "onlinejudge_command.pretty_printers._render_tokens",
+          "onlinejudge_command.pretty_printers._decode_with_recovery",
+          "onlinejudge_command.pretty_printers._tokenize_str",
+          "onlinejudge_command.pretty_printers._tokenize_line",
+          "onlinejudge_command.pretty_printers._warn_if_empty",
+          "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping",
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command.pretty_printers._MergedDiffOp",
+          "onlinejudge_command.pretty_printers._LineDiffOp",
+          "onlinejudge_command.pretty_printers._optimize_tokens",
+          "onlinejudge_command.pretty_printers._skip_whitespaces",
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word",
+          "onlinejudge_command.pretty_printers._tokenize_str_with_highlight",
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib",
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line",
+          "onlinejudge_command.pretty_printers._tokenize_line_with_highlight",
+          "onlinejudge_command.pretty_printers._summary_token_of_diff_ops",
+          "onlinejudge_command.pretty_printers._len_of_tokens",
+          "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops",
+          "onlinejudge_command.pretty_printers._tokenize_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 22
+      },
+      "onlinejudge_command.pretty_printers._PrettyTokenType": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._PrettyTokenType",
+          "onlinejudge_command.pretty_printers._PrettyToken",
+          "onlinejudge_command.pretty_printers._render_tokens",
+          "onlinejudge_command.pretty_printers._decode_with_recovery",
+          "onlinejudge_command.pretty_printers._tokenize_str",
+          "onlinejudge_command.pretty_printers._tokenize_line",
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command.pretty_printers._skip_whitespaces",
+          "onlinejudge_command.pretty_printers._tokenize_str_with_highlight",
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib",
+          "onlinejudge_command.pretty_printers._tokenize_line_with_highlight",
+          "onlinejudge_command.pretty_printers._summary_token_of_diff_ops",
+          "onlinejudge_command.pretty_printers._len_of_tokens",
+          "onlinejudge_command.pretty_printers._tokenize_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 15
+      },
+      "onlinejudge_command.output_comparators.OutputComparator": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.OutputComparator.__call__",
+          "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__",
+          "onlinejudge_command.output_comparators.FloatingPointNumberComparator",
+          "onlinejudge_command.output_comparators.SplitComparator.__init__",
+          "onlinejudge_command.output_comparators.SplitLinesComparator.__call__",
+          "onlinejudge_command.output_comparators.SplitLinesComparator",
+          "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__",
+          "onlinejudge_command.output_comparators.CRLFInsensitiveComparator",
+          "onlinejudge_command.output_comparators.ExactComparator",
+          "onlinejudge_command.output_comparators.SplitComparator.__call__",
+          "onlinejudge_command.output_comparators.SplitComparator",
+          "onlinejudge_command.output_comparators.check_lines_match",
+          "onlinejudge_command"
+        ],
+        "access_count": 13
+      },
+      "onlinejudge_command.pretty_printers._tokenize_line": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping",
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command.pretty_printers._reconstruct_entire_diff",
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line",
+          "onlinejudge_command.pretty_printers._tokenize_line_with_highlight",
+          "onlinejudge_command.pretty_printers._tokenize_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 7
+      },
+      "onlinejudge_command.pretty_printers._decode_with_recovery": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._decode_with_recovery",
+          "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping",
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command.pretty_printers.make_pretty_diff",
+          "onlinejudge_command.pretty_printers._tokenize_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 6
+      },
+      "onlinejudge_command.pretty_printers._tokenize_str": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_str",
+          "onlinejudge_command.pretty_printers._tokenize_line",
+          "onlinejudge_command.pretty_printers._tokenize_str_with_highlight",
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib",
+          "onlinejudge_command"
+        ],
+        "access_count": 5
+      },
+      "onlinejudge_command.pretty_printers._LineDiffOp": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._reconstruct_entire_diff",
+          "onlinejudge_command.pretty_printers._add_lines_around_diff_lines",
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line",
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file",
+          "onlinejudge_command"
+        ],
+        "access_count": 5
+      },
+      "onlinejudge_command.pretty_printers._MergedDiffOp": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._reconstruct_entire_diff",
+          "onlinejudge_command.pretty_printers._add_lines_around_diff_lines",
+          "onlinejudge_command.pretty_printers._summary_token_of_diff_ops",
+          "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops",
+          "onlinejudge_command"
+        ],
+        "access_count": 5
+      },
+      "onlinejudge_command.format_utils.percentformat": {
+        "accessed_by": [
+          "onlinejudge_command.format_utils.match_with_format",
+          "onlinejudge_command.format_utils.glob_with_format",
+          "onlinejudge_command.format_utils.path_from_format",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.output_comparators.CRLFInsensitiveComparator": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__",
+          "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__",
+          "onlinejudge_command.output_comparators.check_lines_match",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.output_comparators.SplitComparator": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.SplitComparator.__init__",
+          "onlinejudge_command.output_comparators.SplitComparator.__call__",
+          "onlinejudge_command.output_comparators.check_lines_match",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.output_comparators.SplitComparator.__call__": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.SplitComparator.__init__",
+          "onlinejudge_command.output_comparators.SplitComparator.__call__",
+          "onlinejudge_command.output_comparators.SplitComparator",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.pretty_printers._warn_if_empty": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping",
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command.pretty_printers._tokenize_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.pretty_printers._render_tokens": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command.pretty_printers.make_pretty_diff",
+          "onlinejudge_command.pretty_printers.make_pretty_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.output_comparators.check_lines_match": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._LineDiffOp",
+          "onlinejudge_command.output_comparators.check_lines_match",
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.output_comparators.CompareMode": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.check_lines_match",
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file",
+          "onlinejudge_command.pretty_printers.make_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.pretty_printers._optimize_tokens": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._optimize_tokens",
+          "onlinejudge_command.pretty_printers._skip_whitespaces",
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.update_checking.get_latest_version_from_pypi": {
+        "accessed_by": [
+          "onlinejudge_command.update_checking.is_update_available_on_pypi",
+          "onlinejudge_command.update_checking.run_for_package",
+          "onlinejudge_command.update_checking.run",
+          "onlinejudge_command"
+        ],
+        "access_count": 4
+      },
+      "onlinejudge_command.download_history.DownloadHistory": {
+        "accessed_by": [
+          "onlinejudge_command.download_history.DownloadHistory.add",
+          "onlinejudge_command.download_history.DownloadHistory.remove",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.format_utils.percentsplit": {
+        "accessed_by": [
+          "onlinejudge_command.format_utils.percentformat",
+          "onlinejudge_command.format_utils.percentparse",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.output_comparators.SplitLinesComparator": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.SplitLinesComparator.__call__",
+          "onlinejudge_command.output_comparators.SplitLinesComparator.__init__",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.pretty_printers._replace_whitespace": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._render_tokens",
+          "onlinejudge_command.pretty_printers._len_of_tokens",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.pretty_printers._add_lines_around_diff_lines": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._add_lines_around_diff_lines",
+          "onlinejudge_command.pretty_printers._tokenize_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.pretty_printers._summary_token_of_diff_ops": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._summary_token_of_diff_ops",
+          "onlinejudge_command.pretty_printers._tokenize_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.pretty_printers._get_terminal_size": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers.make_pretty_diff",
+          "onlinejudge_command.pretty_printers.make_pretty_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.update_checking.is_update_available_on_pypi": {
+        "accessed_by": [
+          "onlinejudge_command.update_checking.run_for_package",
+          "onlinejudge_command.update_checking.run",
+          "onlinejudge_command"
+        ],
+        "access_count": 3
+      },
+      "onlinejudge_command.download_history.DownloadHistory._flush": {
+        "accessed_by": [
+          "onlinejudge_command.download_history.DownloadHistory.add",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.format_utils.match_with_format": {
+        "accessed_by": [
+          "onlinejudge_command.format_utils.construct_relationship_of_files",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.format_utils.is_backup_or_hidden_file": {
+        "accessed_by": [
+          "onlinejudge_command.format_utils.drop_backup_or_hidden_files",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.log_formatter.LogFormatter": {
+        "accessed_by": [
+          "onlinejudge_command.log_formatter.LogFormatter.format",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.OutputComparator.__call__": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.OutputComparator.__call__",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__call__": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.CRLFInsensitiveComparator.__init__",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.FloatingPointNumberComparator": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.FloatingPointNumberComparator.__init__",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.SplitLinesComparator.__call__": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.SplitLinesComparator.__call__",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.SplitLinesComparator.__init__": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.SplitLinesComparator.__call__",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._tokenize_file_content_without_snipping": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers.make_pretty_diff": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers.make_pretty_all",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._reconstruct_entire_diff": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._add_lines_around_diff_lines",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.SplitComparator.__init__": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.SplitComparator.__call__",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.output_comparators.ExactComparator": {
+        "accessed_by": [
+          "onlinejudge_command.output_comparators.check_lines_match",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._skip_whitespaces": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._tokenize_str_with_highlight": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_comparing_word_by_word": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._make_diff_between_line_and_line_by_difflib": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_line_and_line",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._make_diff_between_line_and_line": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._tokenize_line_with_highlight": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_line_with_highlight",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_comparing_line_by_line": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._make_diff_between_file_and_file_by_difflib": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._make_diff_between_file_and_file",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._len_of_tokens": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._make_diff_between_file_and_file": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._add_dots_between_gaps": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._tokens_from_line_diff_ops": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers._tokenize_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._tokenize_pretty_diff": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers.make_pretty_diff",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.pretty_printers._tokenize_large_file_content": {
+        "accessed_by": [
+          "onlinejudge_command.pretty_printers.make_pretty_large_file_content",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.update_checking.request": {
+        "accessed_by": [
+          "onlinejudge_command.update_checking.get_latest_version_from_pypi",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.update_checking.run_for_package": {
+        "accessed_by": [
+          "onlinejudge_command.update_checking.run",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      },
+      "onlinejudge_command.utils.is_windows_subsystem_for_linux": {
+        "accessed_by": [
+          "onlinejudge_command.utils.webbrowser_register_explorer_exe",
+          "onlinejudge_command"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 598,
+      "total_input_tokens": 3656565,
+      "total_output_tokens": 170347,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 59.69,
+    "avg_turns_per_component": 5.98,
+    "memory_hit_rate": 0.9189,
+    "total_tokens": 3826912,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 42521.2
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 88,
+      "total_time_seconds": 5167.2,
+      "avg_time_seconds": 58.718,
+      "total_turns": 581,
+      "avg_turns": 6.6,
+      "action_counts": {
+        "Read": 192,
+        "Write": 127,
+        "Verify": 124,
+        "Finish": 77,
+        "Unknown": 61
+      }
+    },
+    "MODULE": {
+      "count": 1,
+      "total_time_seconds": 86.591,
+      "avg_time_seconds": 86.591,
+      "total_turns": 8,
+      "avg_turns": 8.0,
+      "action_counts": {
+        "Read": 1,
+        "Unknown": 1,
+        "Write": 3,
+        "Verify": 3
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 118.277,
+      "avg_time_seconds": 118.277,
+      "total_turns": 9,
+      "avg_turns": 9.0,
+      "action_counts": {
+        "Read": 2,
+        "Write": 3,
+        "Verify": 3,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {},
+  "verify_summary": {
+    "total_verify_attempts": 130,
+    "first_pass_success": 54,
+    "required_revision": 33,
+    "score_parse_failures": 0,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9171,
+      "COMPLETENESS": 0.8929,
+      "HELPFULNESS": 0.8818
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.0991,
+      "COMPLETENESS": 0.103,
+      "HELPFULNESS": 0.097
+    }
+  }
+}

@@ -1,0 +1,95 @@
+# Example configuration file for MemDocAgent
+# Copy this file to agent_config.yaml and fill in your API key
+
+# LLM configuration for all agents
+llm:
+  # Choose ONE of the following LLM provider configurations by uncommenting
+  
+  # Option 1: Claude (Anthropic)
+  # type: "claude"  
+  # api_key: "your-anthropic-api-key-here"  
+  # model: "claude-3-5-haiku-latest"  # Options: claude-3-5-sonnet, claude-3-opus, etc.
+  # temperature: 0.1
+  # max_output_tokens: 4096
+  # max_input_tokens: 100000  # Maximum number of tokens for input context
+  
+  # Option 2: OpenAI
+  type: "openai"
+  api_key: "your-openai-api-key-here"
+  model: "gpt-4o-mini-2024-07-18"  # Options: gpt-4o, gpt-4-turbo, gpt-3.5-turbo, etc.
+  temperature: 0.1
+  max_output_tokens: 4096
+  max_input_tokens: 100000
+
+  # Option 3: Gemini
+  # type: "gemini"
+  # api_key: "your-gemini-api-key-here"
+  # model: "gemini-1.5-pro"
+  # temperature: 0.1
+  # max_output_tokens: 4096
+  # max_input_tokens: 100000
+
+  # Option 4: HuggingFace (for local models)
+  # type: "huggingface"
+  # model: "codellama/CodeLlama-34b-Instruct-hf"
+  # api_base: "http://localhost:8000/v1"  # Local API endpoint
+  # api_key: "EMPTY"  # Can be empty for local models
+  # device: "cuda"  # Options: cuda, cpu
+  # torch_dtype: "float16"
+  # temperature: 0.1
+  # max_output_tokens: 4096
+  # max_input_tokens: 32000
+
+  # Option 5: Local GPU model (Qwen3) - no API key required
+  # type: "local"
+  # model: "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+  # torch_dtype: "bfloat16"
+  # device_map: "auto"
+  # temperature: 0.1
+  # max_output_tokens: 4096
+  # max_input_tokens: 32000
+  # enable_thinking: false
+
+# Rate limit settings for different LLM providers
+# These are default values - adjust based on your specific API tier
+rate_limits:
+  # Claude rate limits
+  claude:
+    requests_per_minute: 50
+    input_tokens_per_minute: 20000
+    output_tokens_per_minute: 8000
+    input_token_price_per_million: 3.0
+    output_token_price_per_million: 15.0
+
+  # OpenAI rate limits
+  openai:
+    requests_per_minute: 500
+    input_tokens_per_minute: 200000
+    output_tokens_per_minute: 100000
+    input_token_price_per_million: 0.15
+    output_token_price_per_million: 0.60
+
+  # Gemini rate limits
+  gemini:
+    requests_per_minute: 60
+    input_tokens_per_minute: 30000
+    output_tokens_per_minute: 10000
+    input_token_price_per_million: 0.125
+    output_token_price_per_million: 0.375
+
+# Flow control parameters
+flow_control:
+  max_reader_search_attempts: 2  # Maximum times reader can call searcher
+  max_verifier_rejections: 1     # Maximum times verifier can reject a docstring
+  status_sleep_time: 1           # Time to sleep between status updates (seconds)
+
+# Docstring generation options
+docstring_options:
+  overwrite_docstrings: false  # Whether to overwrite existing docstrings (default: false)
+
+# Perplexity API configuration (for web search capability)
+perplexity:
+  api_key: "your-perplexity-api-key-here"  # Replace with your actual Perplexity API key
+  model: "sonar"  # Default model
+  temperature: 0.1
+  max_output_tokens: 250 

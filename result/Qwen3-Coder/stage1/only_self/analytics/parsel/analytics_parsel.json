@@ -1,0 +1,3306 @@
+{
+  "run_id": "20260413_000408",
+  "label": "parsel",
+  "total_run_time_seconds": 4495.663,
+  "repo_summary": {
+    "file_count": 5,
+    "function_count": 19,
+    "class_count": 12,
+    "method_count": 42,
+    "total_components": 73,
+    "module_count": 2,
+    "repo_count": 1,
+    "topological_order_count": 73,
+    "topological_order": [
+      "docs.conftest.load_selector",
+      "docs.conftest.setup",
+      "parsel.csstranslator.GenericTranslator.css_to_xpath",
+      "parsel.csstranslator.XPathExpr.__str__",
+      "parsel.csstranslator.XPathExpr.from_xpath",
+      "parsel.csstranslator.XPathExpr.join",
+      "parsel.csstranslator.XPathExpr",
+      "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element",
+      "parsel.csstranslator.TranslatorMixin.xpath_element",
+      "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
+      "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element",
+      "parsel.csstranslator.TranslatorMixin",
+      "parsel.csstranslator.GenericTranslator",
+      "parsel.csstranslator.HTMLTranslator.css_to_xpath",
+      "parsel.csstranslator.HTMLTranslator",
+      "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+      "parsel.csstranslator.TranslatorProtocol.xpath_element",
+      "parsel.csstranslator.TranslatorProtocol",
+      "parsel.csstranslator.css2xpath",
+      "parsel.selector.CTGroupValue",
+      "parsel.selector.SafeXMLParser",
+      "parsel.selector.SafeXMLParser.__init__",
+      "parsel.selector.CannotRemoveElementWithoutParent",
+      "parsel.selector.CannotDropElementWithoutParent",
+      "parsel.selector.CannotRemoveElementWithoutRoot",
+      "parsel.selector.Selector.__bool__",
+      "parsel.selector.Selector.__getstate__",
+      "parsel.selector.Selector.__str__",
+      "parsel.selector._xml_or_html",
+      "parsel.selector.Selector._css2xpath",
+      "parsel.selector.create_root_node",
+      "parsel.selector.Selector._get_root",
+      "parsel.selector.Selector.attrib",
+      "parsel.selector.SelectorList.__getitem__",
+      "parsel.selector.SelectorList.__getstate__",
+      "parsel.selector.SelectorList.attrib",
+      "parsel.selector.SelectorList.css",
+      "parsel.selector.SelectorList.drop",
+      "parsel.selector.SelectorList.get",
+      "parsel.selector.SelectorList.getall",
+      "parsel.selector.SelectorList.jmespath",
+      "parsel.selector.SelectorList.re",
+      "parsel.selector.SelectorList.re_first",
+      "parsel.selector.SelectorList.remove",
+      "parsel.selector.SelectorList.xpath",
+      "parsel.selector.SelectorList",
+      "parsel.selector.Selector.css",
+      "parsel.selector.Selector.drop",
+      "parsel.selector.Selector.get",
+      "parsel.selector.Selector.getall",
+      "parsel.selector._load_json_or_none",
+      "parsel.selector.Selector.jmespath",
+      "parsel.selector.Selector.re",
+      "parsel.selector.Selector.re_first",
+      "parsel.selector.Selector.register_namespace",
+      "parsel.selector.Selector.remove",
+      "parsel.selector.Selector.remove_namespaces",
+      "parsel.selector.Selector.xpath",
+      "parsel.selector._get_root_and_type_from_bytes",
+      "parsel.selector._get_root_from_text",
+      "parsel.selector._get_root_and_type_from_text",
+      "parsel.selector._is_valid_json",
+      "parsel.selector._get_root_type",
+      "parsel.selector.Selector",
+      "parsel.selector.Selector.__init__",
+      "parsel.utils._is_listlike",
+      "parsel.utils.iflatten",
+      "parsel.utils.flatten",
+      "parsel.utils.extract_regex",
+      "parsel.utils.shorten",
+      "parsel.xpathfuncs.has_class",
+      "parsel.xpathfuncs.set_xpathfunc",
+      "parsel.xpathfuncs.setup"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 210,
+    "Write": 131,
+    "Verify": 117,
+    "Finish": 63
+  },
+  "action_time_totals_seconds": {
+    "Read": 1119.576,
+    "Write": 2042.524,
+    "Verify": 636.163
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 1224276,
+      "output_tokens": 35767
+    },
+    "Write": {
+      "input_tokens": 951162,
+      "output_tokens": 67628
+    },
+    "Verify": {
+      "input_tokens": 914632,
+      "output_tokens": 20842
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 42,
+    "total_memory_hits": 239
+  },
+  "per_component_stats": {
+    "docs.conftest.load_selector": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.633740209043026,
+      "Write_time": 18.019649371970445,
+      "Verify_time": 10.078947579022497,
+      "total_time_seconds": 40.625,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "docs.conftest.setup": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.722596334759146,
+      "Write_time": 15.80615842808038,
+      "Verify_time": 2.9539453918114305,
+      "total_time_seconds": 44.867,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "docs": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.1074927360750735,
+      "Write_time": 25.600902531994507,
+      "Verify_time": 5.964416048955172,
+      "total_time_seconds": 41.697,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.csstranslator.GenericTranslator.css_to_xpath": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.710584031883627,
+      "Write_time": 10.6639597970061,
+      "Verify_time": 9.993382536806166,
+      "total_time_seconds": 55.348,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "parsel.csstranslator.XPathExpr.__str__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.803947596810758,
+      "Write_time": 11.5517348209396,
+      "Verify_time": 6.2986726090312,
+      "total_time_seconds": 31.908,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "parsel.csstranslator.XPathExpr.from_xpath": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.460952838184312,
+      "Write_time": 27.04264049907215,
+      "Verify_time": 8.228353959973902,
+      "total_time_seconds": 46.763,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.csstranslator.XPathExpr.join": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 17.78331856103614,
+      "Write_time": 40.25125385913998,
+      "Verify_time": 22.155092926928774,
+      "total_time_seconds": 82.043,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.csstranslator.XPathExpr": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.2659924030303955,
+      "Write_time": 18.122395840939134,
+      "Verify_time": 10.3099782820791,
+      "total_time_seconds": 38.79,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.009332027984783,
+      "Write_time": 13.900725953979418,
+      "Verify_time": 5.560117827029899,
+      "total_time_seconds": 46.904,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_element": {
+      "Read_calls": 5,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 18.026495021767914,
+      "Write_time": 30.03909945813939,
+      "Verify_time": 4.606101276120171,
+      "total_time_seconds": null,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 23.10737195285037,
+      "Write_time": 23.707736579002813,
+      "Verify_time": 4.758177164942026,
+      "total_time_seconds": 54.553,
+      "graph_searches": 1,
+      "memory_hits": 5
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 17.008648989954963,
+      "Write_time": 36.355614689178765,
+      "Verify_time": 11.659543616930023,
+      "total_time_seconds": 79.25,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "parsel.csstranslator.TranslatorMixin": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.647454492980614,
+      "Write_time": 33.26227859198116,
+      "Verify_time": 9.933875442948192,
+      "total_time_seconds": 79.515,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.csstranslator.GenericTranslator": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.042528090067208,
+      "Write_time": 15.221750939963385,
+      "Verify_time": 8.65255091409199,
+      "total_time_seconds": 59.216,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.csstranslator.HTMLTranslator.css_to_xpath": {
+      "Read_calls": 3,
+      "Write_calls": 6,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 18.690882369875908,
+      "Write_time": 50.6683083800599,
+      "Verify_time": 6.725622752914205,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "parsel.csstranslator.HTMLTranslator": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 26.99554637307301,
+      "Verify_time": 14.548648572992533,
+      "total_time_seconds": 68.666,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.csstranslator.TranslatorProtocol.css_to_xpath": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 23.85870522609912,
+      "Write_time": 24.78654783894308,
+      "Verify_time": 10.087447975995019,
+      "total_time_seconds": 62.473,
+      "graph_searches": 2,
+      "memory_hits": 7
+    },
+    "parsel.csstranslator.TranslatorProtocol.xpath_element": {
+      "Read_calls": 5,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 25.814731274964288,
+      "Write_time": 37.42843301105313,
+      "Verify_time": 4.828983491053805,
+      "total_time_seconds": null,
+      "graph_searches": 2,
+      "memory_hits": 4
+    },
+    "parsel.csstranslator.TranslatorProtocol": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 25.068174817133695,
+      "Write_time": 46.641118176979944,
+      "Verify_time": 16.31396583886817,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "parsel.csstranslator.css2xpath": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.94653794891201,
+      "Write_time": 55.73017716803588,
+      "Verify_time": 22.704808484995738,
+      "total_time_seconds": 94.356,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.CTGroupValue": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.7714480177965015,
+      "Write_time": 17.068321055034176,
+      "Verify_time": 9.249936603941023,
+      "total_time_seconds": 36.54,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector.SafeXMLParser": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.8689801609143615,
+      "Write_time": 28.923776532057673,
+      "Verify_time": 12.561928047100082,
+      "total_time_seconds": 168.26,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector.SafeXMLParser.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 6.27382504590787,
+      "Write_time": 8.005042996956035,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector.CannotRemoveElementWithoutParent": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 3.626132271019742,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector.CannotDropElementWithoutParent": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 9.832872170954943,
+      "Write_time": 34.56946009490639,
+      "Verify_time": 12.481850545853376,
+      "total_time_seconds": 59.196,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "parsel.selector.CannotRemoveElementWithoutRoot": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.17236921703443,
+      "Write_time": 14.644385376945138,
+      "Verify_time": 3.4703231200110167,
+      "total_time_seconds": 33.269,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "parsel.selector.Selector.__bool__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.404747338034213,
+      "Write_time": 10.035082336049527,
+      "Verify_time": 8.175892696948722,
+      "total_time_seconds": 39.942,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "parsel.selector.Selector.__getstate__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.573219390120357,
+      "Write_time": 8.912813825067133,
+      "Verify_time": 9.097056254046038,
+      "total_time_seconds": 38.19,
+      "graph_searches": 5,
+      "memory_hits": 1
+    },
+    "parsel.selector.Selector.__str__": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.140870105009526,
+      "Write_time": 12.626359628047794,
+      "Verify_time": 9.225163585040718,
+      "total_time_seconds": 43.408,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "parsel.selector._xml_or_html": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.92064675502479,
+      "Write_time": 12.072636492084712,
+      "Verify_time": 2.4803613850381225,
+      "total_time_seconds": 37.571,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.selector.Selector._css2xpath": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.90273402724415,
+      "Write_time": 11.648899623192847,
+      "Verify_time": 6.89550445205532,
+      "total_time_seconds": 44.656,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.create_root_node": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 13.5110113308765,
+      "Write_time": 83.61546396021731,
+      "Verify_time": 16.13815704220906,
+      "total_time_seconds": 117.483,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector.Selector._get_root": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.75114036584273,
+      "Write_time": 17.180579056032002,
+      "Verify_time": 6.691733082057908,
+      "total_time_seconds": 45.062,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "parsel.selector.Selector.attrib": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.041957877809182,
+      "Write_time": 10.149704224895686,
+      "Verify_time": 6.629483273951337,
+      "total_time_seconds": 28.973,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.selector.SelectorList.__getitem__": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 19.82352541643195,
+      "Write_time": 39.85315337497741,
+      "Verify_time": 7.1349479232449085,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.SelectorList.__getstate__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.97204042202793,
+      "Write_time": 5.255592596018687,
+      "Verify_time": 9.316916460171342,
+      "total_time_seconds": 43.754,
+      "graph_searches": 4,
+      "memory_hits": 2
+    },
+    "parsel.selector.SelectorList.attrib": {
+      "Read_calls": 6,
+      "Write_calls": 3,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 37.02695506811142,
+      "Write_time": 34.539203845197335,
+      "Verify_time": 6.927834762027487,
+      "total_time_seconds": null,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "parsel.selector.SelectorList.css": {
+      "Read_calls": 5,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 20.413742267061025,
+      "Write_time": 27.55714737274684,
+      "Verify_time": 5.101927420124412,
+      "total_time_seconds": 54.036,
+      "graph_searches": 2,
+      "memory_hits": 5
+    },
+    "parsel.selector.SelectorList.drop": {
+      "Read_calls": 5,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 23.324826003052294,
+      "Write_time": 40.22749891318381,
+      "Verify_time": 5.050944067770615,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.SelectorList.get": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 29.616471830755472,
+      "Write_time": 50.379962750012055,
+      "Verify_time": 26.210376233095303,
+      "total_time_seconds": null,
+      "graph_searches": 4,
+      "memory_hits": 3
+    },
+    "parsel.selector.SelectorList.getall": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.091223569819704,
+      "Write_time": 26.335858993930742,
+      "Verify_time": 9.703648797934875,
+      "total_time_seconds": 76.602,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.selector.SelectorList.jmespath": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.838706824928522,
+      "Write_time": 12.614559409907088,
+      "Verify_time": 7.25816865102388,
+      "total_time_seconds": 48.427,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "parsel.selector.SelectorList.re": {
+      "Read_calls": 8,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 0,
+      "Read_time": 29.128448623931035,
+      "Write_time": 10.974257015157491,
+      "Verify_time": 9.66302660596557,
+      "total_time_seconds": null,
+      "graph_searches": 3,
+      "memory_hits": 4
+    },
+    "parsel.selector.SelectorList.re_first": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.693044644314796,
+      "Write_time": 22.688881173962727,
+      "Verify_time": 5.060818740166724,
+      "total_time_seconds": 46.136,
+      "graph_searches": 0,
+      "memory_hits": 7
+    },
+    "parsel.selector.SelectorList.remove": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 23.56054913927801,
+      "Write_time": 13.510371557902545,
+      "Verify_time": 8.26951048290357,
+      "total_time_seconds": 47.619,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "parsel.selector.SelectorList.xpath": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.348247110610828,
+      "Write_time": 13.93594917608425,
+      "Verify_time": 2.469367679208517,
+      "total_time_seconds": 33.737,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "parsel.selector.SelectorList": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.181975102983415,
+      "Write_time": 41.636113635031506,
+      "Verify_time": 13.445406580111012,
+      "total_time_seconds": 66.229,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.Selector.css": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 11.553375700023025,
+      "Verify_time": 8.451972049893811,
+      "total_time_seconds": 51.688,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector.Selector.drop": {
+      "Read_calls": 5,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 22.156488230684772,
+      "Write_time": 25.540950190043077,
+      "Verify_time": 4.77481048181653,
+      "total_time_seconds": 53.395,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "parsel.selector.Selector.get": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 16.428605484310538,
+      "Write_time": 38.349712886614725,
+      "Verify_time": 12.991246493067592,
+      "total_time_seconds": 69.867,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.selector.Selector.getall": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 33.566568861715496,
+      "Verify_time": 5.745007185032591,
+      "total_time_seconds": 49.101,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector._load_json_or_none": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.707514317007735,
+      "Write_time": 17.64307857793756,
+      "Verify_time": 10.78364174393937,
+      "total_time_seconds": 49.016,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.selector.Selector.jmespath": {
+      "Read_calls": 5,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 20.10705133108422,
+      "Write_time": 37.02284925011918,
+      "Verify_time": 6.072526263771579,
+      "total_time_seconds": 66.771,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "parsel.selector.Selector.re": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.351522840093821,
+      "Write_time": 13.105760876089334,
+      "Verify_time": 8.555487321922556,
+      "total_time_seconds": 38.305,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "parsel.selector.Selector.re_first": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.969348409213126,
+      "Write_time": 10.632705055177212,
+      "Verify_time": 3.1782589959912,
+      "total_time_seconds": 44.888,
+      "graph_searches": 0,
+      "memory_hits": 5
+    },
+    "parsel.selector.Selector.register_namespace": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.075955973938107,
+      "Write_time": 11.271025040885434,
+      "Verify_time": 9.029300444060937,
+      "total_time_seconds": 41.156,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "parsel.selector.Selector.remove": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 24.875536567997187,
+      "Write_time": 15.84882958815433,
+      "Verify_time": 7.801914745010436,
+      "total_time_seconds": 70.846,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "parsel.selector.Selector.remove_namespaces": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.925036587985232,
+      "Write_time": 11.801363721024245,
+      "Verify_time": 7.561139125842601,
+      "total_time_seconds": 34.223,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.Selector.xpath": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.76764401118271,
+      "Write_time": 35.178010928910226,
+      "Verify_time": 4.902086270041764,
+      "total_time_seconds": 80.325,
+      "graph_searches": 0,
+      "memory_hits": 7
+    },
+    "parsel.selector._get_root_and_type_from_bytes": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 21.753637611865997,
+      "Write_time": 99.60110394586809,
+      "Verify_time": 5.000342702725902,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 6
+    },
+    "parsel.selector._get_root_from_text": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.15111576509662,
+      "Write_time": 18.625771960942075,
+      "Verify_time": 9.491819951916113,
+      "total_time_seconds": 47.355,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.selector._get_root_and_type_from_text": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.610685019986704,
+      "Write_time": 53.75268303393386,
+      "Verify_time": 7.505015218863264,
+      "total_time_seconds": 74.487,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector._is_valid_json": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 11.451899423962459,
+      "Verify_time": 6.903851978015155,
+      "total_time_seconds": 31.752,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.selector._get_root_type": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.325877670198679,
+      "Write_time": 13.495757193071768,
+      "Verify_time": 2.990286256186664,
+      "total_time_seconds": 43.156,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.selector.Selector": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 26.171417033998296,
+      "Write_time": 93.37161776400171,
+      "Verify_time": 7.758542731637135,
+      "total_time_seconds": null,
+      "graph_searches": 0,
+      "memory_hits": 10
+    },
+    "parsel.selector.Selector.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.636740059126168,
+      "Write_time": 46.44210263690911,
+      "Verify_time": 4.880793398944661,
+      "total_time_seconds": 97.77,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "parsel.utils._is_listlike": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.965635699918494,
+      "Write_time": 11.32173312199302,
+      "Verify_time": 6.362463617930189,
+      "total_time_seconds": 25.523,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.utils.iflatten": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.424145777709782,
+      "Write_time": 17.727751496015117,
+      "Verify_time": 10.642180748982355,
+      "total_time_seconds": 44.432,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.utils.flatten": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.934644117951393,
+      "Write_time": 14.693281485931948,
+      "Verify_time": 3.052458975929767,
+      "total_time_seconds": 34.519,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "parsel.utils.extract_regex": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 18.611149785108864,
+      "Write_time": 52.077724473783746,
+      "Verify_time": 12.267047534929588,
+      "total_time_seconds": 94.25,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "parsel.utils.shorten": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.372624998213723,
+      "Write_time": 18.389569556107745,
+      "Verify_time": 6.7078864357899874,
+      "total_time_seconds": 49.267,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.xpathfuncs.has_class": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.74562119692564,
+      "Write_time": 25.605163842905313,
+      "Verify_time": 12.695038792910054,
+      "total_time_seconds": 69.641,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.xpathfuncs.set_xpathfunc": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.695111864013597,
+      "Write_time": 34.27541036182083,
+      "Verify_time": 10.179098190041259,
+      "total_time_seconds": 70.334,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "parsel.xpathfuncs.setup": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.734388953307644,
+      "Write_time": 33.18503568088636,
+      "Verify_time": 5.176267704926431,
+      "total_time_seconds": 52.568,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "parsel": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.433260472724214,
+      "Write_time": 40.073821427999064,
+      "Verify_time": 10.577158911153674,
+      "total_time_seconds": 65.652,
+      "graph_searches": 0,
+      "memory_hits": 12
+    }
+  },
+  "per_component_verify_scores": {
+    "docs.conftest.load_selector": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs.conftest.setup": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "docs": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.GenericTranslator.css_to_xpath": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.XPathExpr.__str__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.XPathExpr.from_xpath": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.XPathExpr.join": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.XPathExpr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorMixin.xpath_element": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorMixin": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.GenericTranslator": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.HTMLTranslator.css_to_xpath": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.HTMLTranslator": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorProtocol.css_to_xpath": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorProtocol.xpath_element": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.TranslatorProtocol": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.csstranslator.css2xpath": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.CTGroupValue": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SafeXMLParser": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.CannotDropElementWithoutParent": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.CannotRemoveElementWithoutRoot": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.__bool__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.__getstate__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.__str__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector._xml_or_html": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector._css2xpath": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.create_root_node": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.89,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.89,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector._get_root": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.attrib": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.__getitem__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.__getstate__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.attrib": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.css": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.drop": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.get": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.getall": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.jmespath": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.re": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.re_first": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.remove": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList.xpath": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.SelectorList": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.css": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.drop": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.get": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.getall": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector._load_json_or_none": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.jmespath": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.re": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.re_first": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.register_namespace": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.remove": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.remove_namespaces": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.xpath": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9
+      }
+    ],
+    "parsel.selector._get_root_and_type_from_bytes": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector._get_root_from_text": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector._get_root_and_type_from_text": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector._is_valid_json": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9833,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9833,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector._get_root_type": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.selector.Selector.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.utils._is_listlike": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.utils.iflatten": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.utils.flatten": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.utils.extract_regex": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.utils.shorten": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.xpathfuncs.has_class": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.xpathfuncs.set_xpathfunc": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel.xpathfuncs.setup": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "parsel": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9233,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "docs.conftest.load_selector": {
+      "requests": 4,
+      "input_tokens": 19479,
+      "output_tokens": 1276,
+      "cost": 0.0
+    },
+    "docs.conftest.setup": {
+      "requests": 5,
+      "input_tokens": 25420,
+      "output_tokens": 1367,
+      "cost": 0.0
+    },
+    "docs": {
+      "requests": 6,
+      "input_tokens": 35599,
+      "output_tokens": 1329,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.GenericTranslator.css_to_xpath": {
+      "requests": 8,
+      "input_tokens": 41056,
+      "output_tokens": 1771,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.XPathExpr.__str__": {
+      "requests": 5,
+      "input_tokens": 25624,
+      "output_tokens": 1073,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.XPathExpr.from_xpath": {
+      "requests": 7,
+      "input_tokens": 38212,
+      "output_tokens": 1523,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.XPathExpr.join": {
+      "requests": 10,
+      "input_tokens": 64062,
+      "output_tokens": 2721,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.XPathExpr": {
+      "requests": 4,
+      "input_tokens": 21583,
+      "output_tokens": 1273,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element": {
+      "requests": 5,
+      "input_tokens": 25732,
+      "output_tokens": 1513,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element": {
+      "requests": 9,
+      "input_tokens": 55563,
+      "output_tokens": 1844,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element": {
+      "requests": 10,
+      "input_tokens": 63882,
+      "output_tokens": 2499,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.TranslatorMixin": {
+      "requests": 7,
+      "input_tokens": 41726,
+      "output_tokens": 2617,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.GenericTranslator": {
+      "requests": 6,
+      "input_tokens": 32999,
+      "output_tokens": 1965,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.HTMLTranslator": {
+      "requests": 7,
+      "input_tokens": 37208,
+      "output_tokens": 2316,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.TranslatorProtocol.css_to_xpath": {
+      "requests": 9,
+      "input_tokens": 63083,
+      "output_tokens": 2027,
+      "cost": 0.0
+    },
+    "parsel.csstranslator.css2xpath": {
+      "requests": 9,
+      "input_tokens": 58295,
+      "output_tokens": 3151,
+      "cost": 0.0
+    },
+    "parsel.selector.CTGroupValue": {
+      "requests": 4,
+      "input_tokens": 19501,
+      "output_tokens": 1196,
+      "cost": 0.0
+    },
+    "parsel.selector.SafeXMLParser": {
+      "requests": 6,
+      "input_tokens": 31269,
+      "output_tokens": 5670,
+      "cost": 0.0
+    },
+    "parsel.selector.CannotDropElementWithoutParent": {
+      "requests": 9,
+      "input_tokens": 48460,
+      "output_tokens": 2024,
+      "cost": 0.0
+    },
+    "parsel.selector.CannotRemoveElementWithoutRoot": {
+      "requests": 6,
+      "input_tokens": 41993,
+      "output_tokens": 1120,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.__bool__": {
+      "requests": 6,
+      "input_tokens": 41453,
+      "output_tokens": 1310,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.__getstate__": {
+      "requests": 6,
+      "input_tokens": 42984,
+      "output_tokens": 1299,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.__str__": {
+      "requests": 7,
+      "input_tokens": 47413,
+      "output_tokens": 1414,
+      "cost": 0.0
+    },
+    "parsel.selector._xml_or_html": {
+      "requests": 5,
+      "input_tokens": 23868,
+      "output_tokens": 1242,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector._css2xpath": {
+      "requests": 8,
+      "input_tokens": 53778,
+      "output_tokens": 1509,
+      "cost": 0.0
+    },
+    "parsel.selector.create_root_node": {
+      "requests": 9,
+      "input_tokens": 61419,
+      "output_tokens": 3937,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector._get_root": {
+      "requests": 7,
+      "input_tokens": 50958,
+      "output_tokens": 1449,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.attrib": {
+      "requests": 4,
+      "input_tokens": 25828,
+      "output_tokens": 949,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.__getstate__": {
+      "requests": 6,
+      "input_tokens": 35527,
+      "output_tokens": 1480,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.css": {
+      "requests": 10,
+      "input_tokens": 78151,
+      "output_tokens": 1830,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.getall": {
+      "requests": 7,
+      "input_tokens": 41044,
+      "output_tokens": 2436,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.jmespath": {
+      "requests": 6,
+      "input_tokens": 33359,
+      "output_tokens": 1622,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.re_first": {
+      "requests": 10,
+      "input_tokens": 80304,
+      "output_tokens": 1503,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.remove": {
+      "requests": 8,
+      "input_tokens": 60634,
+      "output_tokens": 1564,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList.xpath": {
+      "requests": 7,
+      "input_tokens": 43137,
+      "output_tokens": 1139,
+      "cost": 0.0
+    },
+    "parsel.selector.SelectorList": {
+      "requests": 6,
+      "input_tokens": 41977,
+      "output_tokens": 2208,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.css": {
+      "requests": 5,
+      "input_tokens": 24350,
+      "output_tokens": 1619,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.drop": {
+      "requests": 10,
+      "input_tokens": 81024,
+      "output_tokens": 1770,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.get": {
+      "requests": 10,
+      "input_tokens": 78462,
+      "output_tokens": 2323,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.getall": {
+      "requests": 9,
+      "input_tokens": 46759,
+      "output_tokens": 1583,
+      "cost": 0.0
+    },
+    "parsel.selector._load_json_or_none": {
+      "requests": 5,
+      "input_tokens": 24443,
+      "output_tokens": 1523,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.jmespath": {
+      "requests": 10,
+      "input_tokens": 86231,
+      "output_tokens": 2162,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.re": {
+      "requests": 6,
+      "input_tokens": 39922,
+      "output_tokens": 1209,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.re_first": {
+      "requests": 7,
+      "input_tokens": 43869,
+      "output_tokens": 1532,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.register_namespace": {
+      "requests": 6,
+      "input_tokens": 42697,
+      "output_tokens": 1336,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.remove": {
+      "requests": 7,
+      "input_tokens": 51729,
+      "output_tokens": 2332,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.remove_namespaces": {
+      "requests": 5,
+      "input_tokens": 34107,
+      "output_tokens": 1139,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.xpath": {
+      "requests": 8,
+      "input_tokens": 73018,
+      "output_tokens": 2672,
+      "cost": 0.0
+    },
+    "parsel.selector._get_root_from_text": {
+      "requests": 6,
+      "input_tokens": 34187,
+      "output_tokens": 1511,
+      "cost": 0.0
+    },
+    "parsel.selector._get_root_and_type_from_text": {
+      "requests": 6,
+      "input_tokens": 38152,
+      "output_tokens": 2392,
+      "cost": 0.0
+    },
+    "parsel.selector._is_valid_json": {
+      "requests": 3,
+      "input_tokens": 13984,
+      "output_tokens": 1035,
+      "cost": 0.0
+    },
+    "parsel.selector._get_root_type": {
+      "requests": 4,
+      "input_tokens": 21384,
+      "output_tokens": 1439,
+      "cost": 0.0
+    },
+    "parsel.selector.Selector.__init__": {
+      "requests": 7,
+      "input_tokens": 67623,
+      "output_tokens": 3141,
+      "cost": 0.0
+    },
+    "parsel.utils._is_listlike": {
+      "requests": 4,
+      "input_tokens": 18301,
+      "output_tokens": 871,
+      "cost": 0.0
+    },
+    "parsel.utils.iflatten": {
+      "requests": 5,
+      "input_tokens": 25572,
+      "output_tokens": 1484,
+      "cost": 0.0
+    },
+    "parsel.utils.flatten": {
+      "requests": 4,
+      "input_tokens": 19664,
+      "output_tokens": 1185,
+      "cost": 0.0
+    },
+    "parsel.utils.extract_regex": {
+      "requests": 8,
+      "input_tokens": 51640,
+      "output_tokens": 3206,
+      "cost": 0.0
+    },
+    "parsel.utils.shorten": {
+      "requests": 4,
+      "input_tokens": 19256,
+      "output_tokens": 1570,
+      "cost": 0.0
+    },
+    "parsel.xpathfuncs.has_class": {
+      "requests": 4,
+      "input_tokens": 21124,
+      "output_tokens": 2330,
+      "cost": 0.0
+    },
+    "parsel.xpathfuncs.set_xpathfunc": {
+      "requests": 7,
+      "input_tokens": 36674,
+      "output_tokens": 2363,
+      "cost": 0.0
+    },
+    "parsel.xpathfuncs.setup": {
+      "requests": 8,
+      "input_tokens": 52834,
+      "output_tokens": 1724,
+      "cost": 0.0
+    },
+    "parsel": {
+      "requests": 5,
+      "input_tokens": 53824,
+      "output_tokens": 2217,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 56,
+    "total_fetched_component_types": 72,
+    "redundant_fetch_count": 175,
+    "duplicates": {
+      "parsel.selector.Selector": {
+        "accessed_by": [
+          "parsel.selector.CannotRemoveElementWithoutRoot",
+          "parsel.selector.Selector.__bool__",
+          "parsel.selector.Selector.__getstate__",
+          "parsel.selector.Selector.__str__",
+          "parsel.selector.Selector._css2xpath",
+          "parsel.selector.Selector._get_root",
+          "parsel.selector.Selector.attrib",
+          "parsel.selector.SelectorList.__getitem__",
+          "parsel.selector.SelectorList.attrib",
+          "parsel.selector.SelectorList.css",
+          "parsel.selector.SelectorList.drop",
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.SelectorList.re_first",
+          "parsel.selector.SelectorList.remove",
+          "parsel.selector.Selector.drop",
+          "parsel.selector.Selector.get",
+          "parsel.selector.Selector.jmespath",
+          "parsel.selector.Selector.re",
+          "parsel.selector.Selector.re_first",
+          "parsel.selector.Selector.register_namespace",
+          "parsel.selector.Selector.remove",
+          "parsel.selector.Selector.remove_namespaces",
+          "parsel.selector.Selector.xpath",
+          "parsel.selector.Selector.__init__",
+          "parsel"
+        ],
+        "access_count": 25
+      },
+      "parsel.selector.SelectorList": {
+        "accessed_by": [
+          "parsel.selector.CannotRemoveElementWithoutRoot",
+          "parsel.selector.SelectorList.__getitem__",
+          "parsel.selector.SelectorList.__getstate__",
+          "parsel.selector.SelectorList.attrib",
+          "parsel.selector.SelectorList.css",
+          "parsel.selector.SelectorList.drop",
+          "parsel.selector.SelectorList.get",
+          "parsel.selector.SelectorList.getall",
+          "parsel.selector.SelectorList.jmespath",
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.SelectorList.re_first",
+          "parsel.selector.SelectorList.remove",
+          "parsel.selector.SelectorList.xpath",
+          "parsel.selector.Selector.jmespath",
+          "parsel.selector.Selector.xpath",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 17
+      },
+      "parsel.csstranslator.GenericTranslator": {
+        "accessed_by": [
+          "parsel.csstranslator.GenericTranslator.css_to_xpath",
+          "parsel.csstranslator.TranslatorMixin.xpath_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
+          "parsel.csstranslator.TranslatorMixin",
+          "parsel.csstranslator.HTMLTranslator.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.xpath_element",
+          "parsel.csstranslator.TranslatorProtocol",
+          "parsel.csstranslator.css2xpath",
+          "parsel"
+        ],
+        "access_count": 10
+      },
+      "parsel.utils.flatten": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.css",
+          "parsel.selector.SelectorList.jmespath",
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.SelectorList.re_first",
+          "parsel.selector.SelectorList.xpath",
+          "parsel.selector.SelectorList",
+          "parsel.selector.Selector.re_first",
+          "parsel.utils.iflatten",
+          "parsel.utils.extract_regex",
+          "parsel"
+        ],
+        "access_count": 10
+      },
+      "parsel.csstranslator.TranslatorMixin": {
+        "accessed_by": [
+          "parsel.csstranslator.GenericTranslator.css_to_xpath",
+          "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element",
+          "parsel.csstranslator.GenericTranslator",
+          "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.xpath_element",
+          "parsel"
+        ],
+        "access_count": 9
+      },
+      "parsel.csstranslator.HTMLTranslator": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorMixin.xpath_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
+          "parsel.csstranslator.TranslatorMixin",
+          "parsel.csstranslator.HTMLTranslator.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.xpath_element",
+          "parsel.csstranslator.TranslatorProtocol",
+          "parsel.csstranslator.css2xpath",
+          "parsel"
+        ],
+        "access_count": 9
+      },
+      "parsel.selector._xml_or_html": {
+        "accessed_by": [
+          "parsel.selector.Selector.__getstate__",
+          "parsel.selector._xml_or_html",
+          "parsel.selector.Selector._css2xpath",
+          "parsel.selector.Selector.xpath",
+          "parsel.selector._get_root_and_type_from_bytes",
+          "parsel.selector._get_root_and_type_from_text",
+          "parsel.selector._get_root_type",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 9
+      },
+      "parsel.utils.iflatten": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.css",
+          "parsel.selector.SelectorList.re_first",
+          "parsel.selector.SelectorList",
+          "parsel.selector.Selector.re_first",
+          "parsel.utils.flatten",
+          "parsel"
+        ],
+        "access_count": 6
+      },
+      "parsel.selector._get_root_and_type_from_text": {
+        "accessed_by": [
+          "parsel.selector.Selector.__getstate__",
+          "parsel.selector.Selector.jmespath",
+          "parsel.selector.Selector",
+          "parsel.selector.Selector.__init__",
+          "parsel"
+        ],
+        "access_count": 5
+      },
+      "parsel.selector._load_json_or_none": {
+        "accessed_by": [
+          "parsel.selector.Selector.__getstate__",
+          "parsel.selector._load_json_or_none",
+          "parsel.selector.Selector.jmespath",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 5
+      },
+      "parsel.selector.create_root_node": {
+        "accessed_by": [
+          "parsel.selector.Selector._get_root",
+          "parsel.selector._get_root_and_type_from_bytes",
+          "parsel.selector._get_root_from_text",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 5
+      },
+      "parsel.selector.SelectorList.re": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.__getstate__",
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.SelectorList.re_first",
+          "parsel.selector.SelectorList.xpath",
+          "parsel"
+        ],
+        "access_count": 5
+      },
+      "parsel.utils.extract_regex": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.SelectorList.re_first",
+          "parsel.selector.Selector.re",
+          "parsel.selector.Selector.re_first",
+          "parsel"
+        ],
+        "access_count": 5
+      },
+      "parsel.csstranslator.XPathExpr": {
+        "accessed_by": [
+          "parsel.csstranslator.XPathExpr.__str__",
+          "parsel.csstranslator.XPathExpr.from_xpath",
+          "parsel.csstranslator.XPathExpr.join",
+          "parsel"
+        ],
+        "access_count": 4
+      },
+      "parsel.selector.CannotRemoveElementWithoutParent": {
+        "accessed_by": [
+          "parsel.selector.CannotDropElementWithoutParent",
+          "parsel.selector.CannotRemoveElementWithoutRoot",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 4
+      },
+      "parsel.selector._get_root_and_type_from_bytes": {
+        "accessed_by": [
+          "parsel.selector.Selector.__getstate__",
+          "parsel.selector.Selector",
+          "parsel.selector.Selector.__init__",
+          "parsel"
+        ],
+        "access_count": 4
+      },
+      "parsel.selector.SelectorList.css": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.__getstate__",
+          "parsel.selector.SelectorList.css",
+          "parsel.selector.SelectorList.xpath",
+          "parsel"
+        ],
+        "access_count": 4
+      },
+      "parsel.selector.Selector.remove": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.remove",
+          "parsel.selector.Selector.drop",
+          "parsel.selector.Selector.remove",
+          "parsel"
+        ],
+        "access_count": 4
+      },
+      "parsel.csstranslator.GenericTranslator.css_to_xpath": {
+        "accessed_by": [
+          "parsel.csstranslator.GenericTranslator.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
+          "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.csstranslator.TranslatorProtocol": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+          "parsel.csstranslator.TranslatorProtocol.xpath_element",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.csstranslator.TranslatorProtocol.xpath_element": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorProtocol.xpath_element",
+          "parsel.csstranslator.TranslatorProtocol",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.CannotDropElementWithoutParent": {
+        "accessed_by": [
+          "parsel.selector.CannotRemoveElementWithoutRoot",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.Selector.get": {
+        "accessed_by": [
+          "parsel.selector.Selector.__bool__",
+          "parsel.selector.SelectorList.get",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.Selector.re_first": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.get",
+          "parsel.selector.SelectorList.re_first",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.SelectorList.jmespath": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.jmespath",
+          "parsel.selector.SelectorList.xpath",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.SafeXMLParser.__init__": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.Selector.xpath",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.Selector.__init__": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.re",
+          "parsel.selector.Selector.xpath",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.Selector.drop": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.remove",
+          "parsel.selector.Selector.remove",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.CannotRemoveElementWithoutRoot": {
+        "accessed_by": [
+          "parsel.selector.Selector.drop",
+          "parsel.selector.Selector",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector.Selector.remove_namespaces": {
+        "accessed_by": [
+          "parsel.selector.Selector.register_namespace",
+          "parsel.selector.Selector.remove_namespaces",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "parsel.selector._get_root_type": {
+        "accessed_by": [
+          "parsel.selector.Selector",
+          "parsel.selector.Selector.__init__",
+          "parsel"
+        ],
+        "access_count": 3
+      },
+      "docs.conftest.load_selector": {
+        "accessed_by": [
+          "docs.conftest.setup",
+          "docs"
+        ],
+        "access_count": 2
+      },
+      "docs.conftest.setup": {
+        "accessed_by": [
+          "docs",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.csstranslator.TranslatorMixin.xpath_pseudo_element": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorMixin.xpath_text_simple_pseudo_element",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.csstranslator.HTMLTranslator.css_to_xpath": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorProtocol.css_to_xpath",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.csstranslator.TranslatorMixin.xpath_element": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorProtocol.xpath_element",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.csstranslator.TranslatorProtocol.css_to_xpath": {
+        "accessed_by": [
+          "parsel.csstranslator.TranslatorProtocol",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.Selector.__getstate__": {
+        "accessed_by": [
+          "parsel.selector.Selector.__getstate__",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.utils.shorten": {
+        "accessed_by": [
+          "parsel.selector.Selector.__str__",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.Selector.__str__": {
+        "accessed_by": [
+          "parsel.selector.Selector.__str__",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.Selector._get_root": {
+        "accessed_by": [
+          "parsel.selector.Selector._get_root",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.SelectorList.__getstate__": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.__getstate__",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.SelectorList.xpath": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.__getstate__",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.SelectorList.attrib": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.attrib",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.SelectorList.getall": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.get",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.Selector.getall": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.get",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.SelectorList.re_first": {
+        "accessed_by": [
+          "parsel.selector.SelectorList.get",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.Selector.re": {
+        "accessed_by": [
+          "parsel.selector.Selector.re_first",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector.Selector.xpath": {
+        "accessed_by": [
+          "parsel.selector.Selector.register_namespace",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector._get_root_from_text": {
+        "accessed_by": [
+          "parsel.selector._get_root_and_type_from_text",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.selector._is_valid_json": {
+        "accessed_by": [
+          "parsel.selector._get_root_type",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.utils._is_listlike": {
+        "accessed_by": [
+          "parsel.utils.iflatten",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.xpathfuncs.set_xpathfunc": {
+        "accessed_by": [
+          "parsel.xpathfuncs.setup",
+          "parsel"
+        ],
+        "access_count": 2
+      },
+      "parsel.xpathfuncs.has_class": {
+        "accessed_by": [
+          "parsel.xpathfuncs.setup",
+          "parsel"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 546,
+      "total_input_tokens": 3715826,
+      "total_output_tokens": 147248,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 46.485,
+    "avg_turns_per_component": 6.95,
+    "memory_hit_rate": 0.8505,
+    "total_tokens": 2768244,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 36909.9
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 73,
+      "total_time_seconds": 3379.002,
+      "avg_time_seconds": 46.288,
+      "total_turns": 530,
+      "avg_turns": 7.26,
+      "action_counts": {
+        "Read": 205,
+        "Write": 127,
+        "Verify": 113,
+        "Finish": 60,
+        "Unknown": 25
+      }
+    },
+    "MODULE": {
+      "count": 2,
+      "total_time_seconds": 107.349,
+      "avg_time_seconds": 53.675,
+      "total_turns": 11,
+      "avg_turns": 5.5,
+      "action_counts": {
+        "Read": 3,
+        "Write": 3,
+        "Verify": 3,
+        "Finish": 2
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 65.652,
+      "avg_time_seconds": 65.652,
+      "total_turns": 5,
+      "avg_turns": 5.0,
+      "action_counts": {
+        "Read": 2,
+        "Write": 1,
+        "Verify": 1,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {},
+  "verify_summary": {
+    "total_verify_attempts": 117,
+    "first_pass_success": 42,
+    "required_revision": 33,
+    "score_parse_failures": 1,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9123,
+      "COMPLETENESS": 0.8808,
+      "HELPFULNESS": 0.874
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.0906,
+      "COMPLETENESS": 0.1109,
+      "HELPFULNESS": 0.0944
+    }
+  }
+}

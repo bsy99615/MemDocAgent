@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qwen3-Coder Documentation Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/core.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    /* ── Sidebar ── */
+    #sidebar {
+      width: 300px;
+      min-width: 200px;
+      max-width: 480px;
+      background: #1e1e2e;
+      color: #cdd6f4;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      flex-shrink: 0;
+      border-right: 2px solid #313244;
+      position: relative;
+    }
+
+    #sidebar-header {
+      padding: 14px 16px 12px;
+      background: #181825;
+      border-bottom: 1px solid #313244;
+      flex-shrink: 0;
+    }
+
+    #sidebar-header h1 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #cba6f7;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    #sidebar-header p {
+      font-size: 11px;
+      color: #585b70;
+      margin-top: 3px;
+    }
+
+    #search-box {
+      margin: 10px 10px 0;
+      padding: 6px 10px;
+      background: #313244;
+      border: 1px solid #45475a;
+      border-radius: 6px;
+      color: #cdd6f4;
+      font-size: 12px;
+      width: calc(100% - 20px);
+      outline: none;
+      flex-shrink: 0;
+    }
+    #search-box::placeholder { color: #585b70; }
+    #search-box:focus { border-color: #cba6f7; }
+
+    #tree-container {
+      overflow-y: auto;
+      overflow-x: hidden;
+      flex: 1;
+      padding: 8px 0 16px;
+    }
+
+    #tree-container::-webkit-scrollbar { width: 5px; }
+    #tree-container::-webkit-scrollbar-track { background: transparent; }
+    #tree-container::-webkit-scrollbar-thumb { background: #45475a; border-radius: 3px; }
+
+    /* Tree nodes */
+    .tree-node { user-select: none; }
+
+    .tree-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 8px 3px 0;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.12s;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tree-label:hover { background: #313244; }
+    .tree-label.active { background: #45475a; color: #cba6f7; }
+
+    .tree-icon {
+      flex-shrink: 0;
+      font-size: 11px;
+      width: 14px;
+      text-align: center;
+    }
+
+    .tree-name {
+      font-size: 12.5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tree-children {
+      overflow: hidden;
+    }
+
+    /* stage level */
+    .depth-0 > .tree-label {
+      padding-left: 10px;
+      font-weight: 700;
+      font-size: 12px;
+      color: #f38ba8;
+      letter-spacing: 0.03em;
+    }
+    /* variant level */
+    .depth-1 > .tree-label {
+      padding-left: 24px;
+      color: #fab387;
+      font-weight: 600;
+    }
+    /* repo level */
+    .depth-2 > .tree-label {
+      padding-left: 38px;
+      color: #a6e3a1;
+    }
+    /* documentation folder (depth 3 dirs) */
+    .depth-3 > .tree-label {
+      padding-left: 52px;
+      color: #89dceb;
+    }
+    /* deeper */
+    .depth-4 > .tree-label  { padding-left: 66px; }
+    .depth-5 > .tree-label  { padding-left: 80px; }
+    .depth-6 > .tree-label  { padding-left: 94px; }
+    .depth-7 > .tree-label  { padding-left: 108px; }
+
+    .file-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 8px 3px 0;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #bac2de;
+      transition: background 0.12s;
+    }
+    .file-item:hover { background: #313244; }
+    .file-item.active { background: #45475a; color: #cba6f7; }
+    .file-icon { flex-shrink: 0; font-size: 11px; width: 14px; text-align: center; }
+    .file-name { overflow: hidden; text-overflow: ellipsis; }
+
+    /* depth padding for file items */
+    .depth-1-file { padding-left: 24px; }
+    .depth-2-file { padding-left: 38px; }
+    .depth-3-file { padding-left: 52px; }
+    .depth-4-file { padding-left: 66px; }
+    .depth-5-file { padding-left: 80px; }
+    .depth-6-file { padding-left: 94px; }
+    .depth-7-file { padding-left: 108px; }
+    .depth-8-file { padding-left: 122px; }
+
+    /* hidden for search */
+    .hidden { display: none !important; }
+
+    /* ── Resizer ── */
+    #resizer {
+      width: 5px;
+      cursor: col-resize;
+      background: #313244;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    #resizer:hover, #resizer.active { background: #cba6f7; }
+
+    /* ── Content ── */
+    #content-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    #content-header {
+      padding: 10px 20px;
+      background: #f8f8f8;
+      border-bottom: 1px solid #e0e0e0;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #breadcrumb {
+      font-size: 12px;
+      color: #666;
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    #breadcrumb span { color: #aaa; margin: 0 4px; }
+    #breadcrumb b { color: #333; }
+
+    #content-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 32px 48px 64px;
+    }
+
+    #content-scroll::-webkit-scrollbar { width: 8px; }
+    #content-scroll::-webkit-scrollbar-track { background: #f5f5f5; }
+    #content-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+    #content-scroll::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* Welcome screen */
+    #welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #aaa;
+      gap: 12px;
+    }
+    #welcome .big-icon { font-size: 64px; }
+    #welcome h2 { font-size: 22px; color: #555; font-weight: 600; }
+    #welcome p { font-size: 14px; }
+
+    /* Markdown styles */
+    #md-content {
+      max-width: 860px;
+      line-height: 1.75;
+      color: #24292e;
+    }
+
+    #md-content h1 { font-size: 2em; border-bottom: 2px solid #e1e4e8; padding-bottom: 0.3em; margin: 0.8em 0 0.5em; }
+    #md-content h2 { font-size: 1.5em; border-bottom: 1px solid #e1e4e8; padding-bottom: 0.25em; margin: 1.2em 0 0.5em; }
+    #md-content h3 { font-size: 1.2em; margin: 1em 0 0.4em; }
+    #md-content h4, #md-content h5, #md-content h6 { margin: 0.8em 0 0.3em; }
+
+    #md-content p { margin: 0.6em 0; }
+
+    #md-content a { color: #0366d6; text-decoration: none; }
+    #md-content a:hover { text-decoration: underline; }
+
+    #md-content code {
+      background: #f0f0f0;
+      padding: 0.1em 0.4em;
+      border-radius: 3px;
+      font-size: 0.88em;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    #md-content pre {
+      background: #f6f8fa;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 16px;
+      overflow-x: auto;
+      margin: 1em 0;
+    }
+    #md-content pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.85em;
+      border-radius: 0;
+    }
+
+    #md-content blockquote {
+      border-left: 4px solid #dfe2e5;
+      margin: 0.8em 0;
+      padding: 0 1em;
+      color: #6a737d;
+    }
+
+    #md-content ul, #md-content ol {
+      padding-left: 2em;
+      margin: 0.5em 0;
+    }
+    #md-content li { margin: 0.2em 0; }
+
+    #md-content table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    #md-content th, #md-content td {
+      border: 1px solid #dfe2e5;
+      padding: 8px 12px;
+    }
+    #md-content th { background: #f6f8fa; font-weight: 600; }
+    #md-content tr:nth-child(even) { background: #f9f9f9; }
+
+    #md-content hr { border: none; border-top: 1px solid #e1e4e8; margin: 1.5em 0; }
+
+    #md-content img { max-width: 100%; border-radius: 4px; }
+
+    /* Loading / error */
+    .loading, .error-msg {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+    .error-msg { color: #c0392b; }
+
+    /* Collapse indicator animation */
+    .toggle-icon {
+      transition: transform 0.18s;
+      display: inline-block;
+    }
+    .collapsed .toggle-icon { transform: rotate(-90deg); }
+  </style>
+</head>
+<body>
+
+<!-- ── Left Sidebar ── -->
+<aside id="sidebar">
+  <div id="sidebar-header">
+    <h1>📚 Qwen3-Coder Docs</h1>
+    <p id="file-count">파일을 불러오는 중...</p>
+  </div>
+  <input id="search-box" type="text" placeholder="🔍 파일 검색..." autocomplete="off" />
+  <div id="tree-container">
+    <div class="loading">트리 구조 불러오는 중...</div>
+  </div>
+</aside>
+
+<!-- ── Resizer ── -->
+<div id="resizer"></div>
+
+<!-- ── Right Content ── -->
+<main id="content-area">
+  <div id="content-header">
+    <div id="breadcrumb">← 왼쪽 메뉴에서 파일을 선택하세요</div>
+  </div>
+  <div id="content-scroll">
+    <div id="welcome">
+      <div class="big-icon">📖</div>
+      <h2>Documentation Viewer</h2>
+      <p>왼쪽 메뉴에서 문서를 선택하면 여기에 표시됩니다.</p>
+    </div>
+    <div id="md-content" style="display:none;"></div>
+  </div>
+</main>
+
+<script>
+const API = '';  // same origin
+let activeItem = null;
+let allFileItems = [];  // for search
+
+// ── Marked.js setup ──
+marked.setOptions({
+  gfm: true,
+  breaks: false,
+  highlight: (code, lang) => {
+    if (window.hljs && lang && hljs.getLanguage(lang)) {
+      try { return hljs.highlight(code, { language: lang }).value; } catch (_) {}
+    }
+    return code;
+  }
+});
+
+// ── Fetch tree and render ──
+async function loadTree() {
+  try {
+    const res = await fetch(`${API}/api/tree`);
+    const tree = await res.json();
+    renderTree(tree);
+  } catch (e) {
+    document.getElementById('tree-container').innerHTML =
+      '<div class="error-msg">트리 로드 실패: ' + e.message + '</div>';
+  }
+}
+
+function renderTree(nodes) {
+  const container = document.getElementById('tree-container');
+  container.innerHTML = '';
+  allFileItems = [];
+
+  let totalFiles = 0;
+
+  nodes.forEach(stageNode => {
+    const el = buildNode(stageNode, 0);
+    container.appendChild(el);
+    totalFiles += countFiles(stageNode);
+  });
+
+  document.getElementById('file-count').textContent =
+    `총 ${totalFiles.toLocaleString()}개 파일`;
+}
+
+function countFiles(node) {
+  if (node.type === 'file') return 1;
+  return (node.children || []).reduce((s, c) => s + countFiles(c), 0);
+}
+
+function buildNode(node, depth) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'tree-node';
+
+  if (node.type === 'directory') {
+    wrapper.classList.add(`depth-${depth}`);
+
+    // Skip "documentation" wrapper directory — just show children directly
+    const isDocDir = node.name === 'documentation';
+
+    const label = document.createElement('div');
+    label.className = 'tree-label';
+
+    const toggleIcon = document.createElement('span');
+    toggleIcon.className = 'toggle-icon';
+    toggleIcon.textContent = depth === 0 ? '▾' : '▾';
+
+    const icon = document.createElement('span');
+    icon.className = 'tree-icon';
+    icon.textContent = getDirectoryIcon(node.name, depth);
+
+    const name = document.createElement('span');
+    name.className = 'tree-name';
+    name.textContent = node.name;
+
+    label.appendChild(toggleIcon);
+    label.appendChild(icon);
+    label.appendChild(name);
+
+    const childrenDiv = document.createElement('div');
+    childrenDiv.className = 'tree-children';
+
+    // Auto-collapse deep levels
+    let collapsed = depth >= 2;
+    if (collapsed) {
+      childrenDiv.style.display = 'none';
+      wrapper.classList.add('collapsed');
+    }
+
+    label.addEventListener('click', () => {
+      collapsed = !collapsed;
+      childrenDiv.style.display = collapsed ? 'none' : 'block';
+      wrapper.classList.toggle('collapsed', collapsed);
+    });
+
+    (node.children || []).forEach(child => {
+      childrenDiv.appendChild(buildNode(child, depth + 1));
+    });
+
+    if (isDocDir) {
+      // Render doc dir's children inline without the dir header
+      const frag = document.createDocumentFragment();
+      (node.children || []).forEach(child => {
+        frag.appendChild(buildNode(child, depth));
+      });
+      return frag;
+    }
+
+    wrapper.appendChild(label);
+    wrapper.appendChild(childrenDiv);
+
+  } else {
+    // File
+    const item = document.createElement('div');
+    item.className = `file-item depth-${depth}-file`;
+    item.dataset.path = node.path;
+
+    const icon = document.createElement('span');
+    icon.className = 'file-icon';
+    icon.textContent = '📄';
+
+    const fname = document.createElement('span');
+    fname.className = 'file-name';
+    fname.textContent = node.name;
+    fname.title = node.path;
+
+    item.appendChild(icon);
+    item.appendChild(fname);
+
+    item.addEventListener('click', () => loadFile(node.path, node.name, item));
+
+    allFileItems.push({ el: item, path: node.path, name: node.name });
+    wrapper.appendChild(item);
+  }
+
+  return wrapper;
+}
+
+function getDirectoryIcon(name, depth) {
+  if (depth === 0) return '🗂';
+  if (depth === 1) return '⚙';
+  if (['documentation', 'docs'].includes(name)) return '📚';
+  if (name === 'src') return '💾';
+  if (['tests', 'test'].includes(name)) return '🧪';
+  if (name === 'examples') return '🔬';
+  return '📁';
+}
+
+// ── Load and render a file ──
+async function loadFile(path, name, itemEl) {
+  // Update active state
+  if (activeItem) activeItem.classList.remove('active');
+  activeItem = itemEl;
+  itemEl.classList.add('active');
+
+  // Scroll item into view in sidebar
+  itemEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+
+  // Update breadcrumb
+  const parts = path.split('/');
+  const breadcrumb = document.getElementById('breadcrumb');
+  breadcrumb.innerHTML = parts.map((p, i) =>
+    i === parts.length - 1
+      ? `<b>${p}</b>`
+      : `${p}<span>/</span>`
+  ).join('');
+
+  // Show loading
+  const welcome = document.getElementById('welcome');
+  const mdContent = document.getElementById('md-content');
+  welcome.style.display = 'none';
+  mdContent.style.display = 'block';
+  mdContent.innerHTML = '<div class="loading">불러오는 중...</div>';
+
+  // Scroll to top
+  document.getElementById('content-scroll').scrollTop = 0;
+
+  try {
+    const res = await fetch(`${API}/api/file?path=${encodeURIComponent(path)}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    mdContent.innerHTML = marked.parse(text);
+
+    // Highlight code blocks
+    mdContent.querySelectorAll('pre code').forEach(block => {
+      if (window.hljs) hljs.highlightElement(block);
+    });
+
+    // Make links open in new tab
+    mdContent.querySelectorAll('a[href]').forEach(a => {
+      if (a.href.startsWith('http')) a.target = '_blank';
+    });
+
+  } catch (e) {
+    mdContent.innerHTML = `<div class="error-msg">파일 로드 실패: ${e.message}</div>`;
+  }
+}
+
+// ── Search ──
+document.getElementById('search-box').addEventListener('input', function() {
+  const query = this.value.trim().toLowerCase();
+
+  if (!query) {
+    allFileItems.forEach(({ el }) => {
+      el.classList.remove('hidden');
+      // Show all parents
+      let p = el.parentElement;
+      while (p) {
+        p.classList.remove('hidden');
+        if (p.classList.contains('tree-children')) p.style.display = 'block';
+        p = p.parentElement;
+      }
+    });
+    return;
+  }
+
+  allFileItems.forEach(({ el, path, name }) => {
+    const match = path.toLowerCase().includes(query) || name.toLowerCase().includes(query);
+    el.classList.toggle('hidden', !match);
+
+    if (match) {
+      // Expand and show all ancestors
+      let p = el.parentElement;
+      while (p) {
+        p.classList.remove('hidden');
+        if (p.classList.contains('tree-children')) {
+          p.style.display = 'block';
+          const wrapper = p.parentElement;
+          if (wrapper) wrapper.classList.remove('collapsed');
+        }
+        p = p.parentElement;
+      }
+    }
+  });
+});
+
+// ── Sidebar resize ──
+(function() {
+  const resizer = document.getElementById('resizer');
+  const sidebar = document.getElementById('sidebar');
+  let dragging = false, startX = 0, startW = 0;
+
+  resizer.addEventListener('mousedown', e => {
+    dragging = true;
+    startX = e.clientX;
+    startW = sidebar.offsetWidth;
+    resizer.classList.add('active');
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+  });
+
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const w = Math.max(180, Math.min(600, startW + e.clientX - startX));
+    sidebar.style.width = w + 'px';
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (dragging) {
+      dragging = false;
+      resizer.classList.remove('active');
+      document.body.style.cursor = '';
+      document.body.style.userSelect = '';
+    }
+  });
+})();
+
+// ── Keyboard navigation ──
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== document.getElementById('search-box')) {
+    e.preventDefault();
+    document.getElementById('search-box').focus();
+    document.getElementById('search-box').select();
+  }
+  if (e.key === 'Escape') {
+    document.getElementById('search-box').value = '';
+    document.getElementById('search-box').dispatchEvent(new Event('input'));
+    document.getElementById('search-box').blur();
+  }
+});
+
+// ── Init ──
+loadTree();
+</script>
+</body>
+</html>

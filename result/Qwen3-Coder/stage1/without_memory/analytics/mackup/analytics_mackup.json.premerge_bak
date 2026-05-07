@@ -1,0 +1,2567 @@
+{
+  "run_id": "20260419_220839",
+  "label": "mackup",
+  "total_run_time_seconds": 3633.751,
+  "repo_summary": {
+    "file_count": 6,
+    "function_count": 17,
+    "class_count": 6,
+    "method_count": 32,
+    "total_components": 55,
+    "module_count": 1,
+    "repo_count": 1,
+    "topological_order_count": 55,
+    "topological_order": [
+      "mackup.application.ApplicationProfile.backup",
+      "mackup.application.ApplicationProfile.getFilepaths",
+      "mackup.application.ApplicationProfile.restore",
+      "mackup.application.ApplicationProfile.uninstall",
+      "mackup.application.ApplicationProfile",
+      "mackup.application.ApplicationProfile.__init__",
+      "mackup.appsdb.ApplicationsDatabase.get_app_names",
+      "mackup.appsdb.ApplicationsDatabase.get_config_files",
+      "mackup.appsdb.ApplicationsDatabase.get_files",
+      "mackup.appsdb.ApplicationsDatabase.get_name",
+      "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names",
+      "mackup.appsdb.ApplicationsDatabase",
+      "mackup.appsdb.ApplicationsDatabase.__init__",
+      "mackup.config.Config._parse_apps_to_ignore",
+      "mackup.config.Config._parse_apps_to_sync",
+      "mackup.config.ConfigError",
+      "mackup.config.Config._parse_directory",
+      "mackup.config.Config._parse_engine",
+      "mackup.config.Config._parse_path",
+      "mackup.config.Config._setup_parser",
+      "mackup.config.Config._warn_on_old_config",
+      "mackup.config.Config.apps_to_ignore",
+      "mackup.config.Config.apps_to_sync",
+      "mackup.config.Config.directory",
+      "mackup.config.Config.engine",
+      "mackup.config.Config.fullpath",
+      "mackup.config.Config.path",
+      "mackup.config.Config",
+      "mackup.config.Config.__init__",
+      "mackup.mackup.Mackup.check_for_usable_backup_env",
+      "mackup.mackup.Mackup.check_for_usable_environment",
+      "mackup.mackup.Mackup.check_for_usable_restore_env",
+      "mackup.mackup.Mackup.clean_temp_folder",
+      "mackup.mackup.Mackup.create_mackup_home",
+      "mackup.mackup.Mackup.get_apps_to_backup",
+      "mackup.mackup.Mackup",
+      "mackup.mackup.Mackup.__init__",
+      "mackup.main.ColorFormatCodes",
+      "mackup.main.bold",
+      "mackup.main.header",
+      "mackup.main.main",
+      "mackup.utils.can_file_be_synced_on_current_platform",
+      "mackup.utils.confirm",
+      "mackup.utils.remove_immutable_attribute",
+      "mackup.utils.chmod",
+      "mackup.utils.copy",
+      "mackup.utils.remove_acl",
+      "mackup.utils.delete",
+      "mackup.utils.error",
+      "mackup.utils.get_copy_folder_location",
+      "mackup.utils.get_dropbox_folder_location",
+      "mackup.utils.get_google_drive_folder_location",
+      "mackup.utils.get_icloud_folder_location",
+      "mackup.utils.is_process_running",
+      "mackup.utils.link"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 125,
+    "Write": 77,
+    "Verify": 71,
+    "Finish": 51
+  },
+  "action_time_totals_seconds": {
+    "Read": 826.951,
+    "Write": 1492.829,
+    "Verify": 516.007
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 750106,
+      "output_tokens": 22055
+    },
+    "Write": {
+      "input_tokens": 515271,
+      "output_tokens": 41654
+    },
+    "Verify": {
+      "input_tokens": 486355,
+      "output_tokens": 13977
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 262,
+    "total_memory_hits": 0
+  },
+  "per_component_stats": {
+    "mackup.application.ApplicationProfile.backup": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.683560471996316,
+      "Write_time": 18.468353247997584,
+      "Verify_time": 12.690964366003755,
+      "total_time_seconds": 44.901,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "mackup.application.ApplicationProfile.getFilepaths": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.15917838599853,
+      "Write_time": 17.397597169998335,
+      "Verify_time": 8.407395285998064,
+      "total_time_seconds": 36.843,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.application.ApplicationProfile.restore": {
+      "Read_calls": 7,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 32.03411529199366,
+      "Write_time": 13.845294869999634,
+      "Verify_time": 9.955118788995605,
+      "total_time_seconds": 86.26,
+      "graph_searches": 10,
+      "memory_hits": 0
+    },
+    "mackup.application.ApplicationProfile.uninstall": {
+      "Read_calls": 3,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 16.959801281998807,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 26.886,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "mackup.application.ApplicationProfile": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.519231881997257,
+      "Write_time": 62.65502074899268,
+      "Verify_time": 12.514010454993695,
+      "total_time_seconds": 164.501,
+      "graph_searches": 6,
+      "memory_hits": 0
+    },
+    "mackup.application.ApplicationProfile.__init__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.869534374993236,
+      "Write_time": 15.374968216005072,
+      "Verify_time": 9.35701931299991,
+      "total_time_seconds": 47.319,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_app_names": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.55813836499874,
+      "Write_time": 9.666493747005006,
+      "Verify_time": 3.536076497999602,
+      "total_time_seconds": 33.129,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_config_files": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.261615224997513,
+      "Write_time": 17.160254941998573,
+      "Verify_time": 8.859004611003911,
+      "total_time_seconds": 44.362,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_files": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.686199545009003,
+      "Write_time": 9.913535220002814,
+      "Verify_time": 10.098994836997008,
+      "total_time_seconds": 40.092,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_name": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 13.407330283996998,
+      "Write_time": 11.23203139600082,
+      "Verify_time": 0.0,
+      "total_time_seconds": 58.356,
+      "graph_searches": 5,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.65723282199906,
+      "Write_time": 15.92329838599835,
+      "Verify_time": 10.015139262999583,
+      "total_time_seconds": 39.751,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.appsdb.ApplicationsDatabase": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.025123045998043,
+      "Write_time": 25.756336635997286,
+      "Verify_time": 9.433547321001242,
+      "total_time_seconds": 76.489,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.appsdb.ApplicationsDatabase.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.028665421996266,
+      "Write_time": 14.311470606997318,
+      "Verify_time": 8.078711997994105,
+      "total_time_seconds": 30.425,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._parse_apps_to_ignore": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.06928048399277,
+      "Write_time": 13.25343863099988,
+      "Verify_time": 9.090617690002546,
+      "total_time_seconds": 46.801,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._parse_apps_to_sync": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.355410459000268,
+      "Write_time": 13.698548159998609,
+      "Verify_time": 9.953489326995623,
+      "total_time_seconds": 44.778,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.config.ConfigError": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.009805007997784,
+      "Write_time": 15.132726971998636,
+      "Verify_time": 8.546565539996664,
+      "total_time_seconds": 32.993,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._parse_directory": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.216511867001827,
+      "Write_time": 13.127568310999777,
+      "Verify_time": 8.790427777996229,
+      "total_time_seconds": 54.444,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._parse_engine": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 25.223725520998414,
+      "Write_time": 14.785113887999614,
+      "Verify_time": 11.768375809006102,
+      "total_time_seconds": 72.319,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._parse_path": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 20.00327603900223,
+      "Write_time": 13.050823181998567,
+      "Verify_time": 8.269956513999205,
+      "total_time_seconds": 62.136,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._setup_parser": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.829147609998472,
+      "Write_time": 31.21116471899586,
+      "Verify_time": 18.265639907993318,
+      "total_time_seconds": 78.714,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.config.Config._warn_on_old_config": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.718176329995913,
+      "Write_time": 14.403865870997834,
+      "Verify_time": 8.823419598003966,
+      "total_time_seconds": 34.336,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.config.Config.apps_to_ignore": {
+      "Read_calls": 2,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 10.976553981003235,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 24.203,
+      "graph_searches": 2,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "mackup.config.Config.apps_to_sync": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.0851872470011585,
+      "Write_time": 13.241734105002251,
+      "Verify_time": 8.425030395002977,
+      "total_time_seconds": 29.265,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "mackup.config.Config.directory": {
+      "Read_calls": 6,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 30.983697181000025,
+      "Write_time": 10.88180311799806,
+      "Verify_time": 11.971125282994763,
+      "total_time_seconds": 56.692,
+      "graph_searches": 6,
+      "memory_hits": 0
+    },
+    "mackup.config.Config.engine": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 25.396249286008242,
+      "Write_time": 10.761321721998684,
+      "Verify_time": 7.899501507003151,
+      "total_time_seconds": 47.093,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.config.Config.fullpath": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 23.226840939001704,
+      "Verify_time": 4.444003668002551,
+      "total_time_seconds": 45.637,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.config.Config.path": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 23.747524835009244,
+      "Write_time": 8.641721941996366,
+      "Verify_time": 3.0387895249950816,
+      "total_time_seconds": 52.34,
+      "graph_searches": 6,
+      "memory_hits": 0
+    },
+    "mackup.config.Config": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 7.34314457399887,
+      "Write_time": 87.24066664100246,
+      "Verify_time": 16.91590573999565,
+      "total_time_seconds": 111.501,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.config.Config.__init__": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 20.362666075008747,
+      "Write_time": 40.62961319700116,
+      "Verify_time": 5.739478654992126,
+      "total_time_seconds": 69.049,
+      "graph_searches": 8,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup.check_for_usable_backup_env": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.738864191000175,
+      "Write_time": 16.973097672998847,
+      "Verify_time": 2.9389562029973604,
+      "total_time_seconds": 48.277,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup.check_for_usable_environment": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 19.690290328006085,
+      "Write_time": 32.84731142999226,
+      "Verify_time": 17.583192161000625,
+      "total_time_seconds": 74.121,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup.check_for_usable_restore_env": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 29.142933083996468,
+      "Write_time": 13.36756010199315,
+      "Verify_time": 7.991099443999701,
+      "total_time_seconds": 65.164,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup.clean_temp_folder": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 23.8374385299976,
+      "Verify_time": 15.030515191006998,
+      "total_time_seconds": 50.268,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup.create_mackup_home": {
+      "Read_calls": 3,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 15.880790968003566,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 29.84,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "mackup.mackup.Mackup.get_apps_to_backup": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.80960757799039,
+      "Write_time": 14.957855569002277,
+      "Verify_time": 9.007741736000753,
+      "total_time_seconds": 47.399,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.550875672000984,
+      "Write_time": 21.233523089998926,
+      "Verify_time": 7.4613433749982505,
+      "total_time_seconds": 54.169,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "mackup.mackup.Mackup.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.585386375998496,
+      "Write_time": 14.992488644005789,
+      "Verify_time": 10.661143974000879,
+      "total_time_seconds": 44.55,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.main.ColorFormatCodes": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.088138038001489,
+      "Write_time": 14.663015785998141,
+      "Verify_time": 10.07579541499581,
+      "total_time_seconds": 55.283,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.main.bold": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.803202647002763,
+      "Write_time": 18.43503355100256,
+      "Verify_time": 15.200170320000325,
+      "total_time_seconds": 52.786,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.main.header": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.48134781599947,
+      "Write_time": 37.79432848099532,
+      "Verify_time": 20.289245967003808,
+      "total_time_seconds": 70.682,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.main.main": {
+      "Read_calls": 0,
+      "Write_calls": 4,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 129.26384550399234,
+      "Verify_time": 8.88509188900207,
+      "total_time_seconds": 152.178,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.can_file_be_synced_on_current_platform": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 12.576942896004766,
+      "Write_time": 51.79165723099868,
+      "Verify_time": 9.467543653001485,
+      "total_time_seconds": 76.216,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.confirm": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 20.409278838007594,
+      "Write_time": 25.086761047998152,
+      "Verify_time": 8.271576384002401,
+      "total_time_seconds": 56.546,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.remove_immutable_attribute": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.791308081999887,
+      "Write_time": 23.45120455000142,
+      "Verify_time": 7.938754131995665,
+      "total_time_seconds": 68.378,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.chmod": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.953753192006843,
+      "Write_time": 20.910736413999985,
+      "Verify_time": 11.727852268995775,
+      "total_time_seconds": 59.446,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.utils.copy": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 15.799153715997818,
+      "Write_time": 28.349299217996304,
+      "Verify_time": 8.709937020001234,
+      "total_time_seconds": 55.222,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "mackup.utils.remove_acl": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.312006362997636,
+      "Write_time": 47.58298570900661,
+      "Verify_time": 18.03275644799578,
+      "total_time_seconds": 98.418,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.delete": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.85664085499593,
+      "Write_time": 19.202654558997892,
+      "Verify_time": 3.4634261180035537,
+      "total_time_seconds": 168.196,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.utils.error": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.3087358269986,
+      "Write_time": 16.30346375099907,
+      "Verify_time": 7.769164975004969,
+      "total_time_seconds": 36.326,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.get_copy_folder_location": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 9.738245047999953,
+      "Write_time": 70.0082146779896,
+      "Verify_time": 12.294638259998464,
+      "total_time_seconds": 94.909,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.get_dropbox_folder_location": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 19.718065427005058,
+      "Write_time": 33.76998939600162,
+      "Verify_time": 6.090763966996747,
+      "total_time_seconds": 63.528,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "mackup.utils.get_google_drive_folder_location": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 45.19292757400399,
+      "Verify_time": 12.226531508000335,
+      "total_time_seconds": 77.777,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.get_icloud_folder_location": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.719635299996298,
+      "Write_time": 17.3102829940035,
+      "Verify_time": 9.853153670999745,
+      "total_time_seconds": 101.323,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "mackup.utils.is_process_running": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.120967896000366,
+      "Write_time": 22.72348784800124,
+      "Verify_time": 9.887841567993746,
+      "total_time_seconds": 47.401,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup.utils.link": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 26.120799985001213,
+      "Verify_time": 9.629321075997723,
+      "total_time_seconds": 68.5,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "mackup": {
+      "Read_calls": 5,
+      "Write_calls": 3,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 21.91501598600007,
+      "Write_time": 96.03957924200222,
+      "Verify_time": 7.1784282449953025,
+      "total_time_seconds": 125.14,
+      "graph_searches": 60,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    }
+  },
+  "per_component_verify_scores": {
+    "mackup.application.ApplicationProfile.backup": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.application.ApplicationProfile.getFilepaths": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.application.ApplicationProfile.restore": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.application.ApplicationProfile": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9167
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.application.ApplicationProfile.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.appsdb.ApplicationsDatabase.get_app_names": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.appsdb.ApplicationsDatabase.get_config_files": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.appsdb.ApplicationsDatabase.get_files": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.appsdb.ApplicationsDatabase": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.appsdb.ApplicationsDatabase.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._parse_apps_to_ignore": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._parse_apps_to_sync": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.ConfigError": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9667,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._parse_directory": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._parse_engine": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._parse_path": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._setup_parser": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config._warn_on_old_config": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config.apps_to_sync": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config.directory": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config.engine": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config.fullpath": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config.path": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.config.Config": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8542,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.875
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8958,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.875
+      },
+      {
+        "attempt": 3,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 0.75
+      }
+    ],
+    "mackup.config.Config.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup.check_for_usable_backup_env": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup.check_for_usable_environment": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.75,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup.check_for_usable_restore_env": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup.clean_temp_folder": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup.get_apps_to_backup": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.mackup.Mackup.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.main.ColorFormatCodes": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.main.bold": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.main.header": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.825,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.65,
+        "weighted_avg": 0.65,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.main.main": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8917,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.can_file_be_synced_on_current_platform": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.6833,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.6,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.6833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.confirm": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.remove_immutable_attribute": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.chmod": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.copy": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.remove_acl": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.delete": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.error": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.get_copy_folder_location": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.get_dropbox_folder_location": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.get_google_drive_folder_location": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.get_icloud_folder_location": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.is_process_running": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup.utils.link": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "mackup": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7778,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.7222
+      },
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7917,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.75
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8869,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.8571
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "mackup.application.ApplicationProfile.backup": {
+      "requests": 4,
+      "input_tokens": 22258,
+      "output_tokens": 1252,
+      "cost": 0.0
+    },
+    "mackup.application.ApplicationProfile.getFilepaths": {
+      "requests": 4,
+      "input_tokens": 18333,
+      "output_tokens": 1035,
+      "cost": 0.0
+    },
+    "mackup.application.ApplicationProfile.restore": {
+      "requests": 10,
+      "input_tokens": 76700,
+      "output_tokens": 2405,
+      "cost": 0.0
+    },
+    "mackup.application.ApplicationProfile.uninstall": {
+      "requests": 10,
+      "input_tokens": 60390,
+      "output_tokens": 724,
+      "cost": 0.0
+    },
+    "mackup.application.ApplicationProfile": {
+      "requests": 9,
+      "input_tokens": 80745,
+      "output_tokens": 4377,
+      "cost": 0.0
+    },
+    "mackup.application.ApplicationProfile.__init__": {
+      "requests": 6,
+      "input_tokens": 34746,
+      "output_tokens": 1287,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_app_names": {
+      "requests": 6,
+      "input_tokens": 30909,
+      "output_tokens": 912,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_config_files": {
+      "requests": 4,
+      "input_tokens": 19818,
+      "output_tokens": 1230,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_files": {
+      "requests": 6,
+      "input_tokens": 30721,
+      "output_tokens": 1074,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_name": {
+      "requests": 10,
+      "input_tokens": 56655,
+      "output_tokens": 1621,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names": {
+      "requests": 5,
+      "input_tokens": 27589,
+      "output_tokens": 1091,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase": {
+      "requests": 4,
+      "input_tokens": 23460,
+      "output_tokens": 2097,
+      "cost": 0.0
+    },
+    "mackup.appsdb.ApplicationsDatabase.__init__": {
+      "requests": 4,
+      "input_tokens": 22904,
+      "output_tokens": 831,
+      "cost": 0.0
+    },
+    "mackup.config.Config._parse_apps_to_ignore": {
+      "requests": 6,
+      "input_tokens": 34142,
+      "output_tokens": 1278,
+      "cost": 0.0
+    },
+    "mackup.config.Config._parse_apps_to_sync": {
+      "requests": 5,
+      "input_tokens": 27834,
+      "output_tokens": 1236,
+      "cost": 0.0
+    },
+    "mackup.config.ConfigError": {
+      "requests": 4,
+      "input_tokens": 18387,
+      "output_tokens": 922,
+      "cost": 0.0
+    },
+    "mackup.config.Config._parse_directory": {
+      "requests": 5,
+      "input_tokens": 24152,
+      "output_tokens": 1497,
+      "cost": 0.0
+    },
+    "mackup.config.Config._parse_engine": {
+      "requests": 6,
+      "input_tokens": 34995,
+      "output_tokens": 1959,
+      "cost": 0.0
+    },
+    "mackup.config.Config._parse_path": {
+      "requests": 6,
+      "input_tokens": 33820,
+      "output_tokens": 1690,
+      "cost": 0.0
+    },
+    "mackup.config.Config._setup_parser": {
+      "requests": 6,
+      "input_tokens": 31505,
+      "output_tokens": 2181,
+      "cost": 0.0
+    },
+    "mackup.config.Config._warn_on_old_config": {
+      "requests": 4,
+      "input_tokens": 22650,
+      "output_tokens": 939,
+      "cost": 0.0
+    },
+    "mackup.config.Config.apps_to_ignore": {
+      "requests": 10,
+      "input_tokens": 55755,
+      "output_tokens": 640,
+      "cost": 0.0
+    },
+    "mackup.config.Config.apps_to_sync": {
+      "requests": 4,
+      "input_tokens": 21029,
+      "output_tokens": 809,
+      "cost": 0.0
+    },
+    "mackup.config.Config.directory": {
+      "requests": 9,
+      "input_tokens": 56466,
+      "output_tokens": 1580,
+      "cost": 0.0
+    },
+    "mackup.config.Config.engine": {
+      "requests": 7,
+      "input_tokens": 39548,
+      "output_tokens": 1305,
+      "cost": 0.0
+    },
+    "mackup.config.Config.fullpath": {
+      "requests": 8,
+      "input_tokens": 39612,
+      "output_tokens": 1272,
+      "cost": 0.0
+    },
+    "mackup.config.Config.path": {
+      "requests": 8,
+      "input_tokens": 51729,
+      "output_tokens": 1439,
+      "cost": 0.0
+    },
+    "mackup.config.Config": {
+      "requests": 7,
+      "input_tokens": 53107,
+      "output_tokens": 3046,
+      "cost": 0.0
+    },
+    "mackup.config.Config.__init__": {
+      "requests": 9,
+      "input_tokens": 61590,
+      "output_tokens": 1942,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.check_for_usable_backup_env": {
+      "requests": 5,
+      "input_tokens": 25851,
+      "output_tokens": 1307,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.check_for_usable_environment": {
+      "requests": 7,
+      "input_tokens": 42753,
+      "output_tokens": 2059,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.check_for_usable_restore_env": {
+      "requests": 7,
+      "input_tokens": 38923,
+      "output_tokens": 1818,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.clean_temp_folder": {
+      "requests": 6,
+      "input_tokens": 28865,
+      "output_tokens": 1381,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.create_mackup_home": {
+      "requests": 10,
+      "input_tokens": 59611,
+      "output_tokens": 764,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.get_apps_to_backup": {
+      "requests": 6,
+      "input_tokens": 33953,
+      "output_tokens": 1293,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup": {
+      "requests": 5,
+      "input_tokens": 34845,
+      "output_tokens": 1487,
+      "cost": 0.0
+    },
+    "mackup.mackup.Mackup.__init__": {
+      "requests": 5,
+      "input_tokens": 28949,
+      "output_tokens": 1214,
+      "cost": 0.0
+    },
+    "mackup.main.ColorFormatCodes": {
+      "requests": 4,
+      "input_tokens": 18435,
+      "output_tokens": 1528,
+      "cost": 0.0
+    },
+    "mackup.main.bold": {
+      "requests": 5,
+      "input_tokens": 23860,
+      "output_tokens": 1450,
+      "cost": 0.0
+    },
+    "mackup.main.header": {
+      "requests": 6,
+      "input_tokens": 31119,
+      "output_tokens": 1941,
+      "cost": 0.0
+    },
+    "mackup.main.main": {
+      "requests": 9,
+      "input_tokens": 73051,
+      "output_tokens": 4261,
+      "cost": 0.0
+    },
+    "mackup.utils.can_file_be_synced_on_current_platform": {
+      "requests": 9,
+      "input_tokens": 49380,
+      "output_tokens": 2107,
+      "cost": 0.0
+    },
+    "mackup.utils.confirm": {
+      "requests": 6,
+      "input_tokens": 29820,
+      "output_tokens": 1522,
+      "cost": 0.0
+    },
+    "mackup.utils.remove_immutable_attribute": {
+      "requests": 5,
+      "input_tokens": 24809,
+      "output_tokens": 1865,
+      "cost": 0.0
+    },
+    "mackup.utils.chmod": {
+      "requests": 5,
+      "input_tokens": 26096,
+      "output_tokens": 1641,
+      "cost": 0.0
+    },
+    "mackup.utils.copy": {
+      "requests": 5,
+      "input_tokens": 25794,
+      "output_tokens": 1518,
+      "cost": 0.0
+    },
+    "mackup.utils.remove_acl": {
+      "requests": 7,
+      "input_tokens": 37674,
+      "output_tokens": 2719,
+      "cost": 0.0
+    },
+    "mackup.utils.delete": {
+      "requests": 5,
+      "input_tokens": 24379,
+      "output_tokens": 4705,
+      "cost": 0.0
+    },
+    "mackup.utils.error": {
+      "requests": 4,
+      "input_tokens": 18728,
+      "output_tokens": 1023,
+      "cost": 0.0
+    },
+    "mackup.utils.get_copy_folder_location": {
+      "requests": 7,
+      "input_tokens": 41419,
+      "output_tokens": 2658,
+      "cost": 0.0
+    },
+    "mackup.utils.get_dropbox_folder_location": {
+      "requests": 8,
+      "input_tokens": 42772,
+      "output_tokens": 1767,
+      "cost": 0.0
+    },
+    "mackup.utils.get_google_drive_folder_location": {
+      "requests": 7,
+      "input_tokens": 40355,
+      "output_tokens": 2153,
+      "cost": 0.0
+    },
+    "mackup.utils.get_icloud_folder_location": {
+      "requests": 5,
+      "input_tokens": 24325,
+      "output_tokens": 2640,
+      "cost": 0.0
+    },
+    "mackup.utils.is_process_running": {
+      "requests": 4,
+      "input_tokens": 19284,
+      "output_tokens": 1205,
+      "cost": 0.0
+    },
+    "mackup.utils.link": {
+      "requests": 4,
+      "input_tokens": 19628,
+      "output_tokens": 1787,
+      "cost": 0.0
+    },
+    "mackup": {
+      "requests": 10,
+      "input_tokens": 153568,
+      "output_tokens": 3487,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 44,
+    "total_fetched_component_types": 55,
+    "redundant_fetch_count": 102,
+    "duplicates": {
+      "mackup.config.Config": {
+        "accessed_by": [
+          "mackup.config.Config._parse_apps_to_ignore",
+          "mackup.config.Config._parse_apps_to_sync",
+          "mackup.config.Config._parse_engine",
+          "mackup.config.Config._warn_on_old_config",
+          "mackup.config.Config.apps_to_ignore",
+          "mackup.config.Config.apps_to_sync",
+          "mackup.config.Config.directory",
+          "mackup.config.Config.engine",
+          "mackup.config.Config.path",
+          "mackup.config.Config.__init__",
+          "mackup.mackup.Mackup.create_mackup_home",
+          "mackup.mackup.Mackup",
+          "mackup.mackup.Mackup.__init__",
+          "mackup"
+        ],
+        "access_count": 14
+      },
+      "mackup.mackup.Mackup": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile",
+          "mackup.application.ApplicationProfile.__init__",
+          "mackup.mackup.Mackup.check_for_usable_backup_env",
+          "mackup.mackup.Mackup.check_for_usable_environment",
+          "mackup.mackup.Mackup.check_for_usable_restore_env",
+          "mackup.mackup.Mackup.create_mackup_home",
+          "mackup.mackup.Mackup.get_apps_to_backup",
+          "mackup.mackup.Mackup.__init__",
+          "mackup"
+        ],
+        "access_count": 10
+      },
+      "mackup.appsdb.ApplicationsDatabase": {
+        "accessed_by": [
+          "mackup.appsdb.ApplicationsDatabase.get_app_names",
+          "mackup.appsdb.ApplicationsDatabase.get_files",
+          "mackup.appsdb.ApplicationsDatabase.get_name",
+          "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names",
+          "mackup.appsdb.ApplicationsDatabase.__init__",
+          "mackup.mackup.Mackup.get_apps_to_backup",
+          "mackup.mackup.Mackup",
+          "mackup"
+        ],
+        "access_count": 8
+      },
+      "mackup.utils.error": {
+        "accessed_by": [
+          "mackup.config.Config._warn_on_old_config",
+          "mackup.mackup.Mackup.check_for_usable_backup_env",
+          "mackup.mackup.Mackup.check_for_usable_environment",
+          "mackup.mackup.Mackup.create_mackup_home",
+          "mackup.mackup.Mackup",
+          "mackup.utils.get_dropbox_folder_location",
+          "mackup.utils.get_icloud_folder_location",
+          "mackup"
+        ],
+        "access_count": 8
+      },
+      "mackup.utils.confirm": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile",
+          "mackup.mackup.Mackup.check_for_usable_backup_env",
+          "mackup.mackup.Mackup.check_for_usable_restore_env",
+          "mackup.mackup.Mackup.create_mackup_home",
+          "mackup.mackup.Mackup",
+          "mackup"
+        ],
+        "access_count": 7
+      },
+      "mackup.application.ApplicationProfile.getFilepaths": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.backup",
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile.uninstall",
+          "mackup"
+        ],
+        "access_count": 4
+      },
+      "mackup.utils.delete": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile.uninstall",
+          "mackup.application.ApplicationProfile",
+          "mackup"
+        ],
+        "access_count": 4
+      },
+      "mackup.application.ApplicationProfile": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile.uninstall",
+          "mackup.application.ApplicationProfile.__init__",
+          "mackup"
+        ],
+        "access_count": 4
+      },
+      "mackup.appsdb.ApplicationsDatabase.get_app_names": {
+        "accessed_by": [
+          "mackup.appsdb.ApplicationsDatabase.get_app_names",
+          "mackup.appsdb.ApplicationsDatabase.get_name",
+          "mackup.mackup.Mackup.get_apps_to_backup",
+          "mackup"
+        ],
+        "access_count": 4
+      },
+      "mackup.utils.can_file_be_synced_on_current_platform": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.utils.link": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup.application.ApplicationProfile",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.utils.copy": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.uninstall",
+          "mackup.application.ApplicationProfile",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names": {
+        "accessed_by": [
+          "mackup.appsdb.ApplicationsDatabase.get_app_names",
+          "mackup.appsdb.ApplicationsDatabase.get_name",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.appsdb.ApplicationsDatabase.get_files": {
+        "accessed_by": [
+          "mackup.appsdb.ApplicationsDatabase.get_files",
+          "mackup.appsdb.ApplicationsDatabase.get_name",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.config.Config._parse_apps_to_sync": {
+        "accessed_by": [
+          "mackup.config.Config._parse_apps_to_ignore",
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.config.Config._parse_engine": {
+        "accessed_by": [
+          "mackup.config.Config._parse_engine",
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.config.Config.fullpath": {
+        "accessed_by": [
+          "mackup.config.Config.directory",
+          "mackup.config.Config.path",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.config.Config._parse_directory": {
+        "accessed_by": [
+          "mackup.config.Config.directory",
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.config.Config._parse_path": {
+        "accessed_by": [
+          "mackup.config.Config.path",
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.mackup.Mackup.check_for_usable_environment": {
+        "accessed_by": [
+          "mackup.mackup.Mackup.check_for_usable_backup_env",
+          "mackup.mackup.Mackup.check_for_usable_restore_env",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.utils.remove_immutable_attribute": {
+        "accessed_by": [
+          "mackup.utils.chmod",
+          "mackup.utils.delete",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.utils.chmod": {
+        "accessed_by": [
+          "mackup.utils.chmod",
+          "mackup.utils.copy",
+          "mackup"
+        ],
+        "access_count": 3
+      },
+      "mackup.application.ApplicationProfile.restore": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.restore",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.application.ApplicationProfile.__init__": {
+        "accessed_by": [
+          "mackup.application.ApplicationProfile.__init__",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.appsdb.ApplicationsDatabase.get_name": {
+        "accessed_by": [
+          "mackup.appsdb.ApplicationsDatabase.get_name",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.appsdb.ApplicationsDatabase.get_config_files": {
+        "accessed_by": [
+          "mackup.appsdb.ApplicationsDatabase.__init__",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config.apps_to_sync": {
+        "accessed_by": [
+          "mackup.config.Config._parse_apps_to_sync",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.utils.get_dropbox_folder_location": {
+        "accessed_by": [
+          "mackup.config.Config._parse_path",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.utils.get_google_drive_folder_location": {
+        "accessed_by": [
+          "mackup.config.Config._parse_path",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.utils.get_copy_folder_location": {
+        "accessed_by": [
+          "mackup.config.Config._parse_path",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.utils.get_icloud_folder_location": {
+        "accessed_by": [
+          "mackup.config.Config._parse_path",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.ConfigError": {
+        "accessed_by": [
+          "mackup.config.Config._parse_path",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config.apps_to_ignore": {
+        "accessed_by": [
+          "mackup.config.Config.apps_to_ignore",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config.directory": {
+        "accessed_by": [
+          "mackup.config.Config.directory",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config.__init__": {
+        "accessed_by": [
+          "mackup.config.Config.directory",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config.engine": {
+        "accessed_by": [
+          "mackup.config.Config.engine",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config.path": {
+        "accessed_by": [
+          "mackup.config.Config.path",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config._setup_parser": {
+        "accessed_by": [
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config._warn_on_old_config": {
+        "accessed_by": [
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.config.Config._parse_apps_to_ignore": {
+        "accessed_by": [
+          "mackup.config.Config.__init__",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.mackup.Mackup.create_mackup_home": {
+        "accessed_by": [
+          "mackup.mackup.Mackup.check_for_usable_backup_env",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.mackup.Mackup.check_for_usable_restore_env": {
+        "accessed_by": [
+          "mackup.mackup.Mackup.check_for_usable_restore_env",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.mackup.Mackup.__init__": {
+        "accessed_by": [
+          "mackup.mackup.Mackup.get_apps_to_backup",
+          "mackup"
+        ],
+        "access_count": 2
+      },
+      "mackup.utils.remove_acl": {
+        "accessed_by": [
+          "mackup.utils.delete",
+          "mackup"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 362,
+      "total_input_tokens": 2316207,
+      "total_output_tokens": 99585,
+      "total_cost_usd": 0.0
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 63.101,
+    "avg_turns_per_component": 5.79,
+    "memory_hit_rate": 0.0,
+    "total_tokens": 2226766,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 39763.7
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 55,
+      "total_time_seconds": 3408.518,
+      "avg_time_seconds": 61.973,
+      "total_turns": 342,
+      "avg_turns": 6.22,
+      "action_counts": {
+        "Read": 113,
+        "Write": 72,
+        "Verify": 68,
+        "Finish": 50,
+        "Unknown": 39
+      }
+    },
+    "MODULE": {
+      "count": 1,
+      "total_time_seconds": 125.14,
+      "avg_time_seconds": 125.14,
+      "total_turns": 10,
+      "avg_turns": 10.0,
+      "action_counts": {
+        "Read": 7,
+        "Write": 2,
+        "Verify": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 125.14,
+      "avg_time_seconds": 125.14,
+      "total_turns": 10,
+      "avg_turns": 10.0,
+      "action_counts": {
+        "Read": 5,
+        "Write": 3,
+        "Verify": 2
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "mackup.application.ApplicationProfile": {
+      "total_candidate_pairs": 46,
+      "entailment_count": 13,
+      "contradiction_count": 1,
+      "neutral_count": 32,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.application.ApplicationProfile.backup",
+        "mackup.application.ApplicationProfile.restore"
+      ]
+    },
+    "mackup.appsdb.ApplicationsDatabase": {
+      "total_candidate_pairs": 21,
+      "entailment_count": 1,
+      "contradiction_count": 0,
+      "neutral_count": 20,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.appsdb.ApplicationsDatabase.get_config_files",
+        "mackup.appsdb.ApplicationsDatabase.get_name",
+        "mackup.appsdb.ApplicationsDatabase.get_pretty_app_names"
+      ]
+    },
+    "mackup.config.Config._parse_directory": {
+      "total_candidate_pairs": 14,
+      "entailment_count": 0,
+      "contradiction_count": 1,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.config.ConfigError"
+      ]
+    },
+    "mackup.config.Config._parse_engine": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 1,
+      "contradiction_count": 2,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.config.ConfigError"
+      ]
+    },
+    "mackup.config.Config": {
+      "total_candidate_pairs": 43,
+      "entailment_count": 13,
+      "contradiction_count": 7,
+      "neutral_count": 23,
+      "conflict_score": 0.25,
+      "dep_ids_checked": [
+        "mackup.config.Config._parse_apps_to_ignore",
+        "mackup.config.Config._parse_apps_to_sync",
+        "mackup.config.Config._parse_engine",
+        "mackup.config.Config._setup_parser",
+        "mackup.config.Config._warn_on_old_config",
+        "mackup.config.Config.apps_to_sync",
+        "mackup.config.Config.directory",
+        "mackup.config.Config.engine",
+        "mackup.config.Config.path"
+      ]
+    },
+    "mackup.mackup.Mackup": {
+      "total_candidate_pairs": 56,
+      "entailment_count": 2,
+      "contradiction_count": 3,
+      "neutral_count": 51,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.mackup.Mackup.check_for_usable_backup_env",
+        "mackup.mackup.Mackup.check_for_usable_restore_env",
+        "mackup.mackup.Mackup.clean_temp_folder",
+        "mackup.mackup.Mackup.get_apps_to_backup"
+      ]
+    },
+    "mackup.main.bold": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.main.ColorFormatCodes"
+      ]
+    },
+    "mackup.main.header": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.main.ColorFormatCodes"
+      ]
+    },
+    "mackup.main.main": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.main.bold",
+        "mackup.main.header"
+      ]
+    },
+    "mackup.utils.get_copy_folder_location": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "mackup.utils.error"
+      ]
+    },
+    "mackup": {
+      "total_candidate_pairs": 36,
+      "entailment_count": 10,
+      "contradiction_count": 0,
+      "neutral_count": 26,
+      "conflict_score": 0.1429,
+      "dep_ids_checked": [
+        "mackup"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 71,
+    "first_pass_success": 39,
+    "required_revision": 15,
+    "score_parse_failures": 0,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9298,
+      "COMPLETENESS": 0.9038,
+      "HELPFULNESS": 0.9019
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.1033,
+      "COMPLETENESS": 0.1233,
+      "HELPFULNESS": 0.1
+    }
+  },
+  "retry_runs": [
+    {
+      "retry_run_id": "20260420_061123",
+      "empty_before": 44,
+      "redone": 44,
+      "failed": [],
+      "empty_after": 44,
+      "elapsed_seconds": 58.812,
+      "targets": [
+        "mackup.application.ApplicationProfile.backup",
+        "mackup.application.ApplicationProfile.getFilepaths",
+        "mackup.application.ApplicationProfile.restore",
+        "mackup.application.ApplicationProfile.uninstall",
+        "mackup.application.ApplicationProfile",
+        "mackup.appsdb.ApplicationsDatabase.get_app_names",
+        "mackup.appsdb.ApplicationsDatabase.get_config_files",
+        "mackup.appsdb.ApplicationsDatabase.get_files",
+        "mackup.appsdb.ApplicationsDatabase",
+        "mackup.config.Config._parse_apps_to_ignore",
+        "mackup.config.Config._parse_apps_to_sync",
+        "mackup.config.ConfigError",
+        "mackup.config.Config._parse_directory",
+        "mackup.config.Config._parse_engine",
+        "mackup.config.Config._parse_path",
+        "mackup.config.Config._setup_parser",
+        "mackup.config.Config._warn_on_old_config",
+        "mackup.config.Config.apps_to_ignore",
+        "mackup.config.Config.fullpath",
+        "mackup.config.Config",
+        "mackup.mackup.Mackup.check_for_usable_backup_env",
+        "mackup.mackup.Mackup.check_for_usable_environment",
+        "mackup.mackup.Mackup.check_for_usable_restore_env",
+        "mackup.mackup.Mackup.create_mackup_home",
+        "mackup.mackup.Mackup.get_apps_to_backup",
+        "mackup.mackup.Mackup",
+        "mackup.main.ColorFormatCodes",
+        "mackup.main.bold",
+        "mackup.main.header",
+        "mackup.main.main",
+        "mackup.utils.can_file_be_synced_on_current_platform",
+        "mackup.utils.confirm",
+        "mackup.utils.remove_immutable_attribute",
+        "mackup.utils.chmod",
+        "mackup.utils.copy",
+        "mackup.utils.remove_acl",
+        "mackup.utils.delete",
+        "mackup.utils.error",
+        "mackup.utils.get_copy_folder_location",
+        "mackup.utils.get_dropbox_folder_location",
+        "mackup.utils.get_google_drive_folder_location",
+        "mackup.utils.get_icloud_folder_location",
+        "mackup.utils.is_process_running",
+        "mackup.utils.link"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2939 @@
+{
+  "run_id": "20260422_200020",
+  "label": "PySnooper",
+  "total_run_time_seconds": 5527.171,
+  "repo_summary": {
+    "file_count": 6,
+    "function_count": 17,
+    "class_count": 12,
+    "method_count": 37,
+    "total_components": 66,
+    "module_count": 2,
+    "repo_count": 1,
+    "topological_order_count": 66,
+    "topological_order": [
+      "misc.generate_authors.drop_recurrences",
+      "misc.generate_authors.iterate_authors_by_chronological_order",
+      "misc.generate_authors.print_authors",
+      "pysnooper.pycompat.ABC",
+      "pysnooper.pycompat.PathLike.__fspath__",
+      "pysnooper.pycompat.PathLike.__subclasshook__",
+      "pysnooper.pycompat.PathLike",
+      "pysnooper.pycompat.timedelta_format",
+      "pysnooper.pycompat.timedelta_parse",
+      "pysnooper.tracer.FileWriter.__init__",
+      "pysnooper.tracer.FileWriter.write",
+      "pysnooper.tracer.FileWriter",
+      "pysnooper.tracer.get_write_function",
+      "pysnooper.tracer.Tracer.__init__",
+      "pysnooper.utils.ensure_tuple",
+      "pysnooper.utils.get_repr_function",
+      "pysnooper.utils.normalize_repr",
+      "pysnooper.utils.truncate",
+      "pysnooper.utils.get_shortish_repr",
+      "pysnooper.utils.shitcode",
+      "pysnooper.variables.needs_parentheses",
+      "pysnooper.variables.BaseVariable.__init__",
+      "pysnooper.variables.Attrs._format_key",
+      "pysnooper.variables.Attrs._get_value",
+      "pysnooper.variables.Attrs._keys",
+      "pysnooper.variables.BaseVariable.__eq__",
+      "pysnooper.variables.BaseVariable.__hash__",
+      "pysnooper.variables.BaseVariable._fingerprint",
+      "pysnooper.variables.BaseVariable._items",
+      "pysnooper.variables.BaseVariable.items",
+      "pysnooper.variables.BaseVariable",
+      "pysnooper.variables.CommonVariable._format_key",
+      "pysnooper.variables.CommonVariable._get_value",
+      "pysnooper.variables.CommonVariable._items",
+      "pysnooper.variables.CommonVariable._keys",
+      "pysnooper.variables.CommonVariable._safe_keys",
+      "pysnooper.variables.CommonVariable",
+      "pysnooper.variables.Attrs",
+      "pysnooper.variables.Indices.__getitem__",
+      "pysnooper.variables.Indices._keys",
+      "pysnooper.variables.Keys._format_key",
+      "pysnooper.variables.Keys._get_value",
+      "pysnooper.variables.Keys._keys",
+      "pysnooper.variables.Keys",
+      "pysnooper.variables.Indices",
+      "pysnooper.variables.Exploding._items",
+      "pysnooper.variables.Exploding",
+      "setup.read_file",
+      "pysnooper.tracer.Tracer.__call__",
+      "pysnooper.tracer.Tracer.__enter__",
+      "pysnooper.tracer.Tracer.__exit__",
+      "pysnooper.tracer.Tracer._is_internal_frame",
+      "pysnooper.tracer.Tracer._wrap_class",
+      "pysnooper.tracer.Tracer._wrap_function",
+      "pysnooper.tracer.Tracer.set_thread_info_padding",
+      "pysnooper.tracer.get_local_reprs",
+      "pysnooper.tracer.UnavailableSource.__getitem__",
+      "pysnooper.tracer.UnavailableSource",
+      "pysnooper.tracer.get_path_and_source_from_frame",
+      "pysnooper.tracer.Tracer.trace",
+      "pysnooper.tracer.Tracer.write",
+      "pysnooper.tracer.Tracer",
+      "pysnooper.utils._check_methods",
+      "pysnooper.utils.WritableStream.__subclasshook__",
+      "pysnooper.utils.WritableStream.write",
+      "pysnooper.utils.WritableStream"
+    ]
+  },
+  "dependency_analysis_time_seconds": 0.0,
+  "action_call_totals": {
+    "Read": 76,
+    "Write": 90,
+    "Verify": 79,
+    "Finish": 65
+  },
+  "action_time_totals_seconds": {
+    "Read": 727.874,
+    "Write": 3010.65,
+    "Verify": 1374.829
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 333902,
+      "output_tokens": 47894
+    },
+    "Write": {
+      "input_tokens": 550691,
+      "output_tokens": 214972
+    },
+    "Verify": {
+      "input_tokens": 585697,
+      "output_tokens": 91057
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 32,
+    "total_memory_hits": 155
+  },
+  "per_component_stats": {
+    "misc.generate_authors.drop_recurrences": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.655458180990536,
+      "Write_time": 13.583100396965165,
+      "Verify_time": 13.694037643959746,
+      "total_time_seconds": 33.939,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "misc.generate_authors.iterate_authors_by_chronological_order": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.228479444980621,
+      "Write_time": 38.04693363897968,
+      "Verify_time": 21.30235736403847,
+      "total_time_seconds": 67.743,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "misc.generate_authors.print_authors": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.561941877997015,
+      "Write_time": 24.674465404998045,
+      "Verify_time": 12.944522979960311,
+      "total_time_seconds": 49.005,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "misc": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 8.352613232971635,
+      "Write_time": 22.38373053999385,
+      "Verify_time": 0.0,
+      "total_time_seconds": 32.949,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "pysnooper.pycompat.ABC": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 29.715596693044063,
+      "Verify_time": 11.549842169042677,
+      "total_time_seconds": 43.201,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.pycompat.PathLike.__fspath__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 4.098568140994757,
+      "Write_time": 17.172910296998452,
+      "Verify_time": 0.0,
+      "total_time_seconds": 24.352,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.pycompat.PathLike.__subclasshook__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.934178328025155,
+      "Write_time": 27.052370966994204,
+      "Verify_time": 17.786774047999643,
+      "total_time_seconds": 59.743,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.pycompat.PathLike": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.170305609004572,
+      "Write_time": 57.138072450994514,
+      "Verify_time": 32.04172923899023,
+      "total_time_seconds": 98.407,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.pycompat.timedelta_format": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 23.63391499099089,
+      "Write_time": 52.87317234202055,
+      "Verify_time": 28.763320380006917,
+      "total_time_seconds": 106.218,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.pycompat.timedelta_parse": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.918963275966235,
+      "Write_time": 35.85589995404007,
+      "Verify_time": 8.5204566239845,
+      "total_time_seconds": 68.362,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "pysnooper.tracer.FileWriter.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.4075013200053945,
+      "Write_time": 17.64552228600951,
+      "Verify_time": 24.120537614973728,
+      "total_time_seconds": 50.696,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.FileWriter.write": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.813916290993802,
+      "Write_time": 22.92380236199824,
+      "Verify_time": 15.106923656945582,
+      "total_time_seconds": 47.811,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.tracer.FileWriter": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 68.95842000393895,
+      "Verify_time": 47.76966895797523,
+      "total_time_seconds": 118.663,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.get_write_function": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 33.099209790932946,
+      "Write_time": 36.99462737102294,
+      "Verify_time": 0.0,
+      "total_time_seconds": 73.125,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "pysnooper.tracer.Tracer.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.9104239660082385,
+      "Write_time": 100.74564373103203,
+      "Verify_time": 46.68975167500321,
+      "total_time_seconds": 157.57,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.utils.ensure_tuple": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.75043876701966,
+      "Write_time": 68.44711664301576,
+      "Verify_time": 39.162993678008206,
+      "total_time_seconds": 124.172,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.utils.get_repr_function": {
+      "Read_calls": 0,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 144.87383933004458,
+      "Verify_time": 94.57277827197686,
+      "total_time_seconds": 243.111,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.utils.normalize_repr": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 49.542447311861906,
+      "Write_time": 34.61844953801483,
+      "Verify_time": 19.35437641700264,
+      "total_time_seconds": 106.697,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "pysnooper.utils.truncate": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 134.2826973059564,
+      "Verify_time": 33.34917087003123,
+      "total_time_seconds": 170.65,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.utils.get_shortish_repr": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.114540662965737,
+      "Write_time": 56.14548525301507,
+      "Verify_time": 26.61013077199459,
+      "total_time_seconds": 92.251,
+      "graph_searches": 0,
+      "memory_hits": 3
+    },
+    "pysnooper.utils.shitcode": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.38947327400092,
+      "Write_time": 49.266297922004014,
+      "Verify_time": 22.848609404987656,
+      "total_time_seconds": 85.467,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.variables.needs_parentheses": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 11.389877655019518,
+      "Write_time": 48.7094921930111,
+      "Verify_time": 36.969389882986434,
+      "total_time_seconds": 99.362,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.variables.BaseVariable.__init__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.905479622015264,
+      "Write_time": 57.84175427502487,
+      "Verify_time": 19.71469861100195,
+      "total_time_seconds": 95.676,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "pysnooper.variables.Attrs._format_key": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 47.14981703204103,
+      "Verify_time": 16.706160184985492,
+      "total_time_seconds": 67.725,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.variables.Attrs._get_value": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 20.182384378975257,
+      "Write_time": 42.311203443969134,
+      "Verify_time": 0.0,
+      "total_time_seconds": 68.488,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.Attrs._keys": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.238473687961232,
+      "Write_time": 72.74736445693998,
+      "Verify_time": 39.90748005599016,
+      "total_time_seconds": 130.918,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.BaseVariable.__eq__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.9612782440381125,
+      "Write_time": 31.64437207800802,
+      "Verify_time": 19.985668428009376,
+      "total_time_seconds": 60.773,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.BaseVariable.__hash__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.335328637971543,
+      "Write_time": 43.01203407498542,
+      "Verify_time": 24.07037318398943,
+      "total_time_seconds": 75.79,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.BaseVariable._fingerprint": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 25.520947106997482,
+      "Verify_time": 14.500747415993828,
+      "total_time_seconds": 42.756,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.variables.BaseVariable._items": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 70.37670533498749,
+      "Write_time": 56.83257936296286,
+      "Verify_time": 0.0,
+      "total_time_seconds": 132.258,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.BaseVariable.items": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 8.273317605955526,
+      "Write_time": 53.6769664559979,
+      "Verify_time": 29.804702369030565,
+      "total_time_seconds": 92.946,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "pysnooper.variables.BaseVariable": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.835583765001502,
+      "Write_time": 83.26032241195207,
+      "Verify_time": 19.954695965046994,
+      "total_time_seconds": 112.5,
+      "graph_searches": 0,
+      "memory_hits": 9
+    },
+    "pysnooper.variables.CommonVariable._format_key": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 13.11530494800536,
+      "Write_time": 23.892844453046564,
+      "Verify_time": 19.445410265005194,
+      "total_time_seconds": 58.245,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.CommonVariable._get_value": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.311540424008854,
+      "Write_time": 36.4383269569953,
+      "Verify_time": 0.0,
+      "total_time_seconds": 50.043,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.CommonVariable._items": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.094990357989445,
+      "Write_time": 58.30768850405002,
+      "Verify_time": 61.43021089595277,
+      "total_time_seconds": 133.188,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "pysnooper.variables.CommonVariable._keys": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 8.822047495981678,
+      "Write_time": 33.38709125597961,
+      "Verify_time": 0.0,
+      "total_time_seconds": 45.186,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.CommonVariable._safe_keys": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.370573271997273,
+      "Write_time": 28.71371626900509,
+      "Verify_time": 14.76370044896612,
+      "total_time_seconds": 57.056,
+      "graph_searches": 1,
+      "memory_hits": 2
+    },
+    "pysnooper.variables.CommonVariable": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 7.9491805150173604,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 63.094,
+      "graph_searches": 0,
+      "memory_hits": 2,
+      "Finish(exception)_calls": 1
+    },
+    "pysnooper.variables.Attrs": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 7.018219057004899,
+      "Write_time": 72.71152931009419,
+      "Verify_time": 20.71870021795621,
+      "total_time_seconds": 103.619,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "pysnooper.variables.Indices.__getitem__": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.258681948995218,
+      "Write_time": 50.728789465967566,
+      "Verify_time": 20.169497222988866,
+      "total_time_seconds": 84.318,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.variables.Indices._keys": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 5.907258236024063,
+      "Write_time": 45.65656789398054,
+      "Verify_time": 27.30927247501677,
+      "total_time_seconds": 82.044,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.Keys._format_key": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 12.188474124006461,
+      "Write_time": 46.9181364600081,
+      "Verify_time": 19.574186425015796,
+      "total_time_seconds": 81.956,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.Keys._get_value": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.69244880595943,
+      "Write_time": 23.94203701999504,
+      "Verify_time": 10.046475701965392,
+      "total_time_seconds": 45.523,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "pysnooper.variables.Keys._keys": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 5.324045797984581,
+      "Write_time": 14.666541062004399,
+      "Verify_time": 12.082799412019085,
+      "total_time_seconds": 34.204,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.Keys": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 21.11185976403067,
+      "Write_time": 84.69084446801571,
+      "Verify_time": 32.05960818292806,
+      "total_time_seconds": 140.671,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "pysnooper.variables.Indices": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 6.996145585027989,
+      "Write_time": 82.84302508598194,
+      "Verify_time": 35.36477837798884,
+      "total_time_seconds": 128.213,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.variables.Exploding._items": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.538247235992458,
+      "Write_time": 24.173180587007664,
+      "Verify_time": 23.015759475994855,
+      "total_time_seconds": 56.214,
+      "graph_searches": 1,
+      "memory_hits": 3
+    },
+    "pysnooper.variables.Exploding": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.328829565027263,
+      "Write_time": 35.82506360003026,
+      "Verify_time": 13.908462858991697,
+      "total_time_seconds": 58.315,
+      "graph_searches": 0,
+      "memory_hits": 4
+    },
+    "setup.read_file": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.596237603982445,
+      "Write_time": 16.788197947957087,
+      "Verify_time": 23.870298149995506,
+      "total_time_seconds": 57.028,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.Tracer.__call__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 26.917207980004605,
+      "Verify_time": 0.0,
+      "total_time_seconds": 30.567,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.Tracer.__enter__": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 49.10604665899882,
+      "Verify_time": 12.208898701006547,
+      "total_time_seconds": 63.232,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.Tracer.__exit__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.040109993948136,
+      "Write_time": 29.339213259983808,
+      "Verify_time": 14.349171591980848,
+      "total_time_seconds": 55.522,
+      "graph_searches": 2,
+      "memory_hits": 2
+    },
+    "pysnooper.tracer.Tracer._is_internal_frame": {
+      "Read_calls": 0,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 38.7122904099524,
+      "Verify_time": 21.369344120961614,
+      "total_time_seconds": 63.481,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.Tracer._wrap_class": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.687980706978124,
+      "Write_time": 33.05587366898544,
+      "Verify_time": 0.0,
+      "total_time_seconds": 45.495,
+      "graph_searches": 2,
+      "memory_hits": 1
+    },
+    "pysnooper.tracer.Tracer._wrap_function": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 9.21769120299723,
+      "Write_time": 27.52419628703501,
+      "Verify_time": 18.49858910898911,
+      "total_time_seconds": 58.246,
+      "graph_searches": 0,
+      "memory_hits": 2
+    },
+    "pysnooper.tracer.Tracer.set_thread_info_padding": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.030748577031773,
+      "Write_time": 19.75722833396867,
+      "Verify_time": 10.183010998007376,
+      "total_time_seconds": 41.924,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.tracer.get_local_reprs": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.792853182007093,
+      "Write_time": 60.20659622200765,
+      "Verify_time": 28.518439862993546,
+      "total_time_seconds": 102.987,
+      "graph_searches": 1,
+      "memory_hits": 5
+    },
+    "pysnooper.tracer.UnavailableSource.__getitem__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 1,
+      "Read_time": 9.039280754048377,
+      "Write_time": 20.256165005033836,
+      "Verify_time": 0.0,
+      "total_time_seconds": 36.013,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.UnavailableSource": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.47651940898504,
+      "Write_time": 24.90755431499565,
+      "Verify_time": 10.836268959974404,
+      "total_time_seconds": 54.531,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper.tracer.get_path_and_source_from_frame": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.155684459023178,
+      "Write_time": 48.772339264978655,
+      "Verify_time": 19.079100681003183,
+      "total_time_seconds": 78.724,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.tracer.Tracer.trace": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 10.216524006973486,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 64.545,
+      "graph_searches": 0,
+      "memory_hits": 5,
+      "Finish(exception)_calls": 1
+    },
+    "pysnooper.tracer.Tracer.write": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.999170054972637,
+      "Write_time": 25.893152175995056,
+      "Verify_time": 12.978724519023672,
+      "total_time_seconds": 52.626,
+      "graph_searches": 0,
+      "memory_hits": 1
+    },
+    "pysnooper.tracer.Tracer": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 15.120970134041272,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 77.657,
+      "graph_searches": 0,
+      "memory_hits": 3,
+      "Finish(exception)_calls": 1
+    },
+    "pysnooper.utils._check_methods": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.982291678024922,
+      "Write_time": 36.966226054006256,
+      "Verify_time": 20.011944226978812,
+      "total_time_seconds": 65.998,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "pysnooper.utils.WritableStream.__subclasshook__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 4.997046659991611,
+      "Write_time": 37.475959078001324,
+      "Verify_time": 27.043014683004003,
+      "total_time_seconds": 72.416,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.utils.WritableStream.write": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.169560283015016,
+      "Write_time": 65.04204186896095,
+      "Verify_time": 25.295381984033156,
+      "total_time_seconds": 103.019,
+      "graph_searches": 1,
+      "memory_hits": 1
+    },
+    "pysnooper.utils.WritableStream": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 41.91779500100529,
+      "Verify_time": 29.74764519801829,
+      "total_time_seconds": 77.303,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "pysnooper": {
+      "Read_calls": 1,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 10.578512610984035,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 78.546,
+      "graph_searches": 0,
+      "memory_hits": 62,
+      "Finish(exception)_calls": 1
+    },
+    "PySnooper": {
+      "Read_calls": 1,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 7.664469228999224,
+      "Write_time": 129.01193175499793,
+      "Verify_time": 53.14817556302296,
+      "total_time_seconds": 191.71,
+      "graph_searches": 0,
+      "memory_hits": 3
+    }
+  },
+  "per_component_verify_scores": {
+    "misc.generate_authors.drop_recurrences": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9567,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9567,
+        "conflict_score": 1.0
+      }
+    ],
+    "misc.generate_authors.iterate_authors_by_chronological_order": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "misc.generate_authors.print_authors": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.pycompat.ABC": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9133,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.93,
+        "HELPFULNESS": 0.89,
+        "weighted_avg": 0.9133,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.pycompat.PathLike.__subclasshook__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.pycompat.PathLike": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7167,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.pycompat.timedelta_format": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.5667,
+        "CONSISTENCY": 0.6,
+        "COMPLETENESS": 0.55,
+        "HELPFULNESS": 0.55,
+        "weighted_avg": 0.5667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.92,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.92,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.pycompat.timedelta_parse": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.FileWriter.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.FileWriter.write": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.FileWriter": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.675,
+        "CONSISTENCY": 0.3,
+        "COMPLETENESS": 0.35,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.35,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9067,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer.__init__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.975,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.ensure_tuple": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.4,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.get_repr_function": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.97,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.98,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.97,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.normalize_repr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.92,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.truncate": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9533,
+        "CONSISTENCY": 0.96,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9533,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.get_shortish_repr": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.shitcode": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.needs_parentheses": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.BaseVariable.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Attrs._format_key": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Attrs._keys": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4167,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.BaseVariable.__eq__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.BaseVariable.__hash__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7333,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9667,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.BaseVariable._fingerprint": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.BaseVariable.items": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.45,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.45,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.BaseVariable": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.CommonVariable._format_key": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.CommonVariable._items": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.3833,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.35,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.3833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.CommonVariable._safe_keys": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Attrs": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8911,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.8933,
+        "conflict_score": 0.8889
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9422,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 0.9444
+      }
+    ],
+    "pysnooper.variables.Indices.__getitem__": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8767,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.8767,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9233,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Indices._keys": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.95,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.95,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Keys._format_key": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Keys._get_value": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9233,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Keys._keys": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Keys": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.35,
+        "weighted_avg": 0.4,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8728,
+        "CONSISTENCY": 0.96,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9233,
+        "conflict_score": 0.8222
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9767,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.93,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.9533,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Indices": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8179,
+        "CONSISTENCY": 0.7,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.7667,
+        "conflict_score": 0.869
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9422,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 0.9444
+      }
+    ],
+    "pysnooper.variables.Exploding._items": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.955,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.91,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.variables.Exploding": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.955,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.88,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.91,
+        "conflict_score": 1.0
+      }
+    ],
+    "setup.read_file": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9417,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer.__enter__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer.__exit__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer._is_internal_frame": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.7167,
+        "CONSISTENCY": 0.4,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.45,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.98,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.95,
+        "weighted_avg": 0.96,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer._wrap_function": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9233,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer.set_thread_info_padding": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.get_local_reprs": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.2667,
+        "CONSISTENCY": 0.15,
+        "COMPLETENESS": 0.3,
+        "HELPFULNESS": 0.35,
+        "weighted_avg": 0.2667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.93,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.UnavailableSource": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9667,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.get_path_and_source_from_frame": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9617,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.9233,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.tracer.Tracer.write": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils._check_methods": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9267,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.88,
+        "weighted_avg": 0.9267,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.WritableStream.__subclasshook__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.WritableStream.write": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.4333,
+        "CONSISTENCY": 0.45,
+        "COMPLETENESS": 0.45,
+        "HELPFULNESS": 0.4,
+        "weighted_avg": 0.4333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.94,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.94,
+        "conflict_score": 1.0
+      }
+    ],
+    "pysnooper.utils.WritableStream": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9717,
+        "CONSISTENCY": 0.98,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9433,
+        "conflict_score": 1.0
+      }
+    ],
+    "PySnooper": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.625,
+        "CONSISTENCY": 0.2,
+        "COMPLETENESS": 0.25,
+        "HELPFULNESS": 0.3,
+        "weighted_avg": 0.25,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8429,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.7692
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.965,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.92,
+        "HELPFULNESS": 0.92,
+        "weighted_avg": 0.93,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "misc.generate_authors.drop_recurrences": {
+      "requests": 4,
+      "input_tokens": 19250,
+      "output_tokens": 3537,
+      "cost": 0.0050097
+    },
+    "misc.generate_authors.iterate_authors_by_chronological_order": {
+      "requests": 4,
+      "input_tokens": 24685,
+      "output_tokens": 5788,
+      "cost": 0.007175549999999998
+    },
+    "misc.generate_authors.print_authors": {
+      "requests": 4,
+      "input_tokens": 24932,
+      "output_tokens": 5237,
+      "cost": 0.006882000000000003
+    },
+    "misc": {
+      "requests": 3,
+      "input_tokens": 22128,
+      "output_tokens": 3334,
+      "cost": 0.005319600000000001
+    },
+    "pysnooper.pycompat.ABC": {
+      "requests": 3,
+      "input_tokens": 14628,
+      "output_tokens": 4347,
+      "cost": 0.004802400000000002
+    },
+    "pysnooper.pycompat.PathLike.__fspath__": {
+      "requests": 3,
+      "input_tokens": 13126,
+      "output_tokens": 2447,
+      "cost": 0.003437099999999995
+    },
+    "pysnooper.pycompat.PathLike.__subclasshook__": {
+      "requests": 4,
+      "input_tokens": 19207,
+      "output_tokens": 5770,
+      "cost": 0.006343049999999996
+    },
+    "pysnooper.pycompat.PathLike": {
+      "requests": 6,
+      "input_tokens": 35827,
+      "output_tokens": 9405,
+      "cost": 0.011017049999999994
+    },
+    "pysnooper.pycompat.timedelta_format": {
+      "requests": 9,
+      "input_tokens": 50683,
+      "output_tokens": 9215,
+      "cost": 0.013131450000000003
+    },
+    "pysnooper.pycompat.timedelta_parse": {
+      "requests": 6,
+      "input_tokens": 30929,
+      "output_tokens": 6079,
+      "cost": 0.00828675000000001
+    },
+    "pysnooper.tracer.FileWriter.__init__": {
+      "requests": 4,
+      "input_tokens": 18917,
+      "output_tokens": 5019,
+      "cost": 0.005848949999999992
+    },
+    "pysnooper.tracer.FileWriter.write": {
+      "requests": 4,
+      "input_tokens": 19168,
+      "output_tokens": 4459,
+      "cost": 0.005550600000000003
+    },
+    "pysnooper.tracer.FileWriter": {
+      "requests": 5,
+      "input_tokens": 32851,
+      "output_tokens": 8836,
+      "cost": 0.01022925000000001
+    },
+    "pysnooper.tracer.get_write_function": {
+      "requests": 5,
+      "input_tokens": 32797,
+      "output_tokens": 5710,
+      "cost": 0.008345550000000007
+    },
+    "pysnooper.tracer.Tracer.__init__": {
+      "requests": 6,
+      "input_tokens": 53882,
+      "output_tokens": 9992,
+      "cost": 0.014077500000000007
+    },
+    "pysnooper.utils.ensure_tuple": {
+      "requests": 6,
+      "input_tokens": 33127,
+      "output_tokens": 6970,
+      "cost": 0.009151050000000008
+    },
+    "pysnooper.utils.get_repr_function": {
+      "requests": 7,
+      "input_tokens": 47685,
+      "output_tokens": 10397,
+      "cost": 0.013390949999999971
+    },
+    "pysnooper.utils.normalize_repr": {
+      "requests": 6,
+      "input_tokens": 28862,
+      "output_tokens": 4843,
+      "cost": 0.007235099999999994
+    },
+    "pysnooper.utils.truncate": {
+      "requests": 5,
+      "input_tokens": 30389,
+      "output_tokens": 6788,
+      "cost": 0.008631150000000004
+    },
+    "pysnooper.utils.get_shortish_repr": {
+      "requests": 4,
+      "input_tokens": 31681,
+      "output_tokens": 5291,
+      "cost": 0.00792675000000001
+    },
+    "pysnooper.utils.shitcode": {
+      "requests": 4,
+      "input_tokens": 19339,
+      "output_tokens": 3976,
+      "cost": 0.005286450000000026
+    },
+    "pysnooper.variables.needs_parentheses": {
+      "requests": 4,
+      "input_tokens": 19679,
+      "output_tokens": 4779,
+      "cost": 0.00581924999999997
+    },
+    "pysnooper.variables.BaseVariable.__init__": {
+      "requests": 4,
+      "input_tokens": 26573,
+      "output_tokens": 4935,
+      "cost": 0.006946950000000007
+    },
+    "pysnooper.variables.Attrs._format_key": {
+      "requests": 3,
+      "input_tokens": 13501,
+      "output_tokens": 3565,
+      "cost": 0.004164149999999978
+    },
+    "pysnooper.variables.Attrs._get_value": {
+      "requests": 4,
+      "input_tokens": 18697,
+      "output_tokens": 3715,
+      "cost": 0.00503354999999997
+    },
+    "pysnooper.variables.Attrs._keys": {
+      "requests": 6,
+      "input_tokens": 32727,
+      "output_tokens": 6625,
+      "cost": 0.008884050000000004
+    },
+    "pysnooper.variables.BaseVariable.__eq__": {
+      "requests": 4,
+      "input_tokens": 19049,
+      "output_tokens": 3275,
+      "cost": 0.004822350000000003
+    },
+    "pysnooper.variables.BaseVariable.__hash__": {
+      "requests": 6,
+      "input_tokens": 30850,
+      "output_tokens": 5030,
+      "cost": 0.007645499999999972
+    },
+    "pysnooper.variables.BaseVariable._fingerprint": {
+      "requests": 3,
+      "input_tokens": 13687,
+      "output_tokens": 3291,
+      "cost": 0.004027649999999966
+    },
+    "pysnooper.variables.BaseVariable._items": {
+      "requests": 7,
+      "input_tokens": 34853,
+      "output_tokens": 8705,
+      "cost": 0.010450950000000014
+    },
+    "pysnooper.variables.BaseVariable.items": {
+      "requests": 6,
+      "input_tokens": 39275,
+      "output_tokens": 6258,
+      "cost": 0.009646050000000017
+    },
+    "pysnooper.variables.BaseVariable": {
+      "requests": 5,
+      "input_tokens": 60720,
+      "output_tokens": 7674,
+      "cost": 0.013712400000000013
+    },
+    "pysnooper.variables.CommonVariable._format_key": {
+      "requests": 4,
+      "input_tokens": 19918,
+      "output_tokens": 3822,
+      "cost": 0.005280900000000005
+    },
+    "pysnooper.variables.CommonVariable._get_value": {
+      "requests": 3,
+      "input_tokens": 14083,
+      "output_tokens": 3271,
+      "cost": 0.004075049999999969
+    },
+    "pysnooper.variables.CommonVariable._items": {
+      "requests": 6,
+      "input_tokens": 45102,
+      "output_tokens": 7511,
+      "cost": 0.011271900000000001
+    },
+    "pysnooper.variables.CommonVariable._keys": {
+      "requests": 3,
+      "input_tokens": 13668,
+      "output_tokens": 2717,
+      "cost": 0.0036803999999999726
+    },
+    "pysnooper.variables.CommonVariable._safe_keys": {
+      "requests": 4,
+      "input_tokens": 21620,
+      "output_tokens": 3677,
+      "cost": 0.005449199999999987
+    },
+    "pysnooper.variables.CommonVariable": {
+      "requests": 2,
+      "input_tokens": 12706,
+      "output_tokens": 4516,
+      "cost": 0.004615499999999995
+    },
+    "pysnooper.variables.Attrs": {
+      "requests": 6,
+      "input_tokens": 49543,
+      "output_tokens": 7430,
+      "cost": 0.011889450000000079
+    },
+    "pysnooper.variables.Indices.__getitem__": {
+      "requests": 6,
+      "input_tokens": 32446,
+      "output_tokens": 6336,
+      "cost": 0.008668500000000023
+    },
+    "pysnooper.variables.Indices._keys": {
+      "requests": 6,
+      "input_tokens": 31322,
+      "output_tokens": 5902,
+      "cost": 0.00823950000000001
+    },
+    "pysnooper.variables.Keys._format_key": {
+      "requests": 6,
+      "input_tokens": 40598,
+      "output_tokens": 5588,
+      "cost": 0.009442499999999965
+    },
+    "pysnooper.variables.Keys._get_value": {
+      "requests": 5,
+      "input_tokens": 23408,
+      "output_tokens": 3771,
+      "cost": 0.005773799999999996
+    },
+    "pysnooper.variables.Keys._keys": {
+      "requests": 4,
+      "input_tokens": 17945,
+      "output_tokens": 3212,
+      "cost": 0.0046189500000000105
+    },
+    "pysnooper.variables.Keys": {
+      "requests": 10,
+      "input_tokens": 84071,
+      "output_tokens": 11854,
+      "cost": 0.019723050000000075
+    },
+    "pysnooper.variables.Indices": {
+      "requests": 6,
+      "input_tokens": 46179,
+      "output_tokens": 9217,
+      "cost": 0.012457050000000025
+    },
+    "pysnooper.variables.Exploding._items": {
+      "requests": 4,
+      "input_tokens": 34897,
+      "output_tokens": 4744,
+      "cost": 0.008080950000000031
+    },
+    "pysnooper.variables.Exploding": {
+      "requests": 4,
+      "input_tokens": 42122,
+      "output_tokens": 5140,
+      "cost": 0.00940230000000003
+    },
+    "setup.read_file": {
+      "requests": 4,
+      "input_tokens": 18643,
+      "output_tokens": 5081,
+      "cost": 0.005845050000000018
+    },
+    "pysnooper.tracer.Tracer.__call__": {
+      "requests": 2,
+      "input_tokens": 9188,
+      "output_tokens": 2220,
+      "cost": 0.002710199999999996
+    },
+    "pysnooper.tracer.Tracer.__enter__": {
+      "requests": 3,
+      "input_tokens": 15560,
+      "output_tokens": 4186,
+      "cost": 0.0048456000000000055
+    },
+    "pysnooper.tracer.Tracer.__exit__": {
+      "requests": 4,
+      "input_tokens": 38748,
+      "output_tokens": 5224,
+      "cost": 0.008946600000000027
+    },
+    "pysnooper.tracer.Tracer._is_internal_frame": {
+      "requests": 5,
+      "input_tokens": 27411,
+      "output_tokens": 5645,
+      "cost": 0.00749864999999994
+    },
+    "pysnooper.tracer.Tracer._wrap_class": {
+      "requests": 3,
+      "input_tokens": 19824,
+      "output_tokens": 3860,
+      "cost": 0.005289600000000005
+    },
+    "pysnooper.tracer.Tracer._wrap_function": {
+      "requests": 4,
+      "input_tokens": 30600,
+      "output_tokens": 5136,
+      "cost": 0.007671600000000056
+    },
+    "pysnooper.tracer.Tracer.set_thread_info_padding": {
+      "requests": 4,
+      "input_tokens": 27088,
+      "output_tokens": 3586,
+      "cost": 0.006214799999999965
+    },
+    "pysnooper.tracer.get_local_reprs": {
+      "requests": 6,
+      "input_tokens": 74986,
+      "output_tokens": 9292,
+      "cost": 0.01682309999999998
+    },
+    "pysnooper.tracer.UnavailableSource.__getitem__": {
+      "requests": 3,
+      "input_tokens": 13206,
+      "output_tokens": 2611,
+      "cost": 0.0035475000000000367
+    },
+    "pysnooper.tracer.UnavailableSource": {
+      "requests": 4,
+      "input_tokens": 18806,
+      "output_tokens": 3915,
+      "cost": 0.0051698999999999495
+    },
+    "pysnooper.tracer.get_path_and_source_from_frame": {
+      "requests": 4,
+      "input_tokens": 29742,
+      "output_tokens": 5265,
+      "cost": 0.007620299999999969
+    },
+    "pysnooper.tracer.Tracer.trace": {
+      "requests": 2,
+      "input_tokens": 22722,
+      "output_tokens": 4924,
+      "cost": 0.006362699999999999
+    },
+    "pysnooper.tracer.Tracer.write": {
+      "requests": 4,
+      "input_tokens": 26479,
+      "output_tokens": 3296,
+      "cost": 0.005949450000000023
+    },
+    "pysnooper.tracer.Tracer": {
+      "requests": 2,
+      "input_tokens": 24408,
+      "output_tokens": 4845,
+      "cost": 0.006568200000000024
+    },
+    "pysnooper.utils._check_methods": {
+      "requests": 4,
+      "input_tokens": 20081,
+      "output_tokens": 4257,
+      "cost": 0.005566349999999998
+    },
+    "pysnooper.utils.WritableStream.__subclasshook__": {
+      "requests": 4,
+      "input_tokens": 22889,
+      "output_tokens": 3935,
+      "cost": 0.005794350000000004
+    },
+    "pysnooper.utils.WritableStream.write": {
+      "requests": 6,
+      "input_tokens": 31097,
+      "output_tokens": 5766,
+      "cost": 0.008124149999999941
+    },
+    "pysnooper.utils.WritableStream": {
+      "requests": 3,
+      "input_tokens": 15417,
+      "output_tokens": 4589,
+      "cost": 0.005065949999999986
+    },
+    "pysnooper": {
+      "requests": 2,
+      "input_tokens": 71540,
+      "output_tokens": 4707,
+      "cost": 0.01355519999999999
+    },
+    "PySnooper": {
+      "requests": 8,
+      "input_tokens": 75421,
+      "output_tokens": 11395,
+      "cost": 0.018150149999999865
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 46,
+    "total_fetched_component_types": 68,
+    "redundant_fetch_count": 110,
+    "duplicates": {
+      "pysnooper.variables.CommonVariable": {
+        "accessed_by": [
+          "pysnooper.variables.Attrs._get_value",
+          "pysnooper.variables.CommonVariable._format_key",
+          "pysnooper.variables.CommonVariable._get_value",
+          "pysnooper.variables.CommonVariable._items",
+          "pysnooper.variables.CommonVariable._keys",
+          "pysnooper.variables.CommonVariable._safe_keys",
+          "pysnooper.variables.Attrs",
+          "pysnooper.variables.Keys._get_value",
+          "pysnooper.variables.Keys",
+          "pysnooper.tracer.get_local_reprs",
+          "pysnooper"
+        ],
+        "access_count": 11
+      },
+      "pysnooper.variables.BaseVariable": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable.__init__",
+          "pysnooper.variables.BaseVariable.__eq__",
+          "pysnooper.variables.BaseVariable.__hash__",
+          "pysnooper.variables.BaseVariable._items",
+          "pysnooper.variables.BaseVariable.items",
+          "pysnooper.variables.BaseVariable",
+          "pysnooper.variables.CommonVariable",
+          "pysnooper.variables.Exploding",
+          "pysnooper.tracer.get_local_reprs",
+          "pysnooper"
+        ],
+        "access_count": 10
+      },
+      "pysnooper.utils.get_shortish_repr": {
+        "accessed_by": [
+          "pysnooper.variables.CommonVariable._items",
+          "pysnooper.variables.CommonVariable",
+          "pysnooper.variables.Keys._format_key",
+          "pysnooper.variables.Keys",
+          "pysnooper.tracer.get_local_reprs",
+          "pysnooper.tracer.Tracer.trace",
+          "pysnooper"
+        ],
+        "access_count": 7
+      },
+      "pysnooper.variables.Keys": {
+        "accessed_by": [
+          "pysnooper.variables.Keys._format_key",
+          "pysnooper.variables.Keys._get_value",
+          "pysnooper.variables.Keys._keys",
+          "pysnooper.variables.Indices",
+          "pysnooper.variables.Exploding._items",
+          "pysnooper.variables.Exploding",
+          "pysnooper"
+        ],
+        "access_count": 7
+      },
+      "pysnooper.tracer.Tracer": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer.__exit__",
+          "pysnooper.tracer.Tracer._wrap_class",
+          "pysnooper.tracer.Tracer._wrap_function",
+          "pysnooper.tracer.Tracer.set_thread_info_padding",
+          "pysnooper.tracer.Tracer.trace",
+          "pysnooper.tracer.Tracer.write",
+          "pysnooper"
+        ],
+        "access_count": 7
+      },
+      "pysnooper.utils.ensure_tuple": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer.__init__",
+          "pysnooper.utils.ensure_tuple",
+          "pysnooper.variables.BaseVariable.__init__",
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 5
+      },
+      "pysnooper.variables.Attrs": {
+        "accessed_by": [
+          "pysnooper.variables.Attrs._get_value",
+          "pysnooper.variables.Attrs._keys",
+          "pysnooper.variables.Exploding._items",
+          "pysnooper.variables.Exploding",
+          "pysnooper"
+        ],
+        "access_count": 5
+      },
+      "pysnooper.variables.Indices": {
+        "accessed_by": [
+          "pysnooper.variables.Indices.__getitem__",
+          "pysnooper.variables.Indices._keys",
+          "pysnooper.variables.Exploding._items",
+          "pysnooper.variables.Exploding",
+          "pysnooper"
+        ],
+        "access_count": 5
+      },
+      "pysnooper.tracer.FileWriter": {
+        "accessed_by": [
+          "pysnooper.tracer.FileWriter.__init__",
+          "pysnooper.tracer.FileWriter.write",
+          "pysnooper.tracer.get_write_function",
+          "pysnooper"
+        ],
+        "access_count": 4
+      },
+      "pysnooper.tracer.get_write_function": {
+        "accessed_by": [
+          "pysnooper.tracer.get_write_function",
+          "pysnooper.tracer.Tracer.__init__",
+          "pysnooper.tracer.Tracer",
+          "pysnooper"
+        ],
+        "access_count": 4
+      },
+      "pysnooper.variables.needs_parentheses": {
+        "accessed_by": [
+          "pysnooper.variables.needs_parentheses",
+          "pysnooper.variables.BaseVariable.__init__",
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 4
+      },
+      "pysnooper.tracer.get_local_reprs": {
+        "accessed_by": [
+          "pysnooper.tracer.get_local_reprs",
+          "pysnooper.tracer.Tracer.trace",
+          "pysnooper.tracer.Tracer",
+          "pysnooper"
+        ],
+        "access_count": 4
+      },
+      "pysnooper.tracer.get_path_and_source_from_frame": {
+        "accessed_by": [
+          "pysnooper.tracer.get_path_and_source_from_frame",
+          "pysnooper.tracer.Tracer.trace",
+          "pysnooper.tracer.Tracer",
+          "pysnooper"
+        ],
+        "access_count": 4
+      },
+      "misc.generate_authors.drop_recurrences": {
+        "accessed_by": [
+          "misc.generate_authors.drop_recurrences",
+          "misc.generate_authors.iterate_authors_by_chronological_order",
+          "misc"
+        ],
+        "access_count": 3
+      },
+      "misc.generate_authors.iterate_authors_by_chronological_order": {
+        "accessed_by": [
+          "misc.generate_authors.iterate_authors_by_chronological_order",
+          "misc.generate_authors.print_authors",
+          "misc"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.pycompat.PathLike": {
+        "accessed_by": [
+          "pysnooper.pycompat.PathLike.__fspath__",
+          "pysnooper.pycompat.PathLike.__subclasshook__",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.utils.normalize_repr": {
+        "accessed_by": [
+          "pysnooper.utils.normalize_repr",
+          "pysnooper.utils.get_shortish_repr",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.utils.truncate": {
+        "accessed_by": [
+          "pysnooper.utils.get_shortish_repr",
+          "pysnooper.tracer.Tracer.trace",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.variables.Attrs._keys": {
+        "accessed_by": [
+          "pysnooper.variables.Attrs._keys",
+          "pysnooper.variables.Attrs",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.variables.BaseVariable._items": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable.items",
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.variables.BaseVariable.items": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable",
+          "pysnooper.tracer.get_local_reprs",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.variables.Exploding": {
+        "accessed_by": [
+          "pysnooper.variables.Exploding._items",
+          "pysnooper.tracer.get_local_reprs",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.tracer.Tracer._wrap_function": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer._wrap_class",
+          "pysnooper.tracer.Tracer._wrap_function",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.tracer.UnavailableSource": {
+        "accessed_by": [
+          "pysnooper.tracer.UnavailableSource.__getitem__",
+          "pysnooper.tracer.get_path_and_source_from_frame",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.utils._check_methods": {
+        "accessed_by": [
+          "pysnooper.utils._check_methods",
+          "pysnooper.utils.WritableStream.__subclasshook__",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.utils.WritableStream": {
+        "accessed_by": [
+          "pysnooper.utils.WritableStream.__subclasshook__",
+          "pysnooper.utils.WritableStream.write",
+          "pysnooper"
+        ],
+        "access_count": 3
+      },
+      "pysnooper.pycompat.timedelta_format": {
+        "accessed_by": [
+          "pysnooper.pycompat.timedelta_format",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.pycompat.timedelta_parse": {
+        "accessed_by": [
+          "pysnooper.pycompat.timedelta_parse",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.utils.get_repr_function": {
+        "accessed_by": [
+          "pysnooper.utils.get_shortish_repr",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.utils.shitcode": {
+        "accessed_by": [
+          "pysnooper.utils.shitcode",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.BaseVariable.__eq__": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.BaseVariable.__hash__": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.BaseVariable._fingerprint": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.pycompat.ABC": {
+        "accessed_by": [
+          "pysnooper.variables.BaseVariable",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.CommonVariable._format_key": {
+        "accessed_by": [
+          "pysnooper.variables.CommonVariable._format_key",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.CommonVariable._keys": {
+        "accessed_by": [
+          "pysnooper.variables.CommonVariable._safe_keys",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.CommonVariable._safe_keys": {
+        "accessed_by": [
+          "pysnooper.variables.CommonVariable._safe_keys",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.Attrs._format_key": {
+        "accessed_by": [
+          "pysnooper.variables.Attrs",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.Attrs._get_value": {
+        "accessed_by": [
+          "pysnooper.variables.Attrs",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.variables.Keys._format_key": {
+        "accessed_by": [
+          "pysnooper.variables.Keys._format_key",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.tracer.Tracer.__init__": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer.__exit__",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.tracer.Tracer.write": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer.__exit__",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.tracer.Tracer.__enter__": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer.__exit__",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.tracer.Tracer._wrap_class": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer._wrap_class",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.tracer.Tracer.set_thread_info_padding": {
+        "accessed_by": [
+          "pysnooper.tracer.Tracer.set_thread_info_padding",
+          "pysnooper"
+        ],
+        "access_count": 2
+      },
+      "pysnooper.utils.WritableStream.write": {
+        "accessed_by": [
+          "pysnooper.utils.WritableStream.write",
+          "pysnooper"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {
+    "WorkerAgent": {
+      "total_requests": 314,
+      "total_input_tokens": 2077188,
+      "total_output_tokens": 377735,
+      "total_cost_usd": 0.5382191999999999
+    }
+  },
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 80.098,
+    "avg_turns_per_component": 4.49,
+    "memory_hit_rate": 0.8289,
+    "total_tokens": 2454923,
+    "estimated_cost_usd": 0.5382,
+    "avg_tokens_per_component": 35578.6
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 66,
+      "total_time_seconds": 5223.578,
+      "avg_time_seconds": 79.145,
+      "total_turns": 298,
+      "avg_turns": 4.52,
+      "action_counts": {
+        "Read": 73,
+        "Write": 86,
+        "Verify": 76,
+        "Finish": 63
+      }
+    },
+    "MODULE": {
+      "count": 2,
+      "total_time_seconds": 111.495,
+      "avg_time_seconds": 55.748,
+      "total_turns": 4,
+      "avg_turns": 2.0,
+      "action_counts": {
+        "Read": 2,
+        "Write": 1,
+        "Finish": 1
+      }
+    },
+    "REPO": {
+      "count": 1,
+      "total_time_seconds": 191.71,
+      "avg_time_seconds": 191.71,
+      "total_turns": 8,
+      "avg_turns": 8.0,
+      "action_counts": {
+        "Read": 1,
+        "Write": 3,
+        "Verify": 3,
+        "Finish": 1
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "misc.generate_authors.iterate_authors_by_chronological_order": {
+      "total_candidate_pairs": 47,
+      "entailment_count": 5,
+      "contradiction_count": 1,
+      "neutral_count": 41,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "misc.generate_authors.drop_recurrences"
+      ]
+    },
+    "misc.generate_authors.print_authors": {
+      "total_candidate_pairs": 65,
+      "entailment_count": 11,
+      "contradiction_count": 10,
+      "neutral_count": 44,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "misc.generate_authors.iterate_authors_by_chronological_order"
+      ]
+    },
+    "pysnooper.pycompat.PathLike": {
+      "total_candidate_pairs": 79,
+      "entailment_count": 41,
+      "contradiction_count": 9,
+      "neutral_count": 29,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.pycompat.PathLike.__fspath__",
+        "pysnooper.pycompat.PathLike.__subclasshook__"
+      ]
+    },
+    "pysnooper.tracer.FileWriter": {
+      "total_candidate_pairs": 63,
+      "entailment_count": 63,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.tracer.FileWriter.write"
+      ]
+    },
+    "pysnooper.tracer.Tracer.__init__": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.tracer.get_write_function"
+      ]
+    },
+    "pysnooper.utils.get_shortish_repr": {
+      "total_candidate_pairs": 107,
+      "entailment_count": 61,
+      "contradiction_count": 14,
+      "neutral_count": 32,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.utils.get_repr_function",
+        "pysnooper.utils.normalize_repr",
+        "pysnooper.utils.truncate"
+      ]
+    },
+    "pysnooper.variables.BaseVariable.__init__": {
+      "total_candidate_pairs": 50,
+      "entailment_count": 9,
+      "contradiction_count": 7,
+      "neutral_count": 34,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.variables.needs_parentheses"
+      ]
+    },
+    "pysnooper.variables.BaseVariable": {
+      "total_candidate_pairs": 166,
+      "entailment_count": 38,
+      "contradiction_count": 15,
+      "neutral_count": 113,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.variables.BaseVariable.__eq__",
+        "pysnooper.variables.BaseVariable.__hash__",
+        "pysnooper.variables.BaseVariable._fingerprint",
+        "pysnooper.variables.BaseVariable._items",
+        "pysnooper.variables.BaseVariable.items",
+        "pysnooper.variables.needs_parentheses"
+      ]
+    },
+    "pysnooper.variables.Attrs": {
+      "total_candidate_pairs": 110,
+      "entailment_count": 45,
+      "contradiction_count": 11,
+      "neutral_count": 54,
+      "conflict_score": 0.0556,
+      "dep_ids_checked": [
+        "pysnooper.variables.Attrs._format_key",
+        "pysnooper.variables.Attrs._get_value",
+        "pysnooper.variables.Attrs._keys"
+      ]
+    },
+    "pysnooper.variables.Keys": {
+      "total_candidate_pairs": 93,
+      "entailment_count": 28,
+      "contradiction_count": 13,
+      "neutral_count": 52,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.variables.Keys._format_key",
+        "pysnooper.variables.Keys._get_value",
+        "pysnooper.variables.Keys._keys"
+      ]
+    },
+    "pysnooper.variables.Indices": {
+      "total_candidate_pairs": 152,
+      "entailment_count": 70,
+      "contradiction_count": 6,
+      "neutral_count": 76,
+      "conflict_score": 0.0556,
+      "dep_ids_checked": [
+        "pysnooper.variables.Indices.__getitem__",
+        "pysnooper.variables.Indices._keys",
+        "pysnooper.variables.Keys"
+      ]
+    },
+    "pysnooper.variables.Exploding._items": {
+      "total_candidate_pairs": 229,
+      "entailment_count": 23,
+      "contradiction_count": 17,
+      "neutral_count": 189,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.variables.Attrs",
+        "pysnooper.variables.Indices",
+        "pysnooper.variables.Keys"
+      ]
+    },
+    "pysnooper.variables.Exploding": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.variables.Attrs",
+        "pysnooper.variables.BaseVariable",
+        "pysnooper.variables.Exploding._items",
+        "pysnooper.variables.Indices",
+        "pysnooper.variables.Keys"
+      ]
+    },
+    "pysnooper.tracer.UnavailableSource": {
+      "total_candidate_pairs": 25,
+      "entailment_count": 19,
+      "contradiction_count": 0,
+      "neutral_count": 6,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.tracer.UnavailableSource.__getitem__"
+      ]
+    },
+    "pysnooper.tracer.get_path_and_source_from_frame": {
+      "total_candidate_pairs": 46,
+      "entailment_count": 34,
+      "contradiction_count": 3,
+      "neutral_count": 9,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.tracer.UnavailableSource"
+      ]
+    },
+    "pysnooper.utils.WritableStream.__subclasshook__": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.utils._check_methods"
+      ]
+    },
+    "pysnooper.utils.WritableStream": {
+      "total_candidate_pairs": 91,
+      "entailment_count": 26,
+      "contradiction_count": 10,
+      "neutral_count": 55,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "pysnooper.utils.WritableStream.__subclasshook__",
+        "pysnooper.utils.WritableStream.write",
+        "pysnooper.utils._check_methods"
+      ]
+    },
+    "PySnooper": {
+      "total_candidate_pairs": 114,
+      "entailment_count": 19,
+      "contradiction_count": 11,
+      "neutral_count": 84,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "misc",
+        "setup.read_file"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 79,
+    "first_pass_success": 34,
+    "required_revision": 21,
+    "score_parse_failures": 0,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.7758,
+      "COMPLETENESS": 0.7911,
+      "HELPFULNESS": 0.7733
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.4271,
+      "COMPLETENESS": 0.3671,
+      "HELPFULNESS": 0.3529
+    }
+  }
+}

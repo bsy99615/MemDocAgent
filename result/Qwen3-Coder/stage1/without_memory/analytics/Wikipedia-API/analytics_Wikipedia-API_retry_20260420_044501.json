@@ -1,0 +1,2149 @@
+{
+  "run_id": "20260420_040111",
+  "label": "Wikipedia-API_retry_20260420_044501",
+  "total_run_time_seconds": 2630.71,
+  "repo_summary": {
+    "file_count": 3,
+    "function_count": 7,
+    "class_count": 5,
+    "method_count": 47,
+    "total_components": 59,
+    "module_count": 1,
+    "repo_count": 1,
+    "topological_order_count": 59,
+    "topological_order": [
+      "example.print_categories",
+      "example.print_langlinks",
+      "example.print_links",
+      "setup.fix_doc",
+      "wikipediaapi.__init__.ExtractFormat",
+      "wikipediaapi.__init__.Wikipedia.__init__",
+      "wikipediaapi.__init__.Namespace",
+      "wikipediaapi.__init__.Wikipedia.__del__",
+      "wikipediaapi.__init__.WikipediaPage.__getattr__",
+      "wikipediaapi.__init__.WikipediaPage.__repr__",
+      "wikipediaapi.__init__.WikipediaPage._fetch",
+      "wikipediaapi.__init__.WikipediaPage.backlinks",
+      "wikipediaapi.__init__.WikipediaPage.categories",
+      "wikipediaapi.__init__.WikipediaPage.categorymembers",
+      "wikipediaapi.__init__.WikipediaPage.exists",
+      "wikipediaapi.__init__.WikipediaPage.langlinks",
+      "wikipediaapi.__init__.WikipediaPage.language",
+      "wikipediaapi.__init__.WikipediaPage.links",
+      "wikipediaapi.__init__.WikipediaPage.namespace",
+      "wikipediaapi.__init__.WikipediaPageSection.__repr__",
+      "wikipediaapi.__init__.WikipediaPageSection.full_text",
+      "wikipediaapi.__init__.WikipediaPageSection.level",
+      "wikipediaapi.__init__.WikipediaPageSection.section_by_title",
+      "wikipediaapi.__init__.WikipediaPageSection.sections",
+      "wikipediaapi.__init__.WikipediaPageSection.text",
+      "wikipediaapi.__init__.WikipediaPageSection.title",
+      "wikipediaapi.__init__.WikipediaPageSection",
+      "wikipediaapi.__init__.WikipediaPage.section_by_title",
+      "wikipediaapi.__init__.WikipediaPage.sections",
+      "wikipediaapi.__init__.WikipediaPage.sections_by_title",
+      "wikipediaapi.__init__.WikipediaPage.summary",
+      "wikipediaapi.__init__.WikipediaPage.text",
+      "wikipediaapi.__init__.WikipediaPage.title",
+      "wikipediaapi.__init__.namespace2int",
+      "wikipediaapi.__init__.WikipediaPage",
+      "wikipediaapi.__init__.Wikipedia._build_backlinks",
+      "wikipediaapi.__init__.Wikipedia._build_categories",
+      "wikipediaapi.__init__.Wikipedia._build_categorymembers",
+      "wikipediaapi.__init__.Wikipedia._build_extracts",
+      "wikipediaapi.__init__.Wikipedia._build_info",
+      "wikipediaapi.__init__.Wikipedia._build_langlinks",
+      "wikipediaapi.__init__.Wikipedia._build_links",
+      "wikipediaapi.__init__.Wikipedia._common_attributes",
+      "wikipediaapi.__init__.Wikipedia._create_section",
+      "wikipediaapi.__init__.Wikipedia._query",
+      "wikipediaapi.__init__.Wikipedia.article",
+      "wikipediaapi.__init__.Wikipedia.backlinks",
+      "wikipediaapi.__init__.Wikipedia.categories",
+      "wikipediaapi.__init__.Wikipedia.categorymembers",
+      "wikipediaapi.__init__.Wikipedia.extracts",
+      "wikipediaapi.__init__.Wikipedia.info",
+      "wikipediaapi.__init__.Wikipedia.langlinks",
+      "wikipediaapi.__init__.Wikipedia.links",
+      "wikipediaapi.__init__.Wikipedia.page",
+      "wikipediaapi.__init__.Wikipedia",
+      "wikipediaapi.__init__.WikipediaPage.__init__",
+      "wikipediaapi.__init__.WikipediaPageSection.__init__",
+      "example.print_categorymembers",
+      "example.print_sections"
+    ]
+  },
+  "dependency_analysis_time_seconds": null,
+  "action_call_totals": {
+    "Read": 136,
+    "Write": 57,
+    "Verify": 56,
+    "Finish": 36
+  },
+  "action_time_totals_seconds": {
+    "Read": 702.322,
+    "Write": 971.477,
+    "Verify": 315.69
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 940369,
+      "output_tokens": 21036
+    },
+    "Write": {
+      "input_tokens": 599802,
+      "output_tokens": 30144
+    },
+    "Verify": {
+      "input_tokens": 619476,
+      "output_tokens": 9236
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 212,
+    "total_memory_hits": 0
+  },
+  "per_component_stats": {
+    "setup.fix_doc": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 8.414034431989421,
+      "Write_time": 14.409324255000683,
+      "Verify_time": 8.13248928100802,
+      "total_time_seconds": 34.0,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.ExtractFormat": {
+      "Read_calls": 0,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 0.0,
+      "Write_time": 16.892682858000626,
+      "Verify_time": 9.915038720995653,
+      "total_time_seconds": 158.157,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.734917633992154,
+      "Write_time": 17.63959502799844,
+      "Verify_time": 13.27446256300027,
+      "total_time_seconds": 48.186,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Namespace": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.070050599999377,
+      "Write_time": 27.62692423000408,
+      "Verify_time": 8.352961668992066,
+      "total_time_seconds": 174.677,
+      "graph_searches": 0,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.__del__": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 7.060386499011656,
+      "Write_time": 10.203453844005708,
+      "Verify_time": 11.740955851011677,
+      "total_time_seconds": 30.995,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.__getattr__": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.921271319995867,
+      "Write_time": 12.49651187499694,
+      "Verify_time": 2.8092179149971344,
+      "total_time_seconds": 42.56,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.__repr__": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.625388347005355,
+      "Write_time": 12.547105263001868,
+      "Verify_time": 8.298876697997912,
+      "total_time_seconds": 59.614,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage._fetch": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 22.596142043999862,
+      "Write_time": 17.97647328300809,
+      "Verify_time": 7.134146314012469,
+      "total_time_seconds": 50.196,
+      "graph_searches": 6,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.categories": {
+      "Read_calls": 5,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 25.644354703996214,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 35.406,
+      "graph_searches": 7,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.WikipediaPage.categorymembers": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.98177220398793,
+      "Write_time": 16.353953661993728,
+      "Verify_time": 2.7633673250093125,
+      "total_time_seconds": 54.066,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.langlinks": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 16.862407786000404,
+      "Write_time": 16.51757350799744,
+      "Verify_time": 3.1236908080027206,
+      "total_time_seconds": 56.221,
+      "graph_searches": 6,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.links": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 17.13499771298666,
+      "Write_time": 13.379959169003996,
+      "Verify_time": 2.8724006160045974,
+      "total_time_seconds": 50.289,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.__repr__": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 32.062,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.full_text": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 9.461309763006284,
+      "Write_time": 45.340575683978386,
+      "Verify_time": 21.302050872007385,
+      "total_time_seconds": 81.745,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.level": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 14.47681816398108,
+      "Write_time": 10.958133289997932,
+      "Verify_time": 5.941703597010928,
+      "total_time_seconds": 46.379,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.section_by_title": {
+      "Read_calls": 1,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 6.979410083004041,
+      "Write_time": 13.846968925005058,
+      "Verify_time": 8.346380341012264,
+      "total_time_seconds": 45.447,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.sections": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.852633862014045,
+      "Write_time": 11.487329001000035,
+      "Verify_time": 2.78292341499764,
+      "total_time_seconds": 41.026,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.text": {
+      "Read_calls": 4,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 16.562129063007887,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 25.99,
+      "graph_searches": 5,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.title": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 26.484407473995816,
+      "Write_time": 11.930056429991964,
+      "Verify_time": 0.0,
+      "total_time_seconds": 48.008,
+      "graph_searches": 7,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.WikipediaPageSection": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 10.269756911002332,
+      "Write_time": 36.515977146002115,
+      "Verify_time": 5.7331896599935135,
+      "total_time_seconds": 80.828,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.section_by_title": {
+      "Read_calls": 7,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 28.63580855296459,
+      "Write_time": 11.986971081001684,
+      "Verify_time": 2.73303963401122,
+      "total_time_seconds": 46.037,
+      "graph_searches": 10,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.namespace2int": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 21.919096023004386,
+      "Write_time": 36.6784274540114,
+      "Verify_time": 12.696642558992608,
+      "total_time_seconds": 76.304,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage": {
+      "Read_calls": 2,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 13.0048443969863,
+      "Write_time": 94.45351449500595,
+      "Verify_time": 15.465296740003396,
+      "total_time_seconds": 130.878,
+      "graph_searches": 42,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_backlinks": {
+      "Read_calls": 6,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 0,
+      "Read_time": 24.187952414999017,
+      "Write_time": 31.278332101981505,
+      "Verify_time": 5.700188689996139,
+      "total_time_seconds": 61.168,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.Wikipedia._build_categories": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 24.560596793002333,
+      "Write_time": 27.235525237003458,
+      "Verify_time": 11.903996368986554,
+      "total_time_seconds": 66.53,
+      "graph_searches": 7,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_categorymembers": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.638222627996583,
+      "Write_time": 18.899706805997994,
+      "Verify_time": 12.996560428000521,
+      "total_time_seconds": 55.276,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_extracts": {
+      "Read_calls": 4,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 0,
+      "Read_time": 24.32651244699082,
+      "Write_time": 55.4935510380019,
+      "Verify_time": 8.215840448989184,
+      "total_time_seconds": 88.041,
+      "graph_searches": 6,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.Wikipedia._build_info": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 18.83578152001428,
+      "Write_time": 10.033020419999957,
+      "Verify_time": 2.721803624997847,
+      "total_time_seconds": 33.983,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_langlinks": {
+      "Read_calls": 5,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 23.18948074799846,
+      "Write_time": 15.360375607997412,
+      "Verify_time": 7.8728585980134085,
+      "total_time_seconds": 48.245,
+      "graph_searches": 5,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_links": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.203550175996497,
+      "Write_time": 15.803449677987373,
+      "Verify_time": 9.970140585006448,
+      "total_time_seconds": 41.369,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._common_attributes": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 21.100832872005412,
+      "Write_time": 17.670548617999884,
+      "Verify_time": 12.2062529130053,
+      "total_time_seconds": 53.027,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._create_section": {
+      "Read_calls": 4,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 17.031119895997108,
+      "Write_time": 30.59588178100239,
+      "Verify_time": 5.292128703003982,
+      "total_time_seconds": 53.978,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia._query": {
+      "Read_calls": 6,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 28.353740058009862,
+      "Write_time": 20.52045434199681,
+      "Verify_time": 9.27606624100008,
+      "total_time_seconds": 60.522,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.article": {
+      "Read_calls": 4,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 19.431507290995796,
+      "Write_time": 14.665013036996243,
+      "Verify_time": 2.7966812869999558,
+      "total_time_seconds": 39.456,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.backlinks": {
+      "Read_calls": 2,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 12.678002682994702,
+      "Write_time": 15.616931159995147,
+      "Verify_time": 8.983671795009286,
+      "total_time_seconds": 40.208,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.categories": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 16.687274650015752,
+      "Write_time": 33.37341641500825,
+      "Verify_time": 5.19458581400977,
+      "total_time_seconds": 57.654,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.categorymembers": {
+      "Read_calls": 3,
+      "Write_calls": 3,
+      "Verify_calls": 3,
+      "Finish_calls": 1,
+      "Read_time": 18.189043846999994,
+      "Write_time": 44.786573619014234,
+      "Verify_time": 28.513109680992784,
+      "total_time_seconds": 94.196,
+      "graph_searches": 1,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.extracts": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 13.389342552007292,
+      "Write_time": 26.751834972994402,
+      "Verify_time": 5.330137648008531,
+      "total_time_seconds": 70.91,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.info": {
+      "Read_calls": 3,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 12.151458678999916,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 21.742,
+      "graph_searches": 5,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.Wikipedia.langlinks": {
+      "Read_calls": 3,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 15.268087322998326,
+      "Write_time": 34.02326830600214,
+      "Verify_time": 4.884144917989033,
+      "total_time_seconds": 56.181,
+      "graph_searches": 4,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.links": {
+      "Read_calls": 2,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.414061180999852,
+      "Write_time": 37.16120937200321,
+      "Verify_time": 5.201103069004603,
+      "total_time_seconds": 59.552,
+      "graph_searches": 2,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia.page": {
+      "Read_calls": 3,
+      "Write_calls": 1,
+      "Verify_calls": 1,
+      "Finish_calls": 1,
+      "Read_time": 10.495106023998233,
+      "Write_time": 12.28069296600006,
+      "Verify_time": 3.1308933980035363,
+      "total_time_seconds": 50.503,
+      "graph_searches": 3,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.Wikipedia": {
+      "Read_calls": 1,
+      "Write_calls": 2,
+      "Verify_calls": 2,
+      "Finish_calls": 1,
+      "Read_time": 11.233424456993816,
+      "Write_time": 60.68535242899088,
+      "Verify_time": 12.081474180013174,
+      "total_time_seconds": 85.192,
+      "graph_searches": 24,
+      "memory_hits": 0
+    },
+    "wikipediaapi.__init__.WikipediaPage.__init__": {
+      "Read_calls": 2,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 8.264383893008926,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 20.86,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.__init__": {
+      "Read_calls": 4,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 14.000686694009346,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 22.845,
+      "graph_searches": 4,
+      "memory_hits": 0,
+      "Finish(max_turns)_calls": 1
+    }
+  },
+  "per_component_verify_scores": {
+    "setup.fix_doc": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.ExtractFormat": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.__init__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Namespace": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.__del__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage.__getattr__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage.__repr__": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage._fetch": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage.categorymembers": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage.langlinks": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage.links": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPageSection.full_text": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.75,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.5
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPageSection.level": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPageSection.section_by_title": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPageSection.sections": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPageSection": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9167
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage.section_by_title": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.namespace2int": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8674,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.8182
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9129,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9091
+      }
+    ],
+    "wikipediaapi.__init__.WikipediaPage": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9038,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 0.9744
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9487,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9808
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9487,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 0.9808
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_backlinks": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.7,
+        "HELPFULNESS": 0.75,
+        "weighted_avg": 0.7333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_categories": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 0.6667
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_categorymembers": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_extracts": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.8833,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9333,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_info": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_langlinks": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 1.0,
+        "CONSISTENCY": 1.0,
+        "COMPLETENESS": 1.0,
+        "HELPFULNESS": 1.0,
+        "weighted_avg": 1.0,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._build_links": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._common_attributes": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._create_section": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.85,
+        "CONSISTENCY": 0.75,
+        "COMPLETENESS": 0.65,
+        "HELPFULNESS": 0.7,
+        "weighted_avg": 0.7,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia._query": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.article": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.95,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.backlinks": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.categories": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.categorymembers": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": false,
+        "final_score": 0.7833,
+        "CONSISTENCY": 0.8,
+        "COMPLETENESS": 0.75,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.7833,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 3,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.extracts": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.langlinks": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8333,
+        "CONSISTENCY": 0.85,
+        "COMPLETENESS": 0.8,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8333,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.links": [
+      {
+        "attempt": 1,
+        "passed": false,
+        "final_score": 0.8667,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9167,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia.page": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.925,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.8,
+        "weighted_avg": 0.85,
+        "conflict_score": 1.0
+      }
+    ],
+    "wikipediaapi.__init__.Wikipedia": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "final_score": 0.9333,
+        "CONSISTENCY": 0.9,
+        "COMPLETENESS": 0.85,
+        "HELPFULNESS": 0.85,
+        "weighted_avg": 0.8667,
+        "conflict_score": 1.0
+      },
+      {
+        "attempt": 2,
+        "passed": true,
+        "final_score": 0.9583,
+        "CONSISTENCY": 0.95,
+        "COMPLETENESS": 0.9,
+        "HELPFULNESS": 0.9,
+        "weighted_avg": 0.9167,
+        "conflict_score": 1.0
+      }
+    ]
+  },
+  "per_component_llm_stats": {
+    "setup.fix_doc": {
+      "requests": 4,
+      "input_tokens": 18474,
+      "output_tokens": 1015,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.ExtractFormat": {
+      "requests": 3,
+      "input_tokens": 14016,
+      "output_tokens": 4923,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.__init__": {
+      "requests": 5,
+      "input_tokens": 28064,
+      "output_tokens": 1272,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Namespace": {
+      "requests": 4,
+      "input_tokens": 22064,
+      "output_tokens": 5379,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.__del__": {
+      "requests": 4,
+      "input_tokens": 33137,
+      "output_tokens": 937,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.__getattr__": {
+      "requests": 5,
+      "input_tokens": 31086,
+      "output_tokens": 1320,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.__repr__": {
+      "requests": 6,
+      "input_tokens": 46411,
+      "output_tokens": 1832,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage._fetch": {
+      "requests": 8,
+      "input_tokens": 85589,
+      "output_tokens": 1528,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.categories": {
+      "requests": 10,
+      "input_tokens": 100204,
+      "output_tokens": 1058,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.categorymembers": {
+      "requests": 6,
+      "input_tokens": 49554,
+      "output_tokens": 1681,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.langlinks": {
+      "requests": 7,
+      "input_tokens": 68519,
+      "output_tokens": 1714,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.links": {
+      "requests": 7,
+      "input_tokens": 67981,
+      "output_tokens": 1543,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.__repr__": {
+      "requests": 10,
+      "input_tokens": 49519,
+      "output_tokens": 975,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.full_text": {
+      "requests": 9,
+      "input_tokens": 57476,
+      "output_tokens": 2539,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.level": {
+      "requests": 6,
+      "input_tokens": 31282,
+      "output_tokens": 1452,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.section_by_title": {
+      "requests": 4,
+      "input_tokens": 20660,
+      "output_tokens": 1426,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.sections": {
+      "requests": 5,
+      "input_tokens": 28048,
+      "output_tokens": 1266,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.text": {
+      "requests": 10,
+      "input_tokens": 102199,
+      "output_tokens": 778,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.title": {
+      "requests": 10,
+      "input_tokens": 92962,
+      "output_tokens": 1473,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection": {
+      "requests": 7,
+      "input_tokens": 68369,
+      "output_tokens": 2466,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.section_by_title": {
+      "requests": 10,
+      "input_tokens": 108389,
+      "output_tokens": 1356,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.namespace2int": {
+      "requests": 8,
+      "input_tokens": 46522,
+      "output_tokens": 2337,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage": {
+      "requests": 9,
+      "input_tokens": 188404,
+      "output_tokens": 3966,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_backlinks": {
+      "requests": 10,
+      "input_tokens": 79817,
+      "output_tokens": 1849,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_categories": {
+      "requests": 8,
+      "input_tokens": 85212,
+      "output_tokens": 1992,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_categorymembers": {
+      "requests": 5,
+      "input_tokens": 46804,
+      "output_tokens": 1682,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_extracts": {
+      "requests": 10,
+      "input_tokens": 113085,
+      "output_tokens": 2629,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_info": {
+      "requests": 8,
+      "input_tokens": 71050,
+      "output_tokens": 1035,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_langlinks": {
+      "requests": 8,
+      "input_tokens": 73651,
+      "output_tokens": 1485,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._build_links": {
+      "requests": 5,
+      "input_tokens": 44257,
+      "output_tokens": 1253,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._common_attributes": {
+      "requests": 7,
+      "input_tokens": 58476,
+      "output_tokens": 1594,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._create_section": {
+      "requests": 9,
+      "input_tokens": 80482,
+      "output_tokens": 1613,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia._query": {
+      "requests": 9,
+      "input_tokens": 92329,
+      "output_tokens": 1808,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.article": {
+      "requests": 7,
+      "input_tokens": 59675,
+      "output_tokens": 1133,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.backlinks": {
+      "requests": 5,
+      "input_tokens": 38115,
+      "output_tokens": 1263,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.categories": {
+      "requests": 8,
+      "input_tokens": 57281,
+      "output_tokens": 1736,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.categorymembers": {
+      "requests": 10,
+      "input_tokens": 93132,
+      "output_tokens": 2924,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.extracts": {
+      "requests": 8,
+      "input_tokens": 69941,
+      "output_tokens": 2152,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.info": {
+      "requests": 10,
+      "input_tokens": 97257,
+      "output_tokens": 656,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.langlinks": {
+      "requests": 8,
+      "input_tokens": 57847,
+      "output_tokens": 1736,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.links": {
+      "requests": 7,
+      "input_tokens": 70911,
+      "output_tokens": 1872,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia.page": {
+      "requests": 6,
+      "input_tokens": 57092,
+      "output_tokens": 1568,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.Wikipedia": {
+      "requests": 6,
+      "input_tokens": 115834,
+      "output_tokens": 2614,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPage.__init__": {
+      "requests": 10,
+      "input_tokens": 97760,
+      "output_tokens": 618,
+      "cost": 0.0
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.__init__": {
+      "requests": 10,
+      "input_tokens": 99646,
+      "output_tokens": 681,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 31,
+    "total_fetched_component_types": 50,
+    "redundant_fetch_count": 134,
+    "duplicates": {
+      "wikipediaapi.__init__.Wikipedia": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia.__del__",
+          "wikipediaapi.__init__.WikipediaPage._fetch",
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.WikipediaPage.categorymembers",
+          "wikipediaapi.__init__.WikipediaPage.langlinks",
+          "wikipediaapi.__init__.WikipediaPage.links",
+          "wikipediaapi.__init__.WikipediaPageSection.text",
+          "wikipediaapi.__init__.WikipediaPageSection.title",
+          "wikipediaapi.__init__.WikipediaPageSection",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title",
+          "wikipediaapi.__init__.WikipediaPage",
+          "wikipediaapi.__init__.Wikipedia._build_categories",
+          "wikipediaapi.__init__.Wikipedia._build_categorymembers",
+          "wikipediaapi.__init__.Wikipedia._build_extracts",
+          "wikipediaapi.__init__.Wikipedia._build_info",
+          "wikipediaapi.__init__.Wikipedia._build_langlinks",
+          "wikipediaapi.__init__.Wikipedia._build_links",
+          "wikipediaapi.__init__.Wikipedia._common_attributes",
+          "wikipediaapi.__init__.Wikipedia._create_section",
+          "wikipediaapi.__init__.Wikipedia._query",
+          "wikipediaapi.__init__.Wikipedia.article",
+          "wikipediaapi.__init__.Wikipedia.backlinks",
+          "wikipediaapi.__init__.Wikipedia.categorymembers",
+          "wikipediaapi.__init__.Wikipedia.extracts",
+          "wikipediaapi.__init__.Wikipedia.info",
+          "wikipediaapi.__init__.Wikipedia.links",
+          "wikipediaapi.__init__.Wikipedia.page",
+          "wikipediaapi.__init__.WikipediaPage.__init__",
+          "wikipediaapi.__init__.WikipediaPageSection.__init__"
+        ],
+        "access_count": 29
+      },
+      "wikipediaapi.__init__.WikipediaPage": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.__getattr__",
+          "wikipediaapi.__init__.WikipediaPage.__repr__",
+          "wikipediaapi.__init__.WikipediaPage._fetch",
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.WikipediaPage.categorymembers",
+          "wikipediaapi.__init__.WikipediaPage.langlinks",
+          "wikipediaapi.__init__.WikipediaPage.links",
+          "wikipediaapi.__init__.WikipediaPageSection.text",
+          "wikipediaapi.__init__.WikipediaPageSection.title",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title",
+          "wikipediaapi.__init__.Wikipedia._build_backlinks",
+          "wikipediaapi.__init__.Wikipedia._build_categories",
+          "wikipediaapi.__init__.Wikipedia._build_categorymembers",
+          "wikipediaapi.__init__.Wikipedia._build_extracts",
+          "wikipediaapi.__init__.Wikipedia._build_info",
+          "wikipediaapi.__init__.Wikipedia._build_langlinks",
+          "wikipediaapi.__init__.Wikipedia._build_links",
+          "wikipediaapi.__init__.Wikipedia._common_attributes",
+          "wikipediaapi.__init__.Wikipedia._query",
+          "wikipediaapi.__init__.Wikipedia.article",
+          "wikipediaapi.__init__.Wikipedia.categories",
+          "wikipediaapi.__init__.Wikipedia.info",
+          "wikipediaapi.__init__.Wikipedia.langlinks",
+          "wikipediaapi.__init__.Wikipedia.links",
+          "wikipediaapi.__init__.Wikipedia.page",
+          "wikipediaapi.__init__.Wikipedia",
+          "wikipediaapi.__init__.WikipediaPageSection.__init__"
+        ],
+        "access_count": 27
+      },
+      "wikipediaapi.__init__.WikipediaPageSection": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPageSection.full_text",
+          "wikipediaapi.__init__.WikipediaPageSection.level",
+          "wikipediaapi.__init__.WikipediaPageSection.section_by_title",
+          "wikipediaapi.__init__.WikipediaPageSection.sections",
+          "wikipediaapi.__init__.WikipediaPageSection.text",
+          "wikipediaapi.__init__.WikipediaPageSection.title",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title",
+          "wikipediaapi.__init__.WikipediaPage",
+          "wikipediaapi.__init__.Wikipedia._build_extracts",
+          "wikipediaapi.__init__.Wikipedia._create_section",
+          "wikipediaapi.__init__.Wikipedia",
+          "wikipediaapi.__init__.WikipediaPage.__init__",
+          "wikipediaapi.__init__.WikipediaPageSection.__init__"
+        ],
+        "access_count": 13
+      },
+      "wikipediaapi.__init__.Wikipedia._common_attributes": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia._build_backlinks",
+          "wikipediaapi.__init__.Wikipedia._build_categories",
+          "wikipediaapi.__init__.Wikipedia._build_categorymembers",
+          "wikipediaapi.__init__.Wikipedia._build_extracts",
+          "wikipediaapi.__init__.Wikipedia._build_info",
+          "wikipediaapi.__init__.Wikipedia._build_langlinks",
+          "wikipediaapi.__init__.Wikipedia._build_links",
+          "wikipediaapi.__init__.Wikipedia._common_attributes",
+          "wikipediaapi.__init__.Wikipedia.categories",
+          "wikipediaapi.__init__.Wikipedia.info",
+          "wikipediaapi.__init__.Wikipedia.langlinks",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 12
+      },
+      "wikipediaapi.__init__.WikipediaPage._fetch": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.__getattr__",
+          "wikipediaapi.__init__.WikipediaPage._fetch",
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.WikipediaPage.categorymembers",
+          "wikipediaapi.__init__.WikipediaPage.langlinks",
+          "wikipediaapi.__init__.WikipediaPage.links",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title",
+          "wikipediaapi.__init__.WikipediaPage"
+        ],
+        "access_count": 8
+      },
+      "wikipediaapi.__init__.Namespace": {
+        "accessed_by": [
+          "wikipediaapi.__init__.namespace2int",
+          "wikipediaapi.__init__.WikipediaPage",
+          "wikipediaapi.__init__.Wikipedia._build_langlinks",
+          "wikipediaapi.__init__.Wikipedia.article",
+          "wikipediaapi.__init__.Wikipedia.page",
+          "wikipediaapi.__init__.Wikipedia",
+          "wikipediaapi.__init__.WikipediaPage.__init__"
+        ],
+        "access_count": 7
+      },
+      "wikipediaapi.__init__.ExtractFormat": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPageSection.full_text",
+          "wikipediaapi.__init__.WikipediaPageSection",
+          "wikipediaapi.__init__.Wikipedia._create_section",
+          "wikipediaapi.__init__.Wikipedia.extracts",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 5
+      },
+      "wikipediaapi.__init__.Wikipedia._build_categories": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.Wikipedia._build_categories",
+          "wikipediaapi.__init__.Wikipedia.categories",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 4
+      },
+      "wikipediaapi.__init__.Wikipedia._build_langlinks": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.langlinks",
+          "wikipediaapi.__init__.Wikipedia._build_langlinks",
+          "wikipediaapi.__init__.Wikipedia.langlinks",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 4
+      },
+      "wikipediaapi.__init__.Wikipedia._query": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia.categories",
+          "wikipediaapi.__init__.Wikipedia.info",
+          "wikipediaapi.__init__.Wikipedia.langlinks",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 4
+      },
+      "wikipediaapi.__init__.WikipediaPageSection.__init__": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia.__del__",
+          "wikipediaapi.__init__.WikipediaPageSection.level",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.WikipediaPage.__getattr__": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage._fetch",
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.WikipediaPage"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia.info": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage._fetch",
+          "wikipediaapi.__init__.Wikipedia._build_info",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia.categories": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.Wikipedia._build_categories",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.WikipediaPage.categories": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.categories",
+          "wikipediaapi.__init__.WikipediaPage",
+          "wikipediaapi.__init__.Wikipedia._build_categories"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.WikipediaPageSection.full_text": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPageSection.sections",
+          "wikipediaapi.__init__.WikipediaPageSection.text",
+          "wikipediaapi.__init__.WikipediaPageSection.title"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia.page": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPageSection.text",
+          "wikipediaapi.__init__.Wikipedia.article",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia.extracts": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.section_by_title",
+          "wikipediaapi.__init__.Wikipedia._build_extracts",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia._create_section": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia._build_extracts",
+          "wikipediaapi.__init__.Wikipedia",
+          "wikipediaapi.__init__.WikipediaPageSection.__init__"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia._build_info": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia._build_info",
+          "wikipediaapi.__init__.Wikipedia.info",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 3
+      },
+      "wikipediaapi.__init__.Wikipedia.__init__": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia.__del__",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.WikipediaPage.__init__": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia.__del__",
+          "wikipediaapi.__init__.WikipediaPage.section_by_title"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.Wikipedia.langlinks": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.langlinks",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.WikipediaPage.langlinks": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.langlinks",
+          "wikipediaapi.__init__.WikipediaPage"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.Wikipedia.links": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.links",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.WikipediaPage.links": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.links",
+          "wikipediaapi.__init__.WikipediaPage"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.WikipediaPageSection.section_by_title": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPageSection.sections",
+          "wikipediaapi.__init__.WikipediaPageSection.title"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.Wikipedia._build_extracts": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage.section_by_title",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.WikipediaPage.categorymembers": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage",
+          "wikipediaapi.__init__.Wikipedia._build_categorymembers"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.namespace2int": {
+        "accessed_by": [
+          "wikipediaapi.__init__.WikipediaPage",
+          "wikipediaapi.__init__.WikipediaPage.__init__"
+        ],
+        "access_count": 2
+      },
+      "wikipediaapi.__init__.Wikipedia.categorymembers": {
+        "accessed_by": [
+          "wikipediaapi.__init__.Wikipedia._build_categorymembers",
+          "wikipediaapi.__init__.Wikipedia"
+        ],
+        "access_count": 2
+      }
+    }
+  },
+  "agent_llm_stats": {},
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 58.456,
+    "avg_turns_per_component": 6.33,
+    "memory_hit_rate": 0.0,
+    "total_tokens": 3098712,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 68860.3
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 45,
+      "total_time_seconds": 2630.509,
+      "avg_time_seconds": 58.456,
+      "total_turns": 331,
+      "avg_turns": 7.36,
+      "action_counts": {
+        "Read": 136,
+        "Write": 57,
+        "Verify": 56,
+        "Finish": 36,
+        "Unknown": 46
+      }
+    }
+  },
+  "per_component_conflict_stats": {
+    "wikipediaapi.__init__.Wikipedia.__init__": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 0,
+      "contradiction_count": 2,
+      "neutral_count": 11,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.ExtractFormat"
+      ]
+    },
+    "wikipediaapi.__init__.WikipediaPageSection.full_text": {
+      "total_candidate_pairs": 13,
+      "entailment_count": 2,
+      "contradiction_count": 1,
+      "neutral_count": 10,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.ExtractFormat"
+      ]
+    },
+    "wikipediaapi.__init__.WikipediaPageSection": {
+      "total_candidate_pairs": 74,
+      "entailment_count": 28,
+      "contradiction_count": 6,
+      "neutral_count": 40,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.ExtractFormat",
+        "wikipediaapi.__init__.WikipediaPageSection.full_text",
+        "wikipediaapi.__init__.WikipediaPageSection.level",
+        "wikipediaapi.__init__.WikipediaPageSection.section_by_title",
+        "wikipediaapi.__init__.WikipediaPageSection.sections",
+        "wikipediaapi.__init__.WikipediaPageSection.title"
+      ]
+    },
+    "wikipediaapi.__init__.WikipediaPage.section_by_title": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 3,
+      "contradiction_count": 1,
+      "neutral_count": 13,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.WikipediaPageSection"
+      ]
+    },
+    "wikipediaapi.__init__.namespace2int": {
+      "total_candidate_pairs": 24,
+      "entailment_count": 12,
+      "contradiction_count": 1,
+      "neutral_count": 11,
+      "conflict_score": 0.0909,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.Namespace"
+      ]
+    },
+    "wikipediaapi.__init__.WikipediaPage": {
+      "total_candidate_pairs": 226,
+      "entailment_count": 38,
+      "contradiction_count": 9,
+      "neutral_count": 179,
+      "conflict_score": 0.0192,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.Namespace",
+        "wikipediaapi.__init__.WikipediaPage.__getattr__",
+        "wikipediaapi.__init__.WikipediaPage.__repr__",
+        "wikipediaapi.__init__.WikipediaPage._fetch",
+        "wikipediaapi.__init__.WikipediaPage.backlinks",
+        "wikipediaapi.__init__.WikipediaPage.categorymembers",
+        "wikipediaapi.__init__.WikipediaPage.exists",
+        "wikipediaapi.__init__.WikipediaPage.langlinks",
+        "wikipediaapi.__init__.WikipediaPage.language",
+        "wikipediaapi.__init__.WikipediaPage.links",
+        "wikipediaapi.__init__.WikipediaPage.namespace",
+        "wikipediaapi.__init__.WikipediaPage.section_by_title",
+        "wikipediaapi.__init__.WikipediaPage.sections",
+        "wikipediaapi.__init__.WikipediaPage.sections_by_title",
+        "wikipediaapi.__init__.WikipediaPage.summary",
+        "wikipediaapi.__init__.WikipediaPage.text",
+        "wikipediaapi.__init__.WikipediaPage.title",
+        "wikipediaapi.__init__.WikipediaPageSection",
+        "wikipediaapi.__init__.namespace2int"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia._build_backlinks": {
+      "total_candidate_pairs": 34,
+      "entailment_count": 32,
+      "contradiction_count": 0,
+      "neutral_count": 2,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.WikipediaPage"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia._build_categories": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 9,
+      "contradiction_count": 3,
+      "neutral_count": 18,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.WikipediaPage"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia._build_categorymembers": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 6,
+      "contradiction_count": 3,
+      "neutral_count": 21,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.WikipediaPage"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia._build_langlinks": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 11,
+      "contradiction_count": 2,
+      "neutral_count": 17,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.Namespace",
+        "wikipediaapi.__init__.WikipediaPage"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia._build_links": {
+      "total_candidate_pairs": 30,
+      "entailment_count": 10,
+      "contradiction_count": 0,
+      "neutral_count": 20,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.WikipediaPage"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia._create_section": {
+      "total_candidate_pairs": 32,
+      "entailment_count": 6,
+      "contradiction_count": 2,
+      "neutral_count": 24,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.ExtractFormat",
+        "wikipediaapi.__init__.WikipediaPageSection"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia.article": {
+      "total_candidate_pairs": 17,
+      "entailment_count": 0,
+      "contradiction_count": 2,
+      "neutral_count": 15,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.Namespace"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia.extracts": {
+      "total_candidate_pairs": 0,
+      "entailment_count": 0,
+      "contradiction_count": 0,
+      "neutral_count": 0,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.ExtractFormat"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia.page": {
+      "total_candidate_pairs": 43,
+      "entailment_count": 5,
+      "contradiction_count": 4,
+      "neutral_count": 34,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.Namespace",
+        "wikipediaapi.__init__.WikipediaPage"
+      ]
+    },
+    "wikipediaapi.__init__.Wikipedia": {
+      "total_candidate_pairs": 146,
+      "entailment_count": 17,
+      "contradiction_count": 7,
+      "neutral_count": 122,
+      "conflict_score": 0.0,
+      "dep_ids_checked": [
+        "wikipediaapi.__init__.ExtractFormat",
+        "wikipediaapi.__init__.Namespace",
+        "wikipediaapi.__init__.Wikipedia.__del__",
+        "wikipediaapi.__init__.Wikipedia._build_backlinks",
+        "wikipediaapi.__init__.Wikipedia._build_categories",
+        "wikipediaapi.__init__.Wikipedia._build_categorymembers",
+        "wikipediaapi.__init__.Wikipedia._build_extracts",
+        "wikipediaapi.__init__.Wikipedia._build_info",
+        "wikipediaapi.__init__.Wikipedia._build_langlinks",
+        "wikipediaapi.__init__.Wikipedia._build_links",
+        "wikipediaapi.__init__.Wikipedia._common_attributes",
+        "wikipediaapi.__init__.Wikipedia._create_section",
+        "wikipediaapi.__init__.Wikipedia._query",
+        "wikipediaapi.__init__.Wikipedia.article",
+        "wikipediaapi.__init__.Wikipedia.backlinks",
+        "wikipediaapi.__init__.Wikipedia.categories",
+        "wikipediaapi.__init__.Wikipedia.categorymembers",
+        "wikipediaapi.__init__.Wikipedia.extracts",
+        "wikipediaapi.__init__.Wikipedia.langlinks",
+        "wikipediaapi.__init__.Wikipedia.links",
+        "wikipediaapi.__init__.Wikipedia.page",
+        "wikipediaapi.__init__.WikipediaPage",
+        "wikipediaapi.__init__.WikipediaPageSection"
+      ]
+    }
+  },
+  "verify_summary": {
+    "total_verify_attempts": 56,
+    "first_pass_success": 28,
+    "required_revision": 14,
+    "score_parse_failures": 0,
+    "avg_first_attempt_scores": {
+      "CONSISTENCY": 0.9276,
+      "COMPLETENESS": 0.9013,
+      "HELPFULNESS": 0.9026
+    },
+    "avg_score_improvement": {
+      "CONSISTENCY": 0.0643,
+      "COMPLETENESS": 0.0786,
+      "HELPFULNESS": 0.0536
+    }
+  }
+}

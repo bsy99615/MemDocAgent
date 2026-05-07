@@ -1,0 +1,904 @@
+{
+  "run_id": "20260420_060518",
+  "label": "zxcvbn-python_retry_20260420_060613",
+  "total_run_time_seconds": 55.219,
+  "repo_summary": {
+    "file_count": 6,
+    "function_count": 40,
+    "class_count": 1,
+    "method_count": 1,
+    "total_components": 42,
+    "module_count": 1,
+    "repo_count": 1,
+    "topological_order_count": 42,
+    "topological_order": [
+      "zxcvbn.__init__.zxcvbn",
+      "zxcvbn.__main__.JSONEncoder.default",
+      "zxcvbn.__main__.JSONEncoder",
+      "zxcvbn.__main__.cli",
+      "zxcvbn.feedback.get_dictionary_match_feedback",
+      "zxcvbn.feedback.get_match_feedback",
+      "zxcvbn.feedback.get_feedback",
+      "zxcvbn.matching.build_ranked_dict",
+      "zxcvbn.matching.add_frequency_lists",
+      "zxcvbn.matching.map_ints_to_dm",
+      "zxcvbn.matching.two_to_four_digit_year",
+      "zxcvbn.matching.map_ints_to_dmy",
+      "zxcvbn.matching.date_match",
+      "zxcvbn.matching.dictionary_match",
+      "zxcvbn.matching.enumerate_l33t_subs",
+      "zxcvbn.matching.relevant_l33t_subtable",
+      "zxcvbn.matching.translate",
+      "zxcvbn.matching.l33t_match",
+      "zxcvbn.matching.regex_match",
+      "zxcvbn.scoring.bruteforce_guesses",
+      "zxcvbn.scoring.date_guesses",
+      "zxcvbn.scoring.nCk",
+      "zxcvbn.scoring.l33t_variations",
+      "zxcvbn.scoring.uppercase_variations",
+      "zxcvbn.scoring.dictionary_guesses",
+      "zxcvbn.scoring.regex_guesses",
+      "zxcvbn.scoring.repeat_guesses",
+      "zxcvbn.scoring.sequence_guesses",
+      "zxcvbn.scoring.spatial_guesses",
+      "zxcvbn.scoring.estimate_guesses",
+      "zxcvbn.scoring.most_guessable_match_sequence",
+      "zxcvbn.matching.repeat_match",
+      "zxcvbn.matching.reverse_dictionary_match",
+      "zxcvbn.matching.sequence_match",
+      "zxcvbn.matching.spatial_match_helper",
+      "zxcvbn.matching.spatial_match",
+      "zxcvbn.matching.omnimatch",
+      "zxcvbn.scoring.calc_average_degree",
+      "zxcvbn.time_estimates.display_time",
+      "zxcvbn.time_estimates.float_to_decimal",
+      "zxcvbn.time_estimates.guesses_to_score",
+      "zxcvbn.time_estimates.estimate_attack_times"
+    ]
+  },
+  "dependency_analysis_time_seconds": null,
+  "action_call_totals": {
+    "Read": 0,
+    "Write": 0,
+    "Verify": 0,
+    "Finish": 0
+  },
+  "action_time_totals_seconds": {
+    "Read": 0.0,
+    "Write": 0.0,
+    "Verify": 0.0
+  },
+  "action_token_totals": {
+    "Read": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "Write": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "Verify": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "Finish": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "read_fetch_totals": {
+    "total_graph_searches": 0,
+    "total_memory_hits": 0
+  },
+  "per_component_stats": {
+    "zxcvbn.__init__.zxcvbn": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.506,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.__main__.JSONEncoder.default": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.449,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.__main__.JSONEncoder": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.234,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.__main__.cli": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.439,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.feedback.get_dictionary_match_feedback": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.354,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.feedback.get_match_feedback": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.427,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.build_ranked_dict": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.367,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.add_frequency_lists": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.228,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.map_ints_to_dm": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.446,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.two_to_four_digit_year": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.249,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.map_ints_to_dmy": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.366,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.date_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.358,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.dictionary_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.189,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.enumerate_l33t_subs": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.479,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.relevant_l33t_subtable": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.389,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.translate": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.388,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.l33t_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.429,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.regex_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.309,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.bruteforce_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.195,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.date_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.283,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.nCk": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.247,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.l33t_variations": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.471,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.uppercase_variations": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.324,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.dictionary_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.207,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.regex_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.206,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.repeat_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.449,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.sequence_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.438,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.spatial_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.228,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.estimate_guesses": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.289,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.most_guessable_match_sequence": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.401,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.repeat_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.204,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.reverse_dictionary_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.281,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.sequence_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.335,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.spatial_match_helper": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.317,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.spatial_match": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.383,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.matching.omnimatch": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.235,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.scoring.calc_average_degree": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.285,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.time_estimates.display_time": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.406,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.time_estimates.float_to_decimal": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.389,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.time_estimates.guesses_to_score": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.372,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    },
+    "zxcvbn.time_estimates.estimate_attack_times": {
+      "Read_calls": 0,
+      "Write_calls": 0,
+      "Verify_calls": 0,
+      "Finish_calls": 0,
+      "Read_time": 0.0,
+      "Write_time": 0.0,
+      "Verify_time": 0.0,
+      "total_time_seconds": 1.47,
+      "graph_searches": 0,
+      "memory_hits": 0,
+      "Finish(exception)_calls": 1
+    }
+  },
+  "per_component_verify_scores": {},
+  "per_component_llm_stats": {
+    "zxcvbn.__init__.zxcvbn": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.__main__.JSONEncoder.default": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.__main__.JSONEncoder": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.__main__.cli": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.feedback.get_dictionary_match_feedback": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.feedback.get_match_feedback": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.build_ranked_dict": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.add_frequency_lists": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.map_ints_to_dm": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.two_to_four_digit_year": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.map_ints_to_dmy": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.date_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.dictionary_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.enumerate_l33t_subs": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.relevant_l33t_subtable": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.translate": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.l33t_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.regex_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.bruteforce_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.date_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.nCk": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.l33t_variations": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.uppercase_variations": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.dictionary_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.regex_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.repeat_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.sequence_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.spatial_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.estimate_guesses": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.most_guessable_match_sequence": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.repeat_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.reverse_dictionary_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.sequence_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.spatial_match_helper": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.spatial_match": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.matching.omnimatch": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.scoring.calc_average_degree": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.time_estimates.display_time": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.time_estimates.float_to_decimal": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.time_estimates.guesses_to_score": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    },
+    "zxcvbn.time_estimates.estimate_attack_times": {
+      "requests": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0
+    }
+  },
+  "cross_component_duplicate_fetches": {
+    "duplicate_component_count": 0,
+    "total_fetched_component_types": 0,
+    "redundant_fetch_count": 0,
+    "duplicates": {}
+  },
+  "agent_llm_stats": {},
+  "efficiency_summary": {
+    "avg_time_per_component_seconds": 1.342,
+    "avg_turns_per_component": 0.0,
+    "memory_hit_rate": 0.0,
+    "total_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "avg_tokens_per_component": 0.0
+  },
+  "per_level_stats": {
+    "COMPONENT": {
+      "count": 41,
+      "total_time_seconds": 55.021,
+      "avg_time_seconds": 1.342,
+      "total_turns": 0,
+      "avg_turns": 0.0,
+      "action_counts": {}
+    }
+  },
+  "per_component_conflict_stats": {},
+  "verify_summary": {}
+}
