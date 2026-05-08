@@ -1,6 +1,6 @@
 # MemDocAgent
 
-MemDocAgent is a framework for automatically generating high-quality documentation for software repositories. It uses a **Manager/Worker agent architecture** with a ReAct-based loop to produce documentation at three hierarchical levels: component (functions, methods, classes), module (packages/directories), and repository.
+MemDocAgent is a framework for automatically generating high-quality documentation for software repositories.
 
 ## Key Features
 
@@ -79,17 +79,6 @@ MODEL_TAG=Llama-3.3-70B SOURCE_ROOT=/path/to/repos bash main.sh
 | `--mode` | `default` | Ablation mode (see below) |
 | `--no-conflict-check` | off | Skip NLI cross-dependency verification |
 | `--log-level` | `INFO` | `DEBUG` / `INFO` / `WARNING` / `ERROR` |
-
-### `--mode` ablation settings
-
-| Mode | Behavior |
-|------|----------|
-| `default` | Full pipeline |
-| `only_self` | Self-consistency verification only (no NLI conflict check) |
-| `without_memory` | Always re-reads source; skips RepoMemory retrieval |
-| `without_think` | Hides Thought step in prompt but still generates it |
-| `without_think2` | Removes Thought generation entirely |
-| `ver2` | Strips docs to essential sections; simple code passthrough |
 
 ## Output
 
