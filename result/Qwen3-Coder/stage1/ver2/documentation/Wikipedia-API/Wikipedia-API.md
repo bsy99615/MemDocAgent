@@ -1,2 +1,0 @@
-# `Wikipedia-API`
-
