@@ -3,7 +3,7 @@
 MemDocAgent is a framework for automatically generating high-quality documentation for software repositories.  
 
 <p align="center">
-  <img src="images/figure.png" width="950" height="500"/>
+  <img src="2026_memdocagent.png" width="950" height="500"/>
 </p>
 
 Our paper was accepted to **NeurIPS 2026**.  
