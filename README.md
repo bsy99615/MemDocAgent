@@ -1,6 +1,24 @@
 # MemDocAgent
 
-MemDocAgent is a framework for automatically generating high-quality documentation for software repositories.
+MemDocAgent is a framework for automatically generating high-quality documentation for software repositories.  
+
+<p align="center">
+  <img src="images/figure.png" width="950" height="500"/>
+</p>
+
+Our paper was accepted to **NeurIPS 2026**.  
+Full paper is available here: <https://arxiv.org/abs/2605.14563/> 
+
+If you use MemDocAgent in your research, please cite our paper:
+```
+@article{bae2026remember,
+  title={Remember Your Trace: Memory-Guided Long-Horizon Agentic Framework for Consistent and Hierarchical Repository-Level Code Documentation},
+  author={Bae, Suyoung and Lee, Jaehoon and Choi, Changkyu and Choi, YunSeok and Lee, Jee-Hyong},
+  journal={arXiv preprint arXiv:2605.14563},
+  year={2026}
+}
+```
+
 
 ## Key Features
 
@@ -152,3 +170,7 @@ bash tool/remove_docstrings.sh /path/to/repo
 bash tool/remove_docstrings.sh --dry-run /path/to/repo   # preview only
 bash tool/remove_docstrings.sh --backup /path/to/repo    # create .bak files first
 ```
+
+## License
+
+MemDocAgent is released under the [MIT License](LICENSE).
